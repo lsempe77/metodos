@@ -16,4 +16,9 @@ description: Un proyecto que espero algún día terminar y que al siguiente (le)
 
 # ¿Por qué otro (¿aburrido?) libro de metodología de la investigación? (lo que se llama Prefacio)
 
+Este libro es fruto de muchas conversaciones, errores y experiencias en el mundo académico. 
+
+No está dirigido a ti, que sabes todo. Está dirigido a mi mismo, para recordarme de las cosas que hice mal, y algunas que me ligaron.
+
+La culpa de todo esto la tiene Francesca Ucelli. Ya luego lo explicaré mejor.
 
