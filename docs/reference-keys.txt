@@ -1,9 +1,7 @@
 por-qué-otro-aburrido-libro-de-metodología-de-la-investigación-lo-que-se-llama-prefacio
 intro
-literature
-methods
+conceptos
+ruta
 math-example
-applications
-example-one
-example-two
-final-words
+paradigmas
+errores-más-comunes
