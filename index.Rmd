@@ -37,8 +37,12 @@ Lo polémico (es decir, yo me salgo un poco de lo convencional aquí) es que en 
 
 Entonces es común encontrar que alguien que está de acuerdo (o en desacuerdo) con algo, lo estudia y confirma su postura. Y se lo comunica, con un lenguaje gregario, a los de su misma tribu. Se pierde la capacidad de asombro, pensar la pregunta de investigación como un rompecabezar a ser resuelto, con la posiblidad de arriesgarse a estar equivocado (al menos parcialmente). Aquí hay un poco de lo que Khun explica magistralmente en cuanto a la tensión de cambiar de paradigmas científicos [@kuhn1996] (pero bueno, este es un libro de metodología y no de filosofía, pero deberías leer el librito o por lo menos googlearlo en wikipedia).
 
-3)
+Yo creo que eso empobrece la producción del conocimiento, no nos acerca a resolver los problemas (oh! resulta que los que investigamos en ciencias sociales debiéramos siempre acordarnos de que una finalidad de nuestro esfuerzo es contribuir a la solución de las cosas (ojo que la denuncia es un paso importante para ello también).
 
-Ah, y no tengo intenciones de publicar el texto así que no tengo que cuidar el lenguaje formal de un manual académico (supongo que se habrán dado cuenta de ello). Así que esto le da la oportunidad al lector de distraerse en un libro poco técnico sobre una materia que suele ser bien aburrida. Ojalá que le cambie en algo su perspectiva.
+Entonces, este manual busca ser una propuesta con una perspectiva un poco diferente (que no debe ser leído aisladamente de los demás). Busca cuestionar al lector sobre sus creencias e invitarlo a salir de su zona de confort. También busca, a través de ejemplos reales, discutir lo complejo de la investigación, apuntando casos reales, problemas comúnes y soluciones que permitan que el proceso de escribir una tesis no sea tenebroso sino que lo aproveches de verdad. Y ojalá más gente se anime a entrar al mundo académico (no paga mal, y es entretenido si lo haces bien, y si la burocracia no te mata). Y busca ayudarte de forma concreta en la producción de tu investigación (como si fuera un tutorial, pero la diferencia es que en vez de seguir pasos mecánicamente -lo que habitualmente ocurre en los manuales-, busco generar etapas del proceso que te permitan ir consolidando tu diseño, y avanzando en tu proyecto).
+
+Un par de aclaraciones importantes:
+
+No tengo intenciones de publicar el texto así que no tengo que cuidar el lenguaje formal de un manual académico (supongo que se habrán dado cuenta de ello). Así que esto le da la oportunidad al lector de distraerse en un libro poco técnico sobre una materia que suele ser bien aburrida. Ojalá que le cambie en algo su perspectiva.
 
 Finalmente, la culpa de todo esto la tiene Francesca Ucelli. Ya luego lo explicaré mejor.
