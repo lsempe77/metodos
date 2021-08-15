@@ -10,8 +10,8 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: Un proyecto que espero algún día terminar y que al siguiente (le) sirva de algo.
+github-repo: lsempe/placeholder
+
 ---
 
 # ¿Por qué otro (¿aburrido?) libro de metodología de la investigación? (lo que se llama Prefacio)
