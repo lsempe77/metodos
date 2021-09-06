@@ -4,10 +4,10 @@ subtitle: Algo políticamente incorrecto
 author: "Lucas Sempé"
 date: "`r Sys.Date()`"
 output:
-  bookdown::gitbook: null
   bookdown::tufte_html_book: 
     toc: true
     css: toc.css
+  bookdown::gitbook: null
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
@@ -18,7 +18,7 @@ link-citations: yes
 github-repo: lsempe/metodos
 ---
 
-# ¿Por qué otro libro de metodología de la investigación? (lo que se llama Prefacio)
+# ¿Para qué otro libro de metodología de la investigación?
 
 Este libro es fruto de muchas conversaciones, errores y experiencias en el mundo académico. Entré a la vida acádemica tardíamente, aunque he estudiado mucho y variadas cosas. He sido (y lo seré) desordenado en los procesos de aprendizaje, y con ello, he perdido mucho tiempo en cosas inútiles o, lo más frecuente, cometí errores repetidamente ("el que se golpea la cabeza una vez es un descuidado; el que se golpea la cabeza en el mismo lugar es un tonto").
 
