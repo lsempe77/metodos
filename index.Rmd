@@ -1,13 +1,18 @@
 ---
 title: "(Otro) Manual de metodología de la investigacion en ciencias sociales"
-subtitle: "Algo políticamente incorrecto"
+subtitle: Algo políticamente incorrecto
 author: "Lucas Sempé"
 date: "`r Sys.Date()`"
+output:
+  bookdown::gitbook: null
+  bookdown::tufte_html_book: 
+    toc: true
+    css: toc.css
 site: bookdown::bookdown_site
-output: bookdown::gitbook
-
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography:
+- book.bib
+- packages.bib
 biblio-style: apalike
 link-citations: yes
 github-repo: lsempe/placeholder
@@ -19,7 +24,7 @@ Este libro es fruto de muchas conversaciones, errores y experiencias en el mundo
 
 No está dirigido a ti, que sabes todo. Está dirigido a mi mismo, para recordarme de las cosas que hice mal, y algunas que me ligaron. Está pensando para el estudiante de pregrado o post-grado (sí, haré algunas distinciones) que quiera aprender a investigar.
 
-Antes de responder la pregunta planteada, aquí va la enseñanza \#1 sobre la investigación: **HACERSE PREGUNTAS (INTERESANTES) ES EL PRIMER PASO FUNDAMENTAL PARA SER UN INVESTIGADOR)**. Si no te haces preguntas (o no te las hiciste de chiquitito), sugiero que busques otra línea de desarrollo personal y profesional. El investigador es un curioso, un inconformado con la realidad, un sabueso de la verdad.
+Antes de responder la pregunta planteada, aquí va la enseñanza \#1 sobre la investigación: **HACERSE PREGUNTAS (INTERESANTES) ES EL PRIMER PASO FUNDAMENTAL PARA SER UN INVESTIGADOR**. Si no te haces preguntas (o no te las hiciste de chiquitito), sugiero que busques otra línea de desarrollo personal y profesional. El investigador es un curioso, un inconformado con la realidad, un sabueso de la verdad.
 
 En mi experiencia en la docencia universitaria, en la investigación académica y aplicada, así como en mi rol de autor, editor y revisor de artículos de revistas científicas me encuentro con 3 grandes desafíos/frustraciones.
 

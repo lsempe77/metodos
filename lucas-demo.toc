@@ -1,0 +1,6 @@
+\contentsline {chapter}{\numberline {1}¿Por qué otro libro de metodología de la investigación? (lo que se llama Prefacio)}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Introducción}{9}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Empecemos por el final: el producto de la investigación.}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Ruta}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Paradigmas}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Errores más comunes}{17}{chapter.6}%
