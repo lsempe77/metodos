@@ -15,7 +15,7 @@ bibliography:
 - packages.bib
 biblio-style: apalike
 link-citations: yes
-github-repo: lsempe/placeholder
+github-repo: lsempe/metodos
 ---
 
 # ¿Por qué otro libro de metodología de la investigación? (lo que se llama Prefacio)
