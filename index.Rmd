@@ -3,13 +3,13 @@ title: "(Otro) Manual de metodología de la investigación en ciencias sociales"
 subtitle: Algo políticamente incorrecto
 author: "Lucas Sempé"
 date: "2021-09-06 (Última actualización: `r Sys.Date()`)"
+site: bookdown::bookdown_site
 output:
   bookdown::tufte_html_book:
     toc: true
     css: toc.css
     always_allow_html: true
   bookdown::gitbook: null
-site: bookdown::bookdown_site
 documentclass: book
 bibliography:
 - book.bib
