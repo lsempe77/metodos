@@ -105,3 +105,39 @@ g2(diamonds_small, asp(clarity, type, color = clarity)) %>%
   gauge_y_cat(range = c(0, 1))
 
 ```
+
+<!--chapter:end:index.Rmd-->
+
+# Introducción {#intro}
+
+En un buen trabajo académico, la introducción se lee primero. Pero se escribe al final.
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Empecemos por el final: el producto de la investigación.
+
+
+<!--chapter:end:02-conceptos.Rmd-->
+
+# Ruta
+
+Cambios de pregunta de investigación
+
+<!--chapter:end:03-ruta.Rmd-->
+
+# Paradigmas
+
+<!--chapter:end:04-paradigmas.Rmd-->
+
+# Errores más comunes
+
+We have finished a nice book.
+
+<!--chapter:end:05-errores_comunes.Rmd-->
+
+`r if (knitr:::is_html_output()) '
+# Referencias {-}
+'`
+
+<!--chapter:end:06-references.Rmd-->
+
