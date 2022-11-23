@@ -4,11 +4,11 @@ subtitle: Algo políticamente incorrecto
 author: "Lucas Sempé"
 date: "2021-09-06 Actualización: `r Sys.Date()`"
 output:
+  bookdown::gitbook: null
   bookdown::tufte_html_book::
     toc: true
     css: toc.css
     always_allow_html: true
-  bookdown::gitbook: null
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
