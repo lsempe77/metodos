@@ -59,7 +59,7 @@ El lenguaje inclusivo me parece que dificulta la lectura (y el objetivo de este 
 
 Finalmente, la culpa de todo esto la tiene Francesca Ucelli. Ya luego lo explicaré mejor.
 
-Aqui testeamos una figura estática en el margen.
+Aqui testeamos una figura estática en el margen. Tambien Github.
 
 
 ```{r, fig.margin=TRUE}
