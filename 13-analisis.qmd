@@ -112,7 +112,7 @@ Seleccionar solo las citas que confirman tu argumento es el pecado capital del a
 
 ## Visualización de datos: un buen gráfico vale más que mil tablas
 
-La visualización no es decoración. Es comunicación. Un buen gráfico puede transmitir instantáneamente lo que una tabla de 50 filas no puede. Este tema es tan importante que le dedicamos un capítulo entero (ver @sec-visualizacion), pero aquí van los principios básicos:
+La visualización no es decoración. Es comunicación. Un buen gráfico puede transmitir instantáneamente lo que una tabla de 50 filas no puede. Este tema es tan importante que le dedicamos un capítulo entero (ver @visualizacion), pero aquí van los principios básicos:
 
 ### Principios básicos
 
