@@ -4,7 +4,9 @@
 
 Exagero. Pero no tanto. La visualización de datos es probablemente la habilidad más subestimada en las ciencias sociales. Puedes tener el análisis más sofisticado del mundo, pero si lo presentas en una tabla ilegible de 15 columnas, nadie lo va a entender (ni le va a importar).
 
-La visualización no es "hacer gráficos bonitos." Es **comunicar evidencia de forma efectiva.** Y como toda comunicación, requiere pensar en tu audiencia, tu mensaje, y la forma más clara de transmitirlo.
+La visualización no es "hacer gráficos bonitos." Es **comunicar evidencia de forma efectiva.** Y como toda comunicación, requiere pensar en tu audiencia, tu mensaje, y la forma más clara de transmitirlo [@healy2018].
+
+Como dice @cairo2016: "Un gráfico no es un adorno. Es un argumento visual." Si tu gráfico no argumenta nada, sobra.
 
 ## Principios fundamentales
 
@@ -12,13 +14,25 @@ La visualización no es "hacer gráficos bonitos." Es **comunicar evidencia de f
 
 Si no puedes decir en una frase qué pregunta responde tu gráfico, probablemente no necesitas ese gráfico. "¿Cómo se distribuye el ingreso?" "¿Hay diferencia entre hombres y mujeres?" "¿Ha cambiado con el tiempo?"
 
-### 2. Menos es más
+@knaflic2015 lo llama el "¿y qué?" (*so what?*). Antes de hacer cualquier gráfico, pregúntate: si alguien ve esto, ¿qué conclusión debería sacar? Si no tienes una respuesta clara, el gráfico no tiene propósito.
 
-El enemigo de un buen gráfico es el ruido visual. Elimina todo lo que no aporta información: líneas de grilla innecesarias, leyendas redundantes, colores sin propósito, efectos 3D (por favor, nunca 3D), fondos decorativos.
+### 2. El ratio data-ink de Tufte
+
+Edward @tufte2001 propuso un principio sencillo pero revolucionario: **maximizar el ratio data-ink.** Es decir, la mayor proporción posible de la tinta de tu gráfico debe representar datos. Todo lo demás (decoraciones, líneas de grilla innecesarias, fondos, bordes) es "tinta sin datos" (*non-data ink*) y debería eliminarse.
+
+$$\text{Data-ink ratio} = \frac{\text{Tinta que representa datos}}{\text{Tinta total del gráfico}}$$
+
+En la práctica, esto significa: elimina todo lo que no aporta información. Líneas de grilla innecesarias, leyendas redundantes, colores sin propósito, efectos 3D (por favor, nunca 3D), fondos decorativos, bordes alrededor del gráfico.
+
+::: {.callout-note}
+## Para recordar
+
+La regla de Tufte tiene sus críticos. A veces, un poco de "tinta sin datos" mejora la legibilidad (como líneas de grilla sutiles que ayudan a leer valores). El principio no es "elimina todo" sino "justifica todo." Si un elemento visual no aporta, elimínalo. Si aporta a la legibilidad, mantenlo.
+:::
 
 ### 3. La honestidad visual
 
-Un gráfico puede mentir sin falsificar un solo dato. Basta con manipular los ejes, elegir colores engañosos, o truncar la escala.
+Un gráfico puede mentir sin falsificar un solo dato. Basta con manipular los ejes, elegir colores engañosos, o truncar la escala. @cairo2016 dedica un libro entero a la "veracidad" en la visualización.
 
 ```{r}
 #| label: fig-eje-honesto
@@ -54,13 +68,51 @@ p2 <- ggplot(datos, aes(x = grupo, y = valor, fill = grupo)) +
 p1 + p2
 ```
 
+Formas comunes de mentir con gráficos:
+
+| Truco | Cómo miente | Ejemplo |
+|---|---|---|
+| **Eje Y truncado** | Exagera diferencias pequeñas | Una diferencia de 2% parece abismal |
+| **Doble eje Y** | Sugiere relación donde no la hay | "El consumo de helado y los ahogamientos correlacionan" |
+| **Área 3D** | Distorsiona proporciones por perspectiva | Tortas 3D donde las porciones del frente parecen más grandes |
+| **Cherry-picking temporal** | Selecciona período que favorece tu argumento | "El crimen bajó" (pero empezaste a contar desde el pico) |
+| **Colores manipuladores** | Rojo = malo, verde = bueno cuando no corresponde | Hacer que tu grupo se vea "positivo" |
+
 ### 4. Color con propósito
 
-El color debe **codificar información**, no decorar. Usa paletas accesibles para daltónicos. No uses más de 5-6 colores distintos. Y si puedes comunicar la misma idea sin color, hazlo.
+El color debe **codificar información**, no decorar. Reglas prácticas:
 
-### 5. Texto integrado
+- **Datos categóricos:** Usa colores cualitativamente distintos (no un gradiente). Máximo 5-6 categorías con color; más de eso, busca otra codificación.
+- **Datos secuenciales:** Usa un gradiente de un solo color (más oscuro = más valor). Ejemplo: mapa coroplético de IDH.
+- **Datos divergentes:** Usa dos colores que divergen desde un punto neutral. Ejemplo: diferencias respecto a la media (azul = debajo, rojo = arriba).
+- **Accesibilidad:** ~8% de los hombres son daltónicos. Evita la combinación rojo-verde. Usa paletas accesibles como `viridis` en R o las paletas de ColorBrewer.
+
+::: {.callout-warning}
+## Sobre daltonismo
+
+Si tu gráfico depende de distinguir rojo de verde para entenderse, excluyes al 8% de los hombres (y al ~0.5% de las mujeres). Usa paletas como `viridis`, `cividis`, o las paletas de `RColorBrewer` tipo "qualitative." En ggplot2: `scale_fill_viridis_d()` para datos discretos, `scale_fill_viridis_c()` para continuos.
+:::
+
+### 5. Texto integrado y etiquetas directas
 
 Las mejores visualizaciones integran el texto en el gráfico: títulos descriptivos, anotaciones que señalan patrones, etiquetas directas en lugar de leyendas separadas.
+
+- **Título descriptivo, no genérico.** ❌ "Gráfico 1: Pobreza por región." ✅ "La pobreza se concentra en las regiones rurales del sur."
+- **Etiquetas directas** en las líneas/barras en lugar de leyendas. Reduce el trabajo cognitivo del lector.
+- **Anotaciones** para señalar puntos clave: "Aquí empezó el programa" o "Este es el valor más alto desde 2010."
+- **Subtítulo** para dar contexto metodológico: "Datos de la ENAHO 2023. N = 35,400 hogares."
+
+### 6. Small multiples: la alternativa al hacinamiento
+
+Cuando quieres mostrar el mismo patrón para muchos grupos, en vez de meter todo en un solo gráfico (que se vuelve ilegible), usa **small multiples** (o *facets* en ggplot2): el mismo gráfico repetido para cada grupo, con los mismos ejes [@tufte2001].
+
+Ventajas:
+
+- Cada grupo se ve con claridad.
+- La comparación visual es inmediata.
+- No necesitas 15 colores diferentes.
+
+En ggplot2: `facet_wrap(~ variable)` o `facet_grid(fila ~ columna)`.
 
 ## Catálogo de visualizaciones por propósito
 
@@ -104,6 +156,16 @@ p3 <- ggplot(ingresos, aes(x = grupo, y = ingreso, fill = grupo)) +
 
 p1 + p2 + p3
 ```
+
+**Cuándo usar cada uno:**
+
+| Gráfico | Mejor para | Evitar cuando |
+|---|---|---|
+| **Histograma** | Ver la forma de la distribución de una variable | Tienes pocas observaciones (<30) |
+| **Densidad** | Comparar distribuciones de 2-3 grupos | Tienes más de 4 grupos (se vuelve ilegible) |
+| **Boxplot** | Comparar medianas y dispersión entre grupos | Quieres ver la forma exacta de la distribución |
+| **Violin plot** | Ver distribución Y comparar grupos | Audiencia no familiarizada con el formato |
+| **Ridgeline** | Comparar distribuciones de muchos grupos | Pocas categorías (mejor usar densidades) |
 
 ### Relación entre variables: ¿hay un patrón?
 
@@ -246,6 +308,70 @@ ggplot(sudamerica) +
   )
 ```
 
+### Proporciones: ¿cómo se reparte el total?
+
+Una nota sobre el gráfico de torta (*pie chart*): tiene mala fama, y con razón. El ojo humano es **mucho peor** comparando ángulos que comparando longitudes. Si tienes más de 3-4 categorías, un gráfico de barras siempre es más legible.
+
+¿Cuándo sí funciona la torta?
+
+- Cuando tienes 2-3 categorías y quieres mostrar proporciones simples (ej.: 70% urbano, 30% rural).
+- Cuando la audiencia espera una torta (presentaciones ejecutivas, informes de prensa).
+
+En todos los demás casos: **barras ordenadas de mayor a menor.** @wilke2019 argumenta que incluso con pocas categorías, las barras son casi siempre superiores.
+
+## El storytelling con datos
+
+@knaflic2015 propone que visualizar datos no es suficiente; necesitas **contar una historia** con ellos. Su framework tiene tres pasos:
+
+### 1. Contexto
+
+¿Quién es tu audiencia? ¿Qué necesitan saber? ¿Qué acción quieres que tomen? Si presentas resultados a un comité de política educativa, tu gráfico necesita ser diferente que si presentas en un congreso académico.
+
+### 2. Elegir la visualización adecuada
+
+No hay un "mejor gráfico." Hay el gráfico adecuado para tu mensaje:
+
+| Tu mensaje es sobre... | Usa... | No uses... |
+|---|---|---|
+| Comparación entre categorías | Barras (horizontales si hay muchas) | Tortas con 10+ categorías |
+| Tendencia temporal | Líneas | Barras apiladas (confunden) |
+| Distribución | Histograma, densidad, boxplot | Tortas (no muestran distribución) |
+| Relación entre dos variables | Scatter plot | Barras (no muestran la relación) |
+| Composición del total | Barras apiladas (100%) | Tortas 3D (nunca) |
+| Geografía | Mapas coropléticos | Tablas con nombres de regiones |
+
+### 3. Eliminar ruido y dirigir la atención
+
+Usa **atributos preatentivos** para que el ojo vaya donde quieres: color, tamaño, posición, forma. Resalta lo importante y atenúa lo secundario.
+
+Ejemplo: si quieres que tu audiencia se fije en que el País C revirtió su tendencia de pobreza, haz su línea más gruesa y de un color más intenso, y atenúa las otras con gris.
+
+## Tablas: la visualización olvidada
+
+Una tabla bien hecha es una forma de visualización. Una tabla mal hecha es una tortura.
+
+### Principios para buenas tablas
+
+1. **Alinea los números a la derecha** (para que los dígitos se alineen).
+2. **Usa formato consistente** (misma cantidad de decimales).
+3. **Elimina bordes innecesarios.** Las mejores tablas usan solo líneas horizontales (arriba, abajo, y separando el header).
+4. **Redondea.** Nadie necesita 6 decimales. Para coeficientes de regresión, 2-3 decimales suelen bastar.
+5. **Señala visualmente** los resultados más importantes (negrita, asteriscos de significancia, sombreado).
+6. **El título debe ser informativo,** no genérico.
+
+| ❌ Tabla mala | ✅ Tabla buena |
+|---|---|
+| "Tabla 3: Resultados" | "Tabla 3: El programa aumentó la matrícula escolar en 8 puntos porcentuales" |
+| Bordes por todos lados | Solo líneas horizontales |
+| 6 decimales | 2-3 decimales |
+| Sin notas al pie | Notas sobre significancia, fuente, y N |
+
+### Tabla vs. gráfico: ¿cuándo usar cada uno?
+
+- **Usa tabla** cuando el lector necesita valores exactos (coeficientes de regresión, estadísticos descriptivos para replicación).
+- **Usa gráfico** cuando el lector necesita ver patrones, tendencias, o comparaciones.
+- **Nunca dupliques:** si tienes un gráfico que muestra lo mismo que la tabla, deja uno de los dos en un apéndice.
+
 ## Los 7 pecados capitales de la visualización
 
 | Pecado | Ejemplo | Solución |
@@ -262,7 +388,7 @@ ggplot(sudamerica) +
 
 ### R + ggplot2
 
-El ecosistema más poderoso para visualización de datos en ciencias sociales. La curva de aprendizaje es empinada, pero la capacidad es prácticamente ilimitada. Todo lo que ves en este capítulo está hecho con ggplot2.
+El ecosistema más poderoso para visualización de datos en ciencias sociales. La curva de aprendizaje es empinada, pero la capacidad es prácticamente ilimitada. Todo lo que ves en este capítulo está hecho con ggplot2. @healy2018 tiene un libro completo (gratuito online) que enseña visualización con R de forma excelente.
 
 Paquetes complementarios útiles:
 
@@ -271,24 +397,40 @@ Paquetes complementarios útiles:
 - **plotly:** Gráficos interactivos (con `ggplotly()`).
 - **scales:** Formateo de ejes.
 - **ggrepel:** Etiquetas que no se superponen.
+- **ggridges:** Ridge plots para comparar muchas distribuciones.
+- **ggthemes:** Temas prediseñados (theme_economist, theme_fivethirtyeight).
+- **gganimate:** Animaciones (para presentaciones, no para papers).
 
 ### Python + matplotlib/seaborn
 
-Alternativa poderosa, especialmente si ya programas en Python. Seaborn hace gráficos estadísticos elegantes con poco código.
+Alternativa poderosa, especialmente si ya programas en Python. Seaborn hace gráficos estadísticos elegantes con poco código. Matplotlib es más flexible pero más verboso.
 
 ### Tableau / Power BI
 
-Para análisis exploratorio rápido y dashboards. No requieren programación, pero son menos flexibles para publicación académica.
+Para análisis exploratorio rápido y dashboards. No requieren programación, pero son menos flexibles para publicación académica. Útiles para explorar datos antes de decidir qué gráficos incluir en el paper.
 
-### Datawrapper / Flourish
+### Datawrapper / Flourish / RAWGraphs
 
-Herramientas web gratuitas para gráficos rápidos y publicables. Excelentes para periodismo de datos y presentaciones.
+Herramientas web gratuitas para gráficos rápidos y publicables. Excelentes para periodismo de datos y presentaciones. Datawrapper es especialmente bueno para gráficos simples y limpios.
+
+### Para mapas
+
+- **QGIS** (gratuito, open source): El estándar para análisis geoespacial.
+- **Mapbox / Leaflet:** Mapas interactivos web.
+- **GeoDa:** Análisis espacial exploratorio.
+
+::: {.callout-important}
+## Reflexión
+
+La visualización no es la última etapa de tu investigación. Es una herramienta de **pensamiento.** Graficar tus datos tempranamente te ayuda a encontrar patrones, detectar errores, y generar hipótesis. No esperes a "tener los resultados" para empezar a visualizar. Grafica desde el primer día. Las mejores preguntas de investigación a menudo surgen de un gráfico exploratorio que reveló algo inesperado.
+:::
 
 ::: {.callout-tip}
 ## Ejercicio
 
-1. Toma los datos de tu investigación (o un dataset público).
-2. Haz **tres gráficos** que cuenten la historia principal de tus hallazgos.
+1. Toma los datos de tu investigación (o un dataset público como ENAHO, CASEN, o los datos abiertos del Banco Mundial).
+2. Haz **tres gráficos** que cuenten la historia principal de tus hallazgos. Para cada uno, escribe un título que sea una afirmación (no una descripción).
 3. Muéstralos a alguien que no sepa nada de tu tema. ¿Entienden el mensaje sin explicación adicional?
 4. Si no entienden, rediseña. Si entienden, felicidades: ya eres mejor comunicador visual que el 80% de los académicos.
+5. Toma un gráfico de tu tesis (o de un paper que estés leyendo) y evalúalo: ¿cumple con el ratio data-ink? ¿Usa color con propósito? ¿El título es informativo? ¿Es accesible para daltónicos? Rediseñalo aplicando los principios de este capítulo.
 :::

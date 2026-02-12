@@ -16,6 +16,40 @@ No está dirigido a ti, que sabes todo. Está dirigido a mi mismo, para recordar
 
 No necesariamente seguiré la habitual lógica en la enseñanza de metodología de la investigación. Intentaré dar ejemplos, mostrar errores, sugerir rutas, y así acercar la rigurosidad metodológica a los problemas y desafíos de la investigación en ciencias sociales.
 
+## Para quién es este libro
+
+- **Estudiantes de pregrado y posgrado** en ciencias sociales en América Latina que están por iniciar (o ya están en) su tesis.
+- **Personas que encuentran aburrida la metodología** (y con razón: tal como suele enseñarse, lo es).
+- **Investigadores junior** que quieren mejorar su práctica y entender por qué hacen lo que hacen.
+- **Gente curiosa** que quiere entender cómo funciona la producción de conocimiento en ciencias sociales.
+
+No está pensado para expertos en metodología (aunque espero que incluso ellos encuentren algo útil). Está pensado para el que necesita un empujón, una guía honesta, y quizás una carcajada en el camino.
+
+## Qué esperar (y qué no)
+
+**Sí vas a encontrar:**
+
+- Explicaciones directas, sin lenguaje arcano innecesario.
+- Ejemplos reales, la mayoría latinoamericanos.
+- Errores comunes señalados con nombre y apellido.
+- Ejercicios prácticos que puedes aplicar a tu propia investigación.
+- Opiniones honestas (a veces incómodas) sobre cómo funciona la academia.
+- Gráficos, tablas y código R cuando aportan.
+
+**No vas a encontrar:**
+
+- Formalismo por el formalismo.
+- Neutralidad fingida. Tengo posturas, y las explicito.
+- La ilusión de que investigar es un proceso limpio y ordenado.
+- Respuestas únicas. En metodología, casi todo depende del contexto.
+
 ## Lógica y estructura de este libro
 
-Este libro se escribe en cuanto se va usando para enseñar. Por ahora la estructura propuesta es seguir los pasos clásicos de la investigación, aunque no necesariamente estudiándolos en esa secuencia.
+Este libro se escribe en cuanto se va usando para enseñar. La estructura sigue los pasos del proceso de investigación, aunque no necesariamente en la secuencia lineal que otros manuales proponen:
+
+- **Parte I (Los cimientos):** Qué es investigar, cómo pensamos sobre la realidad (paradigmas), conceptos básicos, y la ética que lo sostiene todo.
+- **Parte II (El diseño):** De la pregunta al plan de investigación: pregunta, revisión de literatura, marco teórico, hipótesis, enfoques y diseños.
+- **Parte III (La ejecución):** Manos a la obra: muestreo, recolección de datos, análisis, evaluación de impacto, métodos comparados, y visualización.
+- **Parte IV (El cierre):** Comunicar lo que encontraste: escritura, resultados, errores comunes, y la vida después de la tesis.
+
+Cada capítulo termina con un ejercicio práctico. **Hazlos.** Leer sobre metodología sin practicar es como leer sobre natación sin meterse al agua.

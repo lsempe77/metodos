@@ -6,13 +6,13 @@ Antes de responder la pregunta planteada, aquí va la enseñanza #1 sobre la inv
 
 En mi experiencia en la docencia universitaria, en la investigación académica y aplicada, así como en mi rol de autor, editor y revisor de artículos de revistas científicas me encuentro con 3 grandes desafíos/frustraciones.
 
-Los manuales de metodología de investigación, y en muchos casos, las clases, están llenas de formalismos, lenguaje arcano, explican casos irreales (por lo sencillo o claros), no apuntan errores y problemas en el proceso, y encasillan todo en categorías, etiquetas y acciones donde todo ocurre de forma lineal, ordenada y limpia. ¡Pero en la vida real, nada de eso ocurre!
+**Frustración #1: los manuales no reflejan la realidad.** Los manuales de metodología de investigación, y en muchos casos, las clases, están llenas de formalismos, lenguaje arcano, explican casos irreales (por lo sencillo o claros), no apuntan errores y problemas en el proceso, y encasillan todo en categorías, etiquetas y acciones donde todo ocurre de forma lineal, ordenada y limpia. ¡Pero en la vida real, nada de eso ocurre!
 
-En mi lectura de documentos de investigación: primero, muchos diseños de proyectos de investigación no parecen estar bien estructurados. Ello, entre otros, se nota en que muchos no entienden la utilidad (y la diferencia) entre un marco teórico y una revisión de literatura académica; donde los resultados encontrados suelen estar (casi) completamente desconectados de las anteriores.
+**Frustración #2: los productos de investigación están desconectados.** En mi lectura de documentos de investigación: primero, muchos diseños de proyectos de investigación no parecen estar bien estructurados. Ello, entre otros, se nota en que muchos no entienden la utilidad (y la diferencia) entre un marco teórico y una revisión de literatura académica; donde los resultados encontrados suelen estar (casi) completamente desconectados de las anteriores.
 
 Como verás, ya empecé a usar términos raros (marco teórico, revisión de literatura, resultados). Poco a poco los iré explicando, no te preocupes.
 
-Quizás el punto más polémico (y por ello el subtítulo del libro) es el hecho de que las ciencias sociales necesariamente requieren de una posición personal del investigador. No estudiamos física. ¿Puedes imaginarte a un físico diciendo que no está de acuerdo con la teoría de la gravedad?. Estudiamos a las personas, sus entornos, su comportamiento, su individualidad y socialización. Y obviamente, todos tenemos posturas. Suele haber etiquetas para ello (algunas agresivas y otras más amables): zurdo, de derecha, caviar, facho, progre, conserva, etc.
+**Frustración #3: la prédica entre apóstoles.** Quizás el punto más polémico (y por ello el subtítulo del libro) es el hecho de que las ciencias sociales necesariamente requieren de una posición personal del investigador. No estudiamos física. ¿Puedes imaginarte a un físico diciendo que no está de acuerdo con la teoría de la gravedad? Estudiamos a las personas, sus entornos, su comportamiento, su individualidad y socialización. Y obviamente, todos tenemos posturas. Suele haber etiquetas para ello (algunas agresivas y otras más amables): zurdo, de derecha, caviar, facho, progre, conserva, etc.
 
 Lo polémico (es decir, yo me salgo un poco de lo convencional aquí) es que en las ciencias sociales actuales ocurren dos fenómenos al mismo tiempo. Por un lado, existe la prédica entre apóstoles. Un vegano buscando convencer a otros veganos de los maleficios de la carne. Bueno, ¡ellos ya están convencidos! Y por otro lado, los prejuicios/posturas/ideas previas se ven reflejadas en las conclusiones de la investigación (o poner el carro delante de los caballos).
 
@@ -20,12 +20,73 @@ Entonces es común encontrar que alguien que está de acuerdo (o en desacuerdo) 
 
 Yo creo que eso empobrece la producción del conocimiento, no nos acerca a resolver los problemas (oh! resulta que los que investigamos en ciencias sociales debiéramos siempre acordarnos de que una finalidad de nuestro esfuerzo es contribuir a la solución de las cosas (ojo que la denuncia es un paso importante para ello también).
 
+## Lo que este libro propone
+
 Entonces, este manual busca ser una propuesta con una perspectiva un poco diferente (que no debe ser leído aisladamente de los demás). Busca cuestionar al lector sobre sus creencias e invitarlo a salir de su zona de confort. También busca, a través de ejemplos reales, discutir lo complejo de la investigación, apuntando casos reales, problemas comunes y soluciones que permitan que el proceso de escribir una tesis no sea tenebroso sino que lo aproveches de verdad. Y ojalá más gente se anime a entrar al mundo académico (no paga mal, y es entretenido si lo haces bien, y si la burocracia no te mata). Y busca ayudarte de forma concreta en la producción de tu investigación (como si fuera un tutorial, pero la diferencia es que en vez de seguir pasos mecánicamente -lo que habitualmente ocurre en los manuales-, busco generar etapas del proceso que te permitan ir consolidando tu diseño, y avanzando en tu proyecto).
 
-Algunas aclaraciones importantes:
+### El meta-argumento
+
+Si este libro tiene una sola idea central, es esta:
+
+> **La investigación en ciencias sociales requiere honestidad intelectual: con tus datos, con tus sesgos, con tus limitaciones, y con tu lector.**
+
+Todo el contenido del libro vuelve a esta idea:
+
+- Los paradigmas (@sec-paradigmas) exigen honestidad sobre tus supuestos filosóficos.
+- La pregunta de investigación (@sec-pregunta) exige honestidad sobre lo que realmente no sabes.
+- El marco teórico (@sec-marco-teorico) exige honestidad sobre las perspectivas que adoptas y las que ignoras.
+- El método (@sec-enfoques) exige honestidad sobre lo que puedes y no puedes hacer.
+- Los resultados (@sec-resultados) exigen honestidad sobre lo que encontraste, no lo que querías encontrar.
+- La escritura (@sec-escribir) exige honestidad con tu lector.
+- Y los errores (@sec-errores) son, casi siempre, faltas de honestidad (a veces inconscientes).
+
+## Aclaraciones importantes
 
 No tengo intenciones de publicar el texto así que no tengo que cuidar el lenguaje formal de un manual académico (supongo que se habrán dado cuenta de ello). Así que esto le da la oportunidad al lector de distraerse en un libro poco técnico sobre una materia que suele ser bien aburrida. Ojalá que le cambie en algo su perspectiva.
 
 El lenguaje inclusivo me parece que dificulta la lectura (y el objetivo de este ejercicio es lo contrario). Tampoco creo que sea la solución a los problemas serios de disparidad entre grupos humanos (ver el numeral 3 de nuevo). Así que usaré la norma actual de la Real Academia de la Lengua donde el masculino es genérico [@rae]. (Aquí una importante enseñanza sobre la investigación: las afirmaciones deben ser fundamentadas, y para ello, se ha de recurrir a la literatura académica previa, a la autoridad -como en este caso-, o a la evidencia empírica.)
 
-En un buen trabajo académico, la introducción se lee primero. Pero se escribe al final.
+## Cómo usar este libro
+
+Este libro se puede leer de varias maneras:
+
+**Secuencial (para el que empieza de cero):** Lee de la Parte I a la IV en orden. Cada capítulo construye sobre los anteriores.
+
+**Por necesidad (para el que ya está en el proceso):** Si estás escribiendo tu tesis y tienes un problema específico, ve directo al capítulo relevante. Cada capítulo es razonablemente autónomo, aunque hace referencias cruzadas.
+
+**Como referencia (para el que ya sabe):** Usa la tabla de contenido y los ejercicios al final de cada capítulo como checklist de tu propio trabajo.
+
+### Estructura del libro
+
+| Parte | Capítulos | ¿De qué va? |
+|---|---|---|
+| **I. Los cimientos** | 1-4 | Qué es investigar, paradigmas, conceptos base, ética |
+| **II. El diseño** | 5-10 | Pregunta, literatura, marco teórico, hipótesis, enfoques, diseños |
+| **III. La ejecución** | 11-16 | Muestreo, recolección, análisis, evaluación de impacto, métodos comparados, visualización |
+| **IV. El cierre** | 17-20 | Escritura, resultados, errores comunes, qué sigue |
+
+### Convenciones del texto
+
+A lo largo del libro vas a encontrar estos recuadros:
+
+::: {.callout-tip}
+## Ejercicio
+Actividades prácticas al final de cada capítulo. Hazlas. En serio. Leer sobre metodología sin aplicarla es como leer sobre natación sin meterse al agua.
+:::
+
+::: {.callout-note}
+## Para recordar
+Ideas clave que deberías tener presentes.
+:::
+
+::: {.callout-warning}
+## Cuidado
+Errores comunes o trampas frecuentes.
+:::
+
+::: {.callout-important}
+## Reflexión
+Preguntas para pensar más allá de lo técnico.
+:::
+
+En un buen trabajo académico, la introducción se lee primero. Pero se escribe al final. Así que esta introducción fue, paradójicamente, lo último que escribí.

@@ -6,13 +6,15 @@ La mayoría de los manuales de metodología se concentran en dos mundos: el cuan
 
 Son métodos que no buscan "¿cuál es el efecto promedio de X sobre Y?", sino "¿qué combinación de condiciones produce un resultado?" o "¿cómo exactamente ocurrió este proceso?". Son los métodos comparados, y si no los conoces, te estás perdiendo de mucho.
 
+Estos métodos parten de una premisa fundamental: **la causalidad social es compleja.** No es aditiva (más de X = más de Y), no es uniforme (el mismo factor puede tener efectos opuestos en contextos diferentes), y no es lineal (pequeños cambios pueden tener grandes consecuencias, y viceversa). Si eso suena a tu tema de investigación, este capítulo es para ti.
+
 ## QCA: Análisis Cualitativo Comparativo {#qca}
 
 ### La pregunta que QCA responde
 
 La regresión te dice: "en promedio, un año más de educación aumenta el ingreso en $X." Pero muchos fenómenos sociales no funcionan así. No hay un solo factor que cause el resultado. Hay **combinaciones de factores** que, juntos, producen un resultado.
 
-**QCA** (Qualitative Comparative Analysis), desarrollado por Charles Ragin, analiza exactamente eso: ¿qué combinaciones de condiciones son necesarias y/o suficientes para producir un resultado?
+**QCA** (Qualitative Comparative Analysis), desarrollado por Charles Ragin [-@ragin2008], analiza exactamente eso: ¿qué combinaciones de condiciones son necesarias y/o suficientes para producir un resultado?
 
 ### Ejemplo
 
@@ -24,12 +26,31 @@ La regresión te dice: "en promedio, un año más de educación aumenta el ingre
 
 QCA te permite identificar estas configuraciones causales de forma sistemática.
 
-### Cómo funciona (en simple)
+### Los conceptos clave del QCA
+
+Antes de hablar de cómo funciona, necesitas entender la lógica **conjuntista** (de conjuntos) que lo sustenta. QCA no piensa en correlaciones sino en relaciones entre conjuntos:
+
+- **Condición necesaria:** Si siempre que hay resultado ($Y$) también hay condición ($X$), entonces $X$ es necesaria para $Y$. Formalmente: $Y \subseteq X$. Ejemplo: ¿Es la crisis económica necesaria para las revoluciones? Si no hay revolución sin crisis económica previa, sí.
+
+- **Condición suficiente:** Si siempre que hay condición ($X$) también hay resultado ($Y$), entonces $X$ es suficiente para $Y$. Formalmente: $X \subseteq Y$. Ejemplo: ¿Es tener petróleo suficiente para ser país rico? No, porque hay países con petróleo que no son ricos.
+
+- **INUS condition:** Una condición que es insuficiente pero necesaria como parte de una combinación que es innecesaria pero suficiente. Suena complicado, pero es exactamente lo que QCA busca: condiciones que por sí solas no producen el resultado, pero que son parte de una "receta" que sí lo produce.
+
+### Tres tipos de QCA
+
+| Tipo | Codificación | Cuándo usarlo | Ejemplo |
+|---|---|---|---|
+| **csQCA** (crisp-set) | 0 o 1 (presente/ausente) | Condiciones claramente binarias | Democracia sí/no |
+| **mvQCA** (multi-value) | Categorías (0, 1, 2...) | Condiciones con más de dos categorías | Tipo de régimen (democracia, autoritarismo, híbrido) |
+| **fsQCA** (fuzzy-set) | 0 a 1 (grado de pertenencia) | Condiciones graduales | Grado de democratización (0.2, 0.6, 0.9) |
+
+### Cómo funciona (paso a paso)
 
 1. **Defines tus condiciones** (variables independientes) y tu resultado.
-2. **Codificas los casos** en presencia/ausencia de cada condición (en crisp-set QCA) o en grados de pertenencia (en fuzzy-set QCA).
-3. **Construyes una tabla de verdad** con todas las combinaciones posibles.
-4. **Minimizas** lógicamente para encontrar las combinaciones más parsimoniosas que explican el resultado.
+2. **Codificas los casos** en presencia/ausencia (csQCA) o en grados de pertenencia (fsQCA). En fsQCA, la **calibración** es crucial: decides qué significa ser "plenamente dentro" (1), "plenamente fuera" (0), y el "punto de cruce" (0.5). Esto requiere conocimiento sustantivo, no es mecánico.
+3. **Analizas condiciones necesarias** antes de la suficiencia. Una condición es necesaria si su consistencia supera 0.9.
+4. **Construyes una tabla de verdad** con todas las combinaciones posibles.
+5. **Minimizas** lógicamente para encontrar las combinaciones más parsimoniosas que explican el resultado.
 
 ```{r}
 #| label: fig-qca-venn
@@ -62,12 +83,29 @@ ggplot() +
   scale_fill_manual(values = c("#3498DB", "#E74C3C", "#2ECC71"))
 ```
 
+### La calibración: donde el arte se encuentra con la ciencia
+
+En fsQCA, la **calibración** es probablemente la decisión más importante (y más debatida). Estás transformando datos brutos en grados de pertenencia a un conjunto. @schneider2012 dedican un capítulo entero a esto, y con razón.
+
+**Tres anclas de calibración:**
+
+- **Plenamente dentro (1.0):** El valor a partir del cual un caso es claramente miembro del conjunto. Ej.: PIB per cápita > $40,000 = "plenamente país rico."
+- **Punto de cruce (0.5):** El umbral de máxima ambigüedad. Ej.: PIB per cápita = $15,000.
+- **Plenamente fuera (0.0):** El valor a partir del cual un caso claramente no es miembro. Ej.: PIB per cápita < $3,000.
+
+::: {.callout-warning}
+## Cuidado con la calibración mecánica
+
+Algunos investigadores calibran usando percentiles (P25, P50, P75) sin justificación sustantiva. Esto es un error grave. La calibración debe basarse en **conocimiento del caso**, no en la distribución estadística. Si el 75% de tus países son democracias, eso no significa que el P75 sea el umbral de "plenamente democrático."
+:::
+
 ### ¿Cuándo usar QCA?
 
 - **Número intermedio de casos** (10-50 es el rango ideal). Muy pocos para regresión, muchos para un estudio de caso individual.
 - **Causalidad conjuntural:** Crees que el resultado depende de combinaciones, no de variables aisladas.
 - **Equifinalidad:** Sospechas que hay múltiples caminos hacia el mismo resultado.
 - **Asimetría causal:** La presencia de un factor causa X, pero su ausencia no necesariamente causa no-X.
+- **Conocimiento profundo de los casos:** QCA no es un método "mecánico". Necesitas entender cada caso.
 
 ### Limitaciones
 
@@ -75,12 +113,24 @@ ggplot() +
 - No maneja bien la incertidumbre y el error aleatorio.
 - Requiere buen conocimiento de los casos (no es un método "mecánico").
 - La comunidad de usuarios es aún pequeña, lo que puede dificultar la publicación en algunas revistas.
+- **Problema de los residuos lógicos (*logical remainders*):** Combinaciones teóricamente posibles pero sin casos empíricos. ¿Qué haces con ellas? Las tres soluciones (conservadora, parsimoniosa, intermedia) dan resultados diferentes.
+- Sensible a la adición o eliminación de casos.
 
 ### Software
 
 - **fsQCA** (el software original de Ragin, gratuito).
-- **QCA package en R** (más flexible, más actualizado).
+- **QCA package en R** (más flexible, más actualizado). También `SetMethods`.
 - **TOSMANA** (para csQCA).
+
+### Errores frecuentes en QCA
+
+| Error | Por qué es problemático | Solución |
+|---|---|---|
+| Calibrar con percentiles sin justificación | No tiene base teórica | Usar umbrales sustantivos con argumentación |
+| No analizar necesidad antes de suficiencia | Puedes perder condiciones necesarias | Siempre hacer el análisis de necesidad primero |
+| Incluir demasiadas condiciones con pocos casos | Tabla de verdad con demasiados residuos | Regla: máximo $k$ condiciones con $2^k$ filas manejables |
+| Ignorar la consistencia y cobertura | Reportar solo las soluciones | Siempre reportar ambos parámetros |
+| No discutir los residuos lógicos | Las tres soluciones pueden ser muy diferentes | Reportar y justificar la solución elegida |
 
 ## Process tracing: reconstruir el mecanismo causal {#process-tracing}
 
@@ -88,7 +138,7 @@ ggplot() +
 
 Imagina que tienes evidencia estadística de que la democracia reduce la probabilidad de conflicto armado. Bien. Pero ¿**cómo**? ¿A través de qué mecanismo? ¿Las instituciones democráticas canalizan el conflicto? ¿La opinión pública frena a los líderes? ¿El comercio entre democracias genera interdependencia?
 
-**Process tracing** es un método para abrir la "caja negra" de la causalidad. En lugar de solo demostrar que X se asocia con Y, busca reconstruir la cadena causal: X → A → B → C → Y.
+**Process tracing** es un método para abrir la "caja negra" de la causalidad. En lugar de solo demostrar que X se asocia con Y, busca reconstruir la cadena causal: X → A → B → C → Y [@george2005].
 
 ### Cómo funciona
 
@@ -105,12 +155,37 @@ Imagina que tienes evidencia estadística de que la democracia reduce la probabi
 | **Smoking gun** | No | Sí | La confirma fuertemente | No la elimina |
 | **Doubly decisive** | Sí | Sí | La confirma y elimina alternativas | La elimina |
 
-### Ejemplo
+### El enfoque bayesiano de Beach y Pedersen
 
-Quieres explicar por qué Colombia firmó el Acuerdo de Paz con las FARC en 2016. Tu teoría dice que fue por el agotamiento militar mutuo (mutually hurting stalemate).
+@beach2019 proponen una versión más formalizada del process tracing que incorpora razonamiento bayesiano. La idea es actualizar tu confianza en una teoría a medida que encuentras (o no) evidencia:
+
+- **Prior:** Tu creencia inicial en la teoría antes de buscar evidencia.
+- **Likelihood ratio:** ¿Cuán probable es encontrar esta evidencia si la teoría es verdadera vs. si es falsa?
+- **Posterior:** Tu creencia actualizada después de la evidencia.
+
+No necesitas calcular probabilidades exactas (aunque puedes). Lo importante es el **razonamiento**: cada pieza de evidencia debe actualizar tu confianza de manera transparente. Si encuentras un *smoking gun*, tu confianza sube mucho. Si no pasas un *hoop test*, tu confianza cae a casi cero.
+
+### Tipos de evidencia en process tracing
+
+No toda evidencia es igual. @beach2019 distinguen:
+
+| Tipo de evidencia | Ejemplo | Fuerza |
+|---|---|---|
+| **Patrón** | Secuencia temporal de eventos que coincide con la predicción teórica | Moderada |
+| **Relato/Testimonio** | Declaraciones de actores clave sobre sus motivaciones | Variable (depende de la fuente) |
+| **Documental** | Actas de reuniones, memorandos internos, correos | Alta (si es contemporánea al proceso) |
+| **Cuantitativa** | Datos que confirman un eslabón específico del mecanismo | Alta (si es específica al mecanismo) |
+
+### Ejemplo latinoamericano
+
+Quieres explicar por qué Colombia firmó el Acuerdo de Paz con las FARC en 2016. Tu teoría dice que fue por el agotamiento militar mutuo (*mutually hurting stalemate*).
 
 - **Hoop test:** ¿Hay evidencia de que ambos bandos sentían que no podían ganar militarmente? Si no hay esta evidencia, la teoría se cae.
 - **Smoking gun:** ¿Hay declaraciones privadas de líderes de ambos bandos reconociendo el estancamiento? Si las encuentras, es evidencia fuerte.
+- **Straw-in-the-wind:** ¿Hubo intentos previos de negociación que fracasaron pero muestran voluntad? Apoya ligeramente la teoría.
+- **Mecanismo completo:** Estancamiento militar → frustración interna → exploración de salidas → negociación secreta → proceso formal. Necesitas evidencia de *cada eslabón*.
+
+Otro ejemplo: ¿Por qué Bolivia nacionalizó los hidrocarburos en 2006? Teoría: presión social desde abajo (Guerra del Gas 2003) + ideología del gobierno + debilidad de empresas transnacionales en el nuevo contexto político. Process tracing te permite verificar cada eslabón de esta cadena.
 
 ### ¿Cuándo usarlo?
 
@@ -123,9 +198,9 @@ Quieres explicar por qué Colombia firmó el Acuerdo de Paz con las FARC en 2016
 
 ### La tradición
 
-Desde Tocqueville hasta Skocpol, Barrington Moore y Pierson, el análisis histórico comparado es una de las tradiciones más ricas de las ciencias sociales. Compara un número pequeño de casos (países, revoluciones, transiciones) para identificar patrones causales.
+Desde Tocqueville hasta Skocpol, Barrington Moore y Pierson, el análisis histórico comparado es una de las tradiciones más ricas de las ciencias sociales [@mahoney2015]. Compara un número pequeño de casos (países, revoluciones, transiciones) para identificar patrones causales.
 
-### Estrategias clásicas
+### Estrategias clásicas de Mill
 
 **Método de la concordancia (Mill):** Casos con resultados similares → ¿qué tienen en común?
 
@@ -135,14 +210,33 @@ Desde Tocqueville hasta Skocpol, Barrington Moore y Pierson, el análisis histó
 
 - Argentina y Uruguay son similares en muchas cosas, pero tuvieron transiciones democráticas diferentes. ¿Qué difiere? El rol de los militares en la economía.
 
+**Método combinado (indirecto de la diferencia):** Combina concordancia y diferencia. Primero identifica lo común entre casos positivos, luego verifica que eso no está presente en casos negativos.
+
+::: {.callout-note}
+## Para recordar
+
+Los métodos de Mill son **eliminativos**: buscan descartar explicaciones alternativas. Son lógicamente potentes pero tienen una limitación: asumen que las causas son únicas y aditivas. QCA supera esta limitación al permitir combinaciones causales y equifinalidad.
+:::
+
 ### La coyuntura crítica y la dependencia de la trayectoria
 
 Dos conceptos clave de esta tradición:
 
-- **Coyuntura crítica (critical juncture):** Un momento donde se toma una decisión (o ocurre un evento) que cierra caminos y abre otros. Después de ese punto, la trayectoria se "traba."
-- **Dependencia de la trayectoria (path dependence):** Las decisiones del pasado limitan las opciones del presente. La historia importa.
+- **Coyuntura crítica (*critical juncture*):** Un momento donde se toma una decisión (o ocurre un evento) que cierra caminos y abre otros. Después de ese punto, la trayectoria se "traba." Las coyunturas críticas son breves pero sus efectos duran décadas o siglos.
 
-**Ejemplo:** La decisión de Bolivia de nacionalizar el estaño en 1952 creó una dependencia de la trayectoria en su modelo económico que condicionó las opciones de reforma durante décadas.
+- **Dependencia de la trayectoria (*path dependence*):** Las decisiones del pasado limitan las opciones del presente. La historia importa. Una vez que se elige un camino, los costos de cambiar se incrementan (*increasing returns*), lo que hace que la trayectoria se auto-refuerce.
+
+**Ejemplo latinoamericano:** La decisión de Bolivia de nacionalizar el estaño en 1952 creó una dependencia de la trayectoria en su modelo económico que condicionó las opciones de reforma durante décadas. La estructura de la COMIBOL, los sindicatos mineros, la relación Estado-economía, todo quedó "trabado" en un patrón que solo se rompió con el shock neoliberal de 1985.
+
+**Otro ejemplo:** ¿Por qué América Latina tiene tanta desigualdad? Una explicación influyente apunta a las instituciones coloniales: la encomienda, la hacienda, las economías extractivas crearon patrones de distribución que persisten siglos después. Eso es dependencia de la trayectoria a escala regional.
+
+### Análisis temporal: secuencia y timing
+
+La tradición histórica comparada también enfatiza que el **orden** de los eventos importa:
+
+- **Secuencia (*sequencing*):** No es lo mismo industrializarse antes que democratizarse (como en Europa occidental) que democratizarse antes que industrializarse (como en América Latina). El orden cambia los resultados.
+- **Timing:** El momento importa. Una reforma agraria en los 1950s tiene efectos diferentes que la misma reforma en los 2000s, porque el contexto global es distinto.
+- **Coyunturas (*conjunctures*):** Cuando múltiples procesos convergen en un momento, los efectos pueden ser mucho mayores que la suma de las partes.
 
 ## Estudios de caso: profundidad con rigor
 
@@ -150,35 +244,87 @@ Dos conceptos clave de esta tradición:
 
 El estudio de caso tiene mala fama en algunos círculos: "Ah, es solo un caso, no se puede generalizar." Eso es una simplificación.
 
-Un buen estudio de caso no busca generalización estadística. Busca **generalización analítica:** testear, refinar o generar teoría a partir de un análisis profundo.
+Un buen estudio de caso no busca generalización estadística. Busca **generalización analítica:** testear, refinar o generar teoría a partir de un análisis profundo [@george2005].
 
 ### Tipos (siguiendo a Gerring y a Yin)
 
-| Tipo | Propósito | Ejemplo |
-|---|---|---|
-| **Típico** | Representa un fenómeno común | Una escuela pública urbana promedio |
-| **Desviante** | Se aparta de lo esperado | Un país pobre con alta expectativa de vida |
-| **Crucial** | Si la teoría funciona aquí, funciona en todos lados (least likely) o si falla aquí, falla en todos lados (most likely) | Corrupción en Dinamarca (least likely) |
-| **Exploratorio** | Abrir un tema nuevo | Las primeras investigaciones sobre ciberbullying |
+| Tipo | Propósito | Ejemplo | Cuándo elegirlo |
+|---|---|---|---|
+| **Típico** | Representa un fenómeno común | Una escuela pública urbana promedio | Quieres entender un proceso "normal" |
+| **Desviante** | Se aparta de lo esperado | Un país pobre con alta expectativa de vida (Costa Rica) | Quieres entender por qué algo "no debería" pasar |
+| **Crucial** (least likely) | Si la teoría funciona aquí, funciona en todos lados | Corrupción en Dinamarca | Quieres un test fuerte de la teoría |
+| **Crucial** (most likely) | Si la teoría falla aquí, falla en todos lados | Cooperación entre países en guerra | Quieres refutar una teoría |
+| **Exploratorio** | Abrir un tema nuevo | Las primeras investigaciones sobre ciberbullying | No hay teoría previa |
+| **Pathway** | Ilustrar un mecanismo causal | Cómo una política se implementa "en el terreno" | Complementar análisis cuantitativo |
 
 ### La selección del caso importa (mucho)
 
 Seleccionar tu caso **por la variable dependiente** es un error clásico. Si solo estudias países donde hubo revoluciones para entender qué causa las revoluciones, nunca verás los países que tenían las mismas condiciones pero NO tuvieron revolución.
 
+Pero no todo es tan simple. A veces seleccionar por la variable dependiente tiene sentido:
+
+- En estudios **exploratorios** donde quieres entender un fenómeno poco conocido.
+- Cuando usas un caso **desviante** (seleccionas precisamente porque tiene un resultado inesperado).
+- En process tracing, donde el objetivo no es generalizar sino reconstruir un mecanismo en un caso específico.
+
+La clave es ser **transparente** sobre por qué elegiste tu caso y qué implicaciones tiene para la generalizabilidad de tus conclusiones.
+
+### Cómo estructurar un estudio de caso riguroso
+
+1. **Justificación de la selección:** ¿Por qué este caso y no otro? ¿Qué tipo de caso es?
+2. **Teoría explícita:** ¿Qué teoría estás testeando, refinando o generando?
+3. **Predicciones observables:** ¿Qué esperarías encontrar si la teoría es correcta?
+4. **Evidencia múltiple:** Triangula fuentes (documentos, entrevistas, datos, observación).
+5. **Explicaciones alternativas:** Considera y descarta (o no) teorías rivales.
+6. **Implicaciones más allá del caso:** ¿Qué aprendimos para la teoría general?
+
 ## Combinando métodos: nested analysis y multi-method research
 
-La frontera más interesante hoy es la **combinación deliberada** de métodos cuantitativos y cualitativos-comparados:
+La frontera más interesante hoy es la **combinación deliberada** de métodos cuantitativos y cualitativos-comparados.
 
-1. **Análisis cuantitativo** para identificar patrones generales (regresión con N grande).
-2. **Estudio de caso** o **process tracing** para explicar los mecanismos causales en casos seleccionados del análisis cuantitativo.
-3. **QCA** para identificar configuraciones causales en un N intermedio.
+### El diseño nested de Lieberman
 
-Lieberman llama a esto **nested analysis** y es una de las estrategias más potentes (y más exigentes) disponibles.
+@lieberman2005 propone una estrategia elegante:
+
+1. **Análisis preliminar cuantitativo** (Large-N Analysis, LNA): Regresión o similar con muchos casos para identificar patrones generales.
+
+2. **Evalúa los resultados del LNA:**
+   - Si el modelo funciona bien (alto $R^2$, resultados robustos) → **Model-Testing Small-N Analysis (SNA):** Seleccionas un caso *on the regression line* (que se ajusta al modelo) para verificar el mecanismo causal con process tracing.
+   - Si el modelo funciona mal (bajo $R^2$, resultados inestables) → **Model-Building SNA:** Seleccionas un caso *off the regression line* (un residuo grande, un caso desviante) para entender qué falta en tu modelo.
+
+3. **El análisis cualitativo retroalimenta el cuantitativo:** Lo que aprendas del caso puede mejorar tu modelo estadístico (nuevas variables, nueva especificación).
+
+### Otras combinaciones potentes
+
+| Combinación | Cuándo usarla | Ejemplo |
+|---|---|---|
+| **Regresión + Process tracing** | Tienes un patrón estadístico y quieres entender el mecanismo | Efecto de la educación sobre ingresos + estudio de caso de movilidad social |
+| **QCA + Estudio de caso** | QCA identifica configuraciones y quieres profundizar en un camino | QCA de revoluciones + process tracing de una revolución específica |
+| **Encuesta + Entrevistas** | Quieres generalizar y profundizar | Encuesta de satisfacción + entrevistas a usuarios insatisfechos |
+| **Experimento + Etnografía** | Quieres medir efecto y entender contexto | RCT de un programa + observación participante durante la implementación |
+
+::: {.callout-important}
+## Reflexión
+
+La combinación de métodos no es "hacer de todo un poco." Es tener una **estrategia deliberada** donde cada método cumple un rol específico y se complementan mutuamente. "Hice una regresión Y unas entrevistas" no es mixed methods si los dos análisis no dialogan entre sí.
+:::
+
+## ¿Cómo elegir entre estos métodos?
+
+| Tu pregunta es sobre... | Método sugerido | N típico |
+|---|---|---|
+| ¿Cuál es el efecto promedio de X? | Regresión / Evaluación de impacto (@sec-impacto) | 100+ |
+| ¿Qué combinaciones de condiciones producen Y? | QCA | 10-50 |
+| ¿Cómo funciona el mecanismo causal? | Process tracing | 1-3 |
+| ¿Qué patrones emergen al comparar trayectorias históricas? | Análisis histórico comparado | 3-10 |
+| ¿Cómo se experimenta un fenómeno desde adentro? | Estudio de caso / Etnografía | 1 |
+| ¿Hay un patrón general Y cómo opera en casos específicos? | Nested analysis | N grande + 1-3 casos |
 
 ::: {.callout-tip}
 ## Ejercicio
 
-1. Piensa en tu pregunta de investigación. ¿Hay múltiples caminos que podrían llevar al resultado que estudias? Si sí, QCA puede ser tu método.
-2. ¿Puedes identificar un mecanismo causal específico? Intenta dibujarlo como una cadena: X → A → B → Y. Si puedes, process tracing puede ayudarte a testearlo.
-3. ¿Tienes un caso particularmente interesante o atípico? Ese puede ser tu estudio de caso.
+1. Piensa en tu pregunta de investigación. ¿Hay múltiples caminos que podrían llevar al resultado que estudias? Si sí, QCA puede ser tu método. Identifica 3-4 condiciones potenciales y 10-15 casos que podrías analizar.
+2. ¿Puedes identificar un mecanismo causal específico? Intenta dibujarlo como una cadena: X → A → B → Y. Para cada eslabón, ¿qué evidencia necesitarías? ¿Qué tipo de test (hoop, smoking gun) aplicarías?
+3. ¿Tienes un caso particularmente interesante o atípico? Clasifícalo según la tipología de Gerring: ¿es típico, desviante, crucial, exploratorio?
+4. Si ya tienes un análisis cuantitativo, ¿cómo podrías complementarlo con un análisis cualitativo siguiendo la lógica del *nested analysis*? Identifica un caso "on the line" y uno "off the line."
 :::
