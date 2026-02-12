@@ -28,7 +28,6 @@ _deploy.sh
 now.json
 test.R
 book.bib.bak
-packages.bib
 
 # PDFs (libros escaneados / materiales de referencia)
 *.pdf
