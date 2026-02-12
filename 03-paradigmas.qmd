@@ -12,49 +12,96 @@ En investigación, tu paradigma define:
 
 Sí, son palabras grandes. Pero el concepto es simple: tus supuestos sobre cómo funciona el mundo determinan cómo lo estudias. Y si no eres consciente de esos supuestos, estás investigando a ciegas.
 
+La mayoría de los manuales de metodología despachan los paradigmas en 2 páginas y pasan rápido a lo "práctico." Error. Porque si no entiendes tu paradigma, vas a tomar decisiones metodológicas sin saber por qué las tomas. Es como usar un GPS sin saber que está configurado para "evitar autopistas." Llegarás a algún lado, pero no necesariamente al que querías.
+
 ## Los paradigmas principales (sin el lenguaje críptico)
 
 ### Positivismo: "la realidad existe y se puede medir"
 
 El positivista cree que hay una realidad objetiva ahí afuera, que funciona con leyes regulares, y que podemos descubrirla con métodos rigurosos (generalmente cuantitativos). Busca explicar, predecir y generalizar.
 
+El positivismo nace de las ciencias naturales y de la aspiración de Auguste Comte (siglo XIX) de crear una "física social": estudiar la sociedad con el mismo rigor con que se estudia la naturaleza. La idea es seductora: si podemos descubrir las leyes de la gravedad, ¿por qué no las leyes de la conducta humana?
+
 **Ejemplo:** Si quieres saber si la educación reduce la pobreza, un positivista diseñaría un estudio con datos de miles de personas, controlaría variables, y buscaría una relación causal estadísticamente significativa.
 
-**Fortaleza:** Rigor, replicabilidad, capacidad de generalización.
-**Debilidad:** Puede simplificar fenómenos complejos. Las personas no son átomos.
+**Fortaleza:** Rigor, replicabilidad, capacidad de generalización. Si haces bien tu trabajo, otro investigador puede repetir tu estudio y debería obtener resultados similares.
+
+**Debilidad:** Puede simplificar fenómenos complejos. Las personas no son átomos. No se comportan según leyes universales. Y la aspiración de "neutralidad" del investigador es, en la práctica, inalcanzable: siempre hay decisiones subjetivas detrás de los números.
+
+### Post-positivismo: "la realidad existe, pero la conocemos imperfectamente"
+
+El post-positivismo es la versión humilde del positivismo. Acepta que existe una realidad objetiva, pero reconoce que nunca podemos conocerla perfectamente. Karl Popper, su representante más influyente, argumentó que la ciencia no avanza *confirmando* teorías sino *intentando refutarlas* [@popper2002]. Si tu teoría sobrevive a múltiples intentos de refutación, no es "verdadera" —es "no refutada todavía."
+
+Esta distinción parece sutil pero es enorme. El positivista dice: "descubrí la verdad." El post-positivista dice: "todavía no he demostrado que estoy equivocado." La diferencia es de humildad epistémica, y esa humildad cambia cómo investigas: en vez de buscar confirmar tu hipótesis, diseñas tu estudio para intentar destruirla.
+
+**En la práctica:** La gran mayoría de la investigación cuantitativa actual es post-positivista, aunque muchos investigadores no lo saben. Cuando un economista dice "mis resultados son robustos a múltiples especificaciones," está siendo post-positivista: intenta refutar su propio hallazgo con análisis alternativos.
 
 ### Constructivismo (o interpretativismo): "la realidad se construye"
 
-El constructivista cree que la realidad social es construida por las personas a través de sus interacciones, lenguaje y cultura. No hay una verdad única; hay múltiples interpretaciones. Busca comprender, no predecir.
+El constructivista cree que la realidad social es construida por las personas a través de sus interacciones, lenguaje y cultura. No hay una verdad única; hay múltiples interpretaciones, todas legítimas desde su contexto. Busca comprender, no predecir.
 
-**Ejemplo:** Para entender la pobreza, un constructivista haría entrevistas en profundidad para comprender cómo las personas viven y significan la pobreza desde su propia experiencia.
+La raíz está en la tradición hermenéutica alemana (Dilthey, Weber) y en la fenomenología (Husserl, Schutz). Weber lo puso de forma memorable: las ciencias sociales buscan *Verstehen* (comprensión) de los significados que las personas atribuyen a sus acciones, no solo explicación causal [@weber1978].
 
-**Fortaleza:** Profundidad, sensibilidad al contexto, voces de los participantes.
-**Debilidad:** Difícil de generalizar. Más subjetivo (aunque eso no es necesariamente malo).
+**Ejemplo:** Para entender la pobreza, un constructivista haría entrevistas en profundidad para comprender cómo las personas viven y significan la pobreza desde su propia experiencia. La pobreza no es solo un número; es una experiencia vivida, y esa experiencia varía según el contexto, la cultura y la historia personal.
+
+**Fortaleza:** Profundidad, sensibilidad al contexto, voces de los participantes. Captura la complejidad que los números simplifican.
+
+**Debilidad:** Difícil de generalizar. Más subjetivo (aunque los constructivistas argumentan que la objetividad total es una ilusión en cualquier paradigma). Y hay un riesgo real de relativismo extremo: si todo es "construido" y toda interpretación es válida, ¿cómo distinguimos una buena investigación de una mala?
 
 ### Pragmatismo: "lo que funcione"
 
-El pragmatista dice: "¿Saben qué? Dejemos de pelear sobre qué es la realidad y concentrémonos en resolver el problema." Usa el método que mejor sirva para responder la pregunta, sea cuantitativo, cualitativo o mixto.
+El pragmatista dice: "¿Saben qué? Dejemos de pelear sobre qué es la realidad y concentrémonos en resolver el problema." Usa el método que mejor sirva para responder la pregunta, sea cuantitativo, cualitativo o mixto. La verdad no es un reflejo de la realidad ni una construcción social; es lo que *funciona* para resolver el problema en cuestión.
 
-**Ejemplo:** Para abordar la pobreza, un pragmatista podría combinar datos estadísticos con entrevistas, usando lo mejor de ambos mundos.
+Los padres filosóficos son Dewey, James y Peirce. En metodología, el pragmatismo es la base filosófica de los métodos mixtos (ver @enfoques).
 
-**Fortaleza:** Flexibilidad, orientación a resultados.
-**Debilidad:** Puede ser acusado de falta de coherencia filosófica (aunque los pragmatistas responderían: "¿Y a quién le importa?").
+**Ejemplo:** Para abordar la pobreza, un pragmatista podría combinar datos estadísticos con entrevistas, usando lo mejor de ambos mundos. La pregunta guía no es "¿qué es la realidad?" sino "¿qué necesito saber y cuál es la mejor forma de saberlo?"
+
+**Fortaleza:** Flexibilidad, orientación a resultados, evita guerras paradigmáticas improductivas.
+
+**Debilidad:** Puede ser acusado de falta de coherencia filosófica (los pragmatistas responderían: "¿Y a quién le importa si funciona?"). El riesgo es usar métodos sin reflexionar sobre sus supuestos.
 
 ### Teoría crítica: "la investigación es política"
 
-La teoría crítica parte de que la investigación no es neutral. Toda producción de conocimiento ocurre en un contexto de poder, y la investigación debería servir para visibilizar y transformar las desigualdades.
+La teoría crítica parte de que la investigación no es neutral. Toda producción de conocimiento ocurre en un contexto de poder, y la investigación debería servir para visibilizar y transformar las desigualdades. Sus raíces están en Marx, la Escuela de Frankfurt (Habermas, Adorno, Horkheimer), y en América Latina tiene una tradición propia poderosa: la pedagogía del oprimido de Paulo Freire [@freire1970], la teología de la liberación, la investigación-acción participativa de Fals Borda.
 
-**Ejemplo:** Un investigador crítico no solo estudia la pobreza; cuestiona las estructuras que la producen y busca que su investigación empodere a las comunidades estudiadas.
+**Ejemplo:** Un investigador crítico no solo estudia la pobreza; cuestiona las estructuras que la producen y busca que su investigación empodere a las comunidades estudiadas. No basta con *describir* la desigualdad; hay que *actuar* sobre ella.
 
-**Fortaleza:** Compromiso social, visibiliza lo invisible.
-**Debilidad:** La línea entre investigación y activismo puede difuminarse.
+**Fortaleza:** Compromiso social, visibiliza relaciones de poder, da voz a los silenciados. En América Latina, esta tradición ha producido investigaciones transformadoras.
+
+**Debilidad:** La línea entre investigación y activismo puede difuminarse. Si ya sabes cuál es la respuesta antes de investigar (porque tu compromiso político te la dicta), ¿realmente estás investigando o estás haciendo propaganda disfrazada de ciencia? El equilibrio es difícil pero necesario.
+
+### Paradigma transformativo: "la investigación debe servir a los marginados"
+
+Donna Mertens propone un paradigma específico para investigaciones que involucran comunidades marginadas: personas con discapacidad, minorías étnicas, comunidades LGBTQ+, refugiados [@mertens2019]. No es simplemente teoría crítica aplicada; tiene sus propias reglas: el diseño debe incluir a las comunidades, los resultados deben ser accesibles para ellas, y el criterio de calidad incluye la justicia social.
+
+### Perspectivas feministas y decoloniales: quién investiga importa
+
+Sandra Harding planteó una pregunta incómoda: ¿la ciencia es diferente cuando la hacen mujeres? [@harding1991]. Su argumento no es que las mujeres sean "mejores" investigadoras, sino que la posición social del investigador (su género, su clase, su raza) afecta qué preguntas hace, qué problemas ve, y qué considera "objetivo."
+
+Desde América Latina, Boaventura de Sousa Santos va más lejos con su concepto de "epistemologías del Sur" [@santos2014]: el conocimiento producido desde el Norte Global (Europa, EE.UU.) no es universal sino situado, y ha marginado sistemáticamente otras formas de saber. La ciencia moderna, argumenta Santos, ha cometido un "epistemicidio": ha destruido saberes indígenas, campesinos y populares al declararlos "no científicos."
+
+No tienes que estar de acuerdo con todo esto (yo no estoy de acuerdo con todo), pero sí debes conocerlo. Estas perspectivas te obligan a preguntarte: ¿desde dónde investigo? ¿A quién beneficia mi conocimiento? ¿Qué voces estoy excluyendo?
+
+## El gran cuadro: paradigmas comparados
+
+| Paradigma | Ontología | Epistemología | Metodología típica | Criterio de calidad |
+|---|---|---|---|---|
+| **Positivismo** | Realidad objetiva, gobernable por leyes | Objetiva; el investigador es neutral | Cuantitativa: experimentos, encuestas | Validez interna, replicabilidad |
+| **Post-positivismo** | Realidad existe pero se conoce imperfectamente | Objetividad como ideal; reconoce sesgos | Cuantitativa con triangulación | Falsificabilidad, robustez |
+| **Constructivismo** | Realidades múltiples, construidas socialmente | Subjetiva; investigador e investigado co-construyen | Cualitativa: entrevistas, etnografía | Credibilidad, transferibilidad |
+| **Pragmatismo** | Lo que funcione para responder la pregunta | Lo que funcione | Mixta: lo que la pregunta requiera | Utilidad, consecuencias prácticas |
+| **Teoría crítica** | Realidad moldeada por relaciones de poder | Investigación como acto político | Cualitativa, participativa, acción | Emancipación, transformación |
+| **Transformativo** | Realidad influida por privilegios y opresión | Conocimiento co-construido con comunidades | Mixta, participativa | Justicia social, inclusión |
+
+Esta tabla no es para memorizarla. Es para consultarla cuando necesites ubicarte. Y para entender por qué un investigador que opera desde el constructivismo jamás va a hacer un experimento aleatorizado (y está bien), y por qué uno que opera desde el positivismo jamás va a hacer etnografía (y también está bien).
 
 ## El problema de fingir que no tienes paradigma
 
 Aquí vuelvo al punto que hice en la introducción: en ciencias sociales, todos tenemos postura. El que dice "yo soy neutral" probablemente es positivista sin saberlo. El que dice "hay que dar voz a los marginados" probablemente opera desde la teoría crítica.
 
-No hay problema con tener un paradigma. El problema es no saberlo. Porque si no sabes desde dónde miras, no puedes entender las limitaciones de tu mirada.
+No hay problema con tener un paradigma. El problema es no saberlo. Porque si no sabes desde dónde miras, no puedes entender las limitaciones de tu mirada. Y no puedes comunicarle al lector desde dónde le hablas.
+
+Guba y Lincoln lo expresan así: "las cuestiones de método son secundarias respecto a las cuestiones de paradigma" [@gubalincoln1994]. Primero decides cómo ves el mundo; luego decides cómo lo estudias. Si lo haces al revés —eligiendo el método antes que el paradigma— estás construyendo una casa desde el techo.
 
 ## El sesgo de confirmación y la prédica entre apóstoles
 
@@ -65,18 +112,32 @@ Esto tiene un nombre en psicología: **sesgo de confirmación**. Buscamos, inter
 1. Nos rodeamos de gente que piensa parecido (nuestro departamento, nuestras conferencias, nuestras revistas).
 2. Los revisores de nuestros papers suelen compartir nuestro paradigma.
 3. Es más fácil (y más cómodo) confirmar que cuestionar.
+4. Las revistas publican más fácilmente resultados que confirman teorías existentes que resultados que las contradicen.
 
-¿La solución? No hay una mágica. Pero ayuda enormemente leer fuera de tu tribu, conversar con gente que piensa distinto, y hacerte preguntas incómodas sobre tus propios supuestos.
+Kahneman documenta extensamente cómo este sesgo opera en todos los ámbitos de la vida, incluida la ciencia [@kahneman2011]. No es mala fe; es cómo funciona nuestro cerebro. Pero reconocerlo es el primer paso para combatirlo.
+
+¿La solución? No hay una mágica. Pero ayuda enormemente leer fuera de tu tribu, conversar con gente que piensa distinto, y hacerte preguntas incómodas sobre tus propios supuestos. Si eres cuantitativo, lee etnografías. Si eres cualitativo, lee un paper de econometría. Si eres crítico, lee a alguien conservador. El objetivo no es cambiar de opinión; es entender los límites de la tuya.
 
 ## Kuhn y la tensión de cambiar de paradigma
 
-Thomas Kuhn, en *La estructura de las revoluciones científicas* [@kuhn1996], explica que la ciencia no avanza de forma lineal y acumulativa. Avanza a saltos. Los paradigmas dominan hasta que las anomalías se acumulan y alguien propone uno nuevo. Y el cambio es doloroso, resistido, a veces violento (intelectualmente hablando).
+Thomas Kuhn, en *La estructura de las revoluciones científicas* [@kuhn1996], explica que la ciencia no avanza de forma lineal y acumulativa. Avanza a saltos. Hay períodos de "ciencia normal" donde todos trabajan dentro del paradigma dominante, resolviendo puzzles dentro de las reglas aceptadas. Pero las anomalías se acumulan —datos que no encajan, predicciones que fallan, problemas que el paradigma no puede resolver— hasta que alguien propone un paradigma nuevo.
 
-En ciencias sociales, vivimos en una tensión permanente de paradigmas. No hay uno dominante como en la física. Y eso está bien —es parte de nuestra riqueza—, pero exige que seamos honestos sobre desde dónde miramos.
+Y el cambio es doloroso. Los defensores del viejo paradigma no se convencen; se retiran (o se mueren, como dijo Kuhn con brutalidad). Los jóvenes investigadores, que no tienen inversión emocional en el paradigma viejo, adoptan el nuevo. Y el ciclo empieza de nuevo.
+
+En ciencias sociales, vivimos en una tensión permanente de paradigmas. No hay uno dominante como en la física (donde la mecánica cuántica y la relatividad general son el marco aceptado por casi todos). En sociología, economía, ciencia política, educación, múltiples paradigmas coexisten, compiten, y a veces se ignoran mutuamente. Denzin y Lincoln lo llaman una "política de la evidencia": lo que cuenta como "buena investigación" depende del paradigma desde el cual lo evalúes [@denzinlincoln2018].
+
+Y eso está bien —es parte de nuestra riqueza—, pero exige que seamos honestos sobre desde dónde miramos. No hay un tribunal supremo que decida qué paradigma es "el correcto." Lo que sí hay es la obligación de ser transparente sobre el tuyo.
+
+::: {.callout-note}
+## Para recordar
+
+Tu paradigma no es una camisa de fuerza. Puedes evolucionar, cambiar, combinar. Muchos investigadores empiezan positivistas y migran al pragmatismo cuando descubren que los números no cuentan toda la historia. Otros empiezan constructivistas y encuentran valor en la cuantificación. Lo importante no es casarte con un paradigma; es saber cuál estás usando en cada momento y por qué.
+:::
 
 ::: {.callout-tip}
 ## Ejercicio
 
-1. Identifica tu paradigma. ¿Eres más positivista, constructivista, pragmatista, o crítico? ¿Por qué?
+1. Identifica tu paradigma. ¿Eres más positivista, post-positivista, constructivista, pragmatista, o crítico? ¿Por qué? (Pista: piensa en qué tipo de evidencia te convence más. Si un número te parece más "serio" que una entrevista, probablemente tienes tendencia positivista. Si una historia personal te parece más "verdadera" que una estadística, probablemente tienes tendencia constructivista.)
 2. Ahora elige el paradigma opuesto al tuyo e intenta defender una postura de investigación desde ahí. Sí, es incómodo. Ese es el punto.
+3. Toma tu pregunta de investigación y respóndela brevemente desde dos paradigmas diferentes. ¿Cómo cambia la investigación? ¿Qué se gana y qué se pierde con cada uno?
 :::

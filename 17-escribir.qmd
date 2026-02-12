@@ -4,7 +4,7 @@
 
 Aquí va la verdad que nadie te dice en los manuales de metodología: **escribir es la parte más difícil de la investigación.** No el análisis. No la recolección de datos. Escribir.
 
-¿Por qué? Porque escribir te obliga a pensar con claridad. Mientras tus ideas están solo en tu cabeza, pueden ser vagas, contradictorias, incompletas, y tú ni te enteras. Pero cuando las pones en papel, la realidad te golpea: "Espera, esto no tiene sentido."
+¿Por qué? Porque escribir te obliga a pensar con claridad. Mientras tus ideas están solo en tu cabeza, pueden ser vagas, contradictorias, incompletas, y tú ni te enteras. Pero cuando las pones en papel, la realidad te golpea: "Espera, esto no tiene sentido." @becker2007 lo dice sin anestesia: "si no puedes escribirlo, es porque no lo has pensado lo suficiente."
 
 Y eso está bien. Eso es el proceso.
 
@@ -14,9 +14,23 @@ No existe. Punto.
 
 Tu primer borrador va a ser malo. El segundo va a ser menos malo. El tercero va a empezar a parecerse a algo decente. Así funciona.
 
-Los mejores académicos que conozco no escriben mejor que tú en su primer intento. La diferencia es que reescriben más. Un buen capítulo de tesis puede pasar por 5-10 versiones. No es falta de talento; es el proceso normal de escritura académica.
+Los mejores académicos que conozco no escriben mejor que tú en su primer intento. La diferencia es que reescriben más. Un buen capítulo de tesis puede pasar por 5-10 versiones. No es falta de talento; es el proceso normal de escritura académica. @sword2012 analizó los hábitos de escritura de cientos de académicos y encontró que los más productivos no eran los más talentosos; eran los que tenían rutinas de escritura consistentes.
 
 Entonces deja de esperar a que "llegue la inspiración" y empieza a escribir. Aunque sea mal. Un borrador malo se puede mejorar. Una página en blanco no.
+
+## La rutina mata al bloqueo: el método Silvia
+
+@silvia2007 tiene un argumento devastadoramente simple: no existen los "bloques de escritura." Lo que existen son malos hábitos de escritura.
+
+Su propuesta:
+
+1. **Asigna un horario fijo** a la escritura. No "cuando tenga tiempo." Tiempo fijo, innegociable, como ir al gimnasio (pero más útil).
+2. **Escribe todos los días laborales.** Aunque sean 45 minutos. La consistencia supera a las maratones de fin de semana.
+3. **Establece metas concretas.** No "trabajar en la tesis" (demasiado vago). Sino "escribir la sección de resultados descriptivos" o "revisar las citas del capítulo 3."
+4. **Rastrea tu progreso.** Lleva un registro de cuántas palabras escribes por sesión. Ver el número crecer es motivador.
+5. **No esperes motivación para empezar.** La motivación viene *después* de empezar, no antes. Sentarte y escribir genera motivación. Esperar motivación genera series de Netflix.
+
+El dato que Silvia da y que me cambió la vida: los académicos que escriben 30-45 minutos diarios producen **más** al final del año que los que hacen maratones de 8 horas los fines de semana. Y lo hacen con menos estrés, mejor calidad, y menos bloqueos.
 
 ## La estructura IMRyD y sus variantes
 
@@ -40,41 +54,114 @@ Para tesis de métodos mixtos, suelen tener secciones separadas para cada compon
 
 **Lo que importa:** Que tu estructura tenga una lógica interna clara. Que el lector pueda seguir el hilo. Que cada capítulo cumpla una función y se conecte con los demás.
 
+### El orden de escritura: no es el orden del documento
+
+Aquí un secreto que los manuales no te cuentan: **no tienes que escribir en orden.** De hecho, muchos investigadores experimentados recomiendan este orden:
+
+1. **Metodología** (lo más concreto: qué hiciste, cómo, con quién).
+2. **Resultados** (lo que encontraste).
+3. **Marco teórico / Revisión de literatura** (lo que ya sabes del tema).
+4. **Discusión** (qué significan tus resultados en contexto).
+5. **Introducción** (ahora que sabes todo, escribe la entrada).
+6. **Conclusiones** (el cierre).
+7. **Abstract** (el resumen final, siempre al final).
+
+¿Por qué este orden? Porque es más fácil escribir sobre lo que ya hiciste que sobre lo que vas a hacer. Y porque la introducción y las conclusiones solo se pueden escribir bien cuando ya sabes qué encontraste.
+
 ## Consejos prácticos de escritura
 
 ### Sobre el estilo
 
-- **Frases cortas.** Si tu frase tiene más de 3 líneas, córtala en dos.
-- **Voz activa.** "Analicé los datos" es mejor que "Los datos fueron analizados." (Sí, tú hiciste la investigación. Puedes decirlo.)
-- **Párrafos con una idea.** Un párrafo = una idea principal. Si empiezas a hablar de otra cosa, abre un párrafo nuevo.
+- **Frases cortas.** Si tu frase tiene más de 3 líneas, córtala en dos. Tu lector te lo agradecerá.
+- **Voz activa.** "Analicé los datos" es mejor que "Los datos fueron analizados." (Sí, tú hiciste la investigación. Puedes decirlo.) La voz pasiva tiene su lugar, pero su abuso genera prosa gris e impersonal.
+- **Párrafos con una idea.** Un párrafo = una idea principal. Si empiezas a hablar de otra cosa, abre un párrafo nuevo. @sword2012 encontró que los mejores escritores académicos usan párrafos de 4-8 frases, con una oración temática clara al inicio.
 - **Menos adjetivos.** "Un estudio sumamente interesante y enormemente relevante" → "Un estudio relevante." Los adjetivos inflados no impresionan; cansan.
+- **Verbos fuertes.** "Se llevó a cabo un análisis" → "Analizamos." "Se procedió a realizar la recolección" → "Recolectamos los datos." Cada verbo débil que reemplaces mejora tu prosa.
+
+### Las trampas de la escritura académica
+
+@becker2007 identifica varios vicios de la escritura académica que debes evitar conscientemente:
+
+**El exceso de *hedging* (cobertura).** "Parecería que podría haber una cierta tendencia que sugeriría que quizás existe una posible relación..." Solo escríbelo: "Los datos sugieren una relación entre X e Y." Si necesitas ser cauteloso, un solo matizador basta. No apiles cinco.
+
+**La jerga innecesaria.** Usar palabras complicadas no te hace sonar más inteligente; te hace sonar inseguro. "Operacionalizar las dinámicas intersubjetivas del proceso de construcción identitaria" → "Medir cómo las personas construyen su identidad." Si tu abuela no puede entender la frase, reescríbela.
+
+**La nominalización.** Convertir verbos en sustantivos: "La realización de la implementación del programa" → "Implementamos el programa." Cada nominalización le roba energía a tu prosa.
+
+**El párrafo de una sola frase kilométrica.** Si un párrafo tiene una sola frase de 8 líneas con 4 subordinadas, 2 paréntesis y un gerundio colgante, es un párrafo que nadie va a leer completo. Partirlo en pedazos no es simplificar; es comunicar.
+
+### Anatomía de un buen párrafo académico
+
+Un párrafo bien construido tiene:
+
+1. **Oración temática** (de qué trata este párrafo): "El capital cultural se distribuye desigualmente entre estratos socioeconómicos."
+2. **Desarrollo** (evidencia, elaboración): "Los datos muestran que el quintil más rico tiene en promedio 3.5 veces más libros que el quintil más pobre. Además, la frecuencia de asistencia a eventos culturales difiere significativamente (t = 4.2, p < .001)."
+3. **Transición o cierre** (conecta con lo que sigue): "Esta desigualdad en la distribución del capital cultural tiene consecuencias directas para la permanencia universitaria, como se analiza a continuación."
+
+No todo párrafo necesita los tres elementos, pero la mayoría debería tenerlos.
 
 ### Sobre el proceso
 
-- **Escribe todos los días.** Aunque sean 30 minutos. La constancia gana a las "maratones de fin de semana" que terminan en agotamiento.
-- **No edites mientras escribes.** Primero saca las ideas. Luego las pules. Son dos actividades diferentes que usan partes diferentes del cerebro.
+- **No edites mientras escribes.** Primero saca las ideas. Luego las pules. Son dos actividades diferentes que usan partes diferentes del cerebro. Alternar entre ambas es la receta para el bloqueo.
 - **Usa un sistema de referencias desde el primer día.** Zotero, Mendeley, o el que prefieras. No esperes al final para "ordenar las citas." Eso es una pesadilla garantizada.
-- **Haz un outline antes de cada capítulo.** ¿Qué puntos quieres cubrir? ¿En qué orden? Escribir sin outline es como viajar sin mapa.
+- **Haz un outline antes de cada capítulo.** ¿Qué puntos quieres cubrir? ¿En qué orden? ¿Qué evidencia necesitas para cada punto? Escribir sin outline es como viajar sin mapa: llegas a algún lado, pero no al que querías.
+- **Lee en voz alta.** Si tropiezas al leer tu propia frase, el lector también tropezará. Leer en voz alta detecta problemas de ritmo, frases demasiado largas y ambigüedades que la lectura silenciosa no atrapa.
+- **Imprime y corrige en papel** (al menos una vez). La pantalla genera una "ceguera de familiaridad." En papel ves errores que llevas semanas sin notar.
+
+## Cómo escribir un abstract que la gente quiera leer
+
+El abstract es lo primero (y a veces lo único) que leerán de tu trabajo. Son 150-300 palabras que deben convencer al lector de que vale la pena seguir.
+
+**Estructura en 5 frases:**
+
+1. **Contexto/problema:** "La deserción universitaria en América Latina afecta desproporcionadamente a estudiantes de primera generación."
+2. **Vacío/pregunta:** "Sin embargo, poco se sabe sobre el rol del capital cultural familiar más allá del efecto del ingreso."
+3. **Método:** "Este estudio analiza datos de 1.200 estudiantes de universidades públicas de Lima mediante regresión logística."
+4. **Resultado principal:** "Los resultados muestran que el capital cultural institucionalizado tiene un efecto positivo y significativo sobre la permanencia, incluso controlando por ingreso."
+5. **Implicación:** "Esto sugiere que las políticas de retención deben ir más allá de las becas económicas e incluir programas de capital cultural."
+
+Eso es todo. Claro, conciso, informativo. Nada de "desde tiempos inmemoriales, la educación ha sido..." ni de "este trabajo pretende contribuir modestamente al debate sobre..."
 
 ## Citación y referencias: APA y el mundo
 
-En ciencias sociales, el estilo APA (American Psychological Association) es el más común. Pero no es el único:
+En ciencias sociales, el estilo APA (American Psychological Association) es el más común [@apa2020]. Pero no es el único:
 
-| Estilo | Uso común |
-|---|---|
-| APA | Psicología, educación, ciencias sociales en general |
-| Chicago | Historia, ciencia política, humanidades |
-| Harvard | Negocios, economía (en algunos contextos) |
-| Vancouver | Ciencias de la salud |
+| Estilo | Uso común | Formato en texto |
+|---|---|---|
+| APA | Psicología, educación, ciencias sociales | (Pérez, 2020) |
+| Chicago (autor-fecha) | Ciencia política, sociología | (Pérez 2020) |
+| Chicago (notas al pie) | Historia, humanidades | Nota al pie con referencia completa |
+| Harvard | Negocios, economía (algunos contextos) | (Pérez, 2020) |
+| Vancouver | Ciencias de la salud | Número superíndice [1] |
 
 **Lo que importa:** Elige uno (o el que tu programa exija) y sé **consistente.** Nada grita "amateur" más fuerte que mezclar estilos de citación.
 
 ### Errores comunes de citación
 
-- Citar un artículo que no leíste (lo sacaste de la lista de referencias de otro paper).
-- Citar solo en español cuando la literatura principal está en inglés (o viceversa).
-- Citar demasiado un solo autor (¿es una tesis o un fan fiction?).
-- No citar ideas que no son tuyas. Cuando tengas dudas: cita.
+- **Citar un artículo que no leíste** (lo sacaste de la lista de referencias de otro paper). Se nota. Y si el autor original citó mal, tú reproduces el error.
+- **Citar solo en español** cuando la literatura principal está en inglés (o viceversa). Muestra que solo conoces una porción del debate.
+- **Citar demasiado un solo autor.** ¿Es una tesis o un fan fiction? Diversifica tus fuentes.
+- **No citar ideas que no son tuyas.** Cuando tengas dudas: cita. El plagio no siempre es intencional, pero siempre es grave.
+- **Citar Wikipedia o blogs** como fuente primaria. Wikipedia puede ser un punto de partida para *encontrar* fuentes, pero nunca *es* la fuente.
+- **Tener 80 referencias en la bibliografía y citar solo 20 en el texto.** Cada referencia en tu bibliografía debe aparecer citada en el texto, y viceversa. Usa tu gestor bibliográfico para verificar esto automáticamente.
+
+## Cómo responder a revisores (y a tu asesor)
+
+Tarde o temprano recibirás feedback. De tu asesor, de tu comité, o de revisores de una revista. Aprender a procesar y responder ese feedback es una habilidad fundamental.
+
+### Principios
+
+1. **Espera 24 horas antes de responder.** La primera reacción a las críticas siempre es emocional. Deja que pase.
+2. **Asume buena fe.** El revisor quiere mejorar tu trabajo, no destruirte (la mayoría de las veces).
+3. **Responde punto por punto.** Cada comentario merece una respuesta, aunque sea "Gracias por la observación. Hemos corregido X en la página Y."
+4. **Si no estás de acuerdo, argumenta.** No tienes que aceptar todo. Pero "no estoy de acuerdo" no alcanza. Necesitas explicar por qué, con evidencia.
+5. **Agradece los comentarios duros.** Son los que más mejoran tu trabajo. @belcher2019 lo dice claramente: los comentarios que más duelen suelen ser los más útiles.
+
+### Formato para responder
+
+> **Comentario del revisor:** "La muestra es demasiado pequeña para las conclusiones que se hacen."
+>
+> **Respuesta:** "Agradecemos la observación. Hemos añadido un análisis de poder estadístico (p. 18) que demuestra que el tamaño de muestra es suficiente para detectar efectos medianos (d = 0.5) con 80% de poder. Además, hemos matizado las conclusiones para reflejar esta limitación (p. 32)."
 
 ## El síndrome del impostor y la procrastinación académica
 
@@ -86,21 +173,38 @@ Hablemos de lo que nadie habla en los manuales: la salud mental durante la tesis
 
 Si piensas algo de esto: bienvenido al club. Prácticamente todos los académicos —desde estudiantes hasta profesores titulares— experimentan el síndrome del impostor. No eres un fraude. Estás aprendiendo. Y aprender implica no saber (todavía).
 
+Un dato que quizás ayude: @kahneman2011, Nobel de Economía, ha dicho públicamente que sigue sintiéndose un impostor. Si le pasa a él, no es un defecto tuyo; es una característica del oficio.
+
 ### La procrastinación
 
-"Voy a empezar mañana." "Necesito leer un paper más antes de escribir." "Primero voy a organizar mi escritorio."
+"Voy a empezar mañana." "Necesito leer un paper más antes de escribir." "Primero voy a organizar mi escritorio." "Necesito instalar el software perfecto para tomar notas."
 
 La procrastinación en la tesis es epidémica. Y suele estar vinculada al perfeccionismo (no escribo porque no va a quedar perfecto) o al miedo (no escribo porque van a criticarme).
 
-**El antídoto:** Escribe mal, pero escribe. Ponle un timer de 25 minutos (técnica Pomodoro) y escribe sin parar. Luego descansa 5 minutos. Repite. En un día puedes producir 1.000-2.000 palabras con esta técnica.
+**El antídoto:** Escribe mal, pero escribe. @silvia2007 propone el método de 45 minutos:
+
+1. Pon un timer de 45 minutos.
+2. Escribe sin parar. Sin editar. Sin verificar citas. Sin cambiar la fuente a una más bonita.
+3. Cuando suene, para.
+4. Descansa 15 minutos.
+5. Repite.
+
+En un día puedes producir 1.000-2.000 palabras con esta técnica. En una semana, un capítulo entero (en bruto). Después editas. Pero primero produces.
+
+::: {.callout-important}
+## Reflexión
+
+La escritura académica no es un talento innato; es una habilidad que se desarrolla con práctica deliberada. Nadie nace escribiendo bien. Pero todo el mundo puede mejorar si escribe regularmente, lee críticamente cómo escriben otros, y acepta que la reescritura es el proceso, no un fracaso.
+:::
 
 ::: {.callout-tip}
 ## Ejercicio
 
 Durante las próximas 2 semanas:
 
-1. Escribe **500 palabras al día** sobre tu tesis. Cualquier sección. Sin excusas.
-2. No edites lo que escribiste el día anterior. Solo agrega.
-3. Al final de las 2 semanas, tendrás 7.000 palabras. Probablemente la mitad sea rescatable. Eso es un capítulo.
-4. Ahora sí: edita, reorganiza, reescribe.
+1. Bloquea **45 minutos diarios** en tu calendario para escribir tu tesis. La misma hora todos los días. Trátalo como una cita con el médico: innegociable.
+2. Escribe sin editar. Lleva un registro de cuántas palabras produces por día.
+3. Al final de las 2 semanas, tendrás ~7.000-10.000 palabras. Probablemente la mitad sea rescatable. Eso es un capítulo.
+4. Ahora sí: edita, reorganiza, reescribe. Lee en voz alta. Pide a un colega que lea. Reescribe de nuevo.
+5. Compara tu primer borrador con el final. La distancia entre ambos *es* el proceso de escritura. Celebra esa distancia.
 :::

@@ -8,11 +8,13 @@ Si estudias la pobreza y decides medirla por ingreso, ya estás usando una teor�
 
 No necesitas inventar una teoría. Necesitas elegir una (o combinar varias) que te ayude a entender tu problema. Es como elegir lentes: los mismos datos se ven distintos según el cristal que uses.
 
+Kerlinger lo puso de forma clásica: "una teoría es un conjunto de constructos interrelacionados (conceptos), definiciones y proposiciones que presentan una visión sistemática de fenómenos al especificar relaciones entre variables, con el propósito de explicar y predecir los fenómenos" [@kerlinger2002]. Suena denso, pero en esencia dice: una teoría te dice qué variables importan, cómo se relacionan, y por qué.
+
 ## La diferencia entre usar una teoría y copiar definiciones
 
 Otro error clásico: el "marco teórico" que es en realidad un glosario. Definición de educación. Definición de calidad educativa. Definición de deserción. Copiadas de otros autores, una tras otra, sin conexión entre sí ni con la investigación.
 
-Eso no es un marco teórico. Es un diccionario.
+Eso no es un marco teórico. Es un diccionario. Y tu asesor lo sabe.
 
 Un marco teórico **usa** la teoría para:
 
@@ -22,35 +24,97 @@ Un marco teórico **usa** la teoría para:
 
 ¿Ves? La teoría no está ahí de adorno. Está conectada con tu pregunta, tus variables y tus hipótesis. Es el hilo que cose todo.
 
+## Marco teórico vs. marco conceptual: una distinción útil
+
+Muchos manuales usan "marco teórico" y "marco conceptual" como sinónimos. No lo son:
+
+- **Marco teórico:** Adoptas una teoría existente (Bourdieu, Sen, Piaget) y la aplicas a tu problema. La teoría ya existe; tú la usas.
+- **Marco conceptual:** Construyes tu propio mapa de conceptos y relaciones, posiblemente combinando elementos de varias teorías. No adoptas una teoría completa; tomas piezas de varias y las ensamblas para tu problema específico.
+
+Ambos son válidos. El marco conceptual es más común en investigaciones aplicadas y en tesis de maestría, porque rara vez una sola teoría explica completamente un problema práctico. Pero ojo: un marco conceptual no es un collage aleatorio de conceptos. Necesita coherencia interna y justificación de por qué esos conceptos y no otros.
+
 ## Cómo elegir tu teoría
 
 No hay un catálogo donde buscas "teorías para tesis de maestría." La teoría emerge de tu lectura y de tu comprensión del problema. Pero aquí van algunas pistas:
 
 ### Opción 1: Partir de tu disciplina
-Cada disciplina tiene sus teorías principales. En sociología: Durkheim, Weber, Bourdieu, Giddens. En ciencia política: institucionalismo, elección racional, constructivismo. En educación: Piaget, Vygotsky, Freire. Empieza por ahí.
+Cada disciplina tiene sus teorías principales. Aquí una tabla (no exhaustiva) de teorías frecuentes en ciencias sociales:
+
+| Disciplina | Teorías comunes | Autores clave |
+|---|---|---|
+| **Sociología** | Capital social/cultural, estructuración, habitus, interaccionismo simbólico | Bourdieu, Giddens, Durkheim, Weber, Goffman |
+| **Ciencia política** | Institucionalismo, elección racional, constructivismo, poder | North, Ostrom, Downs, Foucault, Lukes |
+| **Economía** | Capital humano, elección racional, economía conductual, institucionalismo | Becker, Sen, Kahneman, Acemoglu |
+| **Educación** | Constructivismo (aprendizaje), capital cultural, pedagogía crítica | Piaget, Vygotsky, Bourdieu, Freire |
+| **Psicología social** | Cognición social, identidad social, disonancia cognitiva | Tajfel, Bandura, Festinger |
+| **Antropología** | Etnografía, cultura, poder simbólico, interseccionalidad | Geertz, Malinowski, Crenshaw |
 
 ### Opción 2: Partir de tu revisión de literatura
-¿Qué teorías usan los papers que leíste? ¿Hay alguna que te haga sentido para tu problema? ¿Hay alguna que nadie haya aplicado a tu contexto?
+¿Qué teorías usan los papers que leíste? ¿Hay alguna que te haga sentido para tu problema? ¿Hay alguna que nadie haya aplicado a tu contexto? (Esa podría ser tu contribución.)
 
 ### Opción 3: Partir del problema
-¿Tu problema es sobre desigualdad? Mira teorías de estratificación social. ¿Es sobre comportamiento? Mira teorías psicosociales. ¿Es sobre instituciones? Mira el institucionalismo.
+¿Tu problema es sobre desigualdad? Mira teorías de estratificación social (Bourdieu, Wright). ¿Es sobre comportamiento? Mira teorías psicosociales (Bandura, Ajzen). ¿Es sobre instituciones? Mira el institucionalismo (North, Ostrom). ¿Es sobre desarrollo? Mira Sen y el enfoque de capacidades.
 
 ### La regla de oro
-**No elijas una teoría porque suena impresionante.** Elige la que mejor te ayude a responder tu pregunta. Una teoría simple que funciona es infinitamente mejor que una compleja que no tiene relación con tu problema.
+**No elijas una teoría porque suena impresionante.** Elige la que mejor te ayude a responder tu pregunta. Una teoría simple que funciona es infinitamente mejor que una compleja que no tiene relación con tu problema. Si tu tesis es sobre el uso de TIC en escuelas rurales, no necesitas a Foucault (a menos que genuinamente te interese el poder/saber en la adopción tecnológica, y eso podría ser fascinante, pero debes justificarlo).
+
+## Tres teorías en acción: cómo se ve un marco teórico que funciona
+
+Veamos cómo tres teorías diferentes enmarcan el mismo problema: la pobreza.
+
+### Bourdieu: la pobreza como falta de capitales
+
+Pierre Bourdieu distingue tres formas de capital: económico (dinero, propiedades), cultural (educación, habilidades, gustos) y social (redes, contactos) [@bourdieu1986]. La pobreza, desde esta perspectiva, no es solo falta de dinero; es la carencia simultánea de los tres capitales, y lo crucial es que estos capitales se transmiten de generación en generación. Un niño que crece en una familia pobre hereda no solo la falta de dinero, sino la falta de capital cultural (menos libros, menos exposición a la cultura dominante) y social (menos contactos útiles).
+
+**Implicación para la investigación:** Si usas a Bourdieu, tus variables no serían solo "ingreso familiar" sino también "nivel educativo de los padres," "acceso a bienes culturales," y "redes sociales de la familia." Y tu hipótesis sería que el capital cultural y social tienen un efecto independiente del capital económico.
+
+### Sen: la pobreza como privación de capacidades
+
+Amartya Sen propone que la pobreza no es la falta de ingreso sino la privación de **libertades fundamentales**: la capacidad de estar bien alimentado, de participar en la vida comunitaria, de aparecer en público sin vergüenza [@sen1999]. El ingreso es un medio, no un fin. Lo que importa es lo que la persona puede *hacer y ser*, no lo que *tiene*.
+
+**Implicación para la investigación:** Si usas a Sen, no medirías pobreza por ingreso sino por un conjunto de capacidades: ¿puede la persona acceder a salud? ¿A educación? ¿Participa en decisiones que afectan su vida? Las variables serían multidimensionales y los indicadores muy diferentes a los de Bourdieu.
+
+### Freire: la pobreza como opresión y silencio
+
+Paulo Freire entiende la pobreza no como un estado sino como una relación de opresión, donde los pobres son despojados no solo de recursos materiales sino de su voz, su agencia y su capacidad de nombrar el mundo [@freire1970]. La "cultura del silencio" mantiene a los oprimidos en una posición de pasividad.
+
+**Implicación para la investigación:** Si usas a Freire, tu investigación probablemente sería cualitativa y participativa. No medirías la pobreza con indicadores externos; explorarías cómo las personas pobres perciben su situación, qué narrativas usan, y cómo la educación puede ser un acto de liberación (o de reproducción de la opresión). Tu metodología incluiría a los participantes como co-investigadores, no como "sujetos de estudio."
+
+::: {.callout-important}
+## Reflexión
+
+¿Ves cómo la misma realidad (la pobreza) se ve completamente diferente según los lentes que uses? Y las diferencias no son solo teóricas: cambian qué variables mides, qué datos necesitas, qué método usas, y qué conclusiones sacas. Por eso elegir tu marco teórico no es un trámite; es una de las decisiones más importantes de tu investigación.
+:::
 
 ## Cómo conectar el marco teórico con el resto de tu investigación
 
-Este es el punto donde muchas tesis se desmoronan. El marco teórico vive en un capítulo aislado, y luego los resultados se analizan como si ese capítulo no existiera.
+Este es el punto donde muchas tesis se desmoronan. El marco teórico vive en un capítulo aislado, y luego los resultados se analizan como si ese capítulo no existiera. Es como presentar a un personaje en el primer acto de una obra y que nunca vuelva a aparecer.
 
 El marco teórico debe estar presente en:
 
-- **Tu pregunta:** La teoría te ayuda a formular preguntas más precisas.
-- **Tus variables:** La teoría te dice qué medir y por qué.
-- **Tu hipótesis:** La teoría genera expectativas sobre lo que encontrarás.
-- **Tu análisis:** La teoría te da categorías para interpretar los datos.
-- **Tu discusión:** Tus resultados dialogan con la teoría (¿la confirman, la matizan, la contradicen?).
+- **Tu pregunta:** La teoría te ayuda a formular preguntas más precisas. Si usas a Sen, no preguntas "¿cuántos pobres hay?" sino "¿qué capacidades están privadas?"
+- **Tus variables:** La teoría te dice qué medir y por qué. Si usas a Bourdieu, mides capital cultural, no solo ingreso.
+- **Tu hipótesis:** La teoría genera expectativas sobre lo que encontrarás. Si Bourdieu tiene razón, el capital cultural debería tener un efecto independiente del ingreso.
+- **Tu análisis:** La teoría te da categorías para interpretar los datos. Un dato sobre "asistencia a eventos culturales" cobra sentido dentro del marco de Bourdieu; fuera de él, es solo un dato curioso.
+- **Tu discusión:** Tus resultados dialogan con la teoría. ¿La confirman? ¿La matizan? ¿La contradicen? Si tus datos no encajan con tu teoría, eso es interesante, no un fracaso.
 
-Si puedes quitar tu capítulo de marco teórico y el resto de la tesis no cambia en nada, entonces tu marco teórico no está funcionando.
+**La prueba de fuego:** Si puedes quitar tu capítulo de marco teórico y el resto de la tesis no cambia en nada, entonces tu marco teórico no está funcionando. Reescríbelo o elige otro.
+
+## Combinar teorías: el arte del eclecticismo responsable
+
+A veces una sola teoría no basta. Tu problema es complejo y necesitas lentes múltiples. Esto es legítimo, pero requiere cuidado.
+
+**Lo que SÍ funciona:**
+
+- Combinar teorías que operan en diferentes niveles. Ejemplo: Bourdieu para el nivel estructural (cómo las desigualdades se reproducen) + Bandura para el nivel individual (cómo la autoeficacia media la experiencia escolar). Se complementan porque uno habla de la estructura y el otro del agente.
+
+- Usar una teoría como marco principal y otra como complementaria. "Mi marco principal es Sen (enfoque de capacidades), pero uso elementos de la teoría institucionalista para explicar por qué algunas instituciones bloquean las capacidades."
+
+**Lo que NO funciona:**
+
+- Combinar teorías contradictorias sin reconocer la contradicción. Bourdieu (determinismo estructural) + elección racional (agencia individual) son difíciles de conciliar. No imposible, pero necesitas justificar cómo los articulas.
+
+- El buffet teórico: "uso un poquito de Foucault, un poquito de Sen, un poquito de Piaget, y un poquito de neoinstitucionalismo." Sin coherencia, esto no es eclecticismo; es confusión.
 
 ## Ejemplos reales de marcos teóricos que funcionan (y que no)
 
@@ -58,20 +122,23 @@ Si puedes quitar tu capítulo de marco teórico y el resto de la tesis no cambia
 
 > "Según la RAE, la educación es el proceso de formación…" (Esto es una definición, no teoría.)
 
-> "Existen múltiples definiciones de pobreza. Según el Banco Mundial… Según la CEPAL… Según Sen…" (Esto es una lista de definiciones, no un argumento teórico.)
+> "Existen múltiples definiciones de pobreza. Según el Banco Mundial… Según la CEPAL… Según Sen…" (Esto es una lista de definiciones, no un argumento teórico. ¿Cuál usas tú? ¿Por qué?)
 
 > "Piaget dice que los niños pasan por etapas de desarrollo cognitivo." (Sí, ¿y qué tiene que ver con tu investigación sobre políticas de inclusión digital?)
 
+> "En esta investigación se utilizará la teoría de Bourdieu." (¿Qué parte? ¿El habitus? ¿El campo? ¿Los capitales? Bourdieu escribió 30 libros. "Usar Bourdieu" no dice nada.)
+
 ### ✅ Lo que SÍ funciona
 
-> "Esta investigación adopta el enfoque de capacidades de Sen (1999), que entiende la pobreza no como la falta de ingreso, sino como la privación de libertades fundamentales. Desde esta perspectiva, la pregunta no es cuánto ganan las familias, sino qué son capaces de hacer y ser. Esto permite analizar las políticas de transferencias condicionadas no solo por su impacto en el ingreso, sino por su efecto en la expansión de capacidades (acceso a salud, educación, participación). Este enfoque se operacionaliza a través de tres dimensiones de capacidad: salud, educación y agencia."
+> "Esta investigación adopta el enfoque de capacidades de Sen (1999), que entiende la pobreza no como la falta de ingreso, sino como la privación de libertades fundamentales. Desde esta perspectiva, la pregunta no es cuánto ganan las familias, sino qué son capaces de hacer y ser. Esto permite analizar las políticas de transferencias condicionadas no solo por su impacto en el ingreso, sino por su efecto en la expansión de capacidades (acceso a salud, educación, participación). Este enfoque se operacionaliza a través de tres dimensiones de capacidad: salud, educación y agencia, medidas con indicadores específicos que se detallan en la sección de metodología."
 
-Nota cómo en este ejemplo la teoría está viva: define el problema, orienta las variables, y anticipa cómo se va a medir.
+Nota cómo en este ejemplo la teoría está viva: define el problema, orienta las variables, anticipa cómo se va a medir, y conecta con la metodología. Eso es un marco teórico que funciona.
 
 ::: {.callout-tip}
 ## Ejercicio
 
-1. Identifica 2-3 teorías relevantes para tu tema de investigación.
+1. Identifica 2-3 teorías relevantes para tu tema de investigación (usa la tabla de arriba como punto de partida).
 2. Para cada una, responde: ¿cómo explica mi problema? ¿Qué variables destaca? ¿Qué preguntas genera?
-3. Elige una y escribe un párrafo (como el ejemplo de arriba) explicando cómo la vas a usar en tu investigación.
+3. Elige una (o una combinación) y escribe un párrafo (como el ejemplo de arriba) explicando cómo la vas a usar en tu investigación. Incluye: qué perspectiva adoptas, qué conceptos tomas, cómo los conectas con tu pregunta, y cómo los vas a operacionalizar.
+4. **La prueba del colega:** Muéstrale tu párrafo a alguien. Si no puede decirte qué variables vas a medir después de leerlo, reescríbelo.
 :::

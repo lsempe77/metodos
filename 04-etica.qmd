@@ -6,38 +6,104 @@ En la mayoría de los manuales de metodología, la ética aparece como un aparta
 
 Pero la ética no es un trámite. Es el esqueleto de tu investigación. Si tu investigación no es ética, no importa qué tan sofisticado sea tu diseño, qué tan elegante tu análisis, o qué tan impactantes tus resultados. Es basura.
 
-Y lo más complicado: la ética raramente es blanco o negro. Está llena de grises.
+Y lo más complicado: la ética raramente es blanco o negro. Está llena de grises. Grises que te van a quitar el sueño si eres un investigador honesto. Y si no te quitan el sueño, quizás deberías preocuparte.
+
+## Una breve historia de los horrores: por qué existen las reglas
+
+Las normas éticas en investigación no nacieron de la filosofía abstracta. Nacieron del horror. Literalmente. Cada regla que hoy te parece obvia existe porque alguien hizo algo terrible.
+
+### El estudio de sífilis de Tuskegee (1932-1972)
+
+Este es quizás el caso más infame de la historia de la investigación. Durante 40 años, el Servicio de Salud Pública de Estados Unidos estudió la progresión de la sífilis en 399 hombres afroamericanos de Tuskegee, Alabama. Los participantes no sabían que tenían sífilis. No recibieron tratamiento, ni siquiera cuando la penicilina estuvo disponible como cura a partir de los años 40. Se les dijo que recibían tratamiento para "mala sangre" [@brandt1978].
+
+Cuarenta años. Hombres que murieron, que contagiaron a sus parejas, que transmitieron la enfermedad a sus hijos. Todo en nombre de la ciencia. Todo con financiamiento público.
+
+Cuando el escándalo se hizo público en 1972, la indignación fue masiva. Y justificada. Tuskegee no fue un "error". Fue racismo institucional disfrazado de investigación. Y es la razón principal por la que hoy existe el **Informe Belmont** [@belmontreport1979], que establece tres principios fundamentales para la investigación con seres humanos:
+
+1. **Respeto por las personas:** Los individuos deben ser tratados como agentes autónomos, y las personas con autonomía reducida tienen derecho a protección.
+2. **Beneficencia:** No hacer daño. Maximizar los beneficios y minimizar los riesgos.
+3. **Justicia:** Los beneficios y las cargas de la investigación deben distribuirse equitativamente.
+
+Suena simple. Aplicarlo no lo es.
+
+### Los experimentos de Milgram (1963)
+
+Stanley Milgram quería entender por qué personas aparentemente normales habían participado en el Holocausto. Su experimento era ingeniosos: los participantes creían que estaban administrando descargas eléctricas a otra persona (un actor) bajo las instrucciones de un investigador de autoridad. El 65% llegó a administrar descargas de 450 voltios —potencialmente letales— solo porque la figura de autoridad les decía que continuaran [@milgram1963].
+
+Los resultados fueron fascinantes y aterradores. Pero ¿a qué costo? Los participantes sufrieron estrés extremo. Algunos tuvieron crisis emocionales durante y después del experimento. No habían dado consentimiento informado real, porque no sabían qué estaba pasando. Y nunca se les dio la oportunidad de retirarse libremente —la presión del investigador era parte del diseño.
+
+Milgram argumentó que el conocimiento generado justificaba el sufrimiento. ¿Tenía razón? Esa pregunta sigue sin respuesta definitiva, y es exactamente el tipo de dilema que la ética de la investigación te obliga a enfrentar.
+
+### El estudio Tearoom Trade (1970)
+
+Laud Humphreys quería estudiar los encuentros sexuales anónimos entre hombres en baños públicos de Estados Unidos. Para hacerlo, se hizo pasar por "vigía" (alguien que vigilaba que no llegara la policía) sin revelar que era investigador. Anotó las placas de los autos de los participantes, obtuvo sus direcciones, y un año después los visitó disfrazado como encuestador de salud para entrevistarlos [@humphreys1970].
+
+La investigación reveló que muchos de estos hombres llevaban vidas heterosexuales convencionales. Un hallazgo sociológicamente valioso. Pero el método fue un catálogo de violaciones éticas: engaño, invasión de privacidad, riesgo de exponer a personas que podían ir a prisión (la homosexualidad era ilegal en muchos estados). Humphreys obtuvo su doctorado. Sus participantes vivieron con el riesgo de ser descubiertos.
+
+::: {.callout-warning}
+## Advertencia
+
+Estos casos no son curiosidades históricas. Son recordatorios de lo que pasa cuando la ambición científica no tiene contrapeso ético. Cada formulario de consentimiento informado que firmas existe porque alguien, en algún momento, abusó de la confianza de sus participantes.
+:::
 
 ## Consentimiento informado: más complejo de lo que parece
 
-El consentimiento informado suena simple: le explicas a la persona qué vas a hacer con su información, y ella acepta. Pero en la práctica:
+El consentimiento informado suena simple: le explicas a la persona qué vas a hacer con su información, y ella acepta. Pero en la práctica está lleno de trampas:
 
-- ¿Qué pasa cuando investigas comunidades con bajos niveles de escolaridad? ¿Realmente entienden un formulario de consentimiento escrito en jerga académica?
-- ¿Qué pasa cuando investigas menores de edad? ¿Basta con el consentimiento de los padres?
+- ¿Qué pasa cuando investigas comunidades con bajos niveles de escolaridad? ¿Realmente entienden un formulario de consentimiento escrito en jerga académica? (Spoiler: probablemente no. Y darles un formulario que no entienden no es consentimiento; es burocracia.)
+- ¿Qué pasa cuando investigas menores de edad? ¿Basta con el consentimiento de los padres? ¿Y si el menor no quiere participar pero los padres dicen que sí?
 - ¿Qué pasa cuando haces observación participante en espacios públicos? ¿Necesitas consentimiento de todos los presentes?
 - ¿Qué pasa con la investigación en redes sociales? ¿Un tuit público es "dato" que puedes usar libremente?
+- ¿Qué pasa en contextos de violencia o clandestinidad? Si investigas narcotráfico, pandillas o migración irregular, ¿cómo obtienes consentimiento sin poner en riesgo a tus participantes?
 
 No hay respuestas universales. Hay principios (respeto por la autonomía, no hacer daño, justicia) y hay contextos. Tu trabajo como investigador es navegar entre ambos con honestidad.
+
+Un buen consentimiento informado:
+
+- Está escrito en lenguaje que tu participante realmente entiende.
+- Explica qué haces, por qué, qué pasa con los datos, y qué riesgos hay.
+- Deja claro que la persona puede retirarse en cualquier momento sin consecuencias.
+- No es un trámite que se firma y se archiva. Es un proceso continuo de comunicación.
 
 ## Anonimato y confidencialidad: no son lo mismo
 
 Otro error común: usar "anonimato" y "confidencialidad" como sinónimos.
 
-- **Anonimato:** Tú, como investigador, no sabes quién dijo qué. Los datos no están vinculados a identidades.
-- **Confidencialidad:** Tú sí sabes quién dijo qué, pero te comprometes a no revelarlo.
+- **Anonimato:** Tú, como investigador, no sabes quién dijo qué. Los datos no están vinculados a identidades. Es el estándar más alto de protección.
+- **Confidencialidad:** Tú sí sabes quién dijo qué, pero te comprometes a no revelarlo. Es lo más común en investigación cualitativa.
 
-En la práctica, el anonimato puro es difícil de lograr (especialmente en estudios cualitativos con muestras pequeñas). Y la confidencialidad puede romperse involuntariamente: si estudias "la directora de la única escuela rural del municipio X", no importa cuántos pseudónimos uses, todos saben quién es.
+En la práctica, el anonimato puro es difícil de lograr (especialmente en estudios cualitativos con muestras pequeñas). Y la confidencialidad puede romperse involuntariamente.
+
+Aquí un ejemplo que he visto repetirse: si estudias "la directora de la única escuela rural del municipio X", no importa cuántos pseudónimos uses, todos saben quién es. Si entrevistas a "un funcionario de alto nivel del Ministerio de Educación de un país pequeño", un lector informado puede deducir quién habló.
+
+La protección real no es solo cambiar nombres. Es pensar activamente en cómo la combinación de detalles puede identificar a alguien, y editar tu texto en consecuencia. A veces esto significa sacrificar riqueza descriptiva por protección. Y eso es frustrante, pero necesario.
 
 ## Plagiar sin querer: cómo pasa y cómo evitarlo
 
 Nadie (bueno, casi nadie) plagia intencionalmente. Pero el plagio involuntario es más común de lo que crees:
 
-- **Parafrasear mal:** Cambiar 3 palabras de un párrafo no es parafrasear. Es plagiar con disfraz.
-- **No citar fuentes de ideas:** No solo se citan las citas textuales. Si una idea no es tuya, cítala.
-- **Autoplagio:** Sí, puedes plagiarte a ti mismo. Reutilizar textos tuyos publicados sin declararlo es autoplagio.
-- **Traducir sin citar:** Traducir un párrafo del inglés al español y presentarlo como propio es plagio.
+- **Parafrasear mal:** Cambiar 3 palabras de un párrafo no es parafrasear. Es plagiar con disfraz. Parafrasear significa reformular la idea completamente en tus propias palabras, manteniendo el sentido pero cambiando la estructura. Si necesitas mirar el texto original mientras escribes tu paráfrasis, probablemente estás demasiado cerca.
+- **No citar fuentes de ideas:** No solo se citan las citas textuales. Si una idea no es tuya, cítala. Incluso si la reformulaste completamente. La idea sigue siendo de otro.
+- **Autoplagio:** Sí, puedes plagiarte a ti mismo. Reutilizar textos tuyos publicados sin declararlo es autoplagio. Y es más problemático de lo que parece, porque quien lee tu texto nuevo asume que es nuevo.
+- **Traducir sin citar:** Traducir un párrafo del inglés al español y presentarlo como propio es plagio. El idioma cambió; la autoría no.
+- **Las "ideas generales":** "Pero eso es conocimiento general, no necesita cita." A veces sí. Que la Tierra gira alrededor del Sol no necesita cita. Que "los sistemas educativos reproducen desigualdades" sí necesita cita (es la tesis de Bourdieu, no un hecho evidente).
 
 La regla de oro: **cuando tengas dudas, cita.** Nadie te va a criticar por citar de más. Muchos te van a criticar por citar de menos.
+
+## Los comités de ética: burocracia necesaria
+
+En muchas universidades, antes de iniciar tu investigación necesitas la aprobación de un **Comité de Ética en Investigación** (CEI) o un **Institutional Review Board** (IRB). Esto implica presentar tu protocolo de investigación, tus instrumentos, tu formulario de consentimiento, y explicar cómo vas a proteger a tus participantes.
+
+¿Es burocrático? Sí. ¿Es lento? A veces desesperantemente. ¿Es necesario? Absolutamente.
+
+Los comités de ética no existen para obstaculizar tu investigación. Existen porque la historia demostró que los investigadores, dejados a su criterio, a veces hacen cosas terribles (ver la primera sección de este capítulo). El comité es un par de ojos externos que revisa tu diseño desde la perspectiva de los participantes, no desde la tuya.
+
+Algunos consejos para sobrevivir el proceso:
+
+- **Presenta tu protocolo temprano.** Los tiempos de revisión pueden ser de semanas o meses. Si lo dejas para último momento, tu cronograma se desmorona.
+- **Sé específico.** "Protegeré la confidencialidad" no basta. ¿Cómo? ¿Dónde guardas los datos? ¿Quién tiene acceso? ¿Cuándo los destruyes?
+- **Anticipa los riesgos.** No digas "mi investigación no tiene riesgos." Toda investigación tiene algún riesgo, aunque sea mínimo. Identificarlo demuestra madurez.
+- **Lee las normas éticas de tu disciplina.** La APA tiene las suyas, la ASA también, la AERA también. Conócelas.
 
 ## Cuando tus resultados no le gustan a quien te financia
 
@@ -47,22 +113,59 @@ Este es el elefante en la habitación. Muchas investigaciones en ciencias social
 
 ¿Qué haces cuando tu tesis muestra que la política estrella de tu gobierno (o de tu partido) no tiene efecto?
 
+¿Qué haces cuando descubres que el programa que financian los donantes internacionales ha generado efectos negativos inesperados en la comunidad?
+
 No hay respuestas fáciles. Pero hay una regla clara: **los datos son los datos.** Tu integridad como investigador depende de que reportes lo que encontraste, no lo que querían que encontraras. Los matices, las limitaciones, las explicaciones alternativas —todo eso se puede discutir—, pero los datos no se manipulan.
 
-## Casos reales de dilemas éticos
+He conocido investigadores que perdieron contratos por reportar resultados incómodos. Y he conocido investigadores que mantuvieron contratos a costa de su honestidad. Los primeros pueden mirarse al espejo. Los segundos tienen un CV más largo, pero un problema más profundo.
+
+Como dice David Resnik: "La integridad es la piedra angular de la empresa científica. Sin ella, la ciencia pierde su capacidad de generar confianza pública" [@resnik2018].
+
+## La ética en la era digital: territorio nuevo, reglas viejas
+
+### Redes sociales como fuente de datos
+
+¿Puedes usar tuits públicos en tu investigación sin consentimiento? ¿Puedes analizar publicaciones de Facebook? ¿Puedes scrapear datos de Instagram?
+
+La respuesta legal y la respuesta ética no siempre coinciden. Legalmente, lo que es público es público. Éticamente, es más complicado. Como señala Michael Zimmer, una persona que publica un tuit no está dando consentimiento para ser sujeto de investigación, por más que su perfil sea público [@zimmer2010].
+
+En 2014, investigadores de Facebook manipularon el feed de noticias de 689.003 usuarios para ver si los contenidos emocionales afectaban su estado de ánimo. El resultado: sí, las emociones se contagian por redes sociales [@kramer2014]. El problema: ninguno de esos 689.003 usuarios sabía que estaba en un experimento. La indignación fue masiva. El paper se publicó en *PNAS* y generó un debate que sigue abierto.
+
+### Cambridge Analytica y el gran despertar
+
+En 2018, se reveló que la consultora Cambridge Analytica había obtenido datos de 87 millones de perfiles de Facebook —sin consentimiento explícito de sus dueños— y los había usado para crear perfiles psicológicos con fines de manipulación electoral [@cadwalladr2018]. El escándalo no fue solo sobre privacidad; fue sobre cómo los datos de investigación (el psicólogo Aleksandr Kogan recopiló los datos bajo pretexto académico) pueden terminar en manos que los usan para fines que los participantes nunca imaginaron.
+
+### Big data e inteligencia artificial
+
+La investigación con big data plantea dilemas éticos que los marcos tradicionales no anticiparon:
+
+- **Consentimiento:** Si analizas millones de registros administrativos, ¿necesitas consentimiento individual? ¿Es posible siquiera obtenerlo?
+- **Anonimización:** Los datos "anónimos" pueden des-anonimizarse con técnicas de machine learning. Investigadores han demostrado que pueden identificar individuos en bases de datos supuestamente anónimas cruzando unas pocas variables.
+- **Sesgos algorítmicos:** Si entrenas un modelo con datos sesgados, obtienes resultados sesgados. Y esos resultados pueden afectar a personas reales (créditos negados, perfiles policiales, contrataciones discriminatorias).
+- **Vigilancia:** Shoshana Zuboff advierte sobre el "capitalismo de vigilancia": un sistema donde el comportamiento humano se extrae, se predice y se comercializa sin consentimiento significativo [@zuboff2019].
+
+La Declaración de Helsinki, diseñada originalmente para la investigación médica, establece que "el bienestar del sujeto de investigación debe tener prioridad sobre todos los demás intereses" [@wma2013]. En la era del big data, ¿quién es el "sujeto"? ¿Y quién protege sus intereses cuando ni siquiera sabe que está siendo investigado?
+
+## Casos reales de dilemas éticos en América Latina
 
 Sin dar nombres (la ética también aplica al escribir un libro), aquí van situaciones reales que he visto o vivido:
 
-1. **El "ajuste" de datos:** Un equipo de investigación que "limpiaba" los datos eliminando los casos que no encajaban con su hipótesis. No estaban mintiendo, técnicamente. Pero estaban contando solo la mitad de la historia.
+1. **El "ajuste" de datos:** Un equipo de investigación que "limpiaba" los datos eliminando los casos que no encajaban con su hipótesis. No estaban mintiendo, técnicamente. Pero estaban contando solo la mitad de la historia. Cuando les pregunté por qué habían eliminado esos casos, la respuesta fue: "Eran outliers." Quizás sí. Pero los outliers también son datos, y a veces son los datos más interesantes.
 
-2. **La comunidad que no quería ser investigada:** Un proyecto de tesis sobre una comunidad indígena que dijo explícitamente que no quería más investigadores. El estudiante fue igual, "porque era importante para la ciencia." ¿Importante para quién?
+2. **La comunidad que no quería ser investigada:** Un proyecto de tesis sobre una comunidad indígena que dijo explícitamente que no quería más investigadores. Llevaban años recibiendo tesistas que llegaban, hacían preguntas, sacaban fotos, y nunca volvían. El estudiante fue igual, "porque era importante para la ciencia." ¿Importante para quién? La ciencia no es una licencia para ignorar la voluntad de las personas.
 
-3. **El revisor interesado:** Un artículo enviado a una revista fue rechazado por un revisor que, meses después, publicó un paper sospechosamente similar. El sistema de peer review depende de la confianza, y a veces esa confianza se rompe.
+3. **El revisor interesado:** Un artículo enviado a una revista fue rechazado por un revisor que, meses después, publicó un paper sospechosamente similar. El sistema de peer review depende de la confianza, y a veces esa confianza se rompe. ¿Hay forma de prevenirlo? Difícil. ¿Hay forma de denunciarlo? Sí, pero pocos lo hacen por miedo a las represalias en una comunidad pequeña.
 
-4. **Los datos "eternos":** Una encuesta realizada hace 15 años cuyos datos siguen siendo usados para publicar papers, mucho más allá del consentimiento original que firmaron los participantes.
+4. **Los datos "eternos":** Una encuesta realizada hace 15 años cuyos datos siguen siendo usados para publicar papers, mucho más allá del consentimiento original que firmaron los participantes. ¿El consentimiento que diste en 2010 cubre un paper publicado en 2025 por un investigador que ni existía cuando te encuestaron?
+
+5. **La foto sin permiso:** Un antropólogo que publicó fotografías de una ceremonia religiosa en una comunidad campesina. Las fotos eran "artísticas" y "documentales." Pero nadie le preguntó a la comunidad si quería que sus rituales privados aparecieran en un libro vendido en Amazon.
+
+6. **El estudiante presionado:** Un tesista cuyos datos no mostraban lo que el asesor esperaba. El asesor sugirió —sutilmente— que "quizás" había que "repensar el análisis." En la práctica, eso significaba correr análisis hasta que algo saliera significativo. El estudiante obedeció. Aprobó. Publicó. ¿Fueron datos inventados? No. ¿Fueron datos manipulados? Sí.
 
 ::: {.callout-important}
 ## Reflexión
 
-La ética no es un capítulo de tu tesis. Es una actitud que atraviesa todo el proceso de investigación, desde la formulación de la pregunta hasta la publicación de los resultados. No se trata de seguir una checklist; se trata de preguntarte constantemente: ¿estoy haciendo lo correcto?
+La ética no es un capítulo de tu tesis. Es una actitud que atraviesa todo el proceso de investigación, desde la formulación de la pregunta hasta la publicación de los resultados. No se trata de seguir una checklist; se trata de preguntarte constantemente: *¿estoy haciendo lo correcto?* Y si la respuesta no es un sí claro, detenerte y pensar antes de avanzar.
+
+La prueba del periódico puede ayudar: ¿te sentirías cómodo si tu decisión ética apareciera en la portada de un diario? Si no, probablemente necesitas reconsiderar.
 :::

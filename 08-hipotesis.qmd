@@ -6,11 +6,11 @@ Si la pregunta de investigación es el corazón, la hipótesis, los objetivos y 
 
 Pero antes de entrar en cada una, una advertencia: muchos manuales presentan estos tres elementos como pasos secuenciales y mecánicos. "Primero escriba su objetivo general. Luego sus objetivos específicos. Luego su hipótesis. Luego sus variables." Como si fuera una receta de cocina.
 
-En la vida real, estos tres elementos se construyen simultáneamente y se van ajustando mutuamente. Tu hipótesis puede hacerte cambiar tus objetivos. Tus variables pueden hacerte reformular tu hipótesis. Es un proceso iterativo, desordenado, y eso está bien.
+En la vida real, estos tres elementos se construyen simultáneamente y se van ajustando mutuamente. Tu hipótesis puede hacerte cambiar tus objetivos. Tus variables pueden hacerte reformular tu hipótesis. Es un proceso iterativo, desordenado, y eso está bien. Como lo planteó @kerlinger2002, la investigación es un ciclo de retroalimentación constante entre teoría, hipótesis y evidencia.
 
 ## Hipótesis: no siempre necesitas una (pero casi siempre ayuda)
 
-Una hipótesis es una respuesta tentativa a tu pregunta de investigación. Es tu apuesta informada sobre lo que vas a encontrar.
+Una hipótesis es una respuesta tentativa a tu pregunta de investigación. Es tu apuesta informada sobre lo que vas a encontrar. No es un deseo, no es una opinión, no es un presentimiento. Es una proposición que se puede contrastar con datos.
 
 **Ejemplo:**
 - Pregunta: ¿Qué factores influyen en la deserción universitaria de primera generación?
@@ -30,9 +30,43 @@ Pero si tu estudio es explicativo o correlacional, sí necesitas hipótesis. Y d
 - **Específica:** No vale "la educación influye en algo."
 - **Fundamentada:** Basada en tu marco teórico o en la literatura previa, no en tu intuición.
 
+### Tipos de hipótesis
+
+No todas las hipótesis son iguales. Conocer los tipos te ayuda a formularlas mejor:
+
+| Tipo | Qué dice | Ejemplo |
+|---|---|---|
+| **Nula ($H_0$)** | No hay relación/efecto | "No existe diferencia en permanencia universitaria entre estudiantes con alto y bajo capital cultural" |
+| **Alternativa ($H_1$)** | Sí hay relación/efecto | "Existe diferencia en permanencia universitaria según nivel de capital cultural" |
+| **Direccional** | Especifica la dirección del efecto | "A mayor capital cultural, mayor probabilidad de permanencia" |
+| **No direccional** | Hay efecto pero no se especifica dirección | "El capital cultural está asociado con la permanencia universitaria" |
+
+::: {.callout-note}
+## Para recordar
+
+En la práctica estadística, tú nunca "pruebas" tu hipótesis. Lo que haces es intentar **rechazar la hipótesis nula**. Es una diferencia sutil pero fundamental: no demuestras que tu idea es correcta; demuestras que la explicación alternativa (que no hay efecto) es improbable. Esto viene de la tradición de Popper (ver @sec-paradigmas): la ciencia avanza por falsación, no por confirmación.
+:::
+
+### Las hipótesis que no son hipótesis
+
+Errores que veo todo el tiempo:
+
+- ❌ "Si el gobierno implementa políticas educativas, la educación mejorará." (Esto es un deseo disfrazado de hipótesis.)
+- ❌ "Se espera que los resultados sean positivos." (¿Positivos respecto a qué? ¿Según quién?)
+- ❌ "La pobreza es un problema multidimensional." (Esto no es contrastable. Es una definición.)
+- ❌ "Existen factores que influyen en la deserción." (Obvio. Todo tiene factores que influyen. ¿Cuáles específicamente?)
+
+Compara con una hipótesis real:
+
+- ✅ "El nivel educativo de la madre tiene un efecto positivo y significativo sobre la probabilidad de permanencia universitaria del hijo, controlando por ingreso familiar y tipo de colegio de procedencia."
+
+Esta sí es contrastable, específica, direccional y operacionalizable.
+
 ### El valor de estar equivocado
 
 Aquí una idea contraintuitiva: **una hipótesis que se refuta puede ser más interesante que una que se confirma.** Si todo sale como esperabas, tu contribución es confirmar lo que ya se sospechaba. Pero si tus datos contradicen tu hipótesis, tienes algo genuinamente nuevo que explicar. Eso genera conocimiento.
+
+Los mejores descubrimientos científicos a menudo empiezan con resultados inesperados. Piensa en la historia de la aspirina como anticoagulante, o en cómo @kahneman2011 descubrió heurísticas del pensamiento estudiando sesgos que no "deberían" existir según la teoría económica estándar.
 
 No le tengas miedo a estar equivocado. Tenle miedo a no estar dispuesto a aceptarlo.
 
@@ -45,6 +79,7 @@ Es lo que quieres lograr con tu investigación. Uno solo. Claro. Directamente vi
 **Error común:** Objetivos generales que son, en realidad, objetivos de política pública.
 
 - ❌ "Contribuir a la reducción de la pobreza en América Latina." (Eso es lindo, pero no es un objetivo de investigación. Es un objetivo de la ONU.)
+- ❌ "Concientizar a la sociedad sobre la importancia de la educación." (Eso es un objetivo de una ONG, no de una tesis.)
 - ✅ "Analizar la relación entre capital cultural familiar y permanencia universitaria en estudiantes de primera generación en universidades públicas de Lima."
 
 ### Los objetivos específicos
@@ -59,9 +94,38 @@ Son los pasos concretos que necesitas dar para lograr el objetivo general. Pero 
 
 Nota cómo cada objetivo específico genera un resultado concreto que contribuye al objetivo general. No son tareas administrativas; son preguntas subordinadas.
 
+### La coherencia del trípode
+
+Aquí una prueba simple para saber si tu trípode funciona:
+
+| Elemento | Pregunta de control |
+|---|---|
+| **Pregunta** | ¿Qué quieres saber? |
+| **Objetivo general** | ¿Es la pregunta convertida en acción (verbo + contenido)? |
+| **Objetivos específicos** | ¿Sumados, responden al objetivo general? |
+| **Hipótesis** | ¿Es una respuesta tentativa a la pregunta? |
+| **Variables** | ¿Son los conceptos mencionados en la hipótesis? |
+| **Indicadores** | ¿Miden lo que dicen las variables? |
+
+Si en algún punto la cadena se rompe (el objetivo general no responde a la pregunta, las variables no aparecen en la hipótesis, los indicadores no miden las variables), hay un problema de coherencia. Vuelve a empezar.
+
 ### La regla de los verbos
 
-Usa verbos que impliquen investigación: analizar, evaluar, comparar, identificar, determinar, explorar. Evita verbos vagos: estudiar, conocer, entender, investigar (redundante: toda tu tesis es "investigar").
+Usa verbos que impliquen investigación: analizar, evaluar, comparar, identificar, determinar, explorar, estimar, examinar, describir, medir.
+
+Evita verbos vagos o redundantes:
+
+- ❌ *Estudiar* (demasiado vago — ¿estudiar cómo?)
+- ❌ *Conocer* (¿conocer para qué?)
+- ❌ *Investigar* (redundante: toda tu tesis es "investigar")
+- ❌ *Proponer* (tu tesis investiga, no propone soluciones, a menos que sea investigación-acción)
+- ❌ *Demostrar* (no demuestras; analizas evidencia y llegas a conclusiones)
+
+::: {.callout-warning}
+## Ojo con esto
+
+"Demostrar que X causa Y" es un objetivo peligroso. Implica que ya sabes la respuesta antes de investigar. Mejor: "Analizar si X está asociado con Y" o "Estimar el efecto de X sobre Y." La diferencia es sutil pero crucial: una está abierta a los resultados; la otra, no.
+:::
 
 ## Variables: de lo abstracto a lo medible
 
@@ -69,40 +133,153 @@ Usa verbos que impliquen investigación: analizar, evaluar, comparar, identifica
 
 Una variable es algo que varía (sí, así de simple). Es una característica que puede tomar diferentes valores en tu estudio.
 
-- **Variable dependiente (VD):** Lo que quieres explicar. El efecto. La consecuencia.
-- **Variable independiente (VI):** Lo que crees que explica. La causa. El factor.
-- **Variables de control:** Las que necesitas mantener constantes para no confundir el efecto.
+- **Variable dependiente (VD):** Lo que quieres explicar. El efecto. La consecuencia. También llamada "variable de resultado" (*outcome*).
+- **Variable independiente (VI):** Lo que crees que explica. La causa. El factor. También llamada "variable explicativa" o "predictor."
+- **Variables de control:** Las que necesitas mantener constantes para no confundir el efecto de tu VI sobre tu VD.
 
 **Ejemplo:**
 - VI: Capital cultural familiar (medido por nivel educativo de los padres, acceso a libros, prácticas culturales).
 - VD: Permanencia universitaria (medida por matrícula continua después del 4to semestre).
 - Control: Ingreso familiar, género, tipo de colegio de origen.
 
+### Variables mediadoras y moderadoras
+
+Aquí es donde las cosas se ponen interesantes (y donde muchas tesis podrían mejorar enormemente). Además de las variables dependientes, independientes y de control, existen dos tipos que permiten entender *cómo* y *cuándo* funciona una relación:
+
+**Variable mediadora:** Explica *por qué* o *a través de qué mecanismo* la VI afecta a la VD. Es el camino causal intermedio.
+
+- Ejemplo: Capital cultural → **Autoeficacia académica** → Permanencia universitaria
+- El capital cultural no actúa directamente; actúa *a través de* la autoeficacia. El estudiante con mayor capital cultural se siente más capaz, y eso es lo que lo retiene.
+
+**Variable moderadora:** Indica *cuándo* o *para quién* la relación entre VI y VD es más fuerte o débil.
+
+- Ejemplo: Capital cultural → Permanencia, pero el efecto es **moderado por género**
+- Quizás el capital cultural importa más para las mujeres que para los hombres (o viceversa). El género cambia la intensidad de la relación.
+
+@baron1986 formalizaron esta distinción en un artículo clásico. La diferencia clave: el mediador está en el *camino causal* (VI → Mediador → VD), mientras que el moderador está *fuera* del camino causal pero afecta su intensidad.
+
+```
+Mediación:     VI ──→ Mediador ──→ VD
+
+Moderación:    VI ──────────────→ VD
+                       ↑
+                   Moderador
+```
+
+::: {.callout-note}
+## Para recordar
+
+Si tu pregunta es "¿por qué X causa Y?", necesitas un mediador. Si tu pregunta es "¿cuándo o para quién X causa Y?", necesitas un moderador. No son intercambiables.
+:::
+
 ### El peligro de las variables "obvias"
 
 Muchos estudiantes eligen variables por inercia ("género," "edad," "nivel socioeconómico") sin preguntarse si realmente son relevantes para su pregunta. Incluir una variable debería tener una justificación teórica. ¿Por qué crees que el género influye en tu fenómeno? ¿Qué dice la literatura? Si no tienes una razón, no la metas solo por llenar espacio.
+
+Esto aplica especialmente a las variables de control. No necesitas controlar por todo lo que se te ocurra. Necesitas controlar por las variables que, según la teoría y la evidencia previa, podrían confundir la relación que estás estudiando. Agregar controles irrelevantes no "mejora" tu modelo; puede incluso empeorarlo (el famoso problema de los "controles malos" o *bad controls*).
+
+### Niveles de medición: no todos los números son iguales
+
+Una variable no es solo "lo que mides." También importa *cómo* lo mides. Los niveles de medición determinan qué puedes hacer estadísticamente con cada variable:
+
+| Nivel | Descripción | Ejemplo | Operaciones posibles |
+|---|---|---|---|
+| **Nominal** | Categorías sin orden | Género, religión, región | Frecuencias, moda, chi-cuadrado |
+| **Ordinal** | Categorías con orden | Nivel educativo (primaria < secundaria < superior) | Lo anterior + mediana, correlación de Spearman |
+| **De intervalo** | Distancias iguales, sin cero absoluto | Temperatura en °C, puntaje en test estandarizado | Lo anterior + media, desviación estándar, correlación de Pearson |
+| **De razón** | Distancias iguales, con cero absoluto | Ingreso, edad, número de hijos | Lo anterior + razones y proporciones |
+
+¿Por qué importa esto? Porque determina qué análisis estadístico puedes usar. No puedes calcular el promedio de una variable nominal (el "género promedio" no tiene sentido). No puedes hacer una regresión lineal con una variable dependiente ordinal (bueno, puedes, pero no deberías). Las herramientas estadísticas tienen supuestos, y uno de los más básicos es el nivel de medición de tus variables.
 
 ## La operacionalización: donde la teoría se encuentra con la realidad
 
 Este es el paso que separa a los amateurs de los investigadores serios. Operacionalizar es pasar de un concepto abstracto ("capital cultural") a algo que puedas medir ("¿cuántos libros hay en tu casa?").
 
-| Concepto | Dimensión | Indicador | Instrumento |
-|---|---|---|---|
-| Capital cultural | Objetivado | Cantidad de libros en el hogar | Encuesta, pregunta 12 |
-| Capital cultural | Incorporado | Frecuencia de asistencia a eventos culturales | Encuesta, pregunta 15 |
-| Capital cultural | Institucionalizado | Nivel educativo máximo de los padres | Encuesta, pregunta 8 |
-| Permanencia | — | Matrícula continua hasta 4to semestre | Registro académico |
+| Concepto | Dimensión | Indicador | Tipo de variable | Instrumento |
+|---|---|---|---|---|
+| Capital cultural | Objetivado | Cantidad de libros en el hogar | De razón | Encuesta, pregunta 12 |
+| Capital cultural | Incorporado | Frecuencia de asistencia a eventos culturales (escala 1-5) | Ordinal | Encuesta, pregunta 15 |
+| Capital cultural | Institucionalizado | Nivel educativo máximo de los padres | Ordinal | Encuesta, pregunta 8 |
+| Permanencia | — | Matrícula continua hasta 4to semestre (sí/no) | Nominal (dicotómica) | Registro académico |
 
 Esta tabla es **oro.** Te obliga a ser concreto, a definir exactamente qué vas a medir y cómo. Si no puedes llenarla, tu investigación todavía es demasiado abstracta.
+
+### Escalas tipo Likert: la herramienta favorita (y la más mal usada)
+
+Si haces investigación con encuestas, probablemente usarás escalas tipo Likert: "Totalmente en desacuerdo – En desacuerdo – Ni de acuerdo ni en desacuerdo – De acuerdo – Totalmente de acuerdo." Son útiles, pero están plagadas de malas prácticas:
+
+**Errores comunes con Likert:**
+
+1. **Tratar cada ítem como variable independiente.** Un solo ítem tipo Likert no es confiable. La idea es construir una *escala* con múltiples ítems que midan el mismo constructo, y luego calcular un puntaje compuesto.
+2. **Asumir que son variables de intervalo.** Técnicamente, una escala de 1 a 5 es ordinal (la distancia entre "de acuerdo" y "totalmente de acuerdo" no es necesariamente igual a la distancia entre "en desacuerdo" y "ni de acuerdo ni en desacuerdo"). En la práctica, muchos investigadores las tratan como de intervalo cuando tienen suficientes puntos (5 o más) y distribución aproximadamente normal. Pero debes saber que estás haciendo un supuesto.
+3. **No verificar la confiabilidad.** Si construyes una escala con 8 ítems para medir "autoeficacia académica," necesitas verificar que esos 8 ítems efectivamente miden lo mismo. El alfa de Cronbach es el indicador más usado (busca un α > 0.70, aunque no es una regla sagrada). @devellis2017 es la referencia clásica para desarrollo de escalas.
+4. **No incluir ítems invertidos.** Si todos tus ítems van en la misma dirección ("la educación es importante," "la educación mejora la vida," "la educación es valiosa"), el respondente puede marcar todo en "de acuerdo" sin leer. Incluye algunos ítems invertidos para detectar respuestas automáticas.
+
+### Validez y confiabilidad: ¿mides lo que crees que mides?
+
+Dos conceptos fundamentales que todo investigador debe manejar:
+
+**Confiabilidad:** ¿Tu instrumento produce resultados consistentes? Si aplicas la misma encuesta dos veces a la misma persona (y nada ha cambiado), ¿obtienes resultados similares?
+
+- *Test-retest:* Aplicas el instrumento dos veces con un intervalo. Correlación alta = buena confiabilidad.
+- *Consistencia interna (alfa de Cronbach):* ¿Los ítems de tu escala miden lo mismo? α > 0.70 es generalmente aceptable.
+- *Inter-evaluadores:* Si dos personas codifican los mismos datos, ¿coinciden?
+
+**Validez:** ¿Tu instrumento mide lo que dice medir? Puedes tener un instrumento muy confiable (da siempre el mismo resultado) pero inválido (no mide lo que crees). Un reloj que siempre marca las 3:00 es perfectamente confiable, pero no válido.
+
+- *Validez de contenido:* ¿Los ítems cubren todas las dimensiones del concepto? (Generalmente evaluada por expertos.)
+- *Validez de constructo:* ¿Se comporta como predice la teoría? Si tu escala de autoeficacia es válida, debería correlacionar positivamente con rendimiento académico.
+- *Validez de criterio:* ¿Predice lo que debería predecir? Si tu escala de riesgo de deserción es válida, los puntajes altos deberían estar asociados con deserción real.
+
+::: {.callout-important}
+## Reflexión
+
+Un instrumento puede ser confiable sin ser válido, pero no puede ser válido sin ser confiable. Piénsalo: si tu medición fluctúa aleatoriamente cada vez que la aplicas, no puede estar midiendo consistentemente lo que dice medir. La confiabilidad es condición necesaria (pero no suficiente) de la validez.
+:::
+
+## El trípode en la práctica: un ejemplo completo
+
+Para que veas cómo todo encaja, aquí va un ejemplo completo del trípode:
+
+**Pregunta:** ¿En qué medida el capital cultural familiar se asocia con la permanencia universitaria de estudiantes de primera generación en universidades públicas de Lima, controlando por nivel socioeconómico?
+
+**Objetivo general:** Analizar la asociación entre capital cultural familiar y permanencia universitaria en estudiantes de primera generación de universidades públicas de Lima.
+
+**Objetivos específicos:**
+
+1. Caracterizar las dimensiones del capital cultural (objetivado, incorporado, institucionalizado) en familias de estudiantes de primera generación.
+2. Estimar la asociación entre cada dimensión del capital cultural y la probabilidad de permanencia universitaria.
+3. Determinar si la asociación persiste al controlar por ingreso familiar.
+
+**Hipótesis:**
+
+- $H_1$: El capital cultural familiar (en sus tres dimensiones) se asocia positivamente con la probabilidad de permanencia universitaria, controlando por ingreso familiar.
+- $H_2$: El capital cultural institucionalizado (nivel educativo de los padres) tiene un efecto mayor que el capital cultural objetivado (bienes culturales en el hogar).
+
+**Variables:**
+
+| Variable | Tipo | Indicadores |
+|---|---|---|
+| Capital cultural objetivado | VI (de razón) | Nº de libros, acceso a internet, bienes culturales |
+| Capital cultural incorporado | VI (ordinal) | Frecuencia de prácticas culturales (escala 1-5) |
+| Capital cultural institucionalizado | VI (ordinal) | Nivel educativo máximo de los padres |
+| Permanencia universitaria | VD (nominal) | Matrícula continua hasta 4to semestre (sí/no) |
+| Ingreso familiar | Control (de razón) | Ingreso mensual en soles |
+| Género | Control (nominal) | Masculino/femenino |
+| Tipo de colegio | Control (nominal) | Público/privado |
+
+¿Ves cómo cada pieza encaja con la otra? La pregunta genera el objetivo, el objetivo genera la hipótesis, la hipótesis define las variables, y las variables se operacionalizan en indicadores. Es una cadena lógica donde cada eslabón se justifica.
 
 ::: {.callout-tip}
 ## Ejercicio
 
-Construye tu tabla de operacionalización:
+Construye tu propio trípode completo:
 
-1. Lista tus variables (dependiente, independiente, control).
-2. Para cada una, define dimensiones e indicadores.
-3. Para cada indicador, especifica cómo lo vas a medir (¿con qué pregunta de encuesta? ¿con qué dato secundario?).
-
-Si no puedes completar alguna celda, es una señal de que necesitas más trabajo teórico o metodológico.
+1. Escribe tu pregunta de investigación.
+2. Convierte la pregunta en objetivo general (cambia la estructura interrogativa por un verbo de investigación).
+3. Descompón el objetivo general en 3-4 objetivos específicos.
+4. Formula al menos una hipótesis (identifica su tipo: direccional, no direccional, nula).
+5. Identifica tus variables: ¿cuál es la VD? ¿Cuál(es) la(s) VI? ¿Qué controlas? ¿Hay mediadores o moderadores?
+6. Construye la tabla de operacionalización (concepto → dimensión → indicador → tipo de variable → instrumento).
+7. **La prueba final:** Pide a un colega que lea tu trípode. Si encuentra una desconexión entre cualquiera de los elementos, vuelve al paso donde se rompe la cadena.
 :::

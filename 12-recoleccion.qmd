@@ -4,7 +4,7 @@
 
 Hasta ahora, todo ha sido planificación. Ahora empieza lo bueno (y lo difícil): **ir a buscar los datos.** Es como la diferencia entre estudiar el mapa y caminar el terreno. El mapa nunca te prepara del todo.
 
-Este capítulo cubre las principales técnicas de recolección de datos. No es un tratado exhaustivo (hay libros enteros sobre cada técnica), sino una guía práctica con los errores que más veo.
+Este capítulo cubre las principales técnicas de recolección de datos. No es un tratado exhaustivo (hay libros enteros sobre cada técnica), sino una guía práctica con los errores que más veo. Para profundizar en encuestas, recomiendo @fowler2014 y @dillman2014; para entrevistas, @kvale2015; para observación, @dewalt2011.
 
 ## Encuestas: el instrumento más usado (y más abusado)
 
@@ -12,12 +12,12 @@ La encuesta (o cuestionario) es probablemente la técnica más usada en ciencias
 
 ### Principios de diseño
 
-**Claridad ante todo.** Cada pregunta debe ser entendida de la misma manera por todos los respondientes.
+**Claridad ante todo.** Cada pregunta debe ser entendida de la misma manera por todos los respondientes. @dillman2014 llama a esto el principio de *pregunta compartida*: lo que tú entiendes al escribir la pregunta debe ser lo mismo que entiende el respondiente al leerla.
 
-- ❌ "¿Considera usted que las políticas gubernamentales son adecuadas?" (¿Cuáles políticas? ¿Adecuadas para qué?)
+- ❌ "¿Considera usted que las políticas gubernamentales son adecuadas?" (¿Cuáles políticas? ¿Adecuadas para qué? ¿Según qué criterio?)
 - ✅ "En una escala de 1 a 5, ¿qué tan satisfecho está con la calidad de los servicios de salud pública en su municipio?"
 
-**Una pregunta, una idea.** Evita preguntas dobles.
+**Una pregunta, una idea.** Evita preguntas dobles (*double-barreled questions*).
 
 - ❌ "¿Cree que los profesores son puntuales y bien preparados?" (¿Qué pasa si son puntuales pero no están preparados?)
 - ✅ Sepáralas en dos preguntas distintas.
@@ -25,31 +25,77 @@ La encuesta (o cuestionario) es probablemente la técnica más usada en ciencias
 **Evita la inducción.** No le digas al encuestado qué debería responder.
 
 - ❌ "¿No cree usted que la corrupción es el principal problema del país?"
+- ❌ "Considerando los graves problemas de nuestro sistema de salud, ¿cómo calificaría la gestión del ministro?"
 - ✅ "¿Cuál considera que es el principal problema del país?" (pregunta abierta) o una lista de opciones sin jerarquizar.
 
-**Ordena con lógica.** Empieza con preguntas fáciles y no amenazantes. Deja las sensibles (ingreso, opiniones políticas, comportamiento) para el final, cuando ya hay confianza.
+**Cuidado con el efecto de deseabilidad social.** Las personas tienden a responder lo que creen que es "correcto" o socialmente aceptable, no lo que realmente piensan o hacen. Preguntar "¿usted discrimina?" siempre da 0%. Mejor diseñar preguntas indirectas o usar viñetas (*vignettes*).
+
+**Ordena con lógica.** La secuencia importa más de lo que crees:
+
+1. Empieza con preguntas **fáciles y no amenazantes** (datos demográficos simples o preguntas de opinión general).
+2. Agrupa por **temas** (no saltes de educación a salud a educación de vuelta).
+3. Deja las preguntas **sensibles** para el final (ingreso, opiniones políticas, comportamiento): cuando ya hay confianza.
+4. Termina con una pregunta **abierta** opcional ("¿Hay algo más que quiera agregar?"). A veces aparecen joyas ahí.
+
+### Tipos de preguntas
+
+| Tipo | Cuándo usarla | Ejemplo | Análisis |
+|---|---|---|---|
+| **Cerrada dicotómica** | Hechos claros | ¿Tiene seguro de salud? Sí/No | Frecuencias, chi-cuadrado |
+| **Opción múltiple** | Categorías definidas | ¿Cuál es su nivel educativo? | Frecuencias, tablas cruzadas |
+| **Escala Likert** | Actitudes, percepciones | ¿Qué tan satisfecho está? (1-5) | Medias, correlaciones (ver Cap 8) |
+| **Escala de diferencial semántico** | Evaluación de conceptos | La gestión fue: Eficiente ___ Ineficiente | Perfiles, comparaciones |
+| **Ranking** | Prioridades | Ordene de 1 a 5 los problemas | Medianas, Friedman |
+| **Abierta** | Exploración, matices | ¿Por qué eligió esta carrera? | Análisis de contenido |
+
+::: {.callout-warning}
+## No abuses de las preguntas abiertas en encuestas cuantitativas
+
+Las preguntas abiertas son valiosas, pero costosas de analizar. Si tu encuesta tiene 400 respondientes y 10 preguntas abiertas, tienes 4.000 respuestas de texto libre para codificar. ¿Realmente tienes tiempo para eso? Usa 1-2 preguntas abiertas estratégicas, no más.
+:::
 
 ### El piloteo: tu seguro de vida
 
-**NUNCA** apliques una encuesta sin pilotearla primero. El piloteo es probar tu instrumento con un grupo pequeño (10-20 personas) para detectar:
+**NUNCA** apliques una encuesta sin pilotearla primero. El piloteo es probar tu instrumento con un grupo pequeño (10-20 personas similares a tu población) para detectar:
 
-- Preguntas que no se entienden.
-- Opciones de respuesta que faltan.
+- Preguntas que no se entienden (las que a ti te parecen claras pero a nadie más).
+- Opciones de respuesta que faltan ("Otro: ___" aparece demasiado → falta una categoría).
 - Preguntas que toman demasiado tiempo.
-- El orden que no fluye.
-- Problemas técnicos (si es digital).
+- Efecto de orden (las respuestas cambian según dónde aparece la pregunta).
+- Problemas técnicos (si es digital: ¿funciona en celular? ¿carga rápido?).
+- Tiempo total de aplicación (más de 20 minutos = altas tasas de abandono).
 
 El piloteo te ahorra meses de dolor. Créeme.
 
+### Encuestas digitales: ventajas y trampas
+
+Google Forms, SurveyMonkey, Qualtrics, KoboToolbox... Las encuestas digitales se han vuelto la norma. Ventajas obvias: bajo costo, rapidez, alcance geográfico. Pero tienen sus propios problemas:
+
+- **Sesgo de cobertura:** ¿Tu población tiene acceso a internet? En América Latina, asumir que "todos están online" excluye sistemáticamente a los más pobres, los más rurales y los más viejos.
+- **Baja tasa de respuesta:** Una encuesta enviada por correo electrónico o WhatsApp puede tener tasas de respuesta del 5-15%. ¿Es tu muestra representativa de algo?
+- **Respondientes de baja calidad:** Sin supervisión, las personas completan encuestas en 2 minutos lo que debería tomar 15. Marca todo en 3 y listo. Incluye preguntas trampa (*attention checks*) para detectar esto.
+- **Selección de herramienta:** KoboToolbox (gratuito, ideal para campo) funciona offline. Qualtrics tiene lógica avanzada pero es caro. Google Forms es simple pero limitado. Elige según tu necesidad real.
+
 ## Entrevistas: el arte de callarse
 
-Las entrevistas son la herramienta estrella de la investigación cualitativa. Pero hacer una buena entrevista es mucho más difícil de lo que parece.
+Las entrevistas son la herramienta estrella de la investigación cualitativa. Pero hacer una buena entrevista es mucho más difícil de lo que parece. @kvale2015 describe al entrevistador como un "artesano" que combina técnica con sensibilidad — no es algo que se improvisa.
 
 ### Tipos
 
-- **Estructurada:** Preguntas predefinidas, en orden fijo. Es casi una encuesta oral.
-- **Semi-estructurada:** Tienes una guía de temas/preguntas, pero puedes improvisar, profundizar, reordenar. Es la más usada y recomendada.
-- **No estructurada / en profundidad:** Conversación guiada por unos pocos temas. Máxima flexibilidad, máxima exigencia para el investigador.
+- **Estructurada:** Preguntas predefinidas, en orden fijo. Es casi una encuesta oral. Útil para comparar respuestas entre participantes.
+- **Semi-estructurada:** Tienes una guía de temas/preguntas, pero puedes improvisar, profundizar, reordenar. Es la más usada y recomendada para investigación cualitativa.
+- **No estructurada / en profundidad:** Conversación guiada por unos pocos temas generadores. Máxima flexibilidad, máxima exigencia para el investigador.
+
+### La guía de entrevista: no un cuestionario, un mapa
+
+Una buena guía de entrevista semi-estructurada tiene:
+
+1. **Pregunta de apertura** (fácil, narrativa): "Cuéntame sobre tu experiencia como docente en esta escuela."
+2. **Preguntas temáticas** (los temas centrales de tu investigación): "¿Cómo describirías la relación con los padres de familia?"
+3. **Preguntas de profundización** (listas para cuando aparezcan temas interesantes): "¿Puedes darme un ejemplo concreto?" "¿Qué quisiste decir con...?"
+4. **Pregunta de cierre** (abierta): "¿Hay algo que no te pregunté y que crees importante que sepa?"
+
+**Lo que la guía NO es:** Una lista de 40 preguntas que lees una por una mirando tu hoja en vez de al entrevistado.
 
 ### El error del entrevistador novato
 
@@ -59,61 +105,122 @@ Reglas de oro:
 
 1. **Pregunta, escucha, repregunta.** Los silencios no son incómodos; son productivos. El entrevistado está pensando. Déjalo.
 2. **No juzgues.** Si alguien te dice algo que te parece terrible, tu cara no puede reflejarlo. Eres investigador, no juez.
-3. **Profundiza.** "¿Podrías contarme más sobre eso?" es tu mejor amiga.
+3. **Profundiza.** "¿Podrías contarme más sobre eso?" es tu mejor amiga. "¿Cómo así?" "¿Y eso qué significó para ti?" 
 4. **Graba (con permiso).** Tomar notas mientras entrevistas es como conducir mirando el celular. Graba y transcribe después.
+5. **No asientas demasiado.** Si dices "ajá, sí, claro, exacto" después de cada frase, estás validando selectivamente. El entrevistado dirá más de lo que tú validas.
+
+### Sesgos del entrevistador
+
+Nadie es neutral. Pero puedes ser consciente de tus sesgos:
+
+| Sesgo | Descripción | Mitigación |
+|---|---|---|
+| **Sesgo de confirmación** | Oyes lo que quieres oír | Graba todo, codifica con otro investigador |
+| **Efecto del entrevistador** | Tu género, edad, clase social influyen en las respuestas | Reconócelo en tus limitaciones |
+| **Preguntas inductivas** | Guías la respuesta sin darte cuenta | Revisa tu guía: ¿hay preguntas que sugieren la respuesta? |
+| **Sesgo de cortesía** | El entrevistado dice lo que cree que quieres oír | Preguntas indirectas, triangulación |
 
 ## Grupos focales
 
-Un grupo focal reúne a 6-10 personas para discutir un tema guiado por un moderador. No es una entrevista grupal (donde preguntas lo mismo a cada uno). Es una **conversación** donde lo que interesa es la interacción entre los participantes.
+Un grupo focal reúne a 6-10 personas para discutir un tema guiado por un moderador. No es una entrevista grupal (donde preguntas lo mismo a cada uno). Es una **conversación** donde lo que interesa es la interacción entre los participantes: cómo negocian significados, cómo se desafían o refuerzan mutuamente.
 
 ### Cuándo usarlos
 - Para explorar percepciones, actitudes y experiencias compartidas.
 - Para entender dinámicas grupales y normas sociales.
 - Para generar hipótesis o refinar instrumentos.
+- Cuando la interacción genera datos que la entrevista individual no generaría.
 
 ### Cuándo NO usarlos
 - Para temas muy sensibles o íntimos (la gente no habla de sus traumas frente a extraños).
 - Cuando hay relaciones de poder en el grupo (jefe y subordinados juntos = silencio del subordinado).
+- Cuando necesitas experiencias individuales detalladas (para eso son las entrevistas).
+
+### El moderador hace la diferencia
+Un buen moderador no domina la conversación; la facilita. Asegura que todos hablen (no solo el más extrovertido), maneja las dinámicas de poder, y profundiza en los temas emergentes. Un mal moderador convierte el grupo focal en una entrevista serial (pregunta-respuesta-pregunta-respuesta) y pierde toda la riqueza de la interacción.
 
 ## Observación: ver con ojos de investigador
 
-La observación es una técnica cualitativa donde el investigador registra sistemáticamente lo que ve (y a veces participa) en un contexto natural.
+La observación es una técnica cualitativa donde el investigador registra sistemáticamente lo que ve (y a veces participa) en un contexto natural [@dewalt2011].
 
 ### Tipos
-- **Participante:** Te insertas en el grupo que estudias. Vives la experiencia.
-- **No participante:** Observas desde afuera, sin interactuar.
+- **Participante:** Te insertas en el grupo que estudias. Vives la experiencia. Requiere tiempo (semanas, meses) y genera datos extraordinariamente ricos.
+- **No participante:** Observas desde afuera, sin interactuar. Menos intrusivo pero pierdes la perspectiva interna.
+- **Participante como observador:** Participas pero todos saben que investigas. El más común en ciencias sociales.
 
-### El desafío
-Todos vemos el mundo a través de nuestros filtros. La observación sistemática requiere **registrar** lo que ves (no lo que interpretas), usar guías de observación, y ser consciente de tus sesgos.
+### El diario de campo: tu instrumento principal
 
-Un buen diario de campo distingue entre: (a) lo que pasó, (b) lo que la gente dijo, y (c) lo que tú pensaste/sentiste. Las tres son valiosas, pero mezclarlas es peligroso.
+Un buen diario de campo distingue entre tres tipos de notas:
+
+1. **Notas descriptivas:** Lo que pasó. Quién hizo qué. Qué se dijo. (Factual, sin interpretación.)
+2. **Notas textuales:** Citas verbales exactas. Lo que la gente dijo con sus palabras.
+3. **Notas reflexivas:** Lo que tú pensaste, sentiste, sospechaste, te preguntaste. Tu interpretación.
+
+Las tres son valiosas, pero **mezclarlas es peligroso.** Si no distingues entre "el director gritó a la maestra" (descriptiva) y "el director parece un autoritario" (reflexiva), vas a contaminar tus datos con tus juicios. Escríbelas en columnas separadas, con colores distintos, o como prefieras, pero sepáralas.
+
+### ¿Cuánto tiempo observar?
+
+No hay respuesta mágica. Pero la regla general es: **más de lo que crees.** Los primeros días ves todo como exótico. Luego empiezas a ver los patrones. Luego los matices. Es en los matices donde están los datos interesantes.
 
 ## Datos secundarios: lo que ya existe
 
 No siempre necesitas generar datos nuevos. Hay una enorme cantidad de datos ya disponibles:
 
-- **Encuestas nacionales:** ENAHO (Perú), CASEN (Chile), ENIGH (México), GEIH (Colombia).
-- **Censos:** Datos demográficos detallados.
-- **Registros administrativos:** Datos de escuelas, hospitales, programas sociales.
-- **Bases de datos internacionales:** Banco Mundial, CEPAL, UNESCO, PNUD.
-- **Datos abiertos:** Muchos gobiernos y organizaciones publican datos de acceso libre.
+| Fuente | Ejemplos | Ventaja | Limitación |
+|---|---|---|---|
+| **Encuestas nacionales** | ENAHO (Perú), CASEN (Chile), ENIGH (México), GEIH (Colombia) | Grandes, representativas, gratuitas | No diseñadas para tu pregunta |
+| **Censos** | Censo nacional de población | Cobertura total | Cada 10 años, pocas variables |
+| **Registros administrativos** | Datos de escuelas, hospitales, programas sociales | Gran N, longitudinales | Calidad variable, acceso restringido |
+| **Bases internacionales** | Banco Mundial, CEPAL, UNESCO, PNUD | Comparabilidad entre países | Indicadores agregados, no individuales |
+| **Datos abiertos** | Portales de datos abiertos gubernamentales | Acceso libre | Documentación a veces deficiente |
+| **Datos digitales** | Redes sociales, web scraping, Google Trends | Masivos, en tiempo real | Éticos, representatividad cuestionable |
 
-### Ventajas
-- Muestras grandes y representativas.
-- Ahorro de tiempo y recursos.
-- Datos longitudinales disponibles.
+### Datos digitales y big data: la frontera nueva
 
-### Desventajas
-- No fueron diseñados para tu pregunta (quizás no miden exactamente lo que necesitas).
-- La calidad depende de quién los recolectó.
-- Pueden estar desactualizados.
+Las ciencias sociales están experimentando una explosión de datos digitales: tweets, publicaciones de Facebook, datos de movilidad de celulares, transacciones electrónicas, búsquedas de Google. Esto abre posibilidades enormes, pero también trampas:
+
+- **Representatividad:** Los usuarios de Twitter no son "la sociedad." Son un subgrupo con características particulares (más jóvenes, más urbanos, más opinados).
+- **Ética:** ¿El hecho de que los datos sean "públicos" significa que puedes usarlos para investigación sin consentimiento? (Spoiler: no necesariamente. Ver el @sec-etica.)
+- **Señal vs. ruido:** Tener millones de datos no garantiza buenas conclusiones. Pueden ser millones de datos irrelevantes.
+- **Transparencia:** Los algoritmos de las plataformas determinan qué ves y qué no. No controlas el "marco muestral."
+
+::: {.callout-note}
+## Para recordar
+
+Más datos no es lo mismo que mejores datos. Una encuesta bien diseñada con 500 casos puede ser infinitamente más valiosa que 5 millones de tweets sesgados. La calidad del dato importa más que la cantidad.
+:::
+
+## Triangulación: no pongas todos los huevos en una canasta
+
+La **triangulación** es usar múltiples fuentes, métodos o investigadores para estudiar el mismo fenómeno. No es solo un concepto bonito; es una estrategia concreta para fortalecer la credibilidad de tus hallazgos.
+
+Tipos de triangulación:
+
+| Tipo | Qué combinas | Ejemplo |
+|---|---|---|
+| **De datos** | Diferentes fuentes de datos | Encuesta + registros administrativos + datos censales |
+| **Metodológica** | Diferentes técnicas | Encuesta + entrevistas + observación |
+| **De investigadores** | Diferentes personas analizan los mismos datos | Dos codificadores independientes |
+| **Teórica** | Diferentes marcos interpretativos | Analizar los datos desde Bourdieu y desde Sen |
+
+La triangulación no busca que todas las fuentes digan lo mismo (eso sería sospechoso). Busca que las **convergencias** fortalezcan los hallazgos y que las **divergencias** generen preguntas nuevas e interesantes.
+
+## El consentimiento informado en la práctica
+
+Ya hablamos de ética en el @sec-etica, pero aquí van los aspectos prácticos del consentimiento informado durante la recolección:
+
+1. **Explica el propósito** de la investigación en lenguaje claro (no en jerga académica ni en lenguaje legal incomprensible).
+2. **Aclara que la participación es voluntaria** y que pueden retirarse en cualquier momento sin consecuencias.
+3. **Explica qué harás con los datos:** quién tendrá acceso, cómo los almacenarás, cuánto tiempo los conservarás.
+4. **Garantiza anonimato o confidencialidad** (no son lo mismo: anonimato = ni tú sabes quién es; confidencialidad = tú sabes pero no lo revelas).
+5. **Obtén el consentimiento por escrito** (o documentado de otra forma si la escritura no es viable).
+6. **Con menores de edad o poblaciones vulnerables,** necesitas consentimiento de un tutor más el asentimiento del participante.
 
 ::: {.callout-tip}
 ## Ejercicio
 
-1. Diseña tu instrumento principal (encuesta, guía de entrevista, o guía de observación).
-2. Pruébalo con 3 personas que NO sean de tu área.
-3. Anota todos los problemas que encuentres.
-4. Reescríbelo.
-5. Repite hasta que funcione sin explicaciones adicionales.
+1. Identifica la(s) técnica(s) de recolección más apropiadas para tu pregunta de investigación. Justifica por qué.
+2. Si usarás encuesta: diseña 10 preguntas (variando tipos: cerradas, Likert, una abierta). Pilotéalas con 5 personas y anota los problemas.
+3. Si usarás entrevista: escribe tu guía de entrevista semi-estructurada (apertura, temas, profundización, cierre). Haz una entrevista de prueba y grábala. Escúchala: ¿hablas más que el entrevistado?
+4. ¿Puedes triangular? Identifica al menos dos fuentes de datos o dos técnicas que podrían complementarse para responder tu pregunta.
+5. Redacta tu formulario de consentimiento informado en lenguaje que entienda tu abuela.
 :::

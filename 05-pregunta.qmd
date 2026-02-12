@@ -6,6 +6,8 @@ Si tuviera que resumir este libro entero en una sola idea sería esta: **la cali
 
 Y sin embargo, la mayoría de los estudiantes dedica más tiempo a elegir el tipo de letra de su tesis que a afinar su pregunta de investigación. Prioridades.
 
+Booth, Colomb y Williams, en su clásico *The Craft of Research*, lo dicen sin rodeos: "un problema bien planteado es un problema medio resuelto" [@booth2016]. Suena a cliché, pero es rigurosamente cierto. Una pregunta clara te dice qué datos necesitas, qué método usar, qué literatura revisar, y cuándo has terminado. Una pregunta vaga te deja dando vueltas durante meses sin saber si estás avanzando o retrocediendo.
+
 ## Anatomía de una buena pregunta vs. una mala pregunta
 
 Veamos algunos ejemplos:
@@ -16,6 +18,7 @@ Veamos algunos ejemplos:
 | ¿Por qué hay pobreza? | Demasiado amplia, inabordable | ¿Cómo experimentan la movilidad económica los jóvenes de primera generación universitaria en Santiago de Chile? |
 | ¿Es mala la corrupción? | Normativa, no investigable | ¿Qué relación existe entre la percepción de corrupción institucional y la participación electoral en municipios colombianos? |
 | ¿Funcionan las políticas públicas? | Vaga, sin delimitar | ¿En qué medida el programa Juntos ha contribuido a reducir la desnutrición infantil en Huancavelica entre 2010 y 2020? |
+| ¿Qué piensan los jóvenes? | Sin foco: ¿sobre qué? ¿qué jóvenes? | ¿Cómo perciben los jóvenes de 18-25 años en barrios populares de Buenos Aires sus posibilidades de inserción laboral? |
 
 ¿Ves el patrón? Una buena pregunta es:
 
@@ -23,6 +26,28 @@ Veamos algunos ejemplos:
 - **Investigable:** Se puede responder con datos (no con opiniones).
 - **Relevante:** Aporta algo al conocimiento o a la solución de un problema.
 - **Viable:** Puedes responderla con los recursos y el tiempo que tienes.
+- **No trivial:** La respuesta no es obvia antes de investigar.
+
+Punch agrega un criterio que muchos olvidan: la pregunta debe ser **conectable** con la literatura existente [@punch2014]. No flota en el vacío. Se inserta en una conversación académica. Si tu pregunta no se conecta con nada de lo que se ha investigado, o es genial (estás abriendo un campo nuevo) o es irrelevante (nadie la ha investigado porque a nadie le importa). Apostaría por lo segundo.
+
+## Los errores más frecuentes al formular preguntas
+
+Después de leer cientos de proyectos de tesis, estos son los errores que veo con más frecuencia:
+
+### La pregunta disfrazada de objetivo
+"¿Cuáles son los factores que determinan...?" Esto no es una pregunta de investigación; es un objetivo disfrazado con signos de interrogación. Una pregunta debe orientar la búsqueda; un objetivo describe qué vas a hacer. No son lo mismo.
+
+### La pregunta que ya tiene respuesta
+"¿La desigualdad educativa afecta el desarrollo económico?" Si la respuesta es obvia (sí), no necesitas 200 páginas para decirlo. Transforma la pregunta: "¿En qué medida la reducción de la brecha educativa de género explica el crecimiento económico diferencial entre países de la región andina?"
+
+### La pregunta doble
+"¿Cómo influye la pobreza en el rendimiento académico y en la salud mental de los adolescentes?" Eso son dos preguntas. Cada una requiere su propio diseño, sus propias variables, su propia revisión de literatura. Elige una o haz dos estudios.
+
+### La pregunta que exige omnisciencia
+"¿Cuáles son TODOS los factores que influyen en...?" Todos. ¿Estás seguro? ¿Incluyendo el clima, la astrología y el color de los calcetines? Nadie puede identificar "todos" los factores de nada. Delimita.
+
+### La pregunta prescriptiva
+"¿Qué debería hacer el gobierno para mejorar la educación?" Eso es una pregunta de política pública, no de investigación. La investigación puede *informar* la política, pero no es su trabajo decir qué "debería" hacerse. Reformula: "¿Qué intervenciones educativas han mostrado mayor efectividad en contextos similares al peruano?"
 
 ## Por qué tu primera pregunta siempre va a cambiar
 
@@ -32,7 +57,13 @@ Tu primera pregunta es una brújula, no un contrato. Te da dirección, pero a me
 
 He visto estudiantes que empezaron investigando sobre política educativa y terminaron haciendo una tesis sobre migración. El camino de la curiosidad es sinuoso, y eso es lo bonito de investigar.
 
-El error no es cambiar de pregunta. El error es enamorarte tanto de tu primera idea que te niegues a ajustarla cuando la evidencia te pide que lo hagas.
+El error no es cambiar de pregunta. El error es enamorarte tanto de tu primera idea que te niegues a ajustarla cuando la evidencia te pide que lo hagas. O, peor aún, que tu asesor te diga "cámbiale" y tú te aferres por orgullo. El orgullo es un mal investigador.
+
+::: {.callout-note}
+## Para recordar
+
+Eco decía que una tesis es un acto de modestia: no vas a resolver el problema del mundo, vas a responder *una* pregunta bien delimitada [@eco2014]. La ambición está bien como motivación, pero la modestia es necesaria como método. Empieza pequeño, termina bien.
+:::
 
 ## El embudo: de la curiosidad a la pregunta operacionalizable
 
@@ -79,19 +110,35 @@ ggplot(embudo, aes(x = ancho, y = etapa)) +
   )
 ```
 
+## Las preguntas cambian según tu paradigma
+
+Un dato que pocos manuales mencionan: tu pregunta de investigación está condicionada por tu paradigma (ver @paradigmas). Un positivista y un constructivista pueden interesarse en el mismo tema y formular preguntas completamente diferentes:
+
+| Paradigma | Pregunta sobre deserción escolar |
+|---|---|
+| **Positivista** | ¿Qué factores predicen la probabilidad de deserción escolar en secundaria? |
+| **Post-positivista** | ¿El programa X reduce la deserción, y este efecto es robusto a especificaciones alternativas? |
+| **Constructivista** | ¿Cómo experimentan y significan los adolescentes el proceso de abandonar la escuela? |
+| **Crítico** | ¿Cómo las estructuras de clase reproducen la deserción en comunidades marginadas? |
+| **Pragmatista** | ¿Qué funciona mejor para retener a los estudiantes en riesgo de deserción? |
+
+Todas son preguntas válidas. Todas estudian "deserción." Pero la investigación resultante sería completamente diferente en cada caso: diferentes datos, diferentes métodos, diferentes resultados, diferentes contribuciones. Eso no es un problema; es la riqueza de las ciencias sociales.
+
 ## Las 5 preguntas letales para testear tu pregunta
 
 Antes de enamorarte de tu pregunta, sométela a estas 5 preguntas:
 
-1. **¿Se puede responder con evidencia?** Si la respuesta depende de valores u opiniones ("¿Es justa la desigualdad?"), no es una pregunta de investigación. Es una pregunta filosófica.
+1. **¿Se puede responder con evidencia?** Si la respuesta depende de valores u opiniones ("¿Es justa la desigualdad?"), no es una pregunta de investigación. Es una pregunta filosófica o moral. Valiosa, pero no para una tesis.
 
-2. **¿Ya se respondió?** Si Google Scholar te arroja 500 papers que responden exactamente tu pregunta, necesitas un ángulo nuevo. No reinventes la rueda.
+2. **¿Ya se respondió?** Si Google Scholar te arroja 500 papers que responden exactamente tu pregunta, necesitas un ángulo nuevo. No reinventes la rueda. Pero tampoco asumas que si alguien ya lo estudió, no puedes estudiarlo: quizás lo estudió en otro país, con otro método, o hace 20 años. Tu contribución puede ser la replicación en un nuevo contexto.
 
-3. **¿La puedes responder TÚ?** Con tus recursos, tu tiempo, tu acceso a datos. Una pregunta que requiere una encuesta a 10.000 personas en 15 países no es viable para una tesis de maestría.
+3. **¿La puedes responder TÚ?** Con tus recursos, tu tiempo, tu acceso a datos. Una pregunta que requiere una encuesta a 10.000 personas en 15 países no es viable para una tesis de maestría. Sé ambicioso pero realista.
 
-4. **¿A quién le importa la respuesta?** Si solo te importa a ti (y a tu mamá), probablemente necesitas repensar la relevancia.
+4. **¿A quién le importa la respuesta?** Si solo te importa a ti (y a tu mamá), probablemente necesitas repensar la relevancia. Piensa: ¿quién usaría estos resultados? ¿Un ministro de educación? ¿Una ONG? ¿Otros investigadores? ¿Las comunidades estudiadas?
 
-5. **¿Qué cambia si la respondes?** ¿Aporta conocimiento nuevo? ¿Informa una política pública? ¿Desafía un supuesto establecido? Si la respuesta es "nada cambia", la pregunta no vale el esfuerzo.
+5. **¿Qué cambia si la respondes?** ¿Aporta conocimiento nuevo? ¿Informa una política pública? ¿Desafía un supuesto establecido? Si la respuesta es "nada cambia," la pregunta no vale el esfuerzo.
+
+Si tu pregunta sobrevive a las 5, probablemente es buena. Si no sobrevive a ninguna, vuelve al embudo.
 
 ## Del tema a la pregunta: un ejemplo completo
 
@@ -99,19 +146,34 @@ Supongamos que te interesa el tema de la violencia escolar. Así sería el proce
 
 **Curiosidad inicial:** "Me preocupa el bullying en los colegios."
 
-**Primera lectura:** Descubres que hay mucha literatura sobre bullying, pero menos sobre ciberbullying en contextos latinoamericanos. También descubres que el rol de los testigos (bystanders) es clave.
+**Primera lectura:** Descubres que hay mucha literatura sobre bullying, pero menos sobre ciberbullying en contextos latinoamericanos. También descubres que el rol de los testigos (bystanders) es clave para detener o perpetuar el acoso.
 
-**Problema identificado:** La mayoría de las intervenciones anti-bullying se enfocan en víctimas y agresores, pero ignoran a los testigos, que son quienes pueden cambiar la dinámica grupal.
+**Problema identificado:** La mayoría de las intervenciones anti-bullying se enfocan en víctimas y agresores, pero ignoran a los testigos, que son quienes pueden cambiar la dinámica grupal. Y en el contexto digital, los testigos son aún más numerosos (toda la clase puede ver un mensaje de acoso en el grupo de WhatsApp).
 
 **Pregunta de investigación:** ¿Qué factores predicen la intervención de los testigos en situaciones de ciberbullying en escuelas secundarias de Buenos Aires?
 
-Nota cómo el tema no cambió (violencia escolar), pero la pregunta es completamente diferente a "¿existe bullying en los colegios?" (respuesta: sí, fin de la investigación).
+Nota cómo el tema no cambió (violencia escolar), pero la pregunta es completamente diferente a "¿existe bullying en los colegios?" (respuesta: sí, fin de la investigación). La pregunta es específica, investigable, relevante, viable, y no trivial. Y llegaste ahí leyendo, no adivinando.
+
+## Preguntas principales y sub-preguntas
+
+Una estructura que funciona bien, especialmente en tesis:
+
+**Pregunta principal:** ¿Qué factores predicen la intervención de los testigos en situaciones de ciberbullying en escuelas secundarias de Buenos Aires?
+
+**Sub-preguntas:**
+
+1. ¿Cuál es la prevalencia del ciberbullying y la intervención de testigos en la muestra?
+2. ¿Qué características individuales (empatía, autoeficacia, género) se asocian con la intervención?
+3. ¿Qué factores contextuales (clima escolar, normas de grupo, relación con la víctima) influyen en la decisión de intervenir?
+
+Las sub-preguntas descomponen la pregunta principal en piezas manejables. Cada una genera un objetivo específico y orienta una sección de tu análisis. Cuando respondas las tres sub-preguntas, habrás respondido la principal.
 
 ::: {.callout-tip}
 ## Ejercicio
 
-1. Escribe 10 preguntas de investigación sobre un tema que te interese. Todas las que se te ocurran, sin filtro.
-2. Ahora elimina las que no pasan las 5 preguntas letales.
+1. Escribe 10 preguntas de investigación sobre un tema que te interese. Todas las que se te ocurran, sin filtro. Las malas también. Especialmente las malas.
+2. Ahora elimina las que no pasan las 5 preguntas letales. ¿Cuántas sobrevivieron?
 3. De las que quedan, elige 2 y reformúlalas para hacerlas más específicas.
-4. Comparte tu pregunta final con alguien que NO sea de tu área. Si no la entiende, simplifícala.
+4. Para tu pregunta favorita, escribe 2-3 sub-preguntas.
+5. Comparte tu pregunta final con alguien que NO sea de tu área. Si no la entiende, simplifícala. Si la entiende pero bosteza, hazla más interesante. Si la entiende y dice "ah, eso sería interesante de saber," vas por buen camino.
 :::

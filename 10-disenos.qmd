@@ -4,17 +4,27 @@
 
 Si la pregunta es el corazón y el método es la herramienta, el diseño es el **plan.** Es cómo vas a organizar tu investigación para responder tu pregunta de la forma más creíble posible.
 
-Piénsalo como construir una casa: puedes tener los mejores materiales del mundo, pero sin un plano, vas a terminar con un desastre. El diseño de investigación es tu plano.
+Piénsalo como construir una casa: puedes tener los mejores materiales del mundo, pero sin un plano, vas a terminar con un desastre. El diseño de investigación es tu plano. Define qué datos vas a recoger, cuándo, de quién, en qué condiciones, y cómo los vas a analizar. Sin diseño, tienes buenas intenciones. Con diseño, tienes una estrategia.
+
+Campbell y Stanley, en su clásico de 1963, lo expresaron de forma lapidaria: un mal diseño produce conclusiones ambiguas, sin importar cuán sofisticado sea tu análisis posterior [@campbell1963]. No hay análisis estadístico que salve un diseño deficiente. Es como intentar hacer un buen guiso con ingredientes podridos: puedes agregar todas las especias que quieras, pero el resultado será incomible.
+
+Shadish, Cook y Campbell, en la actualización más completa de esa tradición, ampliaron el argumento: el diseño no solo afecta la **validez interna** (¿realmente X causó Y?) sino también la **validez externa** (¿esto aplica más allá de mi muestra?), la **validez de constructo** (¿estoy midiendo lo que creo que estoy midiendo?) y la **validez estadística** (¿mi análisis es apropiado?) [@shadish2002]. Cuatro tipos de validez, cuatro formas de meter la pata. Vamos a verlas.
 
 ## Experimental: el estándar de oro (cuando es posible)
 
-El diseño experimental es el que mejor permite establecer **causalidad** (X causa Y). Tiene tres características:
+El diseño experimental es el que mejor permite establecer **causalidad** (X causa Y). Tiene tres características esenciales:
 
 1. **Manipulación:** El investigador controla la variable independiente (le "hace algo" al grupo).
 2. **Grupo de control:** Hay un grupo que no recibe la intervención, para comparar.
 3. **Aleatorización:** Los participantes se asignan al grupo experimental o de control al azar.
 
-**Ejemplo:** ¿Un programa de tutorías mejora las notas? → Asignas aleatoriamente a 100 estudiantes: 50 reciben tutorías, 50 no. Comparas notas al final del semestre.
+La aleatorización es la clave. ¿Por qué? Porque si los grupos se forman al azar y son suficientemente grandes, las diferencias entre ellos se deben al azar, no a factores sistemáticos. Cualquier diferencia que observes *después* de la intervención puede atribuirse con mayor confianza a la intervención misma, no a que un grupo ya era diferente del otro.
+
+### Ejemplo latinoamericano: PROGRESA/Oportunidades
+
+Uno de los experimentos sociales más importantes de la historia ocurrió en México. En 1997, el gobierno lanzó PROGRESA (después Oportunidades, ahora Prospera), un programa de transferencias condicionadas a familias en pobreza extrema. Lo notable: se implementó como un **experimento aleatorizado**. De 506 localidades elegibles, 320 fueron asignadas al azar para recibir el programa de inmediato, y 186 sirvieron como grupo de control (recibirían el programa después).
+
+Los resultados fueron contundentes: aumentó la matrícula escolar, mejoró la nutrición infantil, y se redujo la incidencia de enfermedades. Estos hallazgos fueron tan creíbles —precisamente por el diseño experimental— que convencieron a gobiernos de toda la región. Colombia creó Familias en Acción, Brasil amplió Bolsa Família, y decenas de países adaptaron el modelo. Una buena evaluación no solo genera conocimiento; puede cambiar políticas a escala continental.
 
 ### ¿Por qué no siempre se puede experimentar en ciencias sociales?
 
@@ -23,61 +33,164 @@ Porque muchas veces no es ético, no es práctico, o no es posible:
 - No puedes asignar pobreza aleatoriamente.
 - No puedes decidir quién migra y quién no.
 - No puedes obligar a alguien a divorciarse para estudiar sus efectos.
+- No siempre puedes negar un servicio a un grupo de control (¿le vas a negar educación a niños para tener tu grupo de control?).
+
+Pero incluso cuando puedes experimentar, hay trampas. La más insidiosa: el **efecto Hawthorne.** Las personas cambian su comportamiento cuando saben que están siendo observadas. Si los maestros saben que su escuela está en el grupo de "tratamiento," pueden esforzarse más, y lo que estás midiendo no es el efecto del programa, sino el efecto de ser observado. Diseñar bien un experimento implica pensar en estos problemas *antes* de recoger datos.
 
 Por eso necesitamos alternativas.
 
 ## Cuasi-experimental: lo más cerca posible
 
-Cuando no puedes aleatorizar, pero sí puedes tener un grupo de comparación, tienes un diseño cuasi-experimental. La diferencia clave con el experimental es que los grupos no se forman al azar, sino que "ya existen."
+Cuando no puedes aleatorizar, pero sí puedes tener un grupo de comparación, tienes un diseño cuasi-experimental. La diferencia clave con el experimental es que los grupos no se forman al azar, sino que "ya existen." Esto significa que cualquier diferencia que observes podría deberse a la intervención *o* a diferencias preexistentes entre los grupos. Tu trabajo es argumentar convincentemente que esas diferencias preexistentes no explican tus resultados.
 
-**Ejemplo:** ¿El programa Juntos reduce la desnutrición? → Comparas comunidades que recibieron el programa con comunidades similares que no lo recibieron. No hubo aleatorización, pero puedes controlar estadísticamente las diferencias entre los grupos.
+### Ejemplo: el programa Juntos en Perú
 
-### Técnicas comunes
-- **Diferencia en diferencias:** Comparas el cambio en el tiempo entre el grupo tratado y el no tratado.
-- **Propensity Score Matching:** Emparejas individuos del grupo tratado con individuos similares del grupo no tratado.
-- **Regresión discontinua:** Aprovechas un umbral arbitrario (puntaje de corte) para comparar a los que "justo" calificaron con los que "justo" no calificaron.
+¿El programa Juntos reduce la desnutrición infantil? Comparas comunidades que recibieron el programa con comunidades similares que no lo recibieron. No hubo aleatorización (las primeras comunidades en recibir el programa fueron las más pobres), pero puedes usar técnicas estadísticas para abordar este problema.
+
+### Técnicas cuasi-experimentales
+
+- **Diferencia en diferencias (DiD):** Comparas el cambio en el tiempo entre el grupo tratado y el no tratado. La lógica: si ambos grupos tenían la misma tendencia *antes* de la intervención, cualquier divergencia *después* se puede atribuir al programa. Si antes del programa ambos grupos tenían las mismas tasas de desnutrición y la misma tendencia, y después del programa el grupo tratado mejoró más, algo pasó.
+
+- **Propensity Score Matching (PSM):** Emparejas individuos del grupo tratado con individuos "gemelos estadísticos" del grupo no tratado —iguales en todo lo observable excepto en haber recibido el tratamiento. Es como buscar el doppelgänger estadístico de cada participante.
+
+- **Regresión discontinua (RD):** Aprovechas un umbral arbitrario (puntaje de corte) para comparar a los que "justo" calificaron con los que "justo" no calificaron. Si el programa acepta familias con puntaje de pobreza menor a 50, comparas a las familias con puntaje 49 con las de puntaje 51. La idea: son tan similares que la única diferencia relevante es haber recibido o no el programa.
+
+- **Variables instrumentales (IV):** Buscas una variable que afecte la participación en el programa pero que no afecte directamente el resultado. Es el truco más elegante y el más difícil de lograr. Angrist y Pischke lo explican con claridad cristalina en *Mostly Harmless Econometrics* [@angrist2009].
+
+Dunning llama a estos diseños "experimentos naturales": situaciones donde la vida o las instituciones generan una asignación que se *parece* a un experimento, aunque nadie lo haya planeado [@dunning2012]. Loterías, cambios abruptos de políticas, fronteras geográficas arbitrarias: la realidad a veces nos regala oportunidades cuasi-experimentales.
+
+::: {.callout-important}
+## Reflexión
+
+Ninguna técnica cuasi-experimental es perfecta. Cada una tiene supuestos que pueden no cumplirse. La diferencia en diferencias asume tendencias paralelas. El PSM asume que no hay variables no observables relevantes. La regresión discontinua solo estima efectos locales (cerca del umbral). Sé transparente sobre estos supuestos y pruébalos cuando sea posible.
+:::
 
 ## No experimental: observar sin intervenir
 
-La mayoría de las investigaciones en ciencias sociales son no experimentales. No manipulas nada; observas lo que ya está ahí.
+La mayoría de las investigaciones en ciencias sociales son no experimentales. No manipulas nada; observas lo que ya está ahí. Esto no las hace "peores" que los diseños experimentales —las hace diferentes, apropiadas para preguntas diferentes.
 
-### Tipos principales
+### Diseños transversales
 
-**Transversal:** Recoges datos en un solo momento del tiempo. Una fotografía.
+Recoges datos en un solo momento del tiempo. Una fotografía.
 
 - "¿Cuál es la relación entre educación e ingreso en Perú en 2024?"
-- Ventaja: Rápido y económico.
-- Desventaja: No puedes establecer causalidad ni ver cambios en el tiempo.
+- **Ventaja:** Rápido y relativamente económico. Puedes estudiar muchas variables a la vez.
+- **Desventaja:** No puedes establecer causalidad ni ver cambios en el tiempo. Que educación e ingreso estén correlacionados no te dice si la educación *causa* más ingreso, si el ingreso *causa* más educación, o si ambos dependen de un tercer factor (como la familia de origen).
 
-**Longitudinal:** Recoges datos en múltiples momentos. Una película.
+La mayoría de las encuestas nacionales (ENAHO en Perú, CASEN en Chile, ENIGH en México) son transversales. Son extraordinariamente útiles para describir la situación de un país en un momento dado, pero cuidado con interpretarlas causalmente.
 
-- "¿Cómo cambia el ingreso de los graduados universitarios a lo largo de 10 años?"
-- Ventaja: Puedes ver tendencias y cambios.
-- Desventaja: Costoso, lento, y la gente desaparece (atrición).
+### Diseños longitudinales
 
-**Estudio de caso:** Investigas en profundidad un caso específico (una persona, una organización, un evento, un país).
+Recoges datos en múltiples momentos. Una película.
 
-- "¿Cómo implementó Finlandia su reforma educativa?"
-- Ventaja: Profundidad extraordinaria.
-- Desventaja: No se puede generalizar fácilmente.
+- **Panel:** Sigues a *las mismas* personas a lo largo del tiempo. "¿Cómo cambia el ingreso de estos 5.000 graduados durante 10 años?" Ventaja enorme: puedes controlar las características fijas de cada individuo (su familia, su genética, su personalidad). Desventaja: costoso, lento, y la gente desaparece (**atrición**). Si los que desaparecen son sistemáticamente diferentes de los que se quedan, tus resultados están sesgados.
 
-**Comparado:** Comparas dos o más casos para identificar similitudes y diferencias.
+- **Tendencia (trend):** Mides la misma variable en muestras diferentes del mismo grupo a lo largo del tiempo. "¿Cómo ha cambiado la tasa de pobreza en Colombia entre 2000 y 2020?" No sigues a las mismas personas, sino al mismo grupo (colombianos).
 
-- "¿Por qué Chile y Argentina tuvieron trayectorias educativas diferentes?"
-- Ventaja: Permite identificar factores que explican diferencias.
-- Desventaja: La selección de casos es crucial y puede sesgar los resultados.
+- **Cohorte:** Sigues a un grupo definido por un evento compartido. "¿Qué pasa con los que entraron a la universidad en 2015?" Puedes estudiar la misma cohorte en múltiples momentos.
+
+### Estudio de caso
+
+Investigas en profundidad un caso específico: una persona, una organización, un evento, un país, una política. Yin lo define como "una investigación empírica que estudia un fenómeno contemporáneo dentro de su contexto real, especialmente cuando los límites entre el fenómeno y el contexto no son claramente evidentes" [@yin2018].
+
+**Ejemplo:** ¿Cómo logró Medellín transformarse de la ciudad más violenta del mundo en un referente de innovación urbana? Un estudio de caso examinaría las decisiones políticas, los actores involucrados, el contexto histórico, las intervenciones urbanas (Metrocable, parques biblioteca), y la interacción entre todos estos factores. Ninguna regresión captura esa complejidad.
+
+Gerring argumenta que el estudio de caso no es un "diseño menor" sino un tipo de investigación con sus propias fortalezas: puede generar hipótesis, identificar mecanismos causales, y estudiar casos atípicos que desafían las teorías existentes [@gerring2017].
+
+::: {.callout-warning}
+## Advertencia
+
+El estudio de caso bien hecho no es "contar una historia bonita sobre algo." Requiere sistematicidad: múltiples fuentes de evidencia, una cadena de evidencia trazable, y criterios explícitos para interpretar los hallazgos. Si tu "estudio de caso" es simplemente describir algo sin un marco analítico, es un reportaje, no una investigación.
+:::
+
+### Diseño comparado
+
+Comparas dos o más casos para identificar similitudes y diferencias. King, Keohane y Verba lo formalizan: la comparación controlada es el equivalente cualitativo del control experimental [@kingkeohaneverba1994].
+
+- "¿Por qué Chile y Uruguay lograron reducir la pobreza más rápido que Paraguay y Bolivia?"
+- "¿Qué tienen en común las reformas educativas exitosas de Finlandia, Corea del Sur y Cuba?"
+
+La selección de casos es crucial. Los dos estrategias clásicas:
+
+- **Casos más similares:** Seleccionas casos parecidos en casi todo, excepto en el resultado. Si Chile y Uruguay son similares pero Chile redujo la pobreza más rápido, ¿qué hizo diferente?
+- **Casos más diferentes:** Seleccionas casos muy distintos que comparten el mismo resultado. Si Finlandia y Cuba son radicalmente diferentes pero ambos tienen educación de calidad, ¿qué tienen en común?
+
+## Las amenazas a la validez: lo que puede salir mal
+
+Campbell y Stanley identificaron una serie de **amenazas a la validez** que acechan a todo diseño de investigación [@campbell1963]. Shadish, Cook y Campbell las actualizaron y sistematizaron [@shadish2002]. Aquí van las más importantes:
+
+### Amenazas a la validez interna (¿X realmente causó Y?)
+
+| Amenaza | ¿Qué es? | Ejemplo |
+|---|---|---|
+| **Historia** | Eventos externos que ocurren durante el estudio | Evalúas un programa educativo justo cuando hay una pandemia. ¿El cambio es por el programa o por la pandemia? |
+| **Maduración** | Cambios naturales en los participantes | Los niños mejoran en lectura simplemente porque crecieron, no por tu intervención. |
+| **Selección** | Los grupos comparados son diferentes desde el inicio | Los becarios ya eran mejores estudiantes antes de recibir la beca. |
+| **Atrición** | Los que abandonan el estudio son diferentes de los que se quedan | En tu evaluación de un programa de empleo, los que no consiguieron trabajo dejaron de responder la encuesta. Tu muestra final solo incluye "exitosos." |
+| **Regresión a la media** | Valores extremos tienden a moderarse | Seleccionas las escuelas con peores resultados para un programa. Mejoran, pero ¿por el programa o porque los extremos tienden a volver al promedio? |
+| **Instrumentación** | El instrumento de medición cambia entre mediciones | Cambias las preguntas de la encuesta entre la línea de base y la evaluación final. Cualquier cambio podría ser por la nueva medición, no por la intervención. |
+
+### Amenazas a la validez externa (¿esto aplica fuera de mi estudio?)
+
+- **Especificidad contextual:** Lo que funciona en Lima no necesariamente funciona en Chiapas. Las condiciones culturales, institucionales y geográficas importan.
+- **Efecto de la selección:** Tu muestra no es representativa. Estudiaste voluntarios, y los voluntarios son diferentes de la población general.
+- **Reactividad:** Los participantes saben que están siendo estudiados y se comportan diferente. El efecto Hawthorne mencionado arriba.
+- **Temporalidad:** Lo que era cierto en 2010 puede no serlo en 2025. Las sociedades cambian.
+
+::: {.callout-note}
+## Para recordar
+
+No existe un diseño sin amenazas a la validez. Todos los diseños tienen debilidades. La diferencia entre una investigación buena y una mala no es la ausencia de amenazas, sino la honestidad para reconocerlas y el esfuerzo por minimizarlas.
+:::
 
 ## ¿Descriptivo, correlacional, o explicativo?
 
 Otra forma de clasificar tu diseño es por su **alcance:**
 
-| Alcance | Pregunta | Ejemplo |
-|---|---|---|
-| Descriptivo | ¿Cómo es? ¿Cuántos hay? | ¿Cuál es el perfil de los emprendedores en México? |
-| Correlacional | ¿Existe relación entre X e Y? | ¿Hay relación entre uso de redes sociales y rendimiento académico? |
-| Explicativo | ¿X causa Y? ¿Por qué? | ¿El acceso a internet causa mejoras en el aprendizaje? |
+| Alcance | Pregunta típica | Ejemplo | Diseño común |
+|---|---|---|---|
+| **Descriptivo** | ¿Cómo es? ¿Cuántos hay? | ¿Cuál es el perfil de los emprendedores en México? | Encuesta transversal, censo |
+| **Correlacional** | ¿Existe relación entre X e Y? | ¿Hay relación entre redes sociales y rendimiento académico? | Encuesta con análisis de correlación |
+| **Explicativo** | ¿X causa Y? ¿Por qué? | ¿El acceso a internet causa mejoras en el aprendizaje? | Experimental, cuasi-experimental |
 
 Cada nivel es más complejo que el anterior. Y cada nivel requiere un diseño más robusto. Un estudio descriptivo puede ser transversal y sencillo. Un estudio explicativo casi siempre necesita un diseño experimental o cuasi-experimental.
+
+Pero cuidado con el snobismo del alcance. Un buen estudio descriptivo vale mucho más que un mal estudio explicativo. De hecho, muchos de los estudios más influyentes de las ciencias sociales son descriptivos: el Informe Coleman (1966) sobre desigualdad educativa en Estados Unidos, las encuestas de pobreza del Banco Mundial, o los censos que documentan la realidad de un país entero. Antes de explicar algo, hay que describirlo bien. Y describir bien es más difícil de lo que parece.
+
+## Diseños con datos secundarios: aprovechando lo que ya existe
+
+No siempre tienes que recoger tus propios datos. Muchas veces, los datos ya existen: encuestas nacionales, censos, registros administrativos, bases de datos internacionales (Banco Mundial, CEPAL, PNUD), datos abiertos de gobiernos. Usar datos secundarios es legítimo, económico, y a veces la única opción realista.
+
+### Ventajas
+
+- Ahorro enorme de tiempo y dinero. No necesitas diseñar instrumentos, ir al campo, ni contratar encuestadores.
+- Acceso a muestras grandes y representativas que un estudiante de tesis jamás podría recoger por su cuenta.
+- Posibilidad de estudios comparados entre países y a lo largo del tiempo.
+
+### Desventajas
+
+- No controlas qué se preguntó ni cómo. Las variables que necesitas pueden no existir, estar mal medidas, o tener categorías que no te sirven.
+- Los datos pueden tener problemas de calidad que no puedes detectar fácilmente.
+- Riesgo de "torturar los datos" hasta que confiesen algo. Cuando no diseñaste la recolección, es tentador buscar relaciones interesantes entre decenas de variables hasta que algo "sale significativo." Eso es p-hacking, y lo veremos en el @errores.
+
+::: {.callout-note}
+## Para recordar
+
+Si usas datos secundarios, dedica tanto tiempo a entender la base de datos (su diseño, sus limitaciones, sus manuales) como a analizarla. Los primeros días deben ser de lectura de documentación técnica, no de regresiones.
+:::
+
+## La tabla de decisión: ¿qué diseño necesito?
+
+| Si tu pregunta busca... | Y tus condiciones son... | Diseño recomendado |
+|---|---|---|
+| Establecer causalidad | Puedes aleatorizar y controlar | **Experimental** |
+| Establecer causalidad | No puedes aleatorizar pero tienes grupo de comparación | **Cuasi-experimental** (DiD, PSM, RD) |
+| Describir una población | Tienes acceso a muestra representativa | **Transversal descriptivo** (encuesta) |
+| Identificar relaciones entre variables | Tienes datos de muchas variables | **Correlacional** |
+| Entender cambios en el tiempo | Puedes seguir a las mismas personas o grupos | **Longitudinal (panel o cohorte)** |
+| Comprender un fenómeno en profundidad | Un caso es particularmente revelador | **Estudio de caso** |
+| Identificar factores de éxito/fracaso | Tienes casos comparables | **Comparado** |
+| Explorar un tema poco estudiado | No sabes bien qué esperar | **Cualitativo exploratorio** |
 
 ## Cómo elegir el diseño correcto
 
@@ -85,10 +198,20 @@ La pregunta fundamental es: **¿qué diseño me permite responder mi pregunta de
 
 No elijas el diseño primero y luego busques la pregunta (error más común de lo que crees). Y no elijas el diseño más sofisticado; elige el más apropiado.
 
-Una encuesta bien hecha responde mejor una pregunta descriptiva que un experimento mal diseñado intenta responder una pregunta causal.
+Una encuesta bien hecha responde mejor una pregunta descriptiva que un experimento mal diseñado intenta responder una pregunta causal. Un estudio de caso riguroso aporta más que una regresión con datos basura. La sofisticación metodológica no es sinónimo de calidad.
 
-::: {.callout-note}
-## Para recordar
+::: {.callout-tip}
+## Ejercicio
 
-El mejor diseño es el que responde tu pregunta con la mayor credibilidad posible, dentro de tus limitaciones de tiempo, recursos y acceso. La perfección metodológica es una aspiración, no un requisito. Lo que sí es un requisito es la honestidad sobre las limitaciones de tu diseño.
+Toma tu pregunta de investigación y trabaja sobre estos puntos:
+
+1. ¿Cuál es el **alcance** de tu pregunta? (Descriptivo, correlacional, explicativo.)
+2. ¿Necesitas establecer **causalidad** o basta con identificar asociaciones?
+3. ¿Puedes **aleatorizar**? Si no, ¿tienes algún "experimento natural" disponible?
+4. ¿Qué **datos** tienes o puedes conseguir? ¿Primarios o secundarios?
+5. ¿Cuáles son tus **restricciones** reales de tiempo, dinero y acceso?
+6. Basado en las respuestas anteriores, identifica **dos diseños posibles** para tu estudio. ¿Cuáles son las fortalezas y debilidades de cada uno?
+7. Ahora identifica las **tres amenazas a la validez** más serias para tu diseño elegido. ¿Cómo puedes minimizarlas?
+
+Si no puedes responder la pregunta 6 y 7, vuelve a leer este capítulo. Si puedes, ya tienes el esqueleto de tu sección de metodología.
 :::

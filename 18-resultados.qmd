@@ -9,51 +9,117 @@ Los resultados son lo que **encontraste.** No lo que piensas, no lo que esperaba
 - "El 67% de los encuestados reportó insatisfacción con el servicio de salud." → Resultado.
 - "Es evidente que el servicio de salud es deficiente." → Opinión disfrazada de resultado.
 
-La diferencia es sutil pero crucial. En la sección de resultados, presentas evidencia. En la discusión, interpretas esa evidencia. Son momentos diferentes del texto.
+La diferencia es sutil pero crucial. En la sección de resultados, presentas evidencia. En la discusión, interpretas esa evidencia. Son momentos diferentes del texto. Mezclarlos es uno de los errores más comunes en tesis.
 
 ## Cómo presentar resultados cuantitativos
 
 ### Estructura recomendada
 
-1. **Análisis descriptivo primero:** Caracteriza tu muestra. ¿Quiénes son? ¿Cuántos? ¿Cómo se distribuyen en las variables clave?
-2. **Análisis bivariado:** ¿Hay relación entre tus variables principales? Correlaciones, tablas cruzadas, comparación de medias.
-3. **Análisis multivariado:** Regresiones u otros modelos que controlan por múltiples variables.
-4. **Sensibilidad y robustez:** ¿Tus resultados cambian si cambias alguna decisión metodológica? (Esto es lo que separa a los buenos investigadores de los mediocres.)
+1. **Análisis descriptivo primero:** Caracteriza tu muestra. ¿Quiénes son? ¿Cuántos? ¿Cómo se distribuyen en las variables clave? Medias, desviaciones estándar, frecuencias, porcentajes. Esto le da al lector una imagen clara de tus datos antes de que entres a modelos complejos.
+2. **Análisis bivariado:** ¿Hay relación entre tus variables principales? Correlaciones, tablas cruzadas, comparación de medias (t-test, ANOVA). Esto muestra las relaciones brutas, sin controles.
+3. **Análisis multivariado:** Regresiones u otros modelos que controlan por múltiples variables. Aquí es donde respondes tu pregunta de investigación con mayor rigor.
+4. **Sensibilidad y robustez:** ¿Tus resultados cambian si cambias alguna decisión metodológica? (Diferente definición de la variable, diferente modelo, diferente muestra.) Esto es lo que separa a los buenos investigadores de los mediocres.
 
-### Tablas y gráficos
+### Tablas que comunican
 
-- Cada tabla y cada gráfico debe tener un **número, título y fuente.**
-- No repitas en el texto lo que ya dice la tabla. El texto complementa, contextualiza, destaca lo importante.
-- No metas todas las tablas que puedas. Selecciona las que cuentan la historia. Las demás van a los anexos.
+Las tablas son el vehículo principal de los resultados cuantitativos. Una buena tabla [@apa2020]:
 
-### Sobre la significancia estadística
+- Tiene un **número y título descriptivo** ("Tabla 3: Regresión logística de permanencia universitaria sobre capital cultural y variables de control").
+- Tiene **encabezados claros** para columnas y filas.
+- Reporta **coeficientes, errores estándar (o IC), y significancia.**
+- Incluye **N, R², y estadísticos de ajuste** del modelo.
+- Tiene **notas al pie** que explican abreviaciones y niveles de significancia.
 
-Un asterisco (*) al lado de un coeficiente significa que el resultado es estadísticamente significativo. Pero eso NO significa que sea importante. Repito: **significancia estadística ≠ importancia práctica.**
+| Variable | Modelo 1 | Modelo 2 | Modelo 3 |
+|---|---|---|---|
+| Capital cultural (institucionalizado) | 0.45*** (0.12) | 0.38*** (0.11) | 0.35** (0.12) |
+| Capital cultural (objetivado) | | 0.22* (0.09) | 0.19* (0.09) |
+| Ingreso familiar (log) | | | 0.15 (0.10) |
+| Género (mujer = 1) | | | 0.28* (0.13) |
+| Constante | -1.23 (0.45) | -1.56 (0.48) | -2.01 (0.55) |
+| N | 1.200 | 1.200 | 1.200 |
+| Pseudo R² | 0.08 | 0.11 | 0.13 |
 
-Siempre reporta:
-- El **tamaño del efecto** (¿qué tan grande es la diferencia o la relación?).
-- Los **intervalos de confianza** (¿qué tan precisa es tu estimación?).
-- El **contexto sustantivo** (¿esta diferencia importa en la vida real?).
+*Nota:* \*p < .05; \*\*p < .01; \*\*\*p < .001. Errores estándar entre paréntesis.
+
+¿Ves cómo cada modelo agrega variables? Esto permite ver cómo cambian los coeficientes al incluir controles. Si el capital cultural sigue siendo significativo después de controlar por ingreso (Modelo 3), eso fortalece tu argumento.
+
+::: {.callout-warning}
+## No repitas la tabla en el texto
+
+"Como se observa en la Tabla 3, el coeficiente del capital cultural institucionalizado es 0.45, con un error estándar de 0.12, y es significativo al nivel de 0.001." Esto es repetir la tabla palabra por palabra. No lo hagas.
+
+En cambio: "El capital cultural institucionalizado muestra una asociación positiva y significativa con la permanencia (Tabla 3, Modelo 1). Esta asociación se mantiene incluso al controlar por ingreso familiar y género (Modelo 3), aunque el coeficiente se reduce ligeramente, sugiriendo una mediación parcial del ingreso."
+
+El texto **interpreta** la tabla; no la recita.
+:::
+
+### Sobre la significancia estadística: el elefante en la habitación
+
+Un asterisco (\*) al lado de un coeficiente significa que el resultado es estadísticamente significativo. Pero eso **NO** significa que sea importante. Repito: **significancia estadística ≠ importancia práctica.**
+
+@wasserstein2016, en la declaración oficial de la American Statistical Association sobre p-values, fueron devastadoramente claros:
+
+> "La significancia estadística no es equivalente a significancia científica, humana o económica."
+
+El p-value te dice: "Si no hubiera ningún efecto real, ¿qué tan improbable sería observar estos datos?" Si p < .05, respondemos "bastante improbable" y rechazamos la hipótesis nula. Pero eso no te dice:
+
+- **¿El efecto es grande o pequeño?** Un estudio con 50.000 casos puede encontrar una diferencia "significativa" de 0.3 puntos en un test de 100. Estadísticamente significativo, prácticamente irrelevante.
+- **¿El efecto es preciso?** Para eso necesitas los intervalos de confianza, no solo el asterisco.
+- **¿El efecto es replicable?** Un solo estudio con p = .049 no demuestra nada. La replicación sí.
+
+**Lo que deberías reportar siempre** [@cumming2014]:
+
+1. El **tamaño del efecto** (d de Cohen, odds ratio, coeficiente estandarizado).
+2. Los **intervalos de confianza** al 95% (mucho más informativos que el asterisco).
+3. El **contexto sustantivo** (¿esta diferencia importa en la vida real?).
+
+### Cómo NO interpretar una regresión
+
+Errores que veo constantemente:
+
+- ❌ "X causa Y" (a menos que tengas un diseño experimental o cuasi-experimental, lo que tienes es una *asociación*, no una relación causal).
+- ❌ "Un aumento de una unidad en X produce un aumento de β en Y" (cuidado con el lenguaje causal en modelos observacionales).
+- ❌ "El R² es bajo, entonces el modelo no sirve" (un R² de 0.15 en ciencias sociales puede ser perfectamente normal; los fenómenos sociales tienen mucha variabilidad no explicable).
+- ❌ "La variable no es significativa, entonces no tiene efecto" (ausencia de evidencia ≠ evidencia de ausencia; quizás tu muestra es pequeña).
+- ❌ Ignorar la multicolinealidad (si dos variables independientes están muy correlacionadas entre sí, los coeficientes se vuelven inestables).
+
+**Mejor:**
+
+- ✅ "X se asocia positivamente con Y (β = 0.35, IC 95% [0.12, 0.58], p < .01), controlando por Z."
+- ✅ "El modelo explica el 15% de la varianza en permanencia universitaria, lo cual es consistente con estudios previos en contextos similares."
+- ✅ "No encontramos evidencia de una asociación significativa entre W e Y (β = 0.08, p = .32), aunque el intervalo de confianza no permite descartar un efecto pequeño."
 
 ## Cómo presentar resultados cualitativos
 
 ### La narrativa importa
 
-En investigación cualitativa, los resultados se presentan como una narrativa analítica, no como una lista de citas. El error más común es el "collage de citas": pegar una cita tras otra sin análisis ni conexión.
+En investigación cualitativa, los resultados se presentan como una narrativa analítica, no como una lista de citas. El error más común es el "collage de citas": pegar una cita tras otra sin análisis ni conexión. Eso no son resultados; es un documento de transcripción.
 
 ### Estructura recomendada
 
-1. **Presenta tus categorías/temas principales.** Son el resultado de tu codificación.
-2. **Para cada categoría, ofrece evidencia** (citas textuales de los participantes).
-3. **Analiza e interpreta** cada cita. ¿Qué nos dice? ¿Cómo se conecta con las demás?
-4. **Muestra variación.** No solo las citas que confirman tu argumento. También las que lo matizan o contradicen.
+1. **Presenta tus categorías/temas principales.** Son el resultado de tu codificación. Nómbralos de forma clara y descriptiva.
+2. **Para cada categoría, ofrece evidencia** (citas textuales de los participantes). Selecciona las más representativas y elocuentes.
+3. **Analiza e interpreta** cada cita. ¿Qué nos dice? ¿Cómo se conecta con las demás? ¿Qué patrón revela?
+4. **Muestra variación.** No solo las citas que confirman tu argumento. También las que lo matizan o contradicen. Esto demuestra honestidad y rigor.
+
+### El balance cita-análisis
+
+Una regla útil: por cada cita, deberías tener al menos el mismo espacio de análisis. Si tu sección tiene 3 páginas de citas y media página de análisis, estás dejando que los datos hablen solos (y los datos no hablan solos; necesitan un intérprete).
+
+**Ejemplo de presentación cualitativa:**
+
+> Los docentes expresaron repetidamente un sentimiento de desconexión entre la formación recibida y la realidad del aula. Como señaló una profesora con 15 años de experiencia: "En la universidad me enseñaron teorías hermosas, pero nadie me dijo qué hacer cuando un niño llega sin desayunar y no puede concentrarse" (E7, maestra, escuela rural). Esta percepción de brecha entre formación y práctica fue consistente en 11 de las 15 entrevistas, y fue especialmente marcada entre docentes de escuelas rurales y periurbanas. Solo dos docentes de escuelas urbanas privadas indicaron sentirse "razonablemente preparados" (E3, E12).
+
+Nota: introducción del tema → cita representativa → análisis del patrón → variación → identificación de quién difiere y por qué.
 
 ### La regla de la cita
 
 Una buena cita:
 - Es lo suficientemente larga para tener sentido, pero lo suficientemente corta para mantener la atención.
 - No se explica sola. Tú la introduces, la presentas y la analizas.
-- Aporta algo que el análisis solo con tus palabras no podría transmitir.
+- Aporta algo que el análisis solo con tus palabras no podría transmitir (la voz del participante, la emoción, el detalle concreto).
+- Está identificada (participante, contexto) pero anonimizada (E7, no "María García de la escuela San Martín").
 
 ## La discusión: donde tus resultados conversan con la literatura
 
@@ -61,16 +127,28 @@ La discusión es, para mí, la sección más intelectualmente estimulante de una
 
 ### Preguntas que guían una buena discusión
 
-1. **¿Qué encontré y qué significa?** No repitas los resultados. Interprétalos.
-2. **¿Mis resultados coinciden con la literatura previa? ¿La contradicen?** Aquí tu revisión de literatura cobra vida. Si Pérez (2018) encontró lo mismo en otro contexto, eso fortalece tu hallazgo. Si García (2019) encontró lo contrario, ¿por qué? ¿Es el contexto? ¿El método? ¿La muestra?
-3. **¿Cómo se explican mis resultados desde mi marco teórico?** Aquí tu marco teórico cobra vida. ¿Bourdieu tenía razón? ¿Parcialmente? ¿Hay algo que la teoría no explica?
-4. **¿Qué implicaciones tiene esto?** Para la política pública. Para la práctica profesional. Para la teoría. Para futuras investigaciones.
+1. **¿Qué encontré y qué significa?** No repitas los resultados. Interprétalos. "El capital cultural tiene efecto independiente del ingreso" → "Esto sugiere que la pobreza educativa no se reduce solo con dinero."
+2. **¿Mis resultados coinciden con la literatura previa? ¿La contradicen?** Aquí tu revisión de literatura cobra vida. Si Pérez (2018) encontró lo mismo en otro contexto, eso fortalece tu hallazgo. Si García (2019) encontró lo contrario, ¿por qué? ¿Es el contexto? ¿El método? ¿La muestra? Explorar las diferencias es más interesante que celebrar las coincidencias.
+3. **¿Cómo se explican mis resultados desde mi marco teórico?** Aquí tu marco teórico cobra vida. ¿Bourdieu tenía razón? ¿Parcialmente? ¿Hay algo que la teoría no explica? Si tus datos no encajan con tu teoría, no lo escondas; ese puede ser tu hallazgo más interesante.
+4. **¿Qué implicaciones tiene esto?** Para la política pública. Para la práctica profesional. Para la teoría. Para futuras investigaciones. Sé específico: "Las universidades deberían implementar programas de mentoría que compensen la falta de capital cultural" es mejor que "se necesitan políticas públicas."
+
+### La discusión como diálogo, no como monólogo
+
+Una buena discusión tiene la estructura de una conversación académica:
+
+- **Tú:** "Encontré que X."
+- **La literatura:** "Eso coincide con lo que encontraron Pérez (2018) y López (2020)."
+- **La teoría:** "Bourdieu predecía exactamente esto: el capital cultural se transmite intergeneracionalmente."
+- **El contraargumento:** "Sin embargo, García (2019) encontró resultados diferentes en Chile. Esto podría deberse a diferencias en el sistema educativo..."
+- **Tú de nuevo:** "Mis datos sugieren que la diferencia se explica por el rol del Estado como compensador de desigualdades, que en Chile opera diferente."
+
+Eso es una discusión viva. No "mis resultados confirman la teoría. Fin."
 
 ### El error de la discusión vacía
 
 La peor discusión posible es la que simplemente repite los resultados con sinónimos. "Los datos muestran que X. Es decir, X se confirma. En efecto, X es lo que se encontró."
 
-Eso no es discusión. Es eco.
+Eso no es discusión. Es eco. Si tu discusión no agrega nada que no esté ya en la sección de resultados, no está cumpliendo su función.
 
 ## Conclusiones que concluyen
 
@@ -78,10 +156,10 @@ Las conclusiones no son un resumen de la tesis (para eso está el abstract). Son
 
 ### Una buena conclusión:
 
-- **Responde la pregunta de investigación** de forma directa.
-- **Destaca la contribución principal** de tu trabajo (¿qué sabemos ahora que no sabíamos antes?).
-- **Reconoce limitaciones** con honestidad (no al final, como una disculpa, sino como parte del argumento).
-- **Sugiere caminos futuros** de investigación (no los genéricos "se necesita más investigación", sino caminos específicos).
+- **Responde la pregunta de investigación** de forma directa. Si tu pregunta era "¿se asocia el capital cultural con la permanencia?", tu conclusión debe decir "sí, se asocia, y el efecto persiste controlando por ingreso" (o "no encontramos evidencia de asociación, a pesar de lo que sugería la teoría").
+- **Destaca la contribución principal** de tu trabajo. ¿Qué sabemos ahora que no sabíamos antes? Esto debería caber en 2-3 frases.
+- **Reconoce limitaciones** con honestidad (no al final como una disculpa, sino como parte integral del argumento).
+- **Sugiere caminos futuros** de investigación. No los genéricos "se necesita más investigación" (eso siempre es verdad y no dice nada), sino caminos específicos: "Un estudio longitudinal permitiría determinar si el efecto del capital cultural cambia durante la trayectoria universitaria."
 
 ## Limitaciones: decirlas te hace más creíble, no menos
 
@@ -91,10 +169,30 @@ Un investigador que dice "mi muestra no es representativa, mis datos son transve
 
 Un investigador que presenta sus resultados como verdades absolutas genera sospecha.
 
-**Toda** investigación tiene limitaciones. Reconocerlas es señal de madurez intelectual, no de debilidad.
+### Las limitaciones más comunes (y cómo reportarlas)
+
+| Limitación | Cómo reportarla | Lo que NO hacer |
+|---|---|---|
+| Muestra por conveniencia | "La muestra no es probabilística, lo que limita la generalización de los resultados" | Pretender que es representativa |
+| Datos transversales | "El diseño transversal no permite establecer causalidad" | Usar lenguaje causal |
+| Variables no medidas | "No se controló por motivación intrínseca, que podría ser un confusor" | Ignorar posibles confusores |
+| Baja tasa de respuesta | "La tasa de respuesta del 35% sugiere posible sesgo de no respuesta" | No reportar la tasa |
+| Instrumento no validado | "La escala fue desarrollada para este estudio y no cuenta con validación previa" | Asumir validez sin evidencia |
+
+**Toda** investigación tiene limitaciones. Reconocerlas es señal de madurez intelectual, no de debilidad. La pregunta clave no es "¿tiene limitaciones?" (siempre sí), sino "¿las limitaciones invalidan las conclusiones?" (casi nunca, si se reconocen y matizan apropiadamente).
 
 ::: {.callout-note}
 ## Para recordar
 
-Resultados = lo que encontraste (evidencia). Discusión = lo que significa (interpretación). Conclusiones = la respuesta a tu pregunta. No los mezcles.
+Resultados = lo que encontraste (evidencia). Discusión = lo que significa (interpretación). Conclusiones = la respuesta a tu pregunta. No los mezcles. Si tienes dudas sobre dónde va algo, pregúntate: ¿es un dato o es mi lectura del dato? Si es un dato → resultados. Si es tu lectura → discusión.
+:::
+
+::: {.callout-tip}
+## Ejercicio
+
+1. Toma un resultado de tu investigación (o de un paper que hayas leído). Escríbelo de dos formas:
+   - Como aparecería en la sección de **resultados** (factual, con datos).
+   - Como aparecería en la **discusión** (interpretado, conectado con la literatura).
+2. Identifica 3 limitaciones de tu investigación. Para cada una, escribe: (a) cuál es, (b) por qué importa, y (c) cómo la mitiga(ste) o por qué no invalida tus conclusiones.
+3. Escribe tus conclusiones en máximo 500 palabras. Incluye: respuesta a la pregunta, contribución principal, limitación más importante, y un camino futuro de investigación específico.
 :::

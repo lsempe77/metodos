@@ -2,93 +2,281 @@
 
 ## Bienvenido al museo
 
-Después de años como asesor de tesis, revisor de artículos y editor de revistas, he acumulado una colección de errores que se repiten con una consistencia casi poética. Este capítulo es un recorrido por esa colección.
+Después de años como asesor de tesis, revisor de artículos y editor de revistas, he acumulado una colección de errores que se repiten con una consistencia casi poética. Este capítulo es un recorrido por esa colección —ampliada, actualizada, y complementada con ejemplos que, lamentablemente, son reales.
 
-No es para burlarse. Es para aprender. Porque si puedes reconocer estos errores antes de cometerlos, tu investigación será significativamente mejor que la de la mayoría.
+No es para burlarse (bueno, un poco). Es para aprender. Porque si puedes reconocer estos errores antes de cometerlos, tu investigación será significativamente mejor que la de la mayoría. Y si ya los cometiste, bienvenido al club. Todos hemos estado ahí.
+
+John Ioannidis, en su ya célebre artículo "Why most published research findings are false," demostró que la mayoría de los hallazgos publicados en ciencias son probablemente falsos [@ioannidis2005]. No porque los investigadores sean malos, sino porque el sistema —presión por publicar, sesgos inconscientes, malas prácticas estadísticas— produce errores sistemáticamente. Este capítulo es un intento de que tú no contribuyas a esa estadística.
 
 ## Errores de diseño
 
 ### 1. La pregunta-océano
-"¿Cuáles son los factores que influyen en la educación en América Latina?" Eso no es una pregunta de investigación. Es un programa de doctorado de 10 años. Delimita.
+
+"¿Cuáles son los factores que influyen en la educación en América Latina?" Eso no es una pregunta de investigación. Es un programa de doctorado de 10 años. O un libro de 500 páginas. O el tema de un congreso entero.
+
+La pregunta-océano surge de la ambición mal calibrada: quieres resolver el mundo en 100 páginas. La solución es simple pero dolorosa: **delimita.** ¿Qué factores? ¿Qué dimensión de la educación? ¿En qué país? ¿En qué período? ¿En qué nivel educativo?
+
+Compara:
+- ❌ "¿Qué factores influyen en la educación en América Latina?"
+- ✅ "¿Cómo afecta la inversión en infraestructura escolar al rendimiento en matemáticas en escuelas rurales de Perú entre 2015 y 2020?"
+
+La segunda es investigable. La primera es una carrera académica.
 
 ### 2. El marco teórico Wikipedia
-Copiar definiciones de manual no es un marco teórico. Si tu "marco teórico" se puede reemplazar por una búsqueda en Google sin que nadie note la diferencia, tienes un problema.
+
+Copiar definiciones de manual no es un marco teórico. Si tu "marco teórico" se puede reemplazar por una búsqueda en Google sin que nadie note la diferencia, tienes un problema serio.
+
+Un marco teórico real hace tres cosas: (1) define los conceptos clave y cómo los entiendes *tú*, (2) establece las relaciones teóricas entre esos conceptos, y (3) justifica *por qué* esperas observar ciertos patrones en tus datos. Si tu marco teórico no genera predicciones o expectativas, es decoración.
+
+La versión más triste del marco teórico Wikipedia: empezar con "Según la Real Academia Española, educación es..." Por favor. Tu lector sabe qué es la educación. Lo que necesita saber es qué marco conceptual estás usando para analizarla.
 
 ### 3. La hipótesis obvia
+
 "La pobreza afecta negativamente la calidad de vida." Sí, gracias. ¿Puedes decirnos algo que no sepamos?
 
+Una buena hipótesis debe ser: (a) falsificable (debe poder ser falsa), (b) específica (no vaga), y (c) no trivial (debe aportar algo que no sea sentido común).
+
+- ❌ "La educación mejora el bienestar."
+- ✅ "Las personas con educación universitaria reportan mayor satisfacción vital, pero este efecto se concentra en quienes tienen empleo acorde a su formación; los sobrecualificados no muestran diferencia con quienes no fueron a la universidad."
+
+La segunda es arriesgada. Podría ser falsa. Eso la hace interesante.
+
 ### 4. La desconexión pregunta-método
-Pregunta cualitativa, método cuantitativo (o viceversa). "¿Cómo viven los ancianos la soledad?" → Encuesta con escala Likert del 1 al 5. ¿En serio?
+
+Pregunta cualitativa, método cuantitativo (o viceversa). "¿Cómo viven los ancianos la soledad?" → Encuesta con escala Likert del 1 al 5. ¿En serio? ¿Vas a capturar la experiencia de la soledad con un numerito?
+
+La variante inversa: "¿Cuál es la prevalencia de violencia doméstica en la región?" → 8 entrevistas en profundidad. Valiosas para entender la experiencia, pero no te dicen la prevalencia.
+
+La solución es sencilla: escribe tu pregunta. Léela. Pregúntate qué *tipo* de respuesta necesitas. Si necesitas "cuántos," usa números. Si necesitas "cómo lo viven," usa palabras. Si necesitas ambos, usa métodos mixtos (ver @enfoques).
 
 ### 5. Variables sin operacionalización
-"Mi variable independiente es la cultura." ¿Qué dimensión de la cultura? ¿Cómo la mides? ¿Con qué instrumento? Si no puedes responder, tu variable es un fantasma.
+
+"Mi variable independiente es la cultura." ¿Qué dimensión de la cultura? ¿Cómo la mides? ¿Con qué instrumento? ¿Cuántas dimensiones tiene? ¿Estás hablando de valores, prácticas, creencias, normas?
+
+Si no puedes responder estas preguntas, tu variable es un fantasma: existe en tu imaginación pero no en tus datos. Todo concepto abstracto necesita un puente hacia lo observable. Ese puente es la operacionalización. "Capital social" no es medible; "número de organizaciones comunitarias a las que pertenece" sí lo es. No es lo mismo, claro. Pero es lo que puedes medir. Y debes ser honesto sobre la distancia entre tu concepto teórico y tu medición práctica.
 
 ## Errores de método
 
 ### 6. La muestra disfrazada
-Muestra de conveniencia presentada como "aleatoria estratificada." Nadie te va a juzgar por usar una muestra de conveniencia. Pero sí te van a juzgar por mentir al respecto.
+
+Muestra de conveniencia presentada como "aleatoria estratificada." He visto esto más veces de las que me gustaría admitir. Alguien entrevista a sus compañeros de clase, a sus amigos, a la gente que encontró en Facebook, y lo llama "muestreo aleatorio."
+
+Nadie te va a juzgar por usar una muestra de conveniencia. Es legítima, especialmente en estudios exploratorios o cuando no tienes recursos para un muestreo probabilístico. Pero **sí** te van a juzgar por mentir al respecto. La honestidad sobre las limitaciones de tu muestra es un requisito mínimo de integridad académica.
 
 ### 7. La encuesta eterna
-45 minutos de encuesta con 120 preguntas. A partir de la pregunta 30, la gente responde cualquier cosa con tal de terminar. Tus datos después de ese punto son ruido, no información.
+
+45 minutos de encuesta con 120 preguntas. A partir de la pregunta 30, la gente responde cualquier cosa con tal de terminar. Las últimas 30 preguntas de tu encuesta no son datos; son ruido producido por el aburrimiento.
+
+Regla práctica: si no puedes justificar *para qué necesitas exactamente* cada pregunta en tu análisis, elimínala. Una encuesta de 15 minutos con 30 preguntas bien pensadas produce datos infinitamente mejores que una de 45 minutos con 120 preguntas donde 80 "podrían ser interesantes."
+
+Y otro pecado frecuente: preguntas ambiguas. "¿Está usted de acuerdo con que el gobierno debería hacer más por la educación y la salud?" Dos preguntas en una. ¿Qué pasa si estoy de acuerdo con educación pero no con salud?
 
 ### 8. La entrevista interrogatorio
-"Dígame exactamente cómo se siente sobre X." Eso no es una entrevista; es un interrogatorio policial. Pregunta abierto, escucha, profundiza.
+
+"Dígame exactamente cómo se siente sobre X." Eso no es una entrevista; es un interrogatorio policial. Una buena entrevista cualitativa es una conversación guiada, no un cuestionario leído en voz alta.
+
+Los errores más comunes en entrevistas:
+- Preguntas cerradas que se pueden responder con sí/no. "¿Le gusta su trabajo?" → "Sí." Fin.
+- Preguntas que sugieren la respuesta. "¿No cree usted que la corrupción es el principal problema?" Eso no es preguntar; es confirmar.
+- No tolerar el silencio. Los mejores momentos de una entrevista ocurren cuando callas y esperas. El entrevistado llena el silencio, y lo que dice suele ser más profundo que su primera respuesta.
+- Interrumpir para pasar a la siguiente pregunta de tu guía. La guía es una brújula, no un guión. Si el entrevistado te lleva a un territorio interesante que no estaba en tu guía, síguelo.
 
 ### 9. Tamaño de muestra injustificado
+
 "Entrevisté a 7 personas." ¿Por qué 7? "Porque fueron las que pude encontrar." Eso es honesto, pero necesitas justificar por qué 7 es suficiente (o reconocer que probablemente no lo es).
 
+En investigación cuantitativa, el tamaño de muestra se calcula con fórmulas. En investigación cualitativa, el criterio es la **saturación:** cuando nuevas entrevistas ya no aportan información nueva. Pero la saturación no ocurre mágicamente a las 7 entrevistas. Estudios metódicos sugieren que la saturación temática básica puede ocurrir entre 9 y 17 entrevistas, dependiendo de la heterogeneidad de tu población y la complejidad de tu tema.
+
+Lo que *nunca* es aceptable: elegir el tamaño de muestra por conveniencia y después inventar una justificación post hoc. Si solo pudiste entrevistar a 5 personas, di "solo pude entrevistar a 5 personas y reconozco que esto limita mis hallazgos." Eso es más respetable que pretender que 5 entrevistas alcanzan la saturación.
+
 ### 10. Datos sin contexto
-Usar una base de datos sin entender cómo fue recolectada, qué población representa, y qué limitaciones tiene. Los datos no caen del cielo; alguien los construyó con decisiones que afectan lo que tú puedes decir con ellos.
+
+Usar una base de datos sin entender cómo fue recolectada, qué población representa, y qué limitaciones tiene. He visto tesis enteras basadas en la ENAHO de Perú donde el estudiante no leyó el manual metodológico de la encuesta. No sabía cómo se definía "hogar," no entendía el factor de expansión, no sabía que la muestra excluye ciertas zonas rurales.
+
+Los datos no caen del cielo; alguien los construyó con decisiones que afectan lo que tú puedes decir con ellos. Si usas datos secundarios, tu primer paso —antes de cualquier análisis— es leer la documentación técnica de la base de datos. Toda ella. Sí, es aburrido. No, no es opcional.
 
 ## Errores de análisis
 
 ### 11. Correlación = causalidad
-El error inmortal. "Los países con más consumo de chocolate tienen más premios Nobel. Conclusión: el chocolate te hace inteligente." No. Por favor, no.
+
+El error inmortal. "Los países con más consumo de chocolate tienen más premios Nobel. Conclusión: el chocolate te hace inteligente." No. Ambas cosas se correlacionan con la riqueza del país.
+
+Lo más peligroso de este error no es cuando es obvio (como el chocolate), sino cuando es sutil. "Los estudiantes que asisten a tutorías tienen mejores notas, ergo las tutorías funcionan." Quizás. O quizás los estudiantes más motivados son los que asisten a tutorías *y* los que sacan mejores notas. La motivación es la variable oculta, no la tutoría.
+
+Establecer causalidad requiere diseños específicos (ver @disenos). No basta con controlar variables en una regresión. Si Kahneman nos enseñó algo, es que nuestro cerebro está diseñado para ver patrones causales donde solo hay correlaciones [@kahneman2011]. Es un sesgo cognitivo. Combatirlo requiere esfuerzo consciente.
 
 ### 12. El p-value como dios
-"p < 0.05, ergo es verdad." Un p-value bajo no significa que tu resultado sea importante, ni correcto, ni relevante. Significa que es improbable bajo la hipótesis nula. Eso es todo.
 
-### 13. Ignorar los supuestos
-Correr una regresión lineal sin verificar normalidad, homocedasticidad, multicolinealidad. Es como conducir un auto sin verificar los frenos. Puede funcionar. Hasta que no funciona.
+"p < 0.05, ergo es verdad." Un p-value bajo no significa que tu resultado sea importante, ni correcto, ni relevante. Significa que es improbable observar datos tan extremos si la hipótesis nula fuera cierta. Eso es todo.
+
+Y un p-value de 0.051 no es "casi significativo." Es no significativo. El umbral 0.05 es arbitrario (lo inventó Ronald Fisher como regla de dedo, no como mandamiento divino), y convertirlo en una línea sagrada entre "descubrimiento" y "nada" es absurdo.
+
+La American Statistical Association lo dijo formalmente en 2016: dejen de usar el p-value como criterio único de decisión [@wasserstein2016]. Reporta el tamaño del efecto, los intervalos de confianza, y una interpretación sustantiva. "El programa mejora las notas en 0.3 desviaciones estándar (IC 95%: 0.1-0.5, p = 0.003)" es información útil. "El resultado es significativo (p < 0.05)" no te dice nada sobre si importa.
+
+### 13. Ignorar los supuestos estadísticos
+
+Correr una regresión lineal sin verificar linealidad, normalidad de residuos, homocedasticidad, multicolinealidad. Es como conducir un auto sin verificar los frenos. Puede funcionar. Hasta que no funciona.
+
+Los supuestos no son un trámite burocrático. Si tu variable dependiente tiene una distribución muy sesgada y usas OLS, tus estimaciones pueden estar sesgadas. Si tus errores son heterocedásticos y no usas errores robustos, tus p-values están mal. Si tienes multicolinealidad severa, tus coeficientes individuales no son interpretables.
+
+La buena noticia: verificar supuestos es fácil. Unos pocos gráficos y tests te dan la información que necesitas. La mala noticia: casi nadie lo hace.
 
 ### 14. Cherry picking cualitativo
-Seleccionar solo las citas que confirman tu argumento e ignorar las que lo contradicen. Si 15 entrevistados dicen A y 5 dicen B, los 5 que dicen B son quizás los más interesantes.
+
+Seleccionar solo las citas que confirman tu argumento e ignorar las que lo contradicen. Si 15 entrevistados dicen A y 5 dicen B, los 5 que dicen B son quizás los más interesantes —son los "casos negativos" que desafían tu interpretación y la hacen más rica.
+
+Miles, Huberman y Saldaña lo dicen sin rodeos: la credibilidad de un estudio cualitativo se demuestra mostrando la evidencia que *no* confirma tu argumento, no solo la que lo confirma [@milesHuberman2014]. Si tu análisis cualitativo parece demasiado limpio, demasiado coherente, demasiado bonito, probablemente estás escondiendo la complejidad.
 
 ### 15. El gráfico mentiroso
-Ejes que no empiezan en cero, escalas manipuladas, colores que exageran diferencias. Un gráfico puede contar la verdad o una mentira con los mismos datos.
+
+Ejes que no empiezan en cero, escalas manipuladas, colores que exageran diferencias. Un gráfico puede contar la verdad o una mentira con los mismos datos. El ejemplo clásico: un gráfico de barras donde el eje Y va de 98 a 102. Una diferencia de 4 puntos parece enorme. Si el eje empezara en 0, verías que es trivial.
+
+Gelman y sus colegas han documentado extensamente cómo las decisiones de visualización pueden distorsionar la interpretación [@gelman2014]. El principio es simple: si tu gráfico necesita trucos visuales para que el hallazgo parezca impresionante, quizás el hallazgo no es tan impresionante.
 
 ## Errores de escritura
 
 ### 16. El abstract de 500 palabras
-Un abstract es un resumen de tu investigación completa en 150-250 palabras. No es un mini-ensayo. Si no puedes resumir tu trabajo en 200 palabras, probablemente no lo entiendes lo suficiente.
+
+Un abstract es un resumen de tu investigación completa en 150-250 palabras. No es un mini-ensayo, no es una introducción al tema, y no es el lugar para revisar literatura. Es: problema, método, resultados principales, conclusión. En ese orden. En 200 palabras.
+
+Si no puedes resumir tu trabajo en 200 palabras, probablemente no lo entiendes lo suficiente. Un abstract bien escrito tiene una función práctica crucial: es lo primero (y muchas veces lo único) que lee quien decide si tu artículo vale la pena. Es tu carta de presentación. No la desperdicies.
 
 ### 17. La introducción que no introduce
-Introducciones que dan toda la vuelta al mundo antes de llegar al punto. "Desde los albores de la humanidad, la educación ha sido un pilar fundamental…" No. Empieza por el problema. Directo.
+
+Introducciones que dan toda la vuelta al mundo antes de llegar al punto. "Desde los albores de la humanidad, la educación ha sido un pilar fundamental de la sociedad..." No. Empieza por el problema concreto. Directo.
+
+Una buena introducción tiene cuatro partes, en este orden: (1) el problema que motiva tu estudio, (2) por qué importa, (3) qué vacío hay en lo que sabemos, y (4) qué vas a hacer tú al respecto. No necesitas más. Si tu introducción tiene más de 3 páginas, recórtala.
 
 ### 18. Citas sin análisis
-"Según Pérez (2018), la pobreza es multidimensional (p. 45)." Y luego… nada. ¿Qué tiene que ver con tu investigación? ¿Estás de acuerdo? ¿La usas? Las citas sin análisis son decoración.
+
+"Según Pérez (2018), la pobreza es multidimensional (p. 45)." Y luego… nada. ¿Qué tiene que ver con tu investigación? ¿Estás de acuerdo? ¿Discrepas? ¿La usas para algo? Las citas sin análisis son decoración intelectual. Demuestran que leíste algo, pero no que lo entendiste ni que sabes usarlo.
+
+Cada cita debería ir seguida de una de estas cosas: tu análisis de lo que dice, tu conexión con tu argumento, tu crítica o matiz, o tu aplicación a tu caso. Si solo estás pegando citas para que tu revisión de literatura se vea "seria," estás haciendo collage, no investigación.
 
 ### 19. Conclusiones que no concluyen
-"Se necesita más investigación sobre el tema." Eso no es una conclusión. Es una evasión. ¿Qué encontraste? ¿Qué significa? ¿Qué aporta?
 
-## Errores de actitud
+"Se necesita más investigación sobre el tema." Eso no es una conclusión. Es una evasión. ¿Qué encontraste? ¿Qué significa? ¿Qué aporta a lo que ya sabíamos? ¿Qué implicaciones tiene?
 
-### 20. El enamorado de su tema
-Tan enamorado de su tema que no acepta críticas, no modifica su pregunta cuando los datos le dicen que debería, y defiende su postura como si fuera un dogma de fe. La investigación es buscar verdades, no confirmar creencias.
+Tus conclusiones deben responder directamente tu pregunta de investigación. Si tu pregunta era "¿El programa X mejora Y?", tu conclusión debe decir si lo mejora o no, en qué medida, bajo qué condiciones, y con qué limitaciones. "Se necesita más investigación" puede ser una nota al pie, no el acto final.
+
+## Errores de integridad: la zona oscura
+
+Estos son los errores más graves porque no son errores de ignorancia sino de conducta. Los incluyo porque ocurren más de lo que la academia quiere admitir.
+
+### 20. P-hacking: torturar los datos hasta que confiesen
+
+El p-hacking consiste en probar decenas de especificaciones, variables de control, subgrupos y transformaciones hasta que algún resultado sale significativo —y reportar solo ese resultado como si fuera el único que probaste [@simmons2011].
+
+Head y sus colegas demostraron que la distribución de p-values en la literatura científica tiene un pico sospechoso justo debajo de 0.05, exactamente lo que esperarías si los investigadores estuvieran manipulando sus análisis para cruzar el umbral mágico [@head2015].
+
+Ejemplos de p-hacking:
+- Probar 15 variables de control diferentes y reportar solo la combinación que da significancia.
+- Eliminar outliers hasta que el resultado "mejora."
+- Dividir la muestra en subgrupos hasta encontrar uno donde el efecto es significativo. "El programa no funciona en general, pero funciona para mujeres mayores de 40 en zonas rurales" (después de probar 30 subgrupos).
+- Cambiar la variable dependiente. "No afecta el ingreso, ni el empleo, ni la satisfacción... pero sí la autoestima."
+
+Gelman y Loken lo llaman "el jardín de senderos que se bifurcan": las decisiones analíticas parecen razonables individualmente, pero juntas crean un espacio enorme de posibles resultados, y seleccionar solo los favorables es una forma de sesgo [@gelman2014].
+
+### 21. HARKing: hipótesis después de los resultados
+
+**H**ypothesizing **A**fter **R**esults are **K**nown. Kerr documentó esta práctica en un artículo devastador [@kerr1998]: encuentras un resultado inesperado en tus datos y luego escribes tu artículo como si siempre hubieras predicho ese resultado. Reorganizas tu introducción, ajustas tu marco teórico, y presentas un hallazgo exploratorio como si fuera una confirmación de tu hipótesis.
+
+¿Por qué es problemático? Porque la lógica del test de hipótesis asume que la hipótesis se formuló *antes* de ver los datos. Si primero ves el resultado y luego formulas la hipótesis, la probabilidad de "confirmarla" es del 100%. Es como apostar a un caballo después de que terminó la carrera.
+
+La solución no es dejar de explorar datos —la exploración es valiosa. La solución es ser honesto: distinguir explícitamente entre hipótesis confirmatorias (formuladas antes) e hipótesis exploratorias (descubiertas en los datos). No hay deshonra en lo exploratorio. Lo deshonesto es presentarlo como confirmatorio.
+
+### 22. La crisis de replicabilidad
+
+En 2015, el Open Science Collaboration intentó replicar 100 estudios publicados en las mejores revistas de psicología. Resultado: solo el 36% se replicó [@osc2015]. Otro tercio mostró efectos en la dirección esperada pero no significativos. Y el tercio restante simplemente no se replicó.
+
+Esto no es un problema solo de la psicología. Hay evidencia de problemas similares en economía, medicina, ciencias políticas y educación. Las causas son múltiples: p-hacking, HARKing, sesgos de publicación (las revistas publican resultados positivos, no nulos), muestras pequeñas, y la presión por publicar.
+
+¿Qué puedes hacer tú?
+
+- **Pre-registra tu estudio.** Nosek y sus colegas promueven el pre-registro como antídoto: antes de recoger datos, registra públicamente tus hipótesis, tu diseño y tu plan de análisis [@nosek2018]. Así, nadie (ni tú mismo) puede acusarte de p-hacking o HARKing.
+- **Reporta todo.** No solo los resultados significativos. Los nulos también importan.
+- **Comparte tus datos y código.** La transparencia es la mejor defensa contra la mala ciencia.
+- **Sé escéptico con resultados espectaculares.** Si un efecto parece demasiado bueno para ser verdad, probablemente lo es.
+
+### 23. El autoplagio disfrazado
+
+Publicar el mismo contenido en diferentes revistas/contextos sin reconocerlo. O, más sutilmente, reutilizar secciones enteras de una tesis anterior sin indicarlo. No es el crimen del siglo, pero sí una falta de transparencia que puede tener consecuencias serias.
+
+### 24. Sobreinterpretar datos cualitativos
+
+Una entrevistada menciona de pasada que "a veces se siente sola en la universidad." En tu análisis, esto se convierte en "los estudiantes de primera generación experimentan una profunda crisis existencial de pertenencia identitaria." Un comentario casual convertido en una categoría analítica grandilocuente. La distancia entre lo que dice el dato y lo que afirma el investigador es un indicador de rigor. Si la distancia es grande, estás sobreinterpretando.
+
+### 25. El overfitting: el modelo que memoriza en vez de aprender
+
+En análisis cuantitativo, el overfitting ocurre cuando tu modelo se ajusta *demasiado bien* a tus datos —captura el ruido, no solo la señal. Si tu modelo tiene tantas variables como observaciones, puede explicar el 100% de la variación en *tu* muestra y predecir horriblemente mal en cualquier otra.
+
+Señales de overfitting:
+- Un R² sospechosamente alto (0.95 con datos sociales... desconfía).
+- Muchas más variables que lo que tu teoría justifica.
+- Resultados que no se replican en una muestra diferente.
+- Modelos que cambian radicalmente al agregar o quitar una observación.
+
+## El enamorado de su tema
+
+Merece su propia sección porque es el meta-error que subyace a muchos de los anteriores. El investigador tan enamorado de su tema, su teoría, o su hipótesis que pierde la capacidad de ser autocrítico.
+
+Kahneman lo describe bien: nuestro cerebro está diseñado para buscar confirmación, no para buscar refutación [@kahneman2011]. Es cómodo encontrar lo que esperabas. Es incómodo descubrir que estabas equivocado. Pero la ciencia avanza con la incomodidad, no con la comodidad.
+
+El antídoto es cultivar activamente lo que Kahneman llama "pensamiento lento": detenerte, cuestionar tus supuestos, buscar deliberadamente evidencia que contradiga tu hipótesis, y estar genuinamente dispuesto a cambiar de opinión. Fácil de decir. Difícil de hacer. Pero es lo que separa la investigación de la propaganda.
 
 ::: {.callout-warning}
 ## Checklist antes de entregar
 
-Antes de enviar tu tesis o artículo, revisa:
+Antes de enviar tu tesis o artículo, revisa esta lista:
+
+**Diseño:**
 
 - [ ] ¿Mi pregunta es clara, específica e investigable?
 - [ ] ¿Mi marco teórico se conecta con mis variables y mi análisis?
-- [ ] ¿Mi revisión de literatura es un argumento, no una lista?
+- [ ] ¿Mis hipótesis son falsificables y no triviales?
+- [ ] ¿Hay coherencia entre mi pregunta, mi enfoque y mi método?
+
+**Método:**
+
+- [ ] ¿Mi muestra está correctamente descrita y justificada?
+- [ ] ¿Mis instrumentos están validados (o al menos piloteados)?
 - [ ] ¿Mi metodología es lo suficientemente detallada para ser replicada?
-- [ ] ¿Mis resultados están separados de mi interpretación?
-- [ ] ¿Mi discusión dialoga con la literatura y el marco teórico?
+- [ ] ¿Documenté todas las decisiones de limpieza de datos?
+
+**Análisis:**
+
+- [ ] ¿Verifiqué los supuestos de mis tests estadísticos?
+- [ ] ¿Reporté tamaños de efecto, no solo p-values?
+- [ ] ¿Mostré la evidencia que contradice mi argumento, no solo la que lo confirma?
+- [ ] ¿Mi análisis cualitativo incluye casos negativos?
+
+**Escritura:**
+
+- [ ] ¿Mi abstract resume problema, método, resultados y conclusión en 200 palabras?
+- [ ] ¿Mi introducción va directo al problema?
+- [ ] ¿Cada cita está analizada, no solo pegada?
 - [ ] ¿Mis conclusiones responden mi pregunta de investigación?
-- [ ] ¿Reconozco honestamente las limitaciones?
-- [ ] ¿Mis referencias están completas y consistentes?
+
+**Integridad:**
+
+- [ ] ¿Distinguí claramente entre hipótesis confirmatorias y exploratorias?
+- [ ] ¿Reporté resultados nulos, no solo significativos?
+- [ ] ¿Reconozco honestamente las limitaciones de mi estudio?
 - [ ] ¿Alguien externo leyó el texto y lo entendió?
+
+Si puedes marcar todo con ✅, tu trabajo está en el 10% superior de lo que se entrega. Si no, vuelve a trabajar. Tu investigación lo merece.
+:::
+
+::: {.callout-tip}
+## Ejercicio
+
+Toma un artículo publicado en tu área (preferiblemente uno que cites en tu tesis) y busca:
+
+1. ¿Cuántos de los 25 errores de este capítulo puedes identificar?
+2. ¿El artículo reporta tamaños de efecto o solo p-values?
+3. ¿La muestra está bien justificada?
+4. ¿Las conclusiones se limitan a lo que los datos permiten, o sobreinterpretan?
+5. ¿Podrías replicar el estudio con la información que te dan?
+
+Ahora haz el mismo ejercicio con tu propio trabajo. Duele más, pero sirve más.
 :::

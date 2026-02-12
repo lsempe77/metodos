@@ -4,7 +4,7 @@
 
 Defendiste tu tesis. Aprobaste. Celebraste (ojalá bastante). Y ahora te enfrentas a una pregunta que pocos manuales abordan: **¿qué haces con todo lo que aprendiste?**
 
-La tesis no tiene que ser el final de tu vida investigadora. Puede ser el principio. O puede ser un capítulo cerrado que te dejó habilidades valiosas para otros caminos. Ambas opciones son válidas.
+La tesis no tiene que ser el final de tu vida investigadora. Puede ser el principio. O puede ser un capítulo cerrado que te dejó habilidades valiosas para otros caminos. Ambas opciones son válidas. Lo que no es válido es dejar tu tesis juntando polvo (digital) en un repositorio que nadie visita.
 
 ## Publicar en revistas: cómo funciona el peer review
 
@@ -12,28 +12,80 @@ Si tu tesis tiene resultados interesantes (y probablemente los tiene, aunque no 
 
 ### El proceso
 
-1. **Conviertes tu tesis en un artículo.** Una tesis de 150 páginas NO es un artículo. Un artículo tiene 6.000-10.000 palabras (depende de la revista). Tienes que comprimir, seleccionar, y reescribir. Es casi un trabajo nuevo.
+1. **Conviertes tu tesis en un artículo.** Una tesis de 150 páginas NO es un artículo. Un artículo tiene 6.000-10.000 palabras (depende de la revista). Tienes que comprimir, seleccionar, y reescribir. @belcher2019 tiene un método paso a paso para esta conversión que es extraordinariamente útil.
 
-2. **Eliges una revista.** Busca revistas que publiquen temas similares al tuyo. Mira dónde publican los autores que citas. Revisa si la revista es indexada (Scopus, Web of Science, SciELO). Ojea las normas para autores.
+2. **Eliges una revista.** Busca revistas que publiquen temas similares al tuyo. Mira dónde publican los autores que citas. Revisa si la revista es indexada (Scopus, Web of Science, SciELO). Ojea las normas para autores. **No envíes a la revista más prestigiosa del mundo si tu primer artículo es la tesis de maestría.** Sé estratégico: hay excelentes revistas de rango medio donde tu paper tiene muchas más probabilidades.
 
-3. **Envías tu manuscrito.** La revista asigna un editor que decide si tu paper va a revisión o se rechaza directamente (desk rejection). Que no te desanime: las tasas de desk rejection pueden llegar al 50% en buenas revistas.
+3. **Envías tu manuscrito.** La revista asigna un editor que decide si tu paper va a revisión o se rechaza directamente (*desk rejection*). Que no te desanime: las tasas de *desk rejection* pueden llegar al 50% en buenas revistas.
 
-4. **Revisión por pares (peer review).** 2-3 revisores anónimos (expertos en tu tema) leen tu paper y emiten un dictamen:
+4. **Revisión por pares (*peer review*).** 2-3 revisores anónimos (expertos en tu tema) leen tu paper y emiten un dictamen:
    - **Aceptado:** Rarísimo en primera vuelta. Si te pasa, cómprate un billete de lotería.
    - **Revisiones menores:** Cambios pequeños. Buena señal.
    - **Revisiones mayores:** Cambios sustanciales. No es un rechazo; es una oportunidad.
-   - **Rechazado:** Duele, pero es parte del proceso. Los mejores investigadores del mundo tienen papers rechazados.
+   - **Rechazado:** Duele, pero es parte del proceso. Los mejores investigadores del mundo tienen papers rechazados. Muchos de ellos.
 
-5. **Respondes a los revisores.** Punto por punto. Con educación. Incluso cuando sus comentarios te parezcan injustos. (Especialmente cuando te parecen injustos.)
+5. **Respondes a los revisores.** Punto por punto. Con educación. Incluso cuando sus comentarios te parezcan injustos. (Especialmente cuando te parecen injustos.) Ver @sec-escribir para estrategias de respuesta.
 
 6. **Si todo sale bien, se publica.** Pueden pasar 6-18 meses desde el envío. La academia no es rápida.
 
-### Consejos para sobrevivir el peer review
+### Dónde publicar: una guía para navegantes
 
-- **No te lo tomes personal.** Los revisores critican tu trabajo, no tu persona. (Bueno, la mayoría de las veces.)
-- **Agradece los comentarios duros.** Son los que más mejoran tu paper.
-- **Si te rechazan, no abandones.** Mejora el paper con los comentarios y envíalo a otra revista.
-- **Publica en español también.** No todo tiene que ser en inglés. Hay excelentes revistas en español (y tu trabajo puede tener más impacto en tu contexto si está en el idioma local).
+| Tipo de revista | Ejemplos | Para quién |
+|---|---|---|
+| **Top journals** (Q1 Scopus) | *American Sociological Review*, *World Development*, *Comparative Education Review* | Investigadores establecidos, resultados excepcionales |
+| **Revistas sólidas (Q2-Q3)** | *Latin American Research Review*, *Journal of Latin American Studies*, *Estudios Sociológicos* | Investigadores en formación con buenos resultados |
+| **Revistas regionales indexadas** | *Revista CEPAL*, *Perfiles Educativos*, *Colombia Internacional* | Primer artículo, resultados de tesis |
+| **SciELO** | Muchas revistas latinoamericanas | Acceso abierto, público hispanohablante |
+| **Revistas estudiantiles** | Varían por universidad | Primera publicación, familiarizarse con el proceso |
+
+### Publica en español también
+
+No todo tiene que ser en inglés. Hay excelentes revistas en español indexadas en Scopus y Web of Science. Y tu trabajo puede tener más **impacto real** en tu contexto si está en el idioma local. Un artículo en *Perfiles Educativos* (México) o en *Revista CEPAL* llega directamente a los policy-makers y académicos de la región que más se benefician de tus hallazgos.
+
+La obsesión por publicar solo en inglés es, en muchos casos, una forma sutil de colonialismo académico. Publica donde tu conocimiento tenga más impacto.
+
+## Revistas depredadoras: el lado oscuro de la academia
+
+Con la explosión del acceso abierto surgió un negocio perverso: **revistas depredadoras** (*predatory journals*). Son revistas que cobran por publicar, tienen "peer review" ficticio (aceptan cualquier cosa), y parecen legítimas pero no lo son [@beall2012].
+
+### Cómo identificarlas
+
+| Señal de alerta 🚩 | Detalle |
+|---|---|
+| Te envían correos no solicitados invitándote a publicar | "Dear esteemed researcher" (ni siquiera saben tu nombre) |
+| Prometen revisión en 2-3 días | Un peer review serio tarda semanas o meses |
+| Cobran tarifas de publicación sin transparencia | APCs existen en revistas legítimas, pero son claras y razonables |
+| No aparecen en Scopus, Web of Science, ni SciELO | Verificar siempre la indexación |
+| El comité editorial es falso o no verificable | Busca los nombres: ¿existen? ¿Trabajan donde dicen? |
+| Publican sobre temas inconexos | Una revista de "ingeniería, educación y salud" no es seria |
+
+**Recursos para verificar:**
+- [Compass to Publish](https://app.compass-to-publish.org/) (herramienta de Elsevier)
+- [DOAJ](https://doaj.org/) (Directorio de revistas de acceso abierto legítimas)
+- [Cabells](https://cabells.com/) (lista de revistas depredadoras, por suscripción)
+- Buscar la revista en Scopus o Web of Science
+
+Publicar en una revista depredadora no solo no suma a tu CV: puede restarlo. Demuestra falta de juicio o desesperación. No caigas en la trampa.
+
+## Ciencia abierta: el futuro ya llegó
+
+El movimiento de **ciencia abierta** (*open science*) está transformando la forma de hacer investigación. No es una moda; es una respuesta a la crisis de replicación y a las prácticas cuestionables que vimos en el @sec-errores.
+
+### Componentes principales
+
+**Preregistro:** Registrar tu hipótesis, método y plan de análisis *antes* de recoger datos. Esto evita el p-hacking y el HARKing (ver @sec-errores). Plataformas: [OSF](https://osf.io/), [AsPredicted](https://aspredicted.org/).
+
+**Datos abiertos:** Compartir tus datos (anonimizados) para que otros puedan verificar y reutilizar tu trabajo. Los principios FAIR [@wilkinson2016] proponen que los datos sean: Findable (encontrables), Accessible (accesibles), Interoperable (interoperables) y Reusable (reutilizables).
+
+**Código abierto:** Compartir tus scripts de análisis (R, Python, Stata) para que tus resultados sean reproducibles. Si alguien corre tu código con tus datos, debería obtener exactamente los mismos resultados.
+
+**Preprints:** Publicar versiones preliminares de tu artículo antes de la revisión por pares. Plataformas: [SocArXiv](https://osf.io/preprints/socarxiv) (ciencias sociales), [SSRN](https://www.ssrn.com/) (economía), [arXiv](https://arxiv.org/) (multidisciplinar). Ventaja: feedback rápido y visibilidad inmediata.
+
+::: {.callout-note}
+## Para recordar
+
+La ciencia abierta no es opcional ni altruista; es buena ciencia. Preregistrar tu estudio te obliga a pensar antes de actuar. Compartir tus datos te obliga a ser riguroso en tu manejo de datos. Compartir tu código te obliga a documentar lo que hiciste. Todo eso mejora tu trabajo, independientemente de si alguien lo verifica.
+:::
 
 ## Conferencias académicas: cómo presentar sin dormirlos
 
@@ -42,16 +94,78 @@ Las conferencias son el lugar donde compartes tu trabajo, recibes feedback, y co
 ### Lo que funciona
 
 - **Cuenta una historia.** No leas tu paper. Cuenta el viaje: el problema, la pregunta, lo que hiciste, lo que encontraste, lo que significa.
-- **Menos texto, más visuals.** Si tu slide tiene más de 5 líneas, tiene demasiado texto.
+- **Menos texto, más visuals.** Si tu slide tiene más de 5 líneas, tiene demasiado texto. Pon la idea clave + una imagen/gráfico.
 - **Practica.** Cronometra tu presentación. Si tienes 15 minutos, practica para 12. Los nervios te van a hacer hablar más rápido o más lento.
+- **Un gráfico > una tabla.** En una presentación, nadie puede leer una tabla de regresión con 15 variables. Muestra el resultado principal gráficamente.
 - **Termina con una pregunta provocadora,** no con "gracias, ¿preguntas?" Deja al público pensando.
 
 ### Lo que NO funciona
 
-- Leer las diapositivas palabra por palabra.
+- Leer las diapositivas palabra por palabra (la audiencia sabe leer; quiere tu análisis, no tu lectura).
 - Meter 40 slides en 15 minutos.
-- Empezar con "Antes que nada, quiero agradecer a mi familia, a mi asesor, a mi perro…"
+- Empezar con "Antes que nada, quiero agradecer a mi familia, a mi asesor, a mi perro…" (Guárdalo para los Óscar.)
 - Poner tablas de regresión ilegibles en la pantalla.
+- Mostrar el abstract del paper como primera diapositiva.
+
+### Conferencias clave en América Latina
+
+| Conferencia | Disciplina | Frecuencia |
+|---|---|---|
+| LASA (Latin American Studies Association) | Multidisciplinar | Anual |
+| ALAS (Asociación Latinoamericana de Sociología) | Sociología | Bianual |
+| CLACSO | Ciencias sociales | Variable |
+| CIES (Comparative and International Education Society) | Educación comparada | Anual |
+| LACEA (Latin American and Caribbean Economic Association) | Economía | Anual |
+| ALACIP (Asociación Latinoamericana de Ciencia Política) | Ciencia política | Bianual |
+
+## Redes académicas: a quién conoces importa (más de lo que crees)
+
+La investigación no se hace en aislamiento. Las colaboraciones, las invitaciones, las oportunidades, muchas veces llegan a través de **redes.** No es nepotismo; es cómo funciona la producción de conocimiento.
+
+### Cómo construir redes siendo un investigador junior
+
+1. **Asiste a conferencias** (incluso virtuales). Preséntate a los ponentes cuyo trabajo te interesa. Un "me gustó mucho tu presentación, estoy trabajando en algo similar" abre puertas.
+2. **Comenta papers en redes académicas.** Twitter/X académico (todavía relevante en muchas disciplinas), ResearchGate, LinkedIn.
+3. **Pide feedback.** Escribe a investigadores cuyo trabajo admiras y pídeles comentarios sobre un borrador. La mayoría responde (y se siente halagada).
+4. **Colabora.** Co-autoría con tu asesor, con colegas, con investigadores de otras instituciones. Un paper co-escrito con alguien más visible que tú te da acceso a su red.
+5. **Mantén perfiles actualizados:** Google Scholar (imprescindible), ORCID (identificador único), ResearchGate o Academia.edu (opcionales pero útiles).
+
+### Tu CV académico
+
+Un CV académico no es lo mismo que un CV profesional. Incluye:
+
+- Educación
+- Publicaciones (artículos, capítulos, libros) — ordenados por tipo y año
+- Presentaciones en conferencias
+- Experiencia docente
+- Becas y financiamiento obtenido
+- Servicio (revisión para revistas, comités)
+- Idiomas y habilidades técnicas (R, Python, Stata, NVivo, etc.)
+
+**No incluyas:** foto, estado civil, edad, hobbies. (Esto varía por país, pero la tendencia global es hacia CVs sin información personal irrelevante.)
+
+## Financiamiento: el dinero importa
+
+La investigación cuesta dinero. Viajes, instrumentos, asistentes, software, tiempo. Saber buscar financiamiento es una habilidad que pocos te enseñan.
+
+### Fuentes comunes en América Latina
+
+| Fuente | Tipo | Para quién |
+|---|---|---|
+| **CONICET** (Argentina), **CONACYT** (México), **CONCYTEC** (Perú), **ANID** (Chile) | Becas y fondos nacionales | Estudiantes y profesores del país |
+| **Fulbright** | Becas de estudio e investigación | Movilidad a EE.UU. |
+| **CLACSO** | Becas de investigación | Jóvenes investigadores latinoamericanos |
+| **Fundación Ford, Open Society, Tinker** | Grants de investigación | Temas específicos (derechos, democracia, desarrollo) |
+| **Banco Mundial, BID** | Consultorías de investigación | Investigadores con experiencia |
+| **Erasmus Mundus, DAAD** | Movilidad e intercambio | Estudio en Europa |
+
+### Consejos para escribir una propuesta de financiamiento
+
+1. **Lee las bases con obsesión.** Cada convocatoria dice exactamente qué quiere. Dale exactamente eso.
+2. **Empieza con el problema, no con la metodología.** El evaluador quiere saber primero *por qué importa*, después *cómo lo vas a hacer*.
+3. **Sé realista con el presupuesto.** Ni muy alto (parece inflado) ni muy bajo (parece que no has pensado en los costos reales).
+4. **Muestra que puedes hacerlo.** Tu CV, publicaciones previas, y experiencia son evidencia de que vas a cumplir.
+5. **Pide feedback antes de enviar.** Alguien que haya ganado ese fondo puede decirte qué les importa a los evaluadores.
 
 ## La vida académica: lo bueno, lo malo, y la burocracia
 
@@ -65,9 +179,9 @@ Si estás considerando una carrera académica, aquí va un resumen honesto:
 
 ### Lo malo
 - **Precariedad laboral.** Posiciones permanentes cada vez más escasas. Años de contratos temporales.
-- **Presión por publicar.** "Publish or perish" es real. La cantidad a veces importa más que la calidad.
+- **Presión por publicar.** "*Publish or perish*" es real [@garfield1996]. La cantidad a veces importa más que la calidad.
 - **Ritmo lento.** Todo tarda: publicaciones, financiamiento, promociones, decisiones.
-- **Síndrome del impostor.** Es endémico en la academia. Casi todos lo tienen.
+- **Síndrome del impostor.** Es endémico en la academia. Casi todos lo tienen. (Ver @sec-escribir.)
 
 ### La burocracia
 - Formularios para todo.
@@ -84,14 +198,27 @@ La academia no es el único lugar donde se investiga. Y para muchos, los otros c
 ### Consultorías y evaluaciones
 ONGs, gobiernos, y organismos internacionales contratan constantemente consultores para evaluaciones de programas, diagnósticos, líneas de base, y estudios de política. Si te gusta la investigación aplicada, este es un camino muy viable.
 
+**Habilidades que necesitas:** Las mismas que aprendiste en tu tesis + la capacidad de comunicar resultados a no-académicos + cumplir plazos (esto último no es tan común en la academia como debería).
+
 ### Think tanks y centros de investigación
-Organizaciones como GRADE (Perú), CIPPEC (Argentina), Espacio Público (Chile), o Fedesarrollo (Colombia) hacen investigación de alta calidad fuera del circuito universitario. Son puentes entre la academia y la política pública.
+Organizaciones como GRADE (Perú), CIPPEC (Argentina), Espacio Público (Chile), Fedesarrollo (Colombia), FLACSO, o J-PAL hacen investigación de alta calidad fuera del circuito universitario. Son puentes entre la academia y la política pública.
 
 ### Sector privado
-Empresas de consultoría, departamentos de analytics, investigación de mercados, data science. Las habilidades de investigación (pensar críticamente, analizar datos, comunicar hallazgos) son extremadamente valoradas fuera de la academia.
+Empresas de consultoría, departamentos de analytics, investigación de mercados, data science. Las habilidades de investigación (pensar críticamente, analizar datos, comunicar hallazgos) son extremadamente valoradas fuera de la academia. Y la demanda de estas habilidades solo crece.
 
 ### Periodismo de datos
-La intersección entre investigación y comunicación. Medios como Ojo Público, CIPER, o Animal Político usan metodología de investigación para hacer periodismo de profundidad.
+La intersección entre investigación y comunicación. Medios como Ojo Público (Perú), CIPER (Chile), Animal Político (México), El Faro (El Salvador) usan metodología de investigación para hacer periodismo de profundidad. Si te gusta investigar Y comunicar, esta es una opción fascinante.
+
+### Organismos internacionales
+BID, Banco Mundial, CEPAL, PNUD, UNESCO, UNICEF. Todos tienen departamentos de investigación que producen conocimiento de alto nivel. El camino típico: maestría → consultoría → posición de staff. Son competitivos pero no imposibles.
+
+::: {.callout-important}
+## Reflexión final
+
+Las habilidades que desarrollaste haciendo tu tesis —formular preguntas, pensar sistemáticamente, analizar evidencia, comunicar hallazgos, ser honesto con lo que sabes y lo que no— no son habilidades "académicas." Son habilidades de pensamiento crítico. Y el mundo necesita más de eso, dentro y fuera de la universidad.
+
+Sea cual sea el camino que elijas, recuerda el meta-argumento de este libro: la investigación requiere honestidad intelectual. Con tus datos, con tus sesgos, con tus limitaciones, y con tu lector. Esa honestidad te va a servir vayas donde vayas.
+:::
 
 ::: {.callout-tip}
 ## Ejercicio final
@@ -100,7 +227,8 @@ Reflexiona y escribe un párrafo respondiendo:
 
 1. ¿Qué aprendiste en el proceso de investigación que va más allá del contenido de tu tesis?
 2. ¿Dónde quieres estar en 5 años? ¿La investigación tiene un lugar en esa visión?
-3. Si pudieras empezar tu tesis de nuevo, ¿qué harías diferente?
+3. ¿Cuál es tu siguiente paso concreto? (Convertir la tesis en artículo, postular a un fondo, aplicar a un doctorado, buscar trabajo en consultoría, crear un perfil en Google Scholar...)
+4. Si pudieras empezar tu tesis de nuevo, ¿qué harías diferente? (Esta respuesta suele ser la más reveladora.)
 
 No hay respuestas correctas. Hay respuestas honestas. Y esas son las que importan.
 :::
