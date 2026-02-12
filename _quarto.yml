@@ -8,7 +8,7 @@ book:
   author: "Lucas Sempé"
   date: "2021-09-06"
   date-format: "YYYY-MM-DD"
-  repo-url: https://github.com/lsempe/metodos
+  repo-url: https://github.com/lsempe77/metodos
   repo-actions: [edit]
   chapters:
     - index.qmd
