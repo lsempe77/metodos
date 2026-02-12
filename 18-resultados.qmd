@@ -1,0 +1,100 @@
+# Resultados y discusión: conectar los puntos {#resultados}
+
+## Resultados ≠ opiniones
+
+Este es un error que veo con una frecuencia alarmante: la sección de resultados que está llena de opiniones del investigador en lugar de evidencia.
+
+Los resultados son lo que **encontraste.** No lo que piensas, no lo que esperabas, no lo que te gustaría. Son los datos, organizados y presentados de forma clara.
+
+- "El 67% de los encuestados reportó insatisfacción con el servicio de salud." → Resultado.
+- "Es evidente que el servicio de salud es deficiente." → Opinión disfrazada de resultado.
+
+La diferencia es sutil pero crucial. En la sección de resultados, presentas evidencia. En la discusión, interpretas esa evidencia. Son momentos diferentes del texto.
+
+## Cómo presentar resultados cuantitativos
+
+### Estructura recomendada
+
+1. **Análisis descriptivo primero:** Caracteriza tu muestra. ¿Quiénes son? ¿Cuántos? ¿Cómo se distribuyen en las variables clave?
+2. **Análisis bivariado:** ¿Hay relación entre tus variables principales? Correlaciones, tablas cruzadas, comparación de medias.
+3. **Análisis multivariado:** Regresiones u otros modelos que controlan por múltiples variables.
+4. **Sensibilidad y robustez:** ¿Tus resultados cambian si cambias alguna decisión metodológica? (Esto es lo que separa a los buenos investigadores de los mediocres.)
+
+### Tablas y gráficos
+
+- Cada tabla y cada gráfico debe tener un **número, título y fuente.**
+- No repitas en el texto lo que ya dice la tabla. El texto complementa, contextualiza, destaca lo importante.
+- No metas todas las tablas que puedas. Selecciona las que cuentan la historia. Las demás van a los anexos.
+
+### Sobre la significancia estadística
+
+Un asterisco (*) al lado de un coeficiente significa que el resultado es estadísticamente significativo. Pero eso NO significa que sea importante. Repito: **significancia estadística ≠ importancia práctica.**
+
+Siempre reporta:
+- El **tamaño del efecto** (¿qué tan grande es la diferencia o la relación?).
+- Los **intervalos de confianza** (¿qué tan precisa es tu estimación?).
+- El **contexto sustantivo** (¿esta diferencia importa en la vida real?).
+
+## Cómo presentar resultados cualitativos
+
+### La narrativa importa
+
+En investigación cualitativa, los resultados se presentan como una narrativa analítica, no como una lista de citas. El error más común es el "collage de citas": pegar una cita tras otra sin análisis ni conexión.
+
+### Estructura recomendada
+
+1. **Presenta tus categorías/temas principales.** Son el resultado de tu codificación.
+2. **Para cada categoría, ofrece evidencia** (citas textuales de los participantes).
+3. **Analiza e interpreta** cada cita. ¿Qué nos dice? ¿Cómo se conecta con las demás?
+4. **Muestra variación.** No solo las citas que confirman tu argumento. También las que lo matizan o contradicen.
+
+### La regla de la cita
+
+Una buena cita:
+- Es lo suficientemente larga para tener sentido, pero lo suficientemente corta para mantener la atención.
+- No se explica sola. Tú la introduces, la presentas y la analizas.
+- Aporta algo que el análisis solo con tus palabras no podría transmitir.
+
+## La discusión: donde tus resultados conversan con la literatura
+
+La discusión es, para mí, la sección más intelectualmente estimulante de una tesis. Es donde todo converge: tus datos hablan con tu marco teórico, con la literatura previa, y con las implicaciones prácticas.
+
+### Preguntas que guían una buena discusión
+
+1. **¿Qué encontré y qué significa?** No repitas los resultados. Interprétalos.
+2. **¿Mis resultados coinciden con la literatura previa? ¿La contradicen?** Aquí tu revisión de literatura cobra vida. Si Pérez (2018) encontró lo mismo en otro contexto, eso fortalece tu hallazgo. Si García (2019) encontró lo contrario, ¿por qué? ¿Es el contexto? ¿El método? ¿La muestra?
+3. **¿Cómo se explican mis resultados desde mi marco teórico?** Aquí tu marco teórico cobra vida. ¿Bourdieu tenía razón? ¿Parcialmente? ¿Hay algo que la teoría no explica?
+4. **¿Qué implicaciones tiene esto?** Para la política pública. Para la práctica profesional. Para la teoría. Para futuras investigaciones.
+
+### El error de la discusión vacía
+
+La peor discusión posible es la que simplemente repite los resultados con sinónimos. "Los datos muestran que X. Es decir, X se confirma. En efecto, X es lo que se encontró."
+
+Eso no es discusión. Es eco.
+
+## Conclusiones que concluyen
+
+Las conclusiones no son un resumen de la tesis (para eso está el abstract). Son la respuesta a tu pregunta de investigación, informada por tus resultados.
+
+### Una buena conclusión:
+
+- **Responde la pregunta de investigación** de forma directa.
+- **Destaca la contribución principal** de tu trabajo (¿qué sabemos ahora que no sabíamos antes?).
+- **Reconoce limitaciones** con honestidad (no al final, como una disculpa, sino como parte del argumento).
+- **Sugiere caminos futuros** de investigación (no los genéricos "se necesita más investigación", sino caminos específicos).
+
+## Limitaciones: decirlas te hace más creíble, no menos
+
+Muchos estudiantes (y no pocos investigadores) evitan hablar de las limitaciones de su trabajo, como si reconocerlas lo debilitara. Es exactamente al revés.
+
+Un investigador que dice "mi muestra no es representativa, mis datos son transversales, y mi medición de X es imperfecta" está demostrando que entiende su trabajo y su alcance. Eso genera confianza.
+
+Un investigador que presenta sus resultados como verdades absolutas genera sospecha.
+
+**Toda** investigación tiene limitaciones. Reconocerlas es señal de madurez intelectual, no de debilidad.
+
+::: {.callout-note}
+## Para recordar
+
+Resultados = lo que encontraste (evidencia). Discusión = lo que significa (interpretación). Conclusiones = la respuesta a tu pregunta. No los mezcles.
+:::

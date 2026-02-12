@@ -1,0 +1,144 @@
+# Análisis de datos: donde la magia (no) ocurre {#analisis}
+
+## No hay magia, hay trabajo
+
+Muchos estudiantes creen que el análisis de datos es el momento mágico donde "los resultados aparecen." Metes los datos en SPSS, presionas unos botones, y salen tablas con estrellas (asteriscos de significancia estadística). Magia.
+
+No. El análisis de datos es un proceso que requiere decisiones informadas en cada paso. Y esas decisiones dependen de tu pregunta, tu marco teórico, tu diseño y la naturaleza de tus datos. No hay piloto automático.
+
+## Antes de analizar: limpia tus datos
+
+Esto no es glamoroso, pero es donde se gasta el 60-80% del tiempo real de análisis. Limpiar datos implica:
+
+- **Revisar valores faltantes:** ¿Cuántos hay? ¿Son aleatorios o sistemáticos? (Si todos los que no respondieron la pregunta de ingreso son los más pobres, tienes un sesgo grave.)
+- **Detectar valores atípicos:** ¿Alguien reportó ganar 999.999? Probablemente es un error, no un multimillonario.
+- **Verificar consistencia:** ¿Un respondiente dice tener 15 años y 3 hijos? Posible, pero vale la pena verificar.
+- **Recodificar variables:** Agrupar categorías, crear índices, transformar escalas.
+
+**Regla fundamental:** Documenta TODO lo que hagas. Cada transformación, cada decisión, cada eliminación. Tu "yo" del futuro (y tus revisores) te lo agradecerán.
+
+## Estadística descriptiva: lo básico que muchos ignoran
+
+Antes de correr regresiones sofisticadas, mira tus datos. En serio. Míralos.
+
+- **Distribución:** ¿Cómo se ven tus variables? ¿Son normales, sesgadas, bimodales?
+- **Tendencia central:** Media, mediana, moda. ¿Son diferentes? ¿Por qué?
+- **Dispersión:** Desviación estándar, rango. ¿Hay mucha variabilidad?
+- **Tablas cruzadas:** ¿Cómo se relacionan tus variables principales?
+- **Gráficos:** Histogramas, diagramas de caja, diagramas de dispersión.
+
+La estadística descriptiva no es el "paso previo" al análisis real. **Es** análisis. Muchas veces, un buen gráfico descriptivo te dice más que una regresión.
+
+## Más allá de lo descriptivo: análisis cuantitativo
+
+### Correlación
+
+Mide la fuerza y dirección de la relación lineal entre dos variables. Va de -1 a 1.
+
+- **Correlación ≠ causalidad.** Esto debería estar tatuado en el brazo de todo investigador. El consumo de helado se correlaciona con los ahogamientos. ¿El helado causa ahogamientos? No. Ambos aumentan en verano. Hay una tercera variable (la temperatura) que los explica.
+
+```{r}
+#| label: fig-correlacion-espuria
+#| fig-cap: "Correlación espuria: el consumo de helado y los ahogamientos se correlacionan, pero la causa real es la temperatura"
+#| echo: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 4
+
+library(tidyverse)
+library(patchwork)
+
+set.seed(2024)
+meses <- 1:12
+temp <- c(12, 14, 18, 22, 26, 30, 32, 31, 27, 22, 16, 13)
+helado <- temp * 3.5 + rnorm(12, 0, 8)
+ahogamientos <- temp * 0.8 + rnorm(12, 0, 2)
+
+df_espuria <- tibble(mes = meses, temp, helado, ahogamientos)
+
+p1 <- ggplot(df_espuria, aes(x = helado, y = ahogamientos)) +
+  geom_point(size = 3, color = "#E74C3C") +
+  geom_smooth(method = "lm", se = FALSE, color = "#E74C3C", linetype = "dashed") +
+  labs(title = "Correlación engañosa",
+       x = "Venta de helados", y = "Ahogamientos") +
+  annotate("text", x = max(helado) - 15, y = min(ahogamientos) + 2,
+           label = paste0("r = ", round(cor(helado, ahogamientos), 2)),
+           fontface = "bold", size = 4, color = "#E74C3C") +
+  theme_minimal()
+
+p2 <- ggplot(df_espuria, aes(x = temp)) +
+  geom_line(aes(y = helado / 4, color = "Helados (escala ajustada)"), linewidth = 1.1) +
+  geom_line(aes(y = ahogamientos, color = "Ahogamientos"), linewidth = 1.1) +
+  scale_color_manual(values = c("#3498DB", "#F39C12")) +
+  labs(title = "La variable oculta: temperatura",
+       x = "Temperatura (°C)", y = "Valor", color = "") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+p1 + p2
+```
+
+### Regresión
+
+La regresión es la herramienta más usada en ciencias sociales cuantitativas. Permite estimar el efecto de una o más variables independientes sobre una variable dependiente, controlando por otras variables.
+
+- **Regresión lineal:** Para variables dependientes continuas (ingreso, puntaje de prueba).
+- **Regresión logística:** Para variables dependientes binarias (desertar/no desertar, votar/no votar).
+- **Regresión multinivel:** Para datos jerárquicos (estudiantes dentro de escuelas dentro de distritos).
+
+### Lo que la regresión NO te dice
+
+Un resultado "estadísticamente significativo" (p < 0.05) no significa que sea importante en la vida real. Puedes tener un efecto estadísticamente significativo pero sustantivamente irrelevante (un programa que mejora las notas en 0.01 puntos con p < 0.001). La significancia estadística y la relevancia práctica son cosas diferentes.
+
+## Análisis cualitativo: codificación y más
+
+### El proceso básico
+
+1. **Transcripción:** Si grabaste entrevistas, transcríbelas. Sí, es tedioso. No, las herramientas de transcripción automática no son perfectas (pero ayudan mucho).
+2. **Lectura inicial:** Lee todo sin anotar nada. Empápate del material.
+3. **Codificación abierta:** Asigna etiquetas (códigos) a fragmentos de texto que representen ideas, conceptos o temas.
+4. **Codificación axial:** Agrupa los códigos en categorías más amplias. Busca relaciones entre ellos.
+5. **Saturación:** Cuando nuevos datos ya no generan nuevos códigos, has saturado.
+6. **Interpretación:** ¿Qué te dicen esos patrones? ¿Cómo se conectan con tu marco teórico?
+
+### Software útil
+
+- **Atlas.ti, NVivo, MAXQDA:** Software especializado para análisis cualitativo. Útil para organizar, pero no hace el análisis por ti.
+- **Una hoja de Excel bien organizada:** A veces es suficiente para una tesis con 15 entrevistas.
+
+### El peligro del "cherry picking"
+
+Seleccionar solo las citas que confirman tu argumento es el pecado capital del análisis cualitativo. Si de 20 entrevistados, 15 dicen una cosa y 5 dicen otra, los 5 también importan. Tu trabajo es mostrar la complejidad, no la simplicidad.
+
+## Visualización de datos: un buen gráfico vale más que mil tablas
+
+La visualización no es decoración. Es comunicación. Un buen gráfico puede transmitir instantáneamente lo que una tabla de 50 filas no puede. Este tema es tan importante que le dedicamos un capítulo entero (ver @sec-visualizacion), pero aquí van los principios básicos:
+
+### Principios básicos
+
+- **Simplicidad:** Menos es más. Elimina todo lo que no comunica información.
+- **Honestidad:** No manipules ejes, escalas o colores para exagerar diferencias.
+- **Propósito:** Cada gráfico debe responder una pregunta. Si no sabes cuál, no lo incluyas.
+- **Legibilidad:** Si tu lector necesita un máster en estadística para entender tu gráfico, hiciste algo mal.
+
+### Tipos de gráficos por uso
+
+| Propósito | Gráfico recomendado |
+|---|---|
+| Distribución de una variable | Histograma, boxplot |
+| Relación entre dos variables | Diagrama de dispersión |
+| Comparar grupos | Barras, barras agrupadas |
+| Cambio en el tiempo | Línea temporal |
+| Composición | Barras apiladas, torta (con moderación) |
+| Datos geográficos | Mapas temáticos |
+
+::: {.callout-tip}
+## Ejercicio
+
+Antes de analizar tus datos:
+
+1. Haz un plan de análisis: para cada objetivo específico, ¿qué técnica de análisis vas a usar?
+2. Corre análisis descriptivos completos antes de cualquier otra cosa.
+3. Haz al menos 3 gráficos que resuman tus hallazgos principales.
+4. Muéstralos a alguien sin contexto. ¿Entienden el mensaje? Si no, rediseña.
+:::

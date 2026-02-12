@@ -1,0 +1,231 @@
+# Evaluación de impacto: ¿realmente funcionó? {#impacto}
+
+## La pregunta más importante (y más difícil) de las políticas públicas
+
+Imagina que un gobierno implementa un programa de transferencias condicionadas para reducir la pobreza. Cinco años después, la pobreza bajó. ¿Funcionó el programa?
+
+La respuesta honesta: **no tenemos idea.** La pobreza pudo haber bajado por el crecimiento económico, por otros programas, por migración, por mil razones. Que dos cosas ocurran al mismo tiempo (el programa y la reducción de pobreza) no significa que una cause la otra. Ya lo dijimos: correlación no es causalidad.
+
+La **evaluación de impacto** es el conjunto de métodos diseñados para responder la pregunta causal: ¿cuál es el efecto *del programa específico* sobre el resultado que nos interesa? Es la joya de la corona de la investigación cuantitativa aplicada, y entenderla cambia completamente la forma en que lees los titulares sobre "programas exitosos."
+
+## El problema fundamental: el contrafactual
+
+El corazón de la evaluación de impacto es un concepto simple pero profundo: el **contrafactual.** ¿Qué habría pasado si el programa no hubiera existido?
+
+El problema es que no podemos observar el contrafactual directamente. No podemos ver a la misma persona en dos universos paralelos: uno donde recibió el programa y otro donde no. Por eso necesitamos métodos creativos para construir un contrafactual creíble.
+
+Todo lo que sigue son diferentes formas de resolver este problema.
+
+## Experimentos aleatorios (RCTs): el estándar de oro
+
+### ¿Cómo funciona?
+
+Asignas aleatoriamente a los participantes en dos grupos:
+
+- **Grupo de tratamiento:** Recibe la intervención.
+- **Grupo de control:** No la recibe (o recibe el statu quo).
+
+Como la asignación es aleatoria, los dos grupos son estadísticamente iguales *en promedio* en todas las características observables y no observables. Cualquier diferencia en los resultados se atribuye al programa.
+
+### Ejemplo clásico
+
+El programa PROGRESA (México, hoy Oportunidades/Prospera) fue evaluado con un RCT. De 506 comunidades elegibles, 320 fueron asignadas aleatoriamente a recibir el programa y 186 como control. Los resultados mostraron efectos positivos en matrícula escolar, salud y nutrición. Porque fue un RCT, esos efectos son causalmente creíbles.
+
+### Limitaciones (que los fanáticos de los RCTs no te cuentan)
+
+- **Ética:** ¿Es ético negarle un programa a alguien que lo necesita para tener un grupo de control?
+- **Viabilidad:** No puedes aleatorizar muchas intervenciones (políticas macroeconómicas, reformas constitucionales, guerras).
+- **Validez externa:** Que algo funcione en un contexto no significa que funcione en otro. Un RCT en Kenia no te dice qué pasará en Bolivia.
+- **Efectos de derrame (spillovers):** Si el tratamiento afecta también al grupo de control (porque viven al lado), tu estimación se contamina.
+- **Cumplimiento imperfecto:** No todos los asignados al tratamiento lo reciben, ni todos los del control se quedan fuera.
+
+```{r}
+#| label: fig-rct-ejemplo
+#| fig-cap: "Lógica de un experimento aleatorio: la diferencia de medias entre tratamiento y control estima el impacto"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+set.seed(42)
+n <- 200
+datos_rct <- tibble(
+  grupo = rep(c("Control", "Tratamiento"), each = n/2),
+  resultado = c(
+    rnorm(n/2, mean = 50, sd = 12),
+    rnorm(n/2, mean = 58, sd = 12)
+  )
+)
+
+ggplot(datos_rct, aes(x = resultado, fill = grupo)) +
+  geom_density(alpha = 0.5) +
+  geom_vline(
+    data = datos_rct |> group_by(grupo) |> summarise(media = mean(resultado)),
+    aes(xintercept = media, color = grupo),
+    linewidth = 1, linetype = "dashed"
+  ) +
+  annotate("segment", x = 50, xend = 58, y = 0.035, yend = 0.035,
+           arrow = arrow(ends = "both", length = unit(0.1, "inches"))) +
+  annotate("text", x = 54, y = 0.038, label = "Impacto ≈ 8 puntos",
+           fontface = "bold", size = 3.5) +
+  scale_fill_manual(values = c("#E74C3C", "#3498DB")) +
+  scale_color_manual(values = c("#E74C3C", "#3498DB")) +
+  labs(x = "Resultado (puntaje)", y = "Densidad", fill = "Grupo", color = "Grupo") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+## Diferencia en diferencias (Diff-in-Diff)
+
+### La idea
+
+Si no puedes aleatorizar, pero tienes datos de **antes y después** para un grupo tratado y uno no tratado, puedes estimar el impacto comparando el *cambio* en ambos grupos.
+
+La lógica: el grupo de control te muestra cómo habría evolucionado el grupo tratado si no hubiera recibido la intervención.
+
+### El supuesto clave: tendencias paralelas
+
+Para que diff-in-diff funcione, necesitas asumir que ambos grupos habrían seguido **tendencias paralelas** sin la intervención. No necesitan tener el mismo nivel, pero sí la misma trayectoria.
+
+```{r}
+#| label: fig-did
+#| fig-cap: "Diferencia en diferencias: la tendencia paralela como supuesto clave"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+did_data <- tibble(
+  tiempo = rep(c(1, 2, 3, 4, 5, 6), 3),
+  grupo = rep(c("Tratamiento (observado)", "Control", "Tratamiento (contrafactual)"), each = 6),
+  valor = c(
+    40, 43, 46, 52, 56, 60,
+    35, 38, 41, 44, 47, 50,
+    40, 43, 46, 49, 52, 55
+  )
+)
+
+ggplot(did_data, aes(x = tiempo, y = valor, color = grupo, linetype = grupo)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  geom_vline(xintercept = 3.5, linetype = "dotted", color = "gray40") +
+  annotate("text", x = 3.5, y = 62, label = "Intervención", fontface = "italic",
+           size = 3.5, hjust = -0.1) +
+  annotate("segment", x = 6.05, xend = 6.05, y = 55, yend = 60,
+           arrow = arrow(ends = "both", length = unit(0.1, "inches")),
+           color = "#2C3E50") +
+  annotate("text", x = 6.3, y = 57.5, label = "Impacto", fontface = "bold",
+           size = 3.5, color = "#2C3E50") +
+  scale_color_manual(values = c("#3498DB", "#E74C3C", "#E74C3C")) +
+  scale_linetype_manual(values = c("solid", "solid", "dashed")) +
+  labs(x = "Tiempo", y = "Resultado", color = "", linetype = "") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+### Ejemplo
+
+¿La ley de prohibición de fumar en restaurantes redujo las hospitalizaciones por problemas respiratorios? Compara ciudades con la ley (tratadas) vs. ciudades sin ella (control), antes y después de la implementación.
+
+### Peligro
+
+Si las tendencias no eran paralelas antes de la intervención, tu estimación está sesgada. Siempre grafica las tendencias pre-intervención para verificar.
+
+## Regresión discontinua (RDD)
+
+### La idea genial
+
+Muchas políticas usan un **puntaje de corte** para decidir quién recibe el beneficio. Si sacas más de 60 puntos en la prueba de pobreza, no recibes el programa. Si sacas menos de 60, sí.
+
+La clave: las personas que sacaron 59 y las que sacaron 61 son prácticamente iguales. La única diferencia es que unas recibieron el programa y las otras no. Comparándolas, puedes estimar el efecto del programa.
+
+```{r}
+#| label: fig-rdd
+#| fig-cap: "Regresión discontinua: el salto en el punto de corte estima el impacto"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+set.seed(123)
+n <- 300
+rdd_data <- tibble(
+  puntaje = runif(n, 30, 90),
+  tratado = puntaje < 60,
+  resultado = ifelse(tratado,
+    2 + 0.3 * puntaje + 6 + rnorm(n, 0, 3),
+    2 + 0.3 * puntaje + rnorm(n, 0, 3)
+  )
+)
+
+ggplot(rdd_data, aes(x = puntaje, y = resultado, color = tratado)) +
+  geom_point(alpha = 0.4, size = 1.5) +
+  geom_smooth(method = "lm", se = TRUE) +
+  geom_vline(xintercept = 60, linetype = "dashed", color = "gray30") +
+  annotate("text", x = 60, y = max(rdd_data$resultado) + 1,
+           label = "Punto de corte", fontface = "italic", size = 3.5, hjust = -0.1) +
+  scale_color_manual(values = c("#3498DB", "#E74C3C"),
+                     labels = c("No recibe programa", "Recibe programa")) +
+  labs(x = "Puntaje de elegibilidad", y = "Resultado",
+       color = "") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+### ¿Cuándo funciona?
+
+- Cuando el corte es **arbitrario** (no manipulable por los participantes).
+- Cuando no hay saltos en otras variables en el punto de corte.
+- Cuando hay suficientes observaciones cerca del corte.
+
+### ¿Cuándo no funciona?
+
+Si la gente puede manipular su puntaje para caer justo debajo del corte, el diseño se invalida.
+
+## Matching y Propensity Score
+
+### El problema
+
+En estudios observacionales, el grupo tratado y el no tratado suelen ser diferentes en características que también afectan el resultado. Los que participan en un programa de capacitación son más motivados, más jóvenes, más educados, etc.
+
+### La solución
+
+**Emparejar** a cada persona tratada con una persona no tratada que sea lo más similar posible en todas las características relevantes.
+
+El **Propensity Score Matching (PSM)** resume todas las características en un solo número: la probabilidad de ser tratado dada las características observables. Luego emparejas personas con probabilidades similares.
+
+### Limitación brutal
+
+PSM solo controla por variables **observables.** Si hay una variable importante que no mediste (motivación, conexiones, suerte), tu estimación está sesgada. Y nunca sabes con certeza si hay variables omitidas.
+
+## Variables instrumentales: la salida creativa
+
+### El concepto
+
+A veces tienes una variable (el "instrumento") que afecta tu variable independiente pero no afecta directamente tu variable dependiente (solo a través de la independiente).
+
+### El ejemplo clásico
+
+¿La educación aumenta los ingresos? El problema es que las personas más hábiles tienen más educación Y más ingresos. ¿Es la educación o la habilidad?
+
+Angrist y Krueger usaron el **trimestre de nacimiento** como instrumento: por las leyes de edad mínima para dejar la escuela, los nacidos en ciertos trimestres tienen ligeramente más educación. El trimestre de nacimiento no afecta los ingresos directamente, solo a través de la educación.
+
+### El problema
+
+Buenos instrumentos son **extremadamente difíciles de encontrar.** La mayoría de los que se proponen son cuestionables. Si tu instrumento es malo, tus resultados son peores que un simple OLS.
+
+## ¿Cuál método elegir?
+
+| Método | Necesitas | Supuesto clave | Fortaleza |
+|---|---|---|---|
+| RCT | Poder aleatorizar | Aleatorización exitosa | Máxima credibilidad causal |
+| Diff-in-Diff | Datos pre/post, grupo control | Tendencias paralelas | Usa datos observacionales |
+| RDD | Puntaje de corte | No manipulación del corte | Causalidad local creíble |
+| PSM | Muchas covariables | Sin variables omitidas | Flexible, intuitivo |
+| Variables instrumentales | Un buen instrumento | Exclusión e independencia | Creativo, potente |
+
+::: {.callout-important}
+## Reflexión
+
+Ningún método es perfecto. Todos tienen supuestos. La clave no es encontrar el método "correcto", sino ser honesto sobre los supuestos que estás haciendo y qué tan razonables son en tu contexto. Un investigador que dice "este método tiene estas limitaciones" es infinitamente más creíble que uno que presenta sus resultados como verdad revelada.
+:::

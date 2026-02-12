@@ -1,0 +1,94 @@
+# Diseños de investigación: el plano de tu casa {#disenos}
+
+## El diseño es tu plan de batalla
+
+Si la pregunta es el corazón y el método es la herramienta, el diseño es el **plan.** Es cómo vas a organizar tu investigación para responder tu pregunta de la forma más creíble posible.
+
+Piénsalo como construir una casa: puedes tener los mejores materiales del mundo, pero sin un plano, vas a terminar con un desastre. El diseño de investigación es tu plano.
+
+## Experimental: el estándar de oro (cuando es posible)
+
+El diseño experimental es el que mejor permite establecer **causalidad** (X causa Y). Tiene tres características:
+
+1. **Manipulación:** El investigador controla la variable independiente (le "hace algo" al grupo).
+2. **Grupo de control:** Hay un grupo que no recibe la intervención, para comparar.
+3. **Aleatorización:** Los participantes se asignan al grupo experimental o de control al azar.
+
+**Ejemplo:** ¿Un programa de tutorías mejora las notas? → Asignas aleatoriamente a 100 estudiantes: 50 reciben tutorías, 50 no. Comparas notas al final del semestre.
+
+### ¿Por qué no siempre se puede experimentar en ciencias sociales?
+
+Porque muchas veces no es ético, no es práctico, o no es posible:
+
+- No puedes asignar pobreza aleatoriamente.
+- No puedes decidir quién migra y quién no.
+- No puedes obligar a alguien a divorciarse para estudiar sus efectos.
+
+Por eso necesitamos alternativas.
+
+## Cuasi-experimental: lo más cerca posible
+
+Cuando no puedes aleatorizar, pero sí puedes tener un grupo de comparación, tienes un diseño cuasi-experimental. La diferencia clave con el experimental es que los grupos no se forman al azar, sino que "ya existen."
+
+**Ejemplo:** ¿El programa Juntos reduce la desnutrición? → Comparas comunidades que recibieron el programa con comunidades similares que no lo recibieron. No hubo aleatorización, pero puedes controlar estadísticamente las diferencias entre los grupos.
+
+### Técnicas comunes
+- **Diferencia en diferencias:** Comparas el cambio en el tiempo entre el grupo tratado y el no tratado.
+- **Propensity Score Matching:** Emparejas individuos del grupo tratado con individuos similares del grupo no tratado.
+- **Regresión discontinua:** Aprovechas un umbral arbitrario (puntaje de corte) para comparar a los que "justo" calificaron con los que "justo" no calificaron.
+
+## No experimental: observar sin intervenir
+
+La mayoría de las investigaciones en ciencias sociales son no experimentales. No manipulas nada; observas lo que ya está ahí.
+
+### Tipos principales
+
+**Transversal:** Recoges datos en un solo momento del tiempo. Una fotografía.
+
+- "¿Cuál es la relación entre educación e ingreso en Perú en 2024?"
+- Ventaja: Rápido y económico.
+- Desventaja: No puedes establecer causalidad ni ver cambios en el tiempo.
+
+**Longitudinal:** Recoges datos en múltiples momentos. Una película.
+
+- "¿Cómo cambia el ingreso de los graduados universitarios a lo largo de 10 años?"
+- Ventaja: Puedes ver tendencias y cambios.
+- Desventaja: Costoso, lento, y la gente desaparece (atrición).
+
+**Estudio de caso:** Investigas en profundidad un caso específico (una persona, una organización, un evento, un país).
+
+- "¿Cómo implementó Finlandia su reforma educativa?"
+- Ventaja: Profundidad extraordinaria.
+- Desventaja: No se puede generalizar fácilmente.
+
+**Comparado:** Comparas dos o más casos para identificar similitudes y diferencias.
+
+- "¿Por qué Chile y Argentina tuvieron trayectorias educativas diferentes?"
+- Ventaja: Permite identificar factores que explican diferencias.
+- Desventaja: La selección de casos es crucial y puede sesgar los resultados.
+
+## ¿Descriptivo, correlacional, o explicativo?
+
+Otra forma de clasificar tu diseño es por su **alcance:**
+
+| Alcance | Pregunta | Ejemplo |
+|---|---|---|
+| Descriptivo | ¿Cómo es? ¿Cuántos hay? | ¿Cuál es el perfil de los emprendedores en México? |
+| Correlacional | ¿Existe relación entre X e Y? | ¿Hay relación entre uso de redes sociales y rendimiento académico? |
+| Explicativo | ¿X causa Y? ¿Por qué? | ¿El acceso a internet causa mejoras en el aprendizaje? |
+
+Cada nivel es más complejo que el anterior. Y cada nivel requiere un diseño más robusto. Un estudio descriptivo puede ser transversal y sencillo. Un estudio explicativo casi siempre necesita un diseño experimental o cuasi-experimental.
+
+## Cómo elegir el diseño correcto
+
+La pregunta fundamental es: **¿qué diseño me permite responder mi pregunta de forma creíble, dado mis recursos?**
+
+No elijas el diseño primero y luego busques la pregunta (error más común de lo que crees). Y no elijas el diseño más sofisticado; elige el más apropiado.
+
+Una encuesta bien hecha responde mejor una pregunta descriptiva que un experimento mal diseñado intenta responder una pregunta causal.
+
+::: {.callout-note}
+## Para recordar
+
+El mejor diseño es el que responde tu pregunta con la mayor credibilidad posible, dentro de tus limitaciones de tiempo, recursos y acceso. La perfección metodológica es una aspiración, no un requisito. Lo que sí es un requisito es la honestidad sobre las limitaciones de tu diseño.
+:::

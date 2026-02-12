@@ -1,0 +1,94 @@
+# Errores más comunes: el museo de los horrores {#errores}
+
+## Bienvenido al museo
+
+Después de años como asesor de tesis, revisor de artículos y editor de revistas, he acumulado una colección de errores que se repiten con una consistencia casi poética. Este capítulo es un recorrido por esa colección.
+
+No es para burlarse. Es para aprender. Porque si puedes reconocer estos errores antes de cometerlos, tu investigación será significativamente mejor que la de la mayoría.
+
+## Errores de diseño
+
+### 1. La pregunta-océano
+"¿Cuáles son los factores que influyen en la educación en América Latina?" Eso no es una pregunta de investigación. Es un programa de doctorado de 10 años. Delimita.
+
+### 2. El marco teórico Wikipedia
+Copiar definiciones de manual no es un marco teórico. Si tu "marco teórico" se puede reemplazar por una búsqueda en Google sin que nadie note la diferencia, tienes un problema.
+
+### 3. La hipótesis obvia
+"La pobreza afecta negativamente la calidad de vida." Sí, gracias. ¿Puedes decirnos algo que no sepamos?
+
+### 4. La desconexión pregunta-método
+Pregunta cualitativa, método cuantitativo (o viceversa). "¿Cómo viven los ancianos la soledad?" → Encuesta con escala Likert del 1 al 5. ¿En serio?
+
+### 5. Variables sin operacionalización
+"Mi variable independiente es la cultura." ¿Qué dimensión de la cultura? ¿Cómo la mides? ¿Con qué instrumento? Si no puedes responder, tu variable es un fantasma.
+
+## Errores de método
+
+### 6. La muestra disfrazada
+Muestra de conveniencia presentada como "aleatoria estratificada." Nadie te va a juzgar por usar una muestra de conveniencia. Pero sí te van a juzgar por mentir al respecto.
+
+### 7. La encuesta eterna
+45 minutos de encuesta con 120 preguntas. A partir de la pregunta 30, la gente responde cualquier cosa con tal de terminar. Tus datos después de ese punto son ruido, no información.
+
+### 8. La entrevista interrogatorio
+"Dígame exactamente cómo se siente sobre X." Eso no es una entrevista; es un interrogatorio policial. Pregunta abierto, escucha, profundiza.
+
+### 9. Tamaño de muestra injustificado
+"Entrevisté a 7 personas." ¿Por qué 7? "Porque fueron las que pude encontrar." Eso es honesto, pero necesitas justificar por qué 7 es suficiente (o reconocer que probablemente no lo es).
+
+### 10. Datos sin contexto
+Usar una base de datos sin entender cómo fue recolectada, qué población representa, y qué limitaciones tiene. Los datos no caen del cielo; alguien los construyó con decisiones que afectan lo que tú puedes decir con ellos.
+
+## Errores de análisis
+
+### 11. Correlación = causalidad
+El error inmortal. "Los países con más consumo de chocolate tienen más premios Nobel. Conclusión: el chocolate te hace inteligente." No. Por favor, no.
+
+### 12. El p-value como dios
+"p < 0.05, ergo es verdad." Un p-value bajo no significa que tu resultado sea importante, ni correcto, ni relevante. Significa que es improbable bajo la hipótesis nula. Eso es todo.
+
+### 13. Ignorar los supuestos
+Correr una regresión lineal sin verificar normalidad, homocedasticidad, multicolinealidad. Es como conducir un auto sin verificar los frenos. Puede funcionar. Hasta que no funciona.
+
+### 14. Cherry picking cualitativo
+Seleccionar solo las citas que confirman tu argumento e ignorar las que lo contradicen. Si 15 entrevistados dicen A y 5 dicen B, los 5 que dicen B son quizás los más interesantes.
+
+### 15. El gráfico mentiroso
+Ejes que no empiezan en cero, escalas manipuladas, colores que exageran diferencias. Un gráfico puede contar la verdad o una mentira con los mismos datos.
+
+## Errores de escritura
+
+### 16. El abstract de 500 palabras
+Un abstract es un resumen de tu investigación completa en 150-250 palabras. No es un mini-ensayo. Si no puedes resumir tu trabajo en 200 palabras, probablemente no lo entiendes lo suficiente.
+
+### 17. La introducción que no introduce
+Introducciones que dan toda la vuelta al mundo antes de llegar al punto. "Desde los albores de la humanidad, la educación ha sido un pilar fundamental…" No. Empieza por el problema. Directo.
+
+### 18. Citas sin análisis
+"Según Pérez (2018), la pobreza es multidimensional (p. 45)." Y luego… nada. ¿Qué tiene que ver con tu investigación? ¿Estás de acuerdo? ¿La usas? Las citas sin análisis son decoración.
+
+### 19. Conclusiones que no concluyen
+"Se necesita más investigación sobre el tema." Eso no es una conclusión. Es una evasión. ¿Qué encontraste? ¿Qué significa? ¿Qué aporta?
+
+## Errores de actitud
+
+### 20. El enamorado de su tema
+Tan enamorado de su tema que no acepta críticas, no modifica su pregunta cuando los datos le dicen que debería, y defiende su postura como si fuera un dogma de fe. La investigación es buscar verdades, no confirmar creencias.
+
+::: {.callout-warning}
+## Checklist antes de entregar
+
+Antes de enviar tu tesis o artículo, revisa:
+
+- [ ] ¿Mi pregunta es clara, específica e investigable?
+- [ ] ¿Mi marco teórico se conecta con mis variables y mi análisis?
+- [ ] ¿Mi revisión de literatura es un argumento, no una lista?
+- [ ] ¿Mi metodología es lo suficientemente detallada para ser replicada?
+- [ ] ¿Mis resultados están separados de mi interpretación?
+- [ ] ¿Mi discusión dialoga con la literatura y el marco teórico?
+- [ ] ¿Mis conclusiones responden mi pregunta de investigación?
+- [ ] ¿Reconozco honestamente las limitaciones?
+- [ ] ¿Mis referencias están completas y consistentes?
+- [ ] ¿Alguien externo leyó el texto y lo entendió?
+:::

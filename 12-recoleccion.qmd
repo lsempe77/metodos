@@ -1,0 +1,119 @@
+# Recolección de datos: salir al campo {#recoleccion}
+
+## Del escritorio al mundo real
+
+Hasta ahora, todo ha sido planificación. Ahora empieza lo bueno (y lo difícil): **ir a buscar los datos.** Es como la diferencia entre estudiar el mapa y caminar el terreno. El mapa nunca te prepara del todo.
+
+Este capítulo cubre las principales técnicas de recolección de datos. No es un tratado exhaustivo (hay libros enteros sobre cada técnica), sino una guía práctica con los errores que más veo.
+
+## Encuestas: el instrumento más usado (y más abusado)
+
+La encuesta (o cuestionario) es probablemente la técnica más usada en ciencias sociales cuantitativas. Y también la más abusada: muchas encuestas están mal diseñadas, mal aplicadas y mal analizadas.
+
+### Principios de diseño
+
+**Claridad ante todo.** Cada pregunta debe ser entendida de la misma manera por todos los respondientes.
+
+- ❌ "¿Considera usted que las políticas gubernamentales son adecuadas?" (¿Cuáles políticas? ¿Adecuadas para qué?)
+- ✅ "En una escala de 1 a 5, ¿qué tan satisfecho está con la calidad de los servicios de salud pública en su municipio?"
+
+**Una pregunta, una idea.** Evita preguntas dobles.
+
+- ❌ "¿Cree que los profesores son puntuales y bien preparados?" (¿Qué pasa si son puntuales pero no están preparados?)
+- ✅ Sepáralas en dos preguntas distintas.
+
+**Evita la inducción.** No le digas al encuestado qué debería responder.
+
+- ❌ "¿No cree usted que la corrupción es el principal problema del país?"
+- ✅ "¿Cuál considera que es el principal problema del país?" (pregunta abierta) o una lista de opciones sin jerarquizar.
+
+**Ordena con lógica.** Empieza con preguntas fáciles y no amenazantes. Deja las sensibles (ingreso, opiniones políticas, comportamiento) para el final, cuando ya hay confianza.
+
+### El piloteo: tu seguro de vida
+
+**NUNCA** apliques una encuesta sin pilotearla primero. El piloteo es probar tu instrumento con un grupo pequeño (10-20 personas) para detectar:
+
+- Preguntas que no se entienden.
+- Opciones de respuesta que faltan.
+- Preguntas que toman demasiado tiempo.
+- El orden que no fluye.
+- Problemas técnicos (si es digital).
+
+El piloteo te ahorra meses de dolor. Créeme.
+
+## Entrevistas: el arte de callarse
+
+Las entrevistas son la herramienta estrella de la investigación cualitativa. Pero hacer una buena entrevista es mucho más difícil de lo que parece.
+
+### Tipos
+
+- **Estructurada:** Preguntas predefinidas, en orden fijo. Es casi una encuesta oral.
+- **Semi-estructurada:** Tienes una guía de temas/preguntas, pero puedes improvisar, profundizar, reordenar. Es la más usada y recomendada.
+- **No estructurada / en profundidad:** Conversación guiada por unos pocos temas. Máxima flexibilidad, máxima exigencia para el investigador.
+
+### El error del entrevistador novato
+
+El error #1 del entrevistador novato es **hablar demasiado.** Tu trabajo no es compartir tu opinión, demostrar lo que sabes, o llenar silencios. Tu trabajo es escuchar.
+
+Reglas de oro:
+
+1. **Pregunta, escucha, repregunta.** Los silencios no son incómodos; son productivos. El entrevistado está pensando. Déjalo.
+2. **No juzgues.** Si alguien te dice algo que te parece terrible, tu cara no puede reflejarlo. Eres investigador, no juez.
+3. **Profundiza.** "¿Podrías contarme más sobre eso?" es tu mejor amiga.
+4. **Graba (con permiso).** Tomar notas mientras entrevistas es como conducir mirando el celular. Graba y transcribe después.
+
+## Grupos focales
+
+Un grupo focal reúne a 6-10 personas para discutir un tema guiado por un moderador. No es una entrevista grupal (donde preguntas lo mismo a cada uno). Es una **conversación** donde lo que interesa es la interacción entre los participantes.
+
+### Cuándo usarlos
+- Para explorar percepciones, actitudes y experiencias compartidas.
+- Para entender dinámicas grupales y normas sociales.
+- Para generar hipótesis o refinar instrumentos.
+
+### Cuándo NO usarlos
+- Para temas muy sensibles o íntimos (la gente no habla de sus traumas frente a extraños).
+- Cuando hay relaciones de poder en el grupo (jefe y subordinados juntos = silencio del subordinado).
+
+## Observación: ver con ojos de investigador
+
+La observación es una técnica cualitativa donde el investigador registra sistemáticamente lo que ve (y a veces participa) en un contexto natural.
+
+### Tipos
+- **Participante:** Te insertas en el grupo que estudias. Vives la experiencia.
+- **No participante:** Observas desde afuera, sin interactuar.
+
+### El desafío
+Todos vemos el mundo a través de nuestros filtros. La observación sistemática requiere **registrar** lo que ves (no lo que interpretas), usar guías de observación, y ser consciente de tus sesgos.
+
+Un buen diario de campo distingue entre: (a) lo que pasó, (b) lo que la gente dijo, y (c) lo que tú pensaste/sentiste. Las tres son valiosas, pero mezclarlas es peligroso.
+
+## Datos secundarios: lo que ya existe
+
+No siempre necesitas generar datos nuevos. Hay una enorme cantidad de datos ya disponibles:
+
+- **Encuestas nacionales:** ENAHO (Perú), CASEN (Chile), ENIGH (México), GEIH (Colombia).
+- **Censos:** Datos demográficos detallados.
+- **Registros administrativos:** Datos de escuelas, hospitales, programas sociales.
+- **Bases de datos internacionales:** Banco Mundial, CEPAL, UNESCO, PNUD.
+- **Datos abiertos:** Muchos gobiernos y organizaciones publican datos de acceso libre.
+
+### Ventajas
+- Muestras grandes y representativas.
+- Ahorro de tiempo y recursos.
+- Datos longitudinales disponibles.
+
+### Desventajas
+- No fueron diseñados para tu pregunta (quizás no miden exactamente lo que necesitas).
+- La calidad depende de quién los recolectó.
+- Pueden estar desactualizados.
+
+::: {.callout-tip}
+## Ejercicio
+
+1. Diseña tu instrumento principal (encuesta, guía de entrevista, o guía de observación).
+2. Pruébalo con 3 personas que NO sean de tu área.
+3. Anota todos los problemas que encuentres.
+4. Reescríbelo.
+5. Repite hasta que funcione sin explicaciones adicionales.
+:::

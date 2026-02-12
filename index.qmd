@@ -1,0 +1,21 @@
+---
+engine: knitr
+---
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, comment = '')
+```
+
+# ¡Bienvenidos! {.unnumbered}
+
+Este libro es fruto de muchas conversaciones, errores y experiencias en el mundo académico. Entré a la vida acádemica tardíamente, aunque he estudiado mucho y variadas cosas. He sido (y lo seré) desordenado en los procesos de aprendizaje, y con ello, he perdido mucho tiempo en cosas inútiles o, lo más frecuente, cometí errores repetidamente ("el que se golpea la cabeza una vez es un descuidado; el que se golpea la cabeza en el mismo lugar es un tonto").
+
+No está dirigido a ti, que sabes todo. Está dirigido a mi mismo, para recordarme de las cosas que hice mal, y algunas que me ligaron. Está pensando para el estudiante de pregrado o post-grado (sí, haré algunas distinciones) que quiera aprender a investigar.
+
+No necesariamente seguiré la habitual lógica en la enseñanza de metodología de la investigación. Intentaré dar ejemplos, mostrar errores, sugerir rutas, y así acercar la rigurosidad metodológica a los problemas y desafíos de la investigación en ciencias sociales.
+
+## Lógica y estructura de este libro
+
+Este libro se escribe en cuanto se va usando para enseñar. Por ahora la estructura propuesta es seguir los pasos clásicos de la investigación, aunque no necesariamente estudiándolos en esa secuencia.

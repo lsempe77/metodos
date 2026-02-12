@@ -1,0 +1,106 @@
+# Escribir la tesis: el arte de no morir en el intento {#escribir}
+
+## La tesis no se escribe, se reescribe
+
+Aquí va la verdad que nadie te dice en los manuales de metodología: **escribir es la parte más difícil de la investigación.** No el análisis. No la recolección de datos. Escribir.
+
+¿Por qué? Porque escribir te obliga a pensar con claridad. Mientras tus ideas están solo en tu cabeza, pueden ser vagas, contradictorias, incompletas, y tú ni te enteras. Pero cuando las pones en papel, la realidad te golpea: "Espera, esto no tiene sentido."
+
+Y eso está bien. Eso es el proceso.
+
+## El mito del primer borrador perfecto
+
+No existe. Punto.
+
+Tu primer borrador va a ser malo. El segundo va a ser menos malo. El tercero va a empezar a parecerse a algo decente. Así funciona.
+
+Los mejores académicos que conozco no escriben mejor que tú en su primer intento. La diferencia es que reescriben más. Un buen capítulo de tesis puede pasar por 5-10 versiones. No es falta de talento; es el proceso normal de escritura académica.
+
+Entonces deja de esperar a que "llegue la inspiración" y empieza a escribir. Aunque sea mal. Un borrador malo se puede mejorar. Una página en blanco no.
+
+## La estructura IMRyD y sus variantes
+
+La mayoría de los textos académicos en ciencias sociales (especialmente artículos y tesis cuantitativas) siguen la estructura IMRyD:
+
+- **I**ntroducción: ¿Cuál es el problema y por qué importa?
+- **M**arco teórico / Revisión de literatura: ¿Qué sabemos y desde dónde miramos?
+- **M**etodología: ¿Cómo lo investigué?
+- **R**esultados: ¿Qué encontré?
+- **D**iscusión y conclusiones: ¿Qué significa lo que encontré?
+
+### Variantes comunes
+
+Para tesis cualitativas, la estructura puede ser más flexible:
+
+- Los "resultados" y la "discusión" pueden fundirse en un solo capítulo narrativo.
+- El "marco teórico" puede integrarse con la revisión de literatura.
+- Pueden aparecer capítulos de "contexto" que describan el caso de estudio.
+
+Para tesis de métodos mixtos, suelen tener secciones separadas para cada componente (cuantitativo y cualitativo) y un capítulo de integración.
+
+**Lo que importa:** Que tu estructura tenga una lógica interna clara. Que el lector pueda seguir el hilo. Que cada capítulo cumpla una función y se conecte con los demás.
+
+## Consejos prácticos de escritura
+
+### Sobre el estilo
+
+- **Frases cortas.** Si tu frase tiene más de 3 líneas, córtala en dos.
+- **Voz activa.** "Analicé los datos" es mejor que "Los datos fueron analizados." (Sí, tú hiciste la investigación. Puedes decirlo.)
+- **Párrafos con una idea.** Un párrafo = una idea principal. Si empiezas a hablar de otra cosa, abre un párrafo nuevo.
+- **Menos adjetivos.** "Un estudio sumamente interesante y enormemente relevante" → "Un estudio relevante." Los adjetivos inflados no impresionan; cansan.
+
+### Sobre el proceso
+
+- **Escribe todos los días.** Aunque sean 30 minutos. La constancia gana a las "maratones de fin de semana" que terminan en agotamiento.
+- **No edites mientras escribes.** Primero saca las ideas. Luego las pules. Son dos actividades diferentes que usan partes diferentes del cerebro.
+- **Usa un sistema de referencias desde el primer día.** Zotero, Mendeley, o el que prefieras. No esperes al final para "ordenar las citas." Eso es una pesadilla garantizada.
+- **Haz un outline antes de cada capítulo.** ¿Qué puntos quieres cubrir? ¿En qué orden? Escribir sin outline es como viajar sin mapa.
+
+## Citación y referencias: APA y el mundo
+
+En ciencias sociales, el estilo APA (American Psychological Association) es el más común. Pero no es el único:
+
+| Estilo | Uso común |
+|---|---|
+| APA | Psicología, educación, ciencias sociales en general |
+| Chicago | Historia, ciencia política, humanidades |
+| Harvard | Negocios, economía (en algunos contextos) |
+| Vancouver | Ciencias de la salud |
+
+**Lo que importa:** Elige uno (o el que tu programa exija) y sé **consistente.** Nada grita "amateur" más fuerte que mezclar estilos de citación.
+
+### Errores comunes de citación
+
+- Citar un artículo que no leíste (lo sacaste de la lista de referencias de otro paper).
+- Citar solo en español cuando la literatura principal está en inglés (o viceversa).
+- Citar demasiado un solo autor (¿es una tesis o un fan fiction?).
+- No citar ideas que no son tuyas. Cuando tengas dudas: cita.
+
+## El síndrome del impostor y la procrastinación académica
+
+Hablemos de lo que nadie habla en los manuales: la salud mental durante la tesis.
+
+### El síndrome del impostor
+
+"No soy suficientemente inteligente para esto." "Van a descubrir que no sé nada." "Los demás son mucho mejores que yo."
+
+Si piensas algo de esto: bienvenido al club. Prácticamente todos los académicos —desde estudiantes hasta profesores titulares— experimentan el síndrome del impostor. No eres un fraude. Estás aprendiendo. Y aprender implica no saber (todavía).
+
+### La procrastinación
+
+"Voy a empezar mañana." "Necesito leer un paper más antes de escribir." "Primero voy a organizar mi escritorio."
+
+La procrastinación en la tesis es epidémica. Y suele estar vinculada al perfeccionismo (no escribo porque no va a quedar perfecto) o al miedo (no escribo porque van a criticarme).
+
+**El antídoto:** Escribe mal, pero escribe. Ponle un timer de 25 minutos (técnica Pomodoro) y escribe sin parar. Luego descansa 5 minutos. Repite. En un día puedes producir 1.000-2.000 palabras con esta técnica.
+
+::: {.callout-tip}
+## Ejercicio
+
+Durante las próximas 2 semanas:
+
+1. Escribe **500 palabras al día** sobre tu tesis. Cualquier sección. Sin excusas.
+2. No edites lo que escribiste el día anterior. Solo agrega.
+3. Al final de las 2 semanas, tendrás 7.000 palabras. Probablemente la mitad sea rescatable. Eso es un capítulo.
+4. Ahora sí: edita, reorganiza, reescribe.
+:::

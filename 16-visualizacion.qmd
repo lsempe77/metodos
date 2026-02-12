@@ -1,0 +1,294 @@
+# Visualización de datos: mostrar para convencer {#visualizacion}
+
+## Un buen gráfico vale más que mil regresiones
+
+Exagero. Pero no tanto. La visualización de datos es probablemente la habilidad más subestimada en las ciencias sociales. Puedes tener el análisis más sofisticado del mundo, pero si lo presentas en una tabla ilegible de 15 columnas, nadie lo va a entender (ni le va a importar).
+
+La visualización no es "hacer gráficos bonitos." Es **comunicar evidencia de forma efectiva.** Y como toda comunicación, requiere pensar en tu audiencia, tu mensaje, y la forma más clara de transmitirlo.
+
+## Principios fundamentales
+
+### 1. Cada gráfico responde una pregunta
+
+Si no puedes decir en una frase qué pregunta responde tu gráfico, probablemente no necesitas ese gráfico. "¿Cómo se distribuye el ingreso?" "¿Hay diferencia entre hombres y mujeres?" "¿Ha cambiado con el tiempo?"
+
+### 2. Menos es más
+
+El enemigo de un buen gráfico es el ruido visual. Elimina todo lo que no aporta información: líneas de grilla innecesarias, leyendas redundantes, colores sin propósito, efectos 3D (por favor, nunca 3D), fondos decorativos.
+
+### 3. La honestidad visual
+
+Un gráfico puede mentir sin falsificar un solo dato. Basta con manipular los ejes, elegir colores engañosos, o truncar la escala.
+
+```{r}
+#| label: fig-eje-honesto
+#| fig-cap: "El mismo dato, dos historias: a la izquierda, eje truncado que exagera la diferencia. A la derecha, eje completo que muestra la proporción real."
+#| echo: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 4
+
+library(tidyverse)
+library(patchwork)
+
+datos <- tibble(
+  grupo = c("Programa A", "Programa B"),
+  valor = c(72, 78)
+)
+
+p1 <- ggplot(datos, aes(x = grupo, y = valor, fill = grupo)) +
+  geom_col(width = 0.6) +
+  coord_cartesian(ylim = c(70, 80)) +
+  scale_fill_manual(values = c("#E74C3C", "#3498DB")) +
+  labs(title = "❌ Eje truncado", y = "Puntaje", x = "") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+p2 <- ggplot(datos, aes(x = grupo, y = valor, fill = grupo)) +
+  geom_col(width = 0.6) +
+  scale_fill_manual(values = c("#E74C3C", "#3498DB")) +
+  labs(title = "✅ Eje completo", y = "Puntaje", x = "") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+p1 + p2
+```
+
+### 4. Color con propósito
+
+El color debe **codificar información**, no decorar. Usa paletas accesibles para daltónicos. No uses más de 5-6 colores distintos. Y si puedes comunicar la misma idea sin color, hazlo.
+
+### 5. Texto integrado
+
+Las mejores visualizaciones integran el texto en el gráfico: títulos descriptivos, anotaciones que señalan patrones, etiquetas directas en lugar de leyendas separadas.
+
+## Catálogo de visualizaciones por propósito
+
+### Distribución: ¿cómo se ven tus datos?
+
+```{r}
+#| label: fig-distribucion
+#| fig-cap: "Tres formas de visualizar una distribución: histograma, densidad y boxplot"
+#| echo: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 4
+
+library(tidyverse)
+library(patchwork)
+
+set.seed(42)
+ingresos <- tibble(
+  ingreso = c(rlnorm(500, meanlog = 7, sdlog = 0.8)),
+  grupo = sample(c("Urbano", "Rural"), 500, replace = TRUE, prob = c(0.6, 0.4))
+)
+
+p1 <- ggplot(ingresos, aes(x = ingreso)) +
+  geom_histogram(fill = "#3498DB", bins = 30, alpha = 0.8) +
+  labs(title = "Histograma", x = "Ingreso mensual", y = "Frecuencia") +
+  theme_minimal()
+
+p2 <- ggplot(ingresos, aes(x = ingreso, fill = grupo)) +
+  geom_density(alpha = 0.5) +
+  scale_fill_manual(values = c("#E74C3C", "#3498DB")) +
+  labs(title = "Densidad por grupo", x = "Ingreso mensual", y = "Densidad") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+p3 <- ggplot(ingresos, aes(x = grupo, y = ingreso, fill = grupo)) +
+  geom_boxplot(alpha = 0.7) +
+  scale_fill_manual(values = c("#E74C3C", "#3498DB")) +
+  labs(title = "Boxplot comparativo", x = "", y = "Ingreso mensual") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+p1 + p2 + p3
+```
+
+### Relación entre variables: ¿hay un patrón?
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: "Diagrama de dispersión con línea de tendencia: relación entre gasto en educación y puntajes PISA (datos simulados)"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+set.seed(99)
+n_paises <- 40
+pisa_data <- tibble(
+  pais = paste0("País ", 1:n_paises),
+  gasto_educ = runif(n_paises, 2, 8),
+  pisa_score = 350 + 25 * gasto_educ + rnorm(n_paises, 0, 30),
+  region = sample(c("Am. Latina", "Europa", "Asia", "África"),
+                  n_paises, replace = TRUE,
+                  prob = c(0.35, 0.3, 0.2, 0.15))
+)
+
+ggplot(pisa_data, aes(x = gasto_educ, y = pisa_score)) +
+  geom_point(aes(color = region), size = 3, alpha = 0.7) +
+  geom_smooth(method = "lm", se = TRUE, color = "gray30",
+              linetype = "dashed", alpha = 0.2) +
+  scale_color_manual(values = c("#E74C3C", "#2ECC71", "#3498DB", "#F39C12")) +
+  labs(
+    x = "Gasto en educación (% del PIB)",
+    y = "Puntaje PISA promedio",
+    color = "Región"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+### Cambio en el tiempo: ¿hay tendencia?
+
+```{r}
+#| label: fig-serie-tiempo
+#| fig-cap: "Evolución de la tasa de pobreza en tres países latinoamericanos (datos simulados)"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+set.seed(2024)
+serie <- expand_grid(
+  anio = 2000:2023,
+  pais = c("País A", "País B", "País C")
+) |>
+  mutate(
+    pobreza = case_when(
+      pais == "País A" ~ 55 - 1.5 * (anio - 2000) + rnorm(n(), 0, 2),
+      pais == "País B" ~ 45 - 0.5 * (anio - 2000) + rnorm(n(), 0, 2),
+      pais == "País C" ~ 40 - 1.0 * (anio - 2000) +
+        ifelse(anio >= 2015, 0.8 * (anio - 2015), 0) + rnorm(n(), 0, 2)
+    )
+  )
+
+ggplot(serie, aes(x = anio, y = pobreza, color = pais)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 1.5, alpha = 0.6) +
+  scale_color_manual(values = c("#E74C3C", "#3498DB", "#2ECC71")) +
+  labs(
+    x = "Año",
+    y = "Tasa de pobreza (%)",
+    color = ""
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+### Comparación entre grupos: ¿hay diferencias?
+
+```{r}
+#| label: fig-barras
+#| fig-cap: "Satisfacción con servicios públicos por quintil de ingreso (datos simulados)"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+set.seed(55)
+satisfaccion <- tibble(
+  quintil = factor(rep(paste0("Q", 1:5), each = 3),
+                   levels = paste0("Q", 1:5)),
+  servicio = rep(c("Salud", "Educación", "Transporte"), 5),
+  satisfaccion = c(
+    2.1, 2.5, 1.8,
+    2.8, 3.0, 2.2,
+    3.2, 3.5, 2.8,
+    3.8, 3.9, 3.5,
+    4.2, 4.3, 4.0
+  )
+)
+
+ggplot(satisfaccion, aes(x = quintil, y = satisfaccion, fill = servicio)) +
+  geom_col(position = "dodge", width = 0.7) +
+  scale_fill_manual(values = c("#3498DB", "#2ECC71", "#F39C12")) +
+  labs(
+    x = "Quintil de ingreso",
+    y = "Satisfacción promedio (1-5)",
+    fill = "Servicio"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+### Datos geográficos: ¿dónde ocurre?
+
+```{r}
+#| label: fig-mapa
+#| fig-cap: "Índice de desarrollo humano en América del Sur (datos simulados)"
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+
+sudamerica <- ne_countries(scale = "medium", continent = "South America",
+                           returnclass = "sf")
+
+set.seed(77)
+sudamerica$idh <- runif(nrow(sudamerica), 0.55, 0.85)
+
+ggplot(sudamerica) +
+  geom_sf(aes(fill = idh), color = "white", linewidth = 0.3) +
+  scale_fill_viridis_c(option = "plasma", name = "IDH",
+                       limits = c(0.5, 0.9),
+                       labels = scales::number_format(accuracy = 0.01)) +
+  labs(title = "Índice de Desarrollo Humano") +
+  theme_void() +
+  theme(
+    legend.position = "right",
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
+```
+
+## Los 7 pecados capitales de la visualización
+
+| Pecado | Ejemplo | Solución |
+|---|---|---|
+| **Gráfico de torta con 15 categorías** | Imposible distinguir las porciones | Usa barras ordenadas |
+| **3D sin razón** | Distorsiona las proporciones | Siempre 2D |
+| **Eje Y truncado** | Exagera diferencias pequeñas | Empieza en cero (o justifica por qué no) |
+| **Demasiados colores** | Arcoíris ilegible | Máximo 5-6 colores, paleta coherente |
+| **Doble eje Y** | Confusión garantizada | Dos gráficos separados |
+| **Leyenda lejos del dato** | El lector va y viene entre gráfico y leyenda | Etiquetas directas |
+| **Gráfico sin título** | ¿Qué estoy mirando? | Título que responde una pregunta |
+
+## Herramientas
+
+### R + ggplot2
+
+El ecosistema más poderoso para visualización de datos en ciencias sociales. La curva de aprendizaje es empinada, pero la capacidad es prácticamente ilimitada. Todo lo que ves en este capítulo está hecho con ggplot2.
+
+Paquetes complementarios útiles:
+
+- **patchwork:** Combinar múltiples gráficos.
+- **sf + rnaturalearth:** Mapas.
+- **plotly:** Gráficos interactivos (con `ggplotly()`).
+- **scales:** Formateo de ejes.
+- **ggrepel:** Etiquetas que no se superponen.
+
+### Python + matplotlib/seaborn
+
+Alternativa poderosa, especialmente si ya programas en Python. Seaborn hace gráficos estadísticos elegantes con poco código.
+
+### Tableau / Power BI
+
+Para análisis exploratorio rápido y dashboards. No requieren programación, pero son menos flexibles para publicación académica.
+
+### Datawrapper / Flourish
+
+Herramientas web gratuitas para gráficos rápidos y publicables. Excelentes para periodismo de datos y presentaciones.
+
+::: {.callout-tip}
+## Ejercicio
+
+1. Toma los datos de tu investigación (o un dataset público).
+2. Haz **tres gráficos** que cuenten la historia principal de tus hallazgos.
+3. Muéstralos a alguien que no sepa nada de tu tema. ¿Entienden el mensaje sin explicación adicional?
+4. Si no entienden, rediseña. Si entienden, felicidades: ya eres mejor comunicador visual que el 80% de los académicos.
+:::

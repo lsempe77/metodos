@@ -1,0 +1,77 @@
+# Marco teórico: los lentes con los que miras {#marco-teorico}
+
+## Por qué necesitas teoría (aunque estudies algo "práctico")
+
+"Yo no necesito teoría, mi tesis es práctica." Esta frase la he escuchado decenas de veces. Y decenas de veces la respuesta es la misma: **toda investigación tiene teoría, la uses conscientemente o no.**
+
+Si estudias la pobreza y decides medirla por ingreso, ya estás usando una teoría (que la pobreza es un fenómeno económico medible por ingresos). Si la mides por acceso a servicios, usas otra. Si la entiendes como una experiencia subjetiva, otra más. La teoría no es un adorno. Es la decisión fundamental de qué miras y qué ignoras.
+
+No necesitas inventar una teoría. Necesitas elegir una (o combinar varias) que te ayude a entender tu problema. Es como elegir lentes: los mismos datos se ven distintos según el cristal que uses.
+
+## La diferencia entre usar una teoría y copiar definiciones
+
+Otro error clásico: el "marco teórico" que es en realidad un glosario. Definición de educación. Definición de calidad educativa. Definición de deserción. Copiadas de otros autores, una tras otra, sin conexión entre sí ni con la investigación.
+
+Eso no es un marco teórico. Es un diccionario.
+
+Un marco teórico **usa** la teoría para:
+
+1. **Explicar por qué tu problema existe:** "Según Bourdieu, el sistema educativo reproduce las desigualdades de capital cultural…"
+2. **Definir qué variables importan y por qué:** "Desde esta perspectiva, el capital cultural familiar es un predictor clave de la permanencia escolar…"
+3. **Generar expectativas sobre lo que encontrarás:** "Si Bourdieu tiene razón, esperaríamos que estudiantes con menor capital cultural tengan mayor probabilidad de desertar, controlando por ingreso…"
+
+¿Ves? La teoría no está ahí de adorno. Está conectada con tu pregunta, tus variables y tus hipótesis. Es el hilo que cose todo.
+
+## Cómo elegir tu teoría
+
+No hay un catálogo donde buscas "teorías para tesis de maestría." La teoría emerge de tu lectura y de tu comprensión del problema. Pero aquí van algunas pistas:
+
+### Opción 1: Partir de tu disciplina
+Cada disciplina tiene sus teorías principales. En sociología: Durkheim, Weber, Bourdieu, Giddens. En ciencia política: institucionalismo, elección racional, constructivismo. En educación: Piaget, Vygotsky, Freire. Empieza por ahí.
+
+### Opción 2: Partir de tu revisión de literatura
+¿Qué teorías usan los papers que leíste? ¿Hay alguna que te haga sentido para tu problema? ¿Hay alguna que nadie haya aplicado a tu contexto?
+
+### Opción 3: Partir del problema
+¿Tu problema es sobre desigualdad? Mira teorías de estratificación social. ¿Es sobre comportamiento? Mira teorías psicosociales. ¿Es sobre instituciones? Mira el institucionalismo.
+
+### La regla de oro
+**No elijas una teoría porque suena impresionante.** Elige la que mejor te ayude a responder tu pregunta. Una teoría simple que funciona es infinitamente mejor que una compleja que no tiene relación con tu problema.
+
+## Cómo conectar el marco teórico con el resto de tu investigación
+
+Este es el punto donde muchas tesis se desmoronan. El marco teórico vive en un capítulo aislado, y luego los resultados se analizan como si ese capítulo no existiera.
+
+El marco teórico debe estar presente en:
+
+- **Tu pregunta:** La teoría te ayuda a formular preguntas más precisas.
+- **Tus variables:** La teoría te dice qué medir y por qué.
+- **Tu hipótesis:** La teoría genera expectativas sobre lo que encontrarás.
+- **Tu análisis:** La teoría te da categorías para interpretar los datos.
+- **Tu discusión:** Tus resultados dialogan con la teoría (¿la confirman, la matizan, la contradicen?).
+
+Si puedes quitar tu capítulo de marco teórico y el resto de la tesis no cambia en nada, entonces tu marco teórico no está funcionando.
+
+## Ejemplos reales de marcos teóricos que funcionan (y que no)
+
+### ❌ Lo que NO funciona
+
+> "Según la RAE, la educación es el proceso de formación…" (Esto es una definición, no teoría.)
+
+> "Existen múltiples definiciones de pobreza. Según el Banco Mundial… Según la CEPAL… Según Sen…" (Esto es una lista de definiciones, no un argumento teórico.)
+
+> "Piaget dice que los niños pasan por etapas de desarrollo cognitivo." (Sí, ¿y qué tiene que ver con tu investigación sobre políticas de inclusión digital?)
+
+### ✅ Lo que SÍ funciona
+
+> "Esta investigación adopta el enfoque de capacidades de Sen (1999), que entiende la pobreza no como la falta de ingreso, sino como la privación de libertades fundamentales. Desde esta perspectiva, la pregunta no es cuánto ganan las familias, sino qué son capaces de hacer y ser. Esto permite analizar las políticas de transferencias condicionadas no solo por su impacto en el ingreso, sino por su efecto en la expansión de capacidades (acceso a salud, educación, participación). Este enfoque se operacionaliza a través de tres dimensiones de capacidad: salud, educación y agencia."
+
+Nota cómo en este ejemplo la teoría está viva: define el problema, orienta las variables, y anticipa cómo se va a medir.
+
+::: {.callout-tip}
+## Ejercicio
+
+1. Identifica 2-3 teorías relevantes para tu tema de investigación.
+2. Para cada una, responde: ¿cómo explica mi problema? ¿Qué variables destaca? ¿Qué preguntas genera?
+3. Elige una y escribe un párrafo (como el ejemplo de arriba) explicando cómo la vas a usar en tu investigación.
+:::

@@ -1,0 +1,106 @@
+# Después de la tesis: ¿y ahora qué? {#despues}
+
+## Sobreviviste. ¿Y ahora?
+
+Defendiste tu tesis. Aprobaste. Celebraste (ojalá bastante). Y ahora te enfrentas a una pregunta que pocos manuales abordan: **¿qué haces con todo lo que aprendiste?**
+
+La tesis no tiene que ser el final de tu vida investigadora. Puede ser el principio. O puede ser un capítulo cerrado que te dejó habilidades valiosas para otros caminos. Ambas opciones son válidas.
+
+## Publicar en revistas: cómo funciona el peer review
+
+Si tu tesis tiene resultados interesantes (y probablemente los tiene, aunque no lo creas), considerar publicarlos en una revista académica es una excelente idea. No solo por el CV; sino porque tu conocimiento merece llegar a más personas que tu comité de tesis y tu mamá.
+
+### El proceso
+
+1. **Conviertes tu tesis en un artículo.** Una tesis de 150 páginas NO es un artículo. Un artículo tiene 6.000-10.000 palabras (depende de la revista). Tienes que comprimir, seleccionar, y reescribir. Es casi un trabajo nuevo.
+
+2. **Eliges una revista.** Busca revistas que publiquen temas similares al tuyo. Mira dónde publican los autores que citas. Revisa si la revista es indexada (Scopus, Web of Science, SciELO). Ojea las normas para autores.
+
+3. **Envías tu manuscrito.** La revista asigna un editor que decide si tu paper va a revisión o se rechaza directamente (desk rejection). Que no te desanime: las tasas de desk rejection pueden llegar al 50% en buenas revistas.
+
+4. **Revisión por pares (peer review).** 2-3 revisores anónimos (expertos en tu tema) leen tu paper y emiten un dictamen:
+   - **Aceptado:** Rarísimo en primera vuelta. Si te pasa, cómprate un billete de lotería.
+   - **Revisiones menores:** Cambios pequeños. Buena señal.
+   - **Revisiones mayores:** Cambios sustanciales. No es un rechazo; es una oportunidad.
+   - **Rechazado:** Duele, pero es parte del proceso. Los mejores investigadores del mundo tienen papers rechazados.
+
+5. **Respondes a los revisores.** Punto por punto. Con educación. Incluso cuando sus comentarios te parezcan injustos. (Especialmente cuando te parecen injustos.)
+
+6. **Si todo sale bien, se publica.** Pueden pasar 6-18 meses desde el envío. La academia no es rápida.
+
+### Consejos para sobrevivir el peer review
+
+- **No te lo tomes personal.** Los revisores critican tu trabajo, no tu persona. (Bueno, la mayoría de las veces.)
+- **Agradece los comentarios duros.** Son los que más mejoran tu paper.
+- **Si te rechazan, no abandones.** Mejora el paper con los comentarios y envíalo a otra revista.
+- **Publica en español también.** No todo tiene que ser en inglés. Hay excelentes revistas en español (y tu trabajo puede tener más impacto en tu contexto si está en el idioma local).
+
+## Conferencias académicas: cómo presentar sin dormirlos
+
+Las conferencias son el lugar donde compartes tu trabajo, recibes feedback, y conoces a colegas. Son fundamentales para la vida académica. Pero presentar bien es un arte.
+
+### Lo que funciona
+
+- **Cuenta una historia.** No leas tu paper. Cuenta el viaje: el problema, la pregunta, lo que hiciste, lo que encontraste, lo que significa.
+- **Menos texto, más visuals.** Si tu slide tiene más de 5 líneas, tiene demasiado texto.
+- **Practica.** Cronometra tu presentación. Si tienes 15 minutos, practica para 12. Los nervios te van a hacer hablar más rápido o más lento.
+- **Termina con una pregunta provocadora,** no con "gracias, ¿preguntas?" Deja al público pensando.
+
+### Lo que NO funciona
+
+- Leer las diapositivas palabra por palabra.
+- Meter 40 slides en 15 minutos.
+- Empezar con "Antes que nada, quiero agradecer a mi familia, a mi asesor, a mi perro…"
+- Poner tablas de regresión ilegibles en la pantalla.
+
+## La vida académica: lo bueno, lo malo, y la burocracia
+
+Si estás considerando una carrera académica, aquí va un resumen honesto:
+
+### Lo bueno
+- **Libertad intelectual.** Pocas profesiones te permiten dedicar años a una pregunta que te apasiona.
+- **Impacto.** Formas personas, generas conocimiento, puedes influir en políticas públicas.
+- **Comunidad.** Colegas en todo el mundo que comparten tus intereses.
+- **Flexibilidad.** (Relativa. Más que un trabajo de oficina, menos de lo que la gente cree.)
+
+### Lo malo
+- **Precariedad laboral.** Posiciones permanentes cada vez más escasas. Años de contratos temporales.
+- **Presión por publicar.** "Publish or perish" es real. La cantidad a veces importa más que la calidad.
+- **Ritmo lento.** Todo tarda: publicaciones, financiamiento, promociones, decisiones.
+- **Síndrome del impostor.** Es endémico en la academia. Casi todos lo tienen.
+
+### La burocracia
+- Formularios para todo.
+- Comités que se reúnen para decidir cuándo se reúne el siguiente comité.
+- Informes que nadie lee.
+- Sistemas informáticos diseñados en 1997.
+
+No te lo digo para desanimarte. Te lo digo para que entres con los ojos abiertos.
+
+## Investigar fuera de la academia
+
+La academia no es el único lugar donde se investiga. Y para muchos, los otros caminos son más satisfactorios (y mejor pagados).
+
+### Consultorías y evaluaciones
+ONGs, gobiernos, y organismos internacionales contratan constantemente consultores para evaluaciones de programas, diagnósticos, líneas de base, y estudios de política. Si te gusta la investigación aplicada, este es un camino muy viable.
+
+### Think tanks y centros de investigación
+Organizaciones como GRADE (Perú), CIPPEC (Argentina), Espacio Público (Chile), o Fedesarrollo (Colombia) hacen investigación de alta calidad fuera del circuito universitario. Son puentes entre la academia y la política pública.
+
+### Sector privado
+Empresas de consultoría, departamentos de analytics, investigación de mercados, data science. Las habilidades de investigación (pensar críticamente, analizar datos, comunicar hallazgos) son extremadamente valoradas fuera de la academia.
+
+### Periodismo de datos
+La intersección entre investigación y comunicación. Medios como Ojo Público, CIPER, o Animal Político usan metodología de investigación para hacer periodismo de profundidad.
+
+::: {.callout-tip}
+## Ejercicio final
+
+Reflexiona y escribe un párrafo respondiendo:
+
+1. ¿Qué aprendiste en el proceso de investigación que va más allá del contenido de tu tesis?
+2. ¿Dónde quieres estar en 5 años? ¿La investigación tiene un lugar en esa visión?
+3. Si pudieras empezar tu tesis de nuevo, ¿qué harías diferente?
+
+No hay respuestas correctas. Hay respuestas honestas. Y esas son las que importan.
+:::

@@ -1,0 +1,108 @@
+# Hipótesis, objetivos y variables: el trípode {#hipotesis}
+
+## El trípode que sostiene tu investigación
+
+Si la pregunta de investigación es el corazón, la hipótesis, los objetivos y las variables son las piernas de la mesa. Sin ellas, todo se cae. Y como un trípode, necesitas las tres para que haya equilibrio.
+
+Pero antes de entrar en cada una, una advertencia: muchos manuales presentan estos tres elementos como pasos secuenciales y mecánicos. "Primero escriba su objetivo general. Luego sus objetivos específicos. Luego su hipótesis. Luego sus variables." Como si fuera una receta de cocina.
+
+En la vida real, estos tres elementos se construyen simultáneamente y se van ajustando mutuamente. Tu hipótesis puede hacerte cambiar tus objetivos. Tus variables pueden hacerte reformular tu hipótesis. Es un proceso iterativo, desordenado, y eso está bien.
+
+## Hipótesis: no siempre necesitas una (pero casi siempre ayuda)
+
+Una hipótesis es una respuesta tentativa a tu pregunta de investigación. Es tu apuesta informada sobre lo que vas a encontrar.
+
+**Ejemplo:**
+- Pregunta: ¿Qué factores influyen en la deserción universitaria de primera generación?
+- Hipótesis: El capital cultural familiar tiene un efecto mayor que el ingreso económico sobre la probabilidad de deserción en estudiantes de primera generación.
+
+### ¿Siempre necesitas una hipótesis?
+
+No necesariamente:
+
+- **Estudios exploratorios:** Si nadie ha investigado tu tema antes, es difícil formular una hipótesis. Tu objetivo es explorar, no confirmar.
+- **Investigación cualitativa:** Muchos diseños cualitativos prefieren no tener hipótesis para no sesgar la mirada. Usan "supuestos" o "proposiciones" más flexibles.
+- **Estudios descriptivos:** "¿Cuál es el perfil socioeconómico de los vendedores ambulantes en Lima?" No necesita hipótesis, necesita descripción.
+
+Pero si tu estudio es explicativo o correlacional, sí necesitas hipótesis. Y debe ser:
+
+- **Contrastable:** Se puede confirmar o refutar con datos.
+- **Específica:** No vale "la educación influye en algo."
+- **Fundamentada:** Basada en tu marco teórico o en la literatura previa, no en tu intuición.
+
+### El valor de estar equivocado
+
+Aquí una idea contraintuitiva: **una hipótesis que se refuta puede ser más interesante que una que se confirma.** Si todo sale como esperabas, tu contribución es confirmar lo que ya se sospechaba. Pero si tus datos contradicen tu hipótesis, tienes algo genuinamente nuevo que explicar. Eso genera conocimiento.
+
+No le tengas miedo a estar equivocado. Tenle miedo a no estar dispuesto a aceptarlo.
+
+## Objetivos: general y específicos sin la lista de supermercado
+
+### El objetivo general
+
+Es lo que quieres lograr con tu investigación. Uno solo. Claro. Directamente vinculado a tu pregunta.
+
+**Error común:** Objetivos generales que son, en realidad, objetivos de política pública.
+
+- ❌ "Contribuir a la reducción de la pobreza en América Latina." (Eso es lindo, pero no es un objetivo de investigación. Es un objetivo de la ONU.)
+- ✅ "Analizar la relación entre capital cultural familiar y permanencia universitaria en estudiantes de primera generación en universidades públicas de Lima."
+
+### Los objetivos específicos
+
+Son los pasos concretos que necesitas dar para lograr el objetivo general. Pero cuidado: no son una lista de tareas ("revisar la literatura," "aplicar encuestas," "analizar datos"). Son sub-objetivos de conocimiento.
+
+**Ejemplo:**
+
+1. Identificar las dimensiones del capital cultural presentes en familias de estudiantes de primera generación.
+2. Medir la relación entre cada dimensión del capital cultural y la probabilidad de permanencia.
+3. Comparar el efecto del capital cultural con el efecto del ingreso económico sobre la permanencia.
+
+Nota cómo cada objetivo específico genera un resultado concreto que contribuye al objetivo general. No son tareas administrativas; son preguntas subordinadas.
+
+### La regla de los verbos
+
+Usa verbos que impliquen investigación: analizar, evaluar, comparar, identificar, determinar, explorar. Evita verbos vagos: estudiar, conocer, entender, investigar (redundante: toda tu tesis es "investigar").
+
+## Variables: de lo abstracto a lo medible
+
+### ¿Qué es una variable?
+
+Una variable es algo que varía (sí, así de simple). Es una característica que puede tomar diferentes valores en tu estudio.
+
+- **Variable dependiente (VD):** Lo que quieres explicar. El efecto. La consecuencia.
+- **Variable independiente (VI):** Lo que crees que explica. La causa. El factor.
+- **Variables de control:** Las que necesitas mantener constantes para no confundir el efecto.
+
+**Ejemplo:**
+- VI: Capital cultural familiar (medido por nivel educativo de los padres, acceso a libros, prácticas culturales).
+- VD: Permanencia universitaria (medida por matrícula continua después del 4to semestre).
+- Control: Ingreso familiar, género, tipo de colegio de origen.
+
+### El peligro de las variables "obvias"
+
+Muchos estudiantes eligen variables por inercia ("género," "edad," "nivel socioeconómico") sin preguntarse si realmente son relevantes para su pregunta. Incluir una variable debería tener una justificación teórica. ¿Por qué crees que el género influye en tu fenómeno? ¿Qué dice la literatura? Si no tienes una razón, no la metas solo por llenar espacio.
+
+## La operacionalización: donde la teoría se encuentra con la realidad
+
+Este es el paso que separa a los amateurs de los investigadores serios. Operacionalizar es pasar de un concepto abstracto ("capital cultural") a algo que puedas medir ("¿cuántos libros hay en tu casa?").
+
+| Concepto | Dimensión | Indicador | Instrumento |
+|---|---|---|---|
+| Capital cultural | Objetivado | Cantidad de libros en el hogar | Encuesta, pregunta 12 |
+| Capital cultural | Incorporado | Frecuencia de asistencia a eventos culturales | Encuesta, pregunta 15 |
+| Capital cultural | Institucionalizado | Nivel educativo máximo de los padres | Encuesta, pregunta 8 |
+| Permanencia | — | Matrícula continua hasta 4to semestre | Registro académico |
+
+Esta tabla es **oro.** Te obliga a ser concreto, a definir exactamente qué vas a medir y cómo. Si no puedes llenarla, tu investigación todavía es demasiado abstracta.
+
+::: {.callout-tip}
+## Ejercicio
+
+Construye tu tabla de operacionalización:
+
+1. Lista tus variables (dependiente, independiente, control).
+2. Para cada una, define dimensiones e indicadores.
+3. Para cada indicador, especifica cómo lo vas a medir (¿con qué pregunta de encuesta? ¿con qué dato secundario?).
+
+Si no puedes completar alguna celda, es una señal de que necesitas más trabajo teórico o metodológico.
+:::

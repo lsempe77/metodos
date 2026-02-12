@@ -1,0 +1,87 @@
+# Revisión de literatura: leer antes de escribir {#revision-literatura}
+
+## No es un resumen de libros
+
+Empecemos por lo que la revisión de literatura **NO** es:
+
+- No es una lista de resúmenes de papers.
+- No es copiar y pegar definiciones.
+- No es demostrar que leíste mucho.
+- No es un capítulo obligatorio que nadie lee.
+
+Una buena revisión de literatura es un **mapa del terreno.** Es decirle al lector: "Mira, este tema ha sido estudiado desde estos ángulos, con estos métodos, y se ha llegado a estas conclusiones. Pero hay huecos aquí, aquí y aquí. Mi investigación se mete en uno de esos huecos."
+
+Es un argumento, no un inventario.
+
+## Revisión de literatura vs. marco teórico: la confusión que arruina tesis
+
+Esta es una de las confusiones más comunes y más dañinas. Así que vamos a aclararlo de una vez:
+
+| Revisión de literatura | Marco teórico |
+|---|---|
+| ¿Qué se ha investigado sobre mi tema? | ¿Desde qué teoría voy a mirar mi problema? |
+| Mapea el estado del conocimiento | Define los lentes conceptuales |
+| Incluye estudios empíricos previos | Incluye teorías y modelos |
+| Identifica vacíos en la investigación | Justifica por qué eliges esa perspectiva |
+| Responde: ¿qué sabemos y qué no? | Responde: ¿cómo lo voy a entender? |
+
+**Ejemplo:** Si investigas deserción escolar:
+
+- Tu **revisión de literatura** mapea los estudios previos sobre deserción en América Latina, qué factores se han identificado, qué métodos se han usado, qué contextos se han estudiado, y qué falta por saber.
+- Tu **marco teórico** podría usar la teoría del capital cultural de Bourdieu para argumentar que la deserción no es solo económica, sino que está vinculada a la distancia entre la cultura escolar y la cultura familiar del estudiante.
+
+¿Ves la diferencia? La revisión te dice "qué hay ahí afuera." El marco te dice "desde dónde lo miro."
+
+Son complementarios, pero no son lo mismo. Y mezclarlos produce capítulos interminables donde el lector no sabe si le estás contando qué se ha investigado o qué teoría vas a usar.
+
+## Cómo buscar: el arte de las palabras clave
+
+Buscar literatura académica es un oficio. No es googlear tu tema y ver qué sale. Aquí van las herramientas y estrategias:
+
+### Motores de búsqueda académicos
+
+- **Google Scholar:** El punto de partida. Gratis, amplio, pero con mucho ruido.
+- **Scopus:** Más selectivo, mejor para encontrar lo relevante. Requiere acceso institucional.
+- **Web of Science:** Similar a Scopus. Ideal para ver redes de citación.
+- **JSTOR, SciELO, Redalyc, CLACSO:** Fundamentales para ciencias sociales en América Latina.
+
+### Estrategia de búsqueda
+
+1. **Define tus palabras clave** en español e inglés (la mayoría de la literatura está en inglés).
+2. **Usa operadores booleanos:** "deserción escolar" AND "América Latina" AND "factores socioeconómicos".
+3. **Usa la técnica de la bola de nieve:** Encuentras un buen paper → miras sus referencias → encuentras más papers buenos → repites.
+4. **Busca en ambas direcciones:** ¿Quién cita a este paper? (Google Scholar te lo dice con "Citado por").
+5. **Filtra por fecha:** Prioriza lo reciente (últimos 5-10 años), pero no ignores los clásicos.
+
+## Cómo leer un paper en 20 minutos
+
+No puedes leer 100 papers completos. No tienes tiempo. Pero puedes leer 100 papers de forma inteligente:
+
+1. **Título y abstract** (2 min): ¿Es relevante? Si no, descártalo.
+2. **Introducción** (3 min): ¿Cuál es la pregunta y por qué importa?
+3. **Metodología** (5 min): ¿Cómo lo hicieron? ¿Es un diseño creíble?
+4. **Resultados y conclusiones** (5 min): ¿Qué encontraron? ¿Qué limitaciones reconocen?
+5. **Referencias** (5 min): ¿Quién citan? ¿Hay algún clásico que debería leer?
+
+Si después de estos 20 minutos el paper es claramente central para tu investigación, entonces sí: léelo completo, con lápiz en mano, tomando notas.
+
+## El estado del arte como argumento
+
+Tu revisión de literatura debe construir un argumento. No es "Pérez (2018) dice X. García (2019) dice Y. López (2020) dice Z." Eso es una lista.
+
+Un buen argumento se ve así:
+
+> "La investigación sobre deserción escolar en América Latina ha identificado consistentemente factores económicos como los principales predictores (Pérez, 2018; García, 2019). Sin embargo, estudios recientes en contextos urbanos muestran que factores socioculturales —como las expectativas familiares y la identidad escolar— tienen un peso significativo incluso cuando se controla por ingreso (López, 2020; Rodríguez, 2021). Esta tensión entre lo económico y lo sociocultural permanece sin resolver en contextos rurales, que es precisamente donde esta investigación se posiciona."
+
+¿Ves? No es un resumen. Es una conversación entre autores que va construyendo el caso de por qué tu investigación es necesaria.
+
+::: {.callout-tip}
+## Ejercicio
+
+Construye una **matriz de literatura** con 15 artículos clave sobre tu tema. Para cada uno anota:
+
+| Autor/Año | Pregunta | Método | Hallazgos principales | Relación con mi investigación |
+|---|---|---|---|---|
+
+Cuando termines, mira la tabla completa. ¿Qué patrón ves? ¿Qué falta? Esa es tu contribución.
+:::

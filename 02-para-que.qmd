@@ -1,0 +1,46 @@
+# ¿Para qué investigamos? {#para-que}
+
+## La investigación como herramienta de transformación
+
+Empecemos con una pregunta incómoda: ¿para qué investigas? Y no vale decir "porque me lo piden para graduarme". Eso es un requisito administrativo, no una razón.
+
+La investigación en ciencias sociales existe para entender problemas reales y, ojalá, contribuir a resolverlos. No es decoración del CV. No es un trámite burocrático. Es una herramienta —probablemente la más poderosa que tenemos— para entender por qué las cosas son como son y cómo podrían ser diferentes.
+
+El problema es que muchas veces la academia se desconecta de eso. Se produce conocimiento que nadie lee, que nadie usa, que nadie necesita. Papers que solo existen para engordar índices bibliométricos. Tesis que acumulan polvo en bibliotecas (o bytes en servidores). Y eso es un desperdicio enorme de talento, tiempo y recursos.
+
+## La diferencia entre investigar y opinar con bibliografía
+
+Aquí va una distinción crucial que muchos no entienden (o no quieren entender): investigar no es buscar evidencia que confirme lo que ya piensas. Eso es opinar con bibliografía. Y es sorprendentemente común.
+
+Investigar es hacerte una pregunta genuina —una donde realmente no sabes la respuesta— y diseñar un proceso riguroso para encontrarla. Implica aceptar que podrías estar equivocado. Implica estar dispuesto a cambiar de opinión si la evidencia te lo exige.
+
+¿Suena fácil? No lo es. Nuestro cerebro está diseñado para confirmar lo que ya creemos (se llama sesgo de confirmación, y es brutal). Pero un buen investigador aprende a pelear contra sus propios sesgos. No los elimina —eso es imposible—, pero los reconoce y los controla.
+
+## Investigación básica vs. aplicada
+
+No toda investigación tiene que resolver un problema inmediato. Hay una distinción clásica que vale la pena entender:
+
+- **Investigación básica (o fundamental):** Busca generar conocimiento nuevo sin una aplicación práctica inmediata. ¿Por qué la gente vota como vota? ¿Cómo se forman las identidades colectivas?
+- **Investigación aplicada:** Busca resolver un problema concreto. ¿Cómo reducir la deserción escolar en zonas rurales? ¿Qué política pública funciona mejor para reducir la pobreza?
+
+Ambas son valiosas. Ambas son necesarias. La básica alimenta a la aplicada (sin teoría, no hay soluciones informadas). Y la aplicada retroalimenta a la básica (los problemas reales generan nuevas preguntas teóricas).
+
+El error es despreciar una u otra. El teórico que mira por encima del hombro al aplicado ("eso es consultoría, no ciencia") es tan miope como el aplicado que desprecia la teoría ("eso es filosofía, no sirve para nada").
+
+## ¿A quién le importa tu tesis?
+
+Esta es quizás la pregunta más dura que tienes que hacerte. Y deberías hacértela temprano, no cuando ya llevas 6 meses escribiendo.
+
+Tu investigación debería importarle a alguien más que a ti y a tu asesor. Debería tener una **audiencia** y una **relevancia** clara. Eso no significa que tiene que cambiar el mundo. Pero sí significa que debería poder responder a estas preguntas:
+
+1. ¿Qué problema ayuda a entender o resolver?
+2. ¿Quién se beneficia de este conocimiento?
+3. ¿Qué aporta que no se sepa ya?
+
+Si no puedes responder al menos dos de estas tres, probablemente necesitas repensar tu tema.
+
+::: {.callout-tip}
+## Ejercicio
+
+Escribe en **una sola frase** para qué serviría tu investigación. Si necesitas más de una frase, probablemente no tienes suficiente claridad todavía. Y eso está bien —para eso estamos aquí—, pero hay que trabajarlo.
+:::

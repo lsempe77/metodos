@@ -1,0 +1,34 @@
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Rdata
+.Rprofile
+.Renviroment
+.httr-oauth
+_publish.R
+rsconnect
+
+# Bookdown (viejo)
+_book
+_bookdown_files
+
+# Sistema
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Quarto
+/.quarto/
+_freeze/
+
+# Archivos del proyecto viejo
+_build.sh
+_deploy.sh
+now.json
+test.R
+book.bib.bak
+packages.bib
+
+# PDFs (libros escaneados / materiales de referencia)
+*.pdf

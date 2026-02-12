@@ -1,0 +1,82 @@
+# Paradigmas: tu GPS invisible {#paradigmas}
+
+## ¿Qué es un paradigma y por qué debería importarte?
+
+Un paradigma es, en simple, el conjunto de creencias fundamentales desde las cuales miras el mundo. Es tu GPS invisible: determina qué caminos ves, cuáles ignoras, y hacia dónde te diriges, muchas veces sin que te des cuenta.
+
+En investigación, tu paradigma define:
+
+- **Qué consideras "real"** (ontología): ¿Existe una realidad objetiva independiente de nosotros, o la realidad es construida socialmente?
+- **Cómo crees que se puede conocer** (epistemología): ¿Podemos medir la realidad objetivamente, o solo podemos interpretarla?
+- **Qué métodos usas** (metodología): ¿Encuestas y estadísticas, o entrevistas y análisis de discurso?
+
+Sí, son palabras grandes. Pero el concepto es simple: tus supuestos sobre cómo funciona el mundo determinan cómo lo estudias. Y si no eres consciente de esos supuestos, estás investigando a ciegas.
+
+## Los paradigmas principales (sin el lenguaje críptico)
+
+### Positivismo: "la realidad existe y se puede medir"
+
+El positivista cree que hay una realidad objetiva ahí afuera, que funciona con leyes regulares, y que podemos descubrirla con métodos rigurosos (generalmente cuantitativos). Busca explicar, predecir y generalizar.
+
+**Ejemplo:** Si quieres saber si la educación reduce la pobreza, un positivista diseñaría un estudio con datos de miles de personas, controlaría variables, y buscaría una relación causal estadísticamente significativa.
+
+**Fortaleza:** Rigor, replicabilidad, capacidad de generalización.
+**Debilidad:** Puede simplificar fenómenos complejos. Las personas no son átomos.
+
+### Constructivismo (o interpretativismo): "la realidad se construye"
+
+El constructivista cree que la realidad social es construida por las personas a través de sus interacciones, lenguaje y cultura. No hay una verdad única; hay múltiples interpretaciones. Busca comprender, no predecir.
+
+**Ejemplo:** Para entender la pobreza, un constructivista haría entrevistas en profundidad para comprender cómo las personas viven y significan la pobreza desde su propia experiencia.
+
+**Fortaleza:** Profundidad, sensibilidad al contexto, voces de los participantes.
+**Debilidad:** Difícil de generalizar. Más subjetivo (aunque eso no es necesariamente malo).
+
+### Pragmatismo: "lo que funcione"
+
+El pragmatista dice: "¿Saben qué? Dejemos de pelear sobre qué es la realidad y concentrémonos en resolver el problema." Usa el método que mejor sirva para responder la pregunta, sea cuantitativo, cualitativo o mixto.
+
+**Ejemplo:** Para abordar la pobreza, un pragmatista podría combinar datos estadísticos con entrevistas, usando lo mejor de ambos mundos.
+
+**Fortaleza:** Flexibilidad, orientación a resultados.
+**Debilidad:** Puede ser acusado de falta de coherencia filosófica (aunque los pragmatistas responderían: "¿Y a quién le importa?").
+
+### Teoría crítica: "la investigación es política"
+
+La teoría crítica parte de que la investigación no es neutral. Toda producción de conocimiento ocurre en un contexto de poder, y la investigación debería servir para visibilizar y transformar las desigualdades.
+
+**Ejemplo:** Un investigador crítico no solo estudia la pobreza; cuestiona las estructuras que la producen y busca que su investigación empodere a las comunidades estudiadas.
+
+**Fortaleza:** Compromiso social, visibiliza lo invisible.
+**Debilidad:** La línea entre investigación y activismo puede difuminarse.
+
+## El problema de fingir que no tienes paradigma
+
+Aquí vuelvo al punto que hice en la introducción: en ciencias sociales, todos tenemos postura. El que dice "yo soy neutral" probablemente es positivista sin saberlo. El que dice "hay que dar voz a los marginados" probablemente opera desde la teoría crítica.
+
+No hay problema con tener un paradigma. El problema es no saberlo. Porque si no sabes desde dónde miras, no puedes entender las limitaciones de tu mirada.
+
+## El sesgo de confirmación y la prédica entre apóstoles
+
+Como mencioné en el capítulo anterior, uno de los grandes problemas de las ciencias sociales es que investigamos para confirmar lo que ya creemos. Y luego se lo comunicamos a gente que ya está de acuerdo con nosotros.
+
+Esto tiene un nombre en psicología: **sesgo de confirmación**. Buscamos, interpretamos y recordamos información de manera que confirme nuestras creencias previas. Y en la academia, esto se amplifica porque:
+
+1. Nos rodeamos de gente que piensa parecido (nuestro departamento, nuestras conferencias, nuestras revistas).
+2. Los revisores de nuestros papers suelen compartir nuestro paradigma.
+3. Es más fácil (y más cómodo) confirmar que cuestionar.
+
+¿La solución? No hay una mágica. Pero ayuda enormemente leer fuera de tu tribu, conversar con gente que piensa distinto, y hacerte preguntas incómodas sobre tus propios supuestos.
+
+## Kuhn y la tensión de cambiar de paradigma
+
+Thomas Kuhn, en *La estructura de las revoluciones científicas* [@kuhn1996], explica que la ciencia no avanza de forma lineal y acumulativa. Avanza a saltos. Los paradigmas dominan hasta que las anomalías se acumulan y alguien propone uno nuevo. Y el cambio es doloroso, resistido, a veces violento (intelectualmente hablando).
+
+En ciencias sociales, vivimos en una tensión permanente de paradigmas. No hay uno dominante como en la física. Y eso está bien —es parte de nuestra riqueza—, pero exige que seamos honestos sobre desde dónde miramos.
+
+::: {.callout-tip}
+## Ejercicio
+
+1. Identifica tu paradigma. ¿Eres más positivista, constructivista, pragmatista, o crítico? ¿Por qué?
+2. Ahora elige el paradigma opuesto al tuyo e intenta defender una postura de investigación desde ahí. Sí, es incómodo. Ese es el punto.
+:::

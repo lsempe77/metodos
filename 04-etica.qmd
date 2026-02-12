@@ -1,0 +1,68 @@
+# Ética en la investigación: el capítulo que todos se saltan {#etica}
+
+## Por qué este capítulo importa más de lo que crees
+
+En la mayoría de los manuales de metodología, la ética aparece como un apartado breve, casi decorativo, entre el marco teórico y la metodología. "Respete la confidencialidad. Obtenga consentimiento informado. Fin." Y todos asienten y pasan a la siguiente página.
+
+Pero la ética no es un trámite. Es el esqueleto de tu investigación. Si tu investigación no es ética, no importa qué tan sofisticado sea tu diseño, qué tan elegante tu análisis, o qué tan impactantes tus resultados. Es basura.
+
+Y lo más complicado: la ética raramente es blanco o negro. Está llena de grises.
+
+## Consentimiento informado: más complejo de lo que parece
+
+El consentimiento informado suena simple: le explicas a la persona qué vas a hacer con su información, y ella acepta. Pero en la práctica:
+
+- ¿Qué pasa cuando investigas comunidades con bajos niveles de escolaridad? ¿Realmente entienden un formulario de consentimiento escrito en jerga académica?
+- ¿Qué pasa cuando investigas menores de edad? ¿Basta con el consentimiento de los padres?
+- ¿Qué pasa cuando haces observación participante en espacios públicos? ¿Necesitas consentimiento de todos los presentes?
+- ¿Qué pasa con la investigación en redes sociales? ¿Un tuit público es "dato" que puedes usar libremente?
+
+No hay respuestas universales. Hay principios (respeto por la autonomía, no hacer daño, justicia) y hay contextos. Tu trabajo como investigador es navegar entre ambos con honestidad.
+
+## Anonimato y confidencialidad: no son lo mismo
+
+Otro error común: usar "anonimato" y "confidencialidad" como sinónimos.
+
+- **Anonimato:** Tú, como investigador, no sabes quién dijo qué. Los datos no están vinculados a identidades.
+- **Confidencialidad:** Tú sí sabes quién dijo qué, pero te comprometes a no revelarlo.
+
+En la práctica, el anonimato puro es difícil de lograr (especialmente en estudios cualitativos con muestras pequeñas). Y la confidencialidad puede romperse involuntariamente: si estudias "la directora de la única escuela rural del municipio X", no importa cuántos pseudónimos uses, todos saben quién es.
+
+## Plagiar sin querer: cómo pasa y cómo evitarlo
+
+Nadie (bueno, casi nadie) plagia intencionalmente. Pero el plagio involuntario es más común de lo que crees:
+
+- **Parafrasear mal:** Cambiar 3 palabras de un párrafo no es parafrasear. Es plagiar con disfraz.
+- **No citar fuentes de ideas:** No solo se citan las citas textuales. Si una idea no es tuya, cítala.
+- **Autoplagio:** Sí, puedes plagiarte a ti mismo. Reutilizar textos tuyos publicados sin declararlo es autoplagio.
+- **Traducir sin citar:** Traducir un párrafo del inglés al español y presentarlo como propio es plagio.
+
+La regla de oro: **cuando tengas dudas, cita.** Nadie te va a criticar por citar de más. Muchos te van a criticar por citar de menos.
+
+## Cuando tus resultados no le gustan a quien te financia
+
+Este es el elefante en la habitación. Muchas investigaciones en ciencias sociales son financiadas por organizaciones (gobiernos, ONGs, empresas, cooperación internacional) que tienen intereses. Y a veces, los resultados no coinciden con esos intereses.
+
+¿Qué haces cuando tu evaluación de un programa social muestra que no funciona, y la ONG que te contrató necesita esos resultados para justificar su próximo financiamiento?
+
+¿Qué haces cuando tu tesis muestra que la política estrella de tu gobierno (o de tu partido) no tiene efecto?
+
+No hay respuestas fáciles. Pero hay una regla clara: **los datos son los datos.** Tu integridad como investigador depende de que reportes lo que encontraste, no lo que querían que encontraras. Los matices, las limitaciones, las explicaciones alternativas —todo eso se puede discutir—, pero los datos no se manipulan.
+
+## Casos reales de dilemas éticos
+
+Sin dar nombres (la ética también aplica al escribir un libro), aquí van situaciones reales que he visto o vivido:
+
+1. **El "ajuste" de datos:** Un equipo de investigación que "limpiaba" los datos eliminando los casos que no encajaban con su hipótesis. No estaban mintiendo, técnicamente. Pero estaban contando solo la mitad de la historia.
+
+2. **La comunidad que no quería ser investigada:** Un proyecto de tesis sobre una comunidad indígena que dijo explícitamente que no quería más investigadores. El estudiante fue igual, "porque era importante para la ciencia." ¿Importante para quién?
+
+3. **El revisor interesado:** Un artículo enviado a una revista fue rechazado por un revisor que, meses después, publicó un paper sospechosamente similar. El sistema de peer review depende de la confianza, y a veces esa confianza se rompe.
+
+4. **Los datos "eternos":** Una encuesta realizada hace 15 años cuyos datos siguen siendo usados para publicar papers, mucho más allá del consentimiento original que firmaron los participantes.
+
+::: {.callout-important}
+## Reflexión
+
+La ética no es un capítulo de tu tesis. Es una actitud que atraviesa todo el proceso de investigación, desde la formulación de la pregunta hasta la publicación de los resultados. No se trata de seguir una checklist; se trata de preguntarte constantemente: ¿estoy haciendo lo correcto?
+:::

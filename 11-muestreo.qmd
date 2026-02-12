@@ -1,0 +1,130 @@
+# Muestreo: ¿a quién le preguntas? {#muestreo}
+
+## La pregunta que define tu credibilidad
+
+Puedes tener la mejor pregunta, el mejor marco teórico y el mejor instrumento. Pero si le preguntas a las personas equivocadas (o a muy pocas, o a muy homogéneas), tus resultados no valen mucho.
+
+El muestreo es, en esencia, una decisión sobre **a quién estudias** y **cómo los seleccionas.** Y esa decisión determina qué tan generalizables, creíbles y útiles son tus conclusiones.
+
+## Población y muestra: lo básico
+
+- **Población:** El universo total que te interesa estudiar. "Todos los estudiantes universitarios de primer año en Perú."
+- **Muestra:** El subconjunto de esa población que efectivamente estudias. "500 estudiantes de primer año de 5 universidades públicas de Lima."
+
+Casi nunca puedes estudiar a toda la población (salvo que sea muy pequeña). Por eso seleccionas una muestra y, a partir de ella, haces inferencias sobre la población.
+
+La clave: tu muestra debe **representar** a tu población. Si tu muestra está sesgada, tus conclusiones están sesgadas.
+
+## Muestreo probabilístico: el ideal (cuando se puede)
+
+En el muestreo probabilístico, cada individuo de la población tiene una probabilidad conocida (y no nula) de ser seleccionado. Esto permite hacer inferencias estadísticas y generalizar los resultados.
+
+### Aleatorio simple
+Cada individuo tiene la misma probabilidad de ser seleccionado. Como una lotería.
+- **Ventaja:** Máxima representatividad (en teoría).
+- **Problema:** Necesitas un listado completo de tu población. ¿Tienes una lista de TODOS los emprendedores informales de tu ciudad? Probablemente no.
+
+### Estratificado
+Divides la población en subgrupos (estratos) y seleccionas aleatoriamente dentro de cada uno.
+- **Ejemplo:** Quieres asegurarte de tener representación de universidades públicas y privadas, así que muestrear aleatoriamente dentro de cada estrato.
+- **Ventaja:** Garantiza representación de subgrupos importantes.
+
+### Por conglomerados
+Divides la población en grupos naturales (escuelas, barrios, empresas) y seleccionas algunos grupos al azar, y dentro de ellos estudias a todos.
+- **Ejemplo:** Seleccionas 20 escuelas al azar de un universo de 200, y encuestas a todos los estudiantes de esas 20 escuelas.
+- **Ventaja:** Más práctico y económico que el aleatorio simple.
+- **Desventaja:** Mayor margen de error (los conglomerados pueden ser internamente homogéneos).
+
+## Muestreo no probabilístico: la realidad
+
+Seamos honestos: la mayoría de las tesis en ciencias sociales usan muestreo no probabilístico. No porque sea ideal, sino porque las condiciones para el probabilístico rara vez se cumplen (no hay listados completos, no hay recursos, no hay tiempo).
+
+### Por conveniencia
+Estudias a los que tienes a la mano. "Encuesté a mis compañeros de clase."
+- **Problema:** Es el muestreo más débil. No puedes generalizar. Pero a veces es lo único posible (y eso hay que reconocerlo honestamente).
+
+### Bola de nieve
+Un participante te lleva a otro. Ideal para poblaciones difíciles de alcanzar.
+- **Ejemplo:** Investigas migración indocumentada. No hay un listado de personas en esa situación. Pero si contactas a una, ella te conecta con otras.
+- **Problema:** Sesgo de red (llegas a personas conectadas entre sí, no a las aisladas).
+
+### Intencional (o por juicio)
+Seleccionas casos deliberadamente porque son informativos para tu investigación.
+- **Ejemplo:** Para un estudio de caso sobre liderazgo educativo, eliges a la directora que transformó una escuela en crisis.
+- **Fortaleza:** Profundidad y relevancia del caso.
+- **Debilidad:** Tu criterio puede estar sesgado.
+
+### Por cuotas
+Similar al estratificado, pero sin aleatorización. Defines cuántas personas de cada grupo necesitas y las buscas.
+- **Ejemplo:** Necesitas 50 hombres y 50 mujeres, 25 de cada nivel socioeconómico.
+- **Problema:** Dentro de cada cuota, la selección no es aleatoria.
+
+## El tamaño de muestra: la pregunta que todos hacen
+
+"¿Cuántas personas necesito?" es la pregunta que más me hacen. Y la respuesta honesta es: **depende.**
+
+### Para estudios cuantitativos
+El tamaño de muestra depende de:
+
+- **El tamaño de la población.**
+- **El nivel de confianza deseado** (generalmente 95%).
+- **El margen de error aceptable** (generalmente 5%).
+- **La variabilidad del fenómeno.**
+- **El tipo de análisis estadístico** (una regresión múltiple necesita más casos que una correlación simple).
+
+Hay fórmulas y calculadoras para esto. Pero como regla general: para una encuesta descriptiva, entre 300-400 casos suele ser suficiente para poblaciones grandes. Para análisis multivariados, se suele pedir un mínimo de 10-15 casos por variable.
+
+```{r}
+#| label: fig-margen-error
+#| fig-cap: "Relación entre tamaño de muestra y margen de error (nivel de confianza 95%, p = 0.5)"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+muestra_sizes <- seq(30, 1500, by = 10)
+margen <- 1.96 * sqrt(0.25 / muestra_sizes) * 100
+
+df_me <- tibble(n = muestra_sizes, margen_error = margen)
+
+ggplot(df_me, aes(x = n, y = margen_error)) +
+  geom_line(color = "#3498DB", linewidth = 1.2) +
+  geom_hline(yintercept = 5, linetype = "dashed", color = "#E74C3C") +
+  annotate("text", x = 1200, y = 5.8, label = "Margen de error = 5%",
+           color = "#E74C3C", fontface = "italic", size = 3.5) +
+  geom_vline(xintercept = 384, linetype = "dotted", color = "gray50") +
+  annotate("text", x = 500, y = 12, label = "n ≈ 384",
+           color = "gray40", fontface = "italic", size = 3.5) +
+  labs(
+    x = "Tamaño de muestra (n)",
+    y = "Margen de error (%)"
+  ) +
+  theme_minimal()
+```
+
+Nota cómo a partir de cierto punto, aumentar la muestra tiene rendimientos decrecientes. Pasar de 100 a 400 casos reduce enormemente el margen de error. Pero pasar de 400 a 1.000 apenas lo mejora. Es la ley de rendimientos decrecientes aplicada al muestreo.
+
+### Para estudios cualitativos
+No hay fórmula. El criterio es la **saturación:** cuando nuevas entrevistas o observaciones dejan de aportar información nueva, has llegado al punto.
+
+En la práctica, para entrevistas en profundidad, entre 15-30 participantes suele ser razonable. Para grupos focales, 3-5 grupos de 6-10 personas. Pero son orientaciones, no reglas.
+
+## El error que más veo: la muestra de conveniencia disfrazada
+
+El error más común (y más deshonesto) es usar una muestra por conveniencia y presentarla como si fuera representativa.
+
+"Seleccionamos una muestra aleatoria estratificada de..." No, no lo hiciste. Encuestaste a los que encontraste en el pasillo de tu facultad un martes a las 10 de la mañana. Y eso está bien **si lo dices.** Lo que no está bien es disfrazarlo.
+
+La honestidad sobre las limitaciones de tu muestra no debilita tu investigación. La fortalece. Porque demuestra que entiendes lo que hiciste y lo que eso implica para la interpretación de tus resultados.
+
+::: {.callout-tip}
+## Ejercicio
+
+Para tu investigación:
+
+1. Define tu población objetivo. ¿Quiénes son? ¿Cuántos son (aproximadamente)?
+2. ¿Puedes hacer muestreo probabilístico? Si no, ¿por qué no?
+3. ¿Qué tipo de muestreo es más viable para tu caso?
+4. ¿Cuál sería un tamaño de muestra razonable? Justifícalo.
+5. ¿Qué sesgos podría tener tu muestra? ¿Cómo los mitigarías?
+:::

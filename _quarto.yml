@@ -1,0 +1,64 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "(Otro) Manual de metodología de la investigación en ciencias sociales"
+  subtitle: "Algo políticamente incorrecto y con un énfasis en lo cuantitativo"
+  author: "Lucas Sempé"
+  date: "2021-09-06"
+  date-format: "YYYY-MM-DD"
+  repo-url: https://github.com/lsempe/metodos
+  repo-actions: [edit]
+  chapters:
+    - index.qmd
+    - part: "Parte I — Antes de investigar"
+      chapters:
+        - 01-intro.qmd
+        - 02-para-que.qmd
+        - 03-paradigmas.qmd
+        - 04-etica.qmd
+    - part: "Parte II — El diseño"
+      chapters:
+        - 05-pregunta.qmd
+        - 06-revision-literatura.qmd
+        - 07-marco-teorico.qmd
+        - 08-hipotesis.qmd
+    - part: "Parte III — El método"
+      chapters:
+        - 09-enfoques.qmd
+        - 10-disenos.qmd
+        - 11-muestreo.qmd
+        - 12-recoleccion.qmd
+        - 13-analisis.qmd
+        - 14-evaluacion-impacto.qmd
+        - 15-metodos-comparados.qmd
+        - 16-visualizacion.qmd
+    - part: "Parte IV — El producto"
+      chapters:
+        - 17-escribir.qmd
+        - 18-resultados.qmd
+        - 19-errores.qmd
+        - 20-despues.qmd
+    - 21-references.qmd
+
+bibliography:
+  - book.bib
+  - packages.bib
+csl: apa.csl
+link-citations: true
+
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    toc: true
+  pdf:
+    documentclass: book
+    include-in-header: preamble.tex
+    latex-engine: xelatex
+    keep-tex: true
+  epub:
+    toc: true
+
+lang: es

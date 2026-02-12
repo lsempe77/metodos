@@ -1,0 +1,117 @@
+# La pregunta de investigación: el corazón de todo {#pregunta}
+
+## Todo empieza (y termina) con una pregunta
+
+Si tuviera que resumir este libro entero en una sola idea sería esta: **la calidad de tu investigación depende de la calidad de tu pregunta.** Un método impecable con una pregunta mediocre produce una investigación mediocre. Una pregunta brillante con un método aceptable puede producir algo interesante.
+
+Y sin embargo, la mayoría de los estudiantes dedica más tiempo a elegir el tipo de letra de su tesis que a afinar su pregunta de investigación. Prioridades.
+
+## Anatomía de una buena pregunta vs. una mala pregunta
+
+Veamos algunos ejemplos:
+
+| Pregunta débil | Problema | Pregunta mejorada |
+|---|---|---|
+| ¿La educación es importante? | Demasiado vaga, obvia, no investigable | ¿Cuál es el efecto del acceso a educación preescolar sobre el rendimiento académico en primaria en zonas rurales de Perú? |
+| ¿Por qué hay pobreza? | Demasiado amplia, inabordable | ¿Cómo experimentan la movilidad económica los jóvenes de primera generación universitaria en Santiago de Chile? |
+| ¿Es mala la corrupción? | Normativa, no investigable | ¿Qué relación existe entre la percepción de corrupción institucional y la participación electoral en municipios colombianos? |
+| ¿Funcionan las políticas públicas? | Vaga, sin delimitar | ¿En qué medida el programa Juntos ha contribuido a reducir la desnutrición infantil en Huancavelica entre 2010 y 2020? |
+
+¿Ves el patrón? Una buena pregunta es:
+
+- **Específica:** Delimita qué, quién, dónde, cuándo.
+- **Investigable:** Se puede responder con datos (no con opiniones).
+- **Relevante:** Aporta algo al conocimiento o a la solución de un problema.
+- **Viable:** Puedes responderla con los recursos y el tiempo que tienes.
+
+## Por qué tu primera pregunta siempre va a cambiar
+
+Aquí va algo que ningún manual te dice con suficiente honestidad: **tu pregunta de investigación va a cambiar.** Probablemente varias veces. Y eso está bien. Es parte del proceso.
+
+Tu primera pregunta es una brújula, no un contrato. Te da dirección, pero a medida que lees más, entiendes mejor el tema, y encuentras datos (o descubres que no los hay), tu pregunta se va afinando, estrechando, a veces cambiando radicalmente.
+
+He visto estudiantes que empezaron investigando sobre política educativa y terminaron haciendo una tesis sobre migración. El camino de la curiosidad es sinuoso, y eso es lo bonito de investigar.
+
+El error no es cambiar de pregunta. El error es enamorarte tanto de tu primera idea que te niegues a ajustarla cuando la evidencia te pide que lo hagas.
+
+## El embudo: de la curiosidad a la pregunta operacionalizable
+
+Piensa en tu pregunta como un embudo:
+
+1. **Tema general:** Educación y desigualdad.
+2. **Tema acotado:** Acceso a educación superior en poblaciones vulnerables.
+3. **Problema de investigación:** Los jóvenes de primera generación universitaria enfrentan barreras que no se limitan a lo económico.
+4. **Pregunta de investigación:** ¿Qué factores socioculturales influyen en la permanencia de estudiantes de primera generación en universidades públicas de Lima?
+
+Cada nivel del embudo va estrechando el foco. Del océano al vaso de agua. Y es en el vaso de agua donde puedes investigar de verdad.
+
+```{r}
+#| label: fig-embudo
+#| fig-cap: "El embudo de investigación: de la curiosidad general a la pregunta operacionalizable"
+#| echo: false
+#| message: false
+
+library(tidyverse)
+
+embudo <- tibble(
+  etapa = factor(c("Tema general", "Tema acotado", "Problema", "Pregunta"),
+                 levels = rev(c("Tema general", "Tema acotado", "Problema", "Pregunta"))),
+  ancho = c(10, 7, 4.5, 2.5),
+  ejemplo = c(
+    "Educación y desigualdad",
+    "Acceso a educación superior\nen poblaciones vulnerables",
+    "Barreras no económicas en\nestudiantes de 1ra generación",
+    "¿Qué factores socioculturales\ninfluyen en la permanencia?"
+  )
+)
+
+ggplot(embudo, aes(x = ancho, y = etapa)) +
+  geom_col(fill = "#3498DB", alpha = 0.8, width = 0.7) +
+  geom_text(aes(label = ejemplo), hjust = 0, nudge_x = 0.3,
+            size = 3.2, color = "gray20", lineheight = 0.9) +
+  scale_x_continuous(limits = c(0, 16)) +
+  labs(x = NULL, y = NULL) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(),
+    axis.text.y = element_text(face = "bold", size = 10),
+    panel.grid = element_blank()
+  )
+```
+
+## Las 5 preguntas letales para testear tu pregunta
+
+Antes de enamorarte de tu pregunta, sométela a estas 5 preguntas:
+
+1. **¿Se puede responder con evidencia?** Si la respuesta depende de valores u opiniones ("¿Es justa la desigualdad?"), no es una pregunta de investigación. Es una pregunta filosófica.
+
+2. **¿Ya se respondió?** Si Google Scholar te arroja 500 papers que responden exactamente tu pregunta, necesitas un ángulo nuevo. No reinventes la rueda.
+
+3. **¿La puedes responder TÚ?** Con tus recursos, tu tiempo, tu acceso a datos. Una pregunta que requiere una encuesta a 10.000 personas en 15 países no es viable para una tesis de maestría.
+
+4. **¿A quién le importa la respuesta?** Si solo te importa a ti (y a tu mamá), probablemente necesitas repensar la relevancia.
+
+5. **¿Qué cambia si la respondes?** ¿Aporta conocimiento nuevo? ¿Informa una política pública? ¿Desafía un supuesto establecido? Si la respuesta es "nada cambia", la pregunta no vale el esfuerzo.
+
+## Del tema a la pregunta: un ejemplo completo
+
+Supongamos que te interesa el tema de la violencia escolar. Así sería el proceso:
+
+**Curiosidad inicial:** "Me preocupa el bullying en los colegios."
+
+**Primera lectura:** Descubres que hay mucha literatura sobre bullying, pero menos sobre ciberbullying en contextos latinoamericanos. También descubres que el rol de los testigos (bystanders) es clave.
+
+**Problema identificado:** La mayoría de las intervenciones anti-bullying se enfocan en víctimas y agresores, pero ignoran a los testigos, que son quienes pueden cambiar la dinámica grupal.
+
+**Pregunta de investigación:** ¿Qué factores predicen la intervención de los testigos en situaciones de ciberbullying en escuelas secundarias de Buenos Aires?
+
+Nota cómo el tema no cambió (violencia escolar), pero la pregunta es completamente diferente a "¿existe bullying en los colegios?" (respuesta: sí, fin de la investigación).
+
+::: {.callout-tip}
+## Ejercicio
+
+1. Escribe 10 preguntas de investigación sobre un tema que te interese. Todas las que se te ocurran, sin filtro.
+2. Ahora elimina las que no pasan las 5 preguntas letales.
+3. De las que quedan, elige 2 y reformúlalas para hacerlas más específicas.
+4. Comparte tu pregunta final con alguien que NO sea de tu área. Si no la entiende, simplifícala.
+:::

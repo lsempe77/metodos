@@ -1,0 +1,92 @@
+# Cuantitativo, cualitativo, mixto: elige tu aventura {#enfoques}
+
+## Los tres enfoques (sin dogmatismo)
+
+Si has llegado hasta aquí, ya sabes que las ciencias sociales están llenas de debates. Pero pocos debates son tan apasionados (y tan improductivos) como el de cuantitativo vs. cualitativo. Es como la discusión entre perros y gatos: cada bando está convencido de que el suyo es mejor, y ninguno va a cambiar de opinión.
+
+Spoiler: ambos sirven. Depende de la pregunta. Y combinarlos también es válido.
+
+## Enfoque cuantitativo: los números cuentan historias
+
+El enfoque cuantitativo recolecta datos numéricos y los analiza estadísticamente para identificar patrones, relaciones y tendencias. Es ideal cuando quieres:
+
+- **Medir** la magnitud de un fenómeno ("¿Cuántos jóvenes desertan?").
+- **Comparar** grupos ("¿Hay diferencias entre hombres y mujeres?").
+- **Correlacionar** variables ("¿A mayor ingreso, menor deserción?").
+- **Generalizar** hallazgos a una población más amplia.
+
+### Fortalezas
+- Rigor estadístico y posibilidad de replicación.
+- Permite trabajar con muestras grandes.
+- Los resultados son "defendibles" con números (lo que importa en muchos contextos).
+- Permite controlar variables y aislar efectos.
+
+### Debilidades
+- Puede simplificar realidades complejas.
+- Los números no te dicen el "por qué" detrás de los patrones.
+- Depende de la calidad de los instrumentos (basura entra, basura sale).
+- Puede generar una falsa sensación de objetividad.
+
+## Enfoque cualitativo: las palabras también son datos
+
+El enfoque cualitativo recolecta datos no numéricos (entrevistas, observaciones, textos, imágenes) y los analiza buscando significados, patrones y comprensiones profundas. Es ideal cuando quieres:
+
+- **Comprender** experiencias y significados ("¿Cómo viven los jóvenes la experiencia de desertar?").
+- **Explorar** fenómenos poco estudiados ("¿Qué pasa en las comunidades que nadie ha investigado?").
+- **Profundizar** en procesos y dinámicas ("¿Cómo se toma la decisión de abandonar la universidad?").
+- **Dar voz** a los participantes.
+
+### Fortalezas
+- Profundidad y riqueza de detalle.
+- Sensibilidad al contexto y a la experiencia vivida.
+- Flexibilidad: el diseño puede adaptarse sobre la marcha.
+- Captura lo que los números no pueden: emociones, significados, contradicciones.
+
+### Debilidades
+- Difícil de generalizar (muestras pequeñas, contextos específicos).
+- La subjetividad del investigador es inevitable (aunque no necesariamente mala).
+- El análisis es más artesanal y menos estandarizado.
+- Puede ser difícil de publicar en revistas que privilegian lo cuantitativo.
+
+## Enfoque mixto: lo mejor de dos mundos (con cautela)
+
+El enfoque mixto combina elementos cuantitativos y cualitativos en un mismo estudio. Suena ideal, pero ojo: no es simplemente "hago encuestas Y entrevistas." Es integrar ambos enfoques de manera coherente.
+
+### Diseños mixtos comunes
+
+- **Secuencial explicativo:** Primero cuantitativo, luego cualitativo para profundizar. "La encuesta muestra que la deserción es mayor en primer año. Las entrevistas exploran por qué."
+- **Secuencial exploratorio:** Primero cualitativo para explorar, luego cuantitativo para confirmar. "Las entrevistas revelan que el sentido de pertenencia importa. La encuesta lo mide en una muestra grande."
+- **Concurrente:** Ambos al mismo tiempo, y se integran en la interpretación.
+
+### El peligro del mixto mal hecho
+
+El enfoque mixto mal ejecutado es peor que usar un solo enfoque bien hecho. Los errores más comunes:
+
+- Hacer cuantitativo y cualitativo en paralelo pero nunca integrarlos. Son dos estudios separados bajo un mismo título.
+- Usar lo cualitativo como "adorno" de lo cuantitativo ("y además hice 3 entrevistas").
+- No tener claridad sobre qué pregunta responde cada componente.
+
+## El falso debate: cuali vs. cuanti
+
+Aquí va mi posición (y sí, es una posición personal, coherente con lo que dije en la introducción sobre ser transparente):
+
+El debate cuali vs. cuanti es, en su mayoría, una pérdida de tiempo. Son herramientas. Un martillo no es mejor que un destornillador. Depende de qué necesites hacer.
+
+El problema real no es el método; es la pregunta. Una buena pregunta te indica el método. Si preguntas "¿cuántos?", necesitas números. Si preguntas "¿cómo lo viven?", necesitas palabras. Si preguntas ambas cosas, necesitas ambos.
+
+Lo que sí es válido criticar:
+
+- El imperialismo cuantitativo que reduce todo a números y p-values.
+- El relativismo cualitativo que rechaza toda cuantificación como "positivista."
+- La pereza intelectual de elegir método por comodidad, no por pertinencia.
+
+::: {.callout-tip}
+## Ejercicio
+
+Toma tu pregunta de investigación y responde:
+
+1. ¿Qué tipo de datos necesitas para responderla? ¿Números, palabras, ambos?
+2. ¿Tu objetivo es medir, comprender, o ambos?
+3. ¿Tienes acceso a suficientes datos/participantes para cada enfoque?
+4. Basado en estas respuestas, ¿qué enfoque es más pertinente para tu investigación?
+:::
