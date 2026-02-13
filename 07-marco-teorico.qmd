@@ -1,4 +1,4 @@
-# Marco teórico: los lentes con los que miras {#marco-teorico}
+# Marco teórico: los lentes con los que miras {#sec-marco-teorico}
 
 ## Por qué necesitas teoría (aunque estudies algo "práctico")
 

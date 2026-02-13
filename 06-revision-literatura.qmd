@@ -1,4 +1,4 @@
-# Revisión de literatura: leer antes de escribir {#revision-literatura}
+# Revisión de literatura: leer antes de escribir {#sec-revision-literatura}
 
 ## No es un resumen de libros
 
@@ -29,7 +29,7 @@ Esta es una de las confusiones más comunes y más dañinas. Así que vamos a ac
 **Ejemplo:** Si investigas deserción escolar:
 
 - Tu **revisión de literatura** mapea los estudios previos sobre deserción en América Latina, qué factores se han identificado, qué métodos se han usado, qué contextos se han estudiado, y qué falta por saber.
-- Tu **marco teórico** (ver @marco-teorico) podría usar la teoría del capital cultural de Bourdieu para argumentar que la deserción no es solo económica, sino que está vinculada a la distancia entre la cultura escolar y la cultura familiar del estudiante.
+- Tu **marco teórico** (ver @sec-marco-teorico) podría usar la teoría del capital cultural de Bourdieu para argumentar que la deserción no es solo económica, sino que está vinculada a la distancia entre la cultura escolar y la cultura familiar del estudiante.
 
 ¿Ves la diferencia? La revisión te dice "qué hay ahí afuera." El marco te dice "desde dónde lo miro."
 

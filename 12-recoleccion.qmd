@@ -1,4 +1,4 @@
-# Recolección de datos: salir al campo {#recoleccion}
+# Recolección de datos: salir al campo {#sec-recoleccion}
 
 ## Del escritorio al mundo real
 

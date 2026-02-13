@@ -1,4 +1,4 @@
-# La pregunta de investigación: el corazón de todo {#pregunta}
+# La pregunta de investigación: el corazón de todo {#sec-pregunta}
 
 ## Todo empieza (y termina) con una pregunta
 
@@ -112,7 +112,7 @@ ggplot(embudo, aes(x = ancho, y = etapa)) +
 
 ## Las preguntas cambian según tu paradigma
 
-Un dato que pocos manuales mencionan: tu pregunta de investigación está condicionada por tu paradigma (ver @paradigmas). Un positivista y un constructivista pueden interesarse en el mismo tema y formular preguntas completamente diferentes:
+Un dato que pocos manuales mencionan: tu pregunta de investigación está condicionada por tu paradigma (ver @sec-paradigmas). Un positivista y un constructivista pueden interesarse en el mismo tema y formular preguntas completamente diferentes:
 
 | Paradigma | Pregunta sobre deserción escolar |
 |---|---|

@@ -1,4 +1,4 @@
-# ¿Para qué investigamos? {#para-que}
+# ¿Para qué investigamos? {#sec-para-que}
 
 ## La investigación como herramienta de transformación
 

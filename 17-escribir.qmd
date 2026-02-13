@@ -1,4 +1,4 @@
-# Escribir la tesis: el arte de no morir en el intento {#escribir}
+# Escribir la tesis: el arte de no morir en el intento {#sec-escribir}
 
 ## La tesis no se escribe, se reescribe
 

@@ -1,4 +1,4 @@
-# Errores más comunes: el museo de los horrores {#errores}
+# Errores más comunes: el museo de los horrores {#sec-errores}
 
 ## Bienvenido al museo
 
@@ -47,7 +47,7 @@ Pregunta cualitativa, método cuantitativo (o viceversa). "¿Cómo viven los anc
 
 La variante inversa: "¿Cuál es la prevalencia de violencia doméstica en la región?" → 8 entrevistas en profundidad. Valiosas para entender la experiencia, pero no te dicen la prevalencia.
 
-La solución es sencilla: escribe tu pregunta. Léela. Pregúntate qué *tipo* de respuesta necesitas. Si necesitas "cuántos," usa números. Si necesitas "cómo lo viven," usa palabras. Si necesitas ambos, usa métodos mixtos (ver @enfoques).
+La solución es sencilla: escribe tu pregunta. Léela. Pregúntate qué *tipo* de respuesta necesitas. Si necesitas "cuántos," usa números. Si necesitas "cómo lo viven," usa palabras. Si necesitas ambos, usa métodos mixtos (ver @sec-enfoques).
 
 ### 5. Variables sin operacionalización
 

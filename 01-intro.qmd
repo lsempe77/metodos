@@ -1,4 +1,4 @@
-# ¿Otro libro más? {#intro}
+# ¿Otro libro más? {#sec-intro}
 
 ***¿Para qué otro libro de metodología de la investigación?***
 

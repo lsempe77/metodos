@@ -1,4 +1,4 @@
-# Paradigmas: tu GPS invisible {#paradigmas}
+# Paradigmas: tu GPS invisible {#sec-paradigmas}
 
 ## ¿Qué es un paradigma y por qué debería importarte?
 
@@ -52,7 +52,7 @@ La raíz está en la tradición hermenéutica alemana (Dilthey, Weber) y en la f
 
 El pragmatista dice: "¿Saben qué? Dejemos de pelear sobre qué es la realidad y concentrémonos en resolver el problema." Usa el método que mejor sirva para responder la pregunta, sea cuantitativo, cualitativo o mixto. La verdad no es un reflejo de la realidad ni una construcción social; es lo que *funciona* para resolver el problema en cuestión.
 
-Los padres filosóficos son Dewey, James y Peirce. En metodología, el pragmatismo es la base filosófica de los métodos mixtos (ver @enfoques).
+Los padres filosóficos son Dewey, James y Peirce. En metodología, el pragmatismo es la base filosófica de los métodos mixtos (ver @sec-enfoques).
 
 **Ejemplo:** Para abordar la pobreza, un pragmatista podría combinar datos estadísticos con entrevistas, usando lo mejor de ambos mundos. La pregunta guía no es "¿qué es la realidad?" sino "¿qué necesito saber y cuál es la mejor forma de saberlo?"
 

@@ -1,4 +1,4 @@
-# Visualización de datos: mostrar para convencer {#visualizacion}
+# Visualización de datos: mostrar para convencer {#sec-visualizacion}
 
 ## Un buen gráfico vale más que mil regresiones
 

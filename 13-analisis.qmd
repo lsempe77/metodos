@@ -1,4 +1,4 @@
-# Análisis de datos: donde la magia (no) ocurre {#analisis}
+# Análisis de datos: donde la magia (no) ocurre {#sec-analisis}
 
 ## No hay magia, hay trabajo
 

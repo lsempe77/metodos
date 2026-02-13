@@ -1,4 +1,4 @@
-# Métodos comparados: más allá de la regresión {#metodos-comparados}
+# Métodos comparados: más allá de la regresión {#sec-metodos-comparados}
 
 ## ¿Y si el problema no es cuánto sino cómo?
 

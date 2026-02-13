@@ -1,4 +1,4 @@
-# Diseños de investigación: el plano de tu casa {#disenos}
+# Diseños de investigación: el plano de tu casa {#sec-disenos}
 
 ## El diseño es tu plan de batalla
 
@@ -171,7 +171,7 @@ No siempre tienes que recoger tus propios datos. Muchas veces, los datos ya exis
 
 - No controlas qué se preguntó ni cómo. Las variables que necesitas pueden no existir, estar mal medidas, o tener categorías que no te sirven.
 - Los datos pueden tener problemas de calidad que no puedes detectar fácilmente.
-- Riesgo de "torturar los datos" hasta que confiesen algo. Cuando no diseñaste la recolección, es tentador buscar relaciones interesantes entre decenas de variables hasta que algo "sale significativo." Eso es p-hacking, y lo veremos en el @errores.
+- Riesgo de "torturar los datos" hasta que confiesen algo. Cuando no diseñaste la recolección, es tentador buscar relaciones interesantes entre decenas de variables hasta que algo "sale significativo." Eso es p-hacking, y lo veremos en el @sec-errores.
 
 ::: {.callout-note}
 ## Para recordar
